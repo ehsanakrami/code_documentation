@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bdctype_0',['BDCType',['../d4/d29/_b_d_c_type_enum_8hpp.html#ac1efcf28f6f152fe5354b888f616668d',1,'BDCTypeEnum.hpp']]]
+  ['_5fblas_5fmultiply_5fflag_0',['_BLAS_Multiply_Flag',['../classfemus_1_1_dense_matrix.html#affbbfc7fe7471c4e7fff99434e910209',1,'femus::DenseMatrix']]]
 ];

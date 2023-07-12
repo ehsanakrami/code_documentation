@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['schurfacttype_0',['SchurFactType',['../df/d84/_schur_fact_type_enum_8hpp.html#ad4d3cf6d0b21772872faec3028583b54',1,'SchurFactTypeEnum.hpp']]],
-  ['schurpretype_1',['SchurPreType',['../d2/dd5/_schur_pre_type_8hpp.html#a45add9dd3b9c2331ba78b3f6c14ef459',1,'SchurPreType.hpp']]],
-  ['solverpackage_2',['SolverPackage',['../d0/d99/_solver_package_enum_8hpp.html#a32541e934c944770722653e69abe38fe',1,'SolverPackageEnum.hpp']]],
-  ['solvertype_3',['SolverType',['../de/dd2/_solvertype_enum_8hpp.html#a8b06041d7c1fb05f379714f4312306ec',1,'SolvertypeEnum.hpp']]]
+  ['paralleltype_0',['ParallelType',['../_paralleltype_enum_8hpp.html#a55f694af2ca20b6481914237cf7e567c',1,'ParalleltypeEnum.hpp']]],
+  ['pos_5fvector_5fquantities_1',['pos_vector_quantities',['../classfemus_1_1navier__stokes_1_1pure__boundary.html#a9a781b05546de6348b9bb7e35805f78c',1,'femus::navier_stokes::pure_boundary::pos_vector_quantities'],['../classfemus_1_1navier__stokes_1_1lifting__internal.html#af248c16a96849c525c645f3b0e8a46e8',1,'femus::navier_stokes::lifting_internal::pos_vector_quantities']]],
+  ['preconditionertype_2',['PreconditionerType',['../_precondtype_enum_8hpp.html#a8b341faac6531c4543c9dc6e5e4592cf',1,'PrecondtypeEnum.hpp']]],
+  ['prectype_3',['PrecType',['../_p_c_field_split_2ex11_2ex11_8cpp.html#a2306c451d937b138c0f2ca551c97f16a',1,'PrecType:&#160;ex11.cpp'],['../ex11__1_8cpp.html#a2306c451d937b138c0f2ca551c97f16a',1,'PrecType:&#160;ex11_1.cpp'],['../ex11__2_8cpp.html#a2306c451d937b138c0f2ca551c97f16a',1,'PrecType:&#160;ex11_2.cpp'],['../_p_c_field_split_2ex21_2ex21_8cpp.html#a2306c451d937b138c0f2ca551c97f16a',1,'PrecType:&#160;ex21.cpp'],['../ex21__1_8cpp.html#a2306c451d937b138c0f2ca551c97f16a',1,'PrecType:&#160;ex21_1.cpp'],['../ex21__2_8cpp.html#a2306c451d937b138c0f2ca551c97f16a',1,'PrecType:&#160;ex21_2.cpp'],['../_p_c_field_split_2ex22_2ex22_8cpp.html#a2306c451d937b138c0f2ca551c97f16a',1,'PrecType:&#160;ex22.cpp'],['../ex22__1_8cpp.html#a2306c451d937b138c0f2ca551c97f16a',1,'PrecType:&#160;ex22_1.cpp'],['../ex23__1_8cpp.html#a2306c451d937b138c0f2ca551c97f16a',1,'PrecType:&#160;ex23_1.cpp'],['../ex30_8cpp.html#a2306c451d937b138c0f2ca551c97f16a',1,'PrecType:&#160;ex30.cpp']]]
 ];

@@ -1,20 +1,4 @@
 var searchData=
 [
-  ['boundary_5fcontrol_5fbetween_5fextreme_0',['boundary_control_between_extreme',['../dd/d57/namespacefemus_1_1ctrl_1_1boundary__control__between__extreme.html',1,'femus::ctrl']]],
-  ['boundary_5fcontrol_5ffull_5fface_1',['boundary_control_full_face',['../d4/d1c/namespacefemus_1_1ctrl_1_1boundary__control__full__face.html',1,'femus::ctrl']]],
-  ['cmdline_2',['CmdLine',['../d6/dc2/namespacefemus_1_1_cmd_line.html',1,'femus']]],
-  ['ctrl_3',['ctrl',['../dc/dbd/namespacefemus_1_1ctrl.html',1,'femus']]],
-  ['cube_4',['cube',['../d4/da0/namespacefemus_1_1ctrl_1_1boundary__control__between__extreme_1_1cube.html',1,'femus::ctrl::boundary_control_between_extreme::cube'],['../db/d4a/namespacefemus_1_1ctrl_1_1boundary__control__full__face_1_1cube.html',1,'femus::ctrl::boundary_control_full_face::cube'],['../df/dfc/namespacefemus_1_1ctrl_1_1cube.html',1,'femus::ctrl::cube']]],
-  ['elliptic_5',['elliptic',['../df/d9f/namespacefemus_1_1elliptic.html',1,'femus']]],
-  ['femus_6',['femus',['../d8/dea/namespacefemus.html',1,'']]],
-  ['generation_7',['Generation',['../d1/d24/namespacefemus_1_1_mesh_tools_1_1_generation.html',1,'femus::MeshTools']]],
-  ['math_8',['Math',['../d0/d3b/namespacefemus_1_1_math.html',1,'femus']]],
-  ['mesh_9',['mesh',['../d1/d7d/namespacefemus_1_1ctrl_1_1cube_1_1mesh.html',1,'femus::ctrl::cube::mesh'],['../d5/df6/namespacefemus_1_1ctrl_1_1square_1_1mesh.html',1,'femus::ctrl::square::mesh']]],
-  ['meshtools_10',['MeshTools',['../d3/d90/namespacefemus_1_1_mesh_tools.html',1,'femus']]],
-  ['navier_5fstokes_11',['navier_stokes',['../d3/de9/namespacefemus_1_1navier__stokes.html',1,'femus']]],
-  ['paral_12',['paral',['../dc/de0/namespacefemus_1_1paral.html',1,'femus']]],
-  ['parallel_13',['Parallel',['../db/ded/namespacefemus_1_1_parallel.html',1,'femus']]],
-  ['private_14',['Private',['../d9/de2/namespacefemus_1_1_mesh_tools_1_1_generation_1_1_private.html',1,'femus::MeshTools::Generation']]],
-  ['square_15',['square',['../d9/d67/namespacefemus_1_1ctrl_1_1boundary__control__between__extreme_1_1square.html',1,'femus::ctrl::boundary_control_between_extreme::square'],['../d1/df1/namespacefemus_1_1ctrl_1_1boundary__control__full__face_1_1square.html',1,'femus::ctrl::boundary_control_full_face::square'],['../d1/d71/namespacefemus_1_1ctrl_1_1square.html',1,'femus::ctrl::square']]],
-  ['square_5for_5fcube_16',['square_or_cube',['../db/dec/namespacefemus_1_1ctrl_1_1square__or__cube.html',1,'femus::ctrl']]]
+  ['ns_5fstate_5fonly_0',['ns_state_only',['../namespacens__state__only.html',1,'']]]
 ];

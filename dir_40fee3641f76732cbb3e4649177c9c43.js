@@ -1,0 +1,26 @@
+var dir_40fee3641f76732cbb3e4649177c9c43 =
+[
+    [ "00_norm_of_errors_of_unknowns.hpp", "00__norm__of__errors__of__unknowns_8hpp.html", "00__norm__of__errors__of__unknowns_8hpp" ],
+    [ "00_poisson_eqn_with_dirichlet_or_neumann_bc.hpp", "00__poisson__eqn__with__dirichlet__or__neumann__bc_8hpp.html", "00__poisson__eqn__with__dirichlet__or__neumann__bc_8hpp" ],
+    [ "app_specifics.hpp", "app__specifics_8hpp.html", "app__specifics_8hpp" ],
+    [ "Assemble_jacobian.cpp", "_assemble__jacobian_8cpp.html", null ],
+    [ "Assemble_jacobian.hpp", "_assemble__jacobian_8hpp.html", "_assemble__jacobian_8hpp" ],
+    [ "Assemble_unknown.cpp", "_assemble__unknown_8cpp.html", null ],
+    [ "Assemble_unknown.hpp", "_assemble__unknown_8hpp.html", "_assemble__unknown_8hpp" ],
+    [ "Assemble_unknown_jacres.hpp", "_assemble__unknown__jacres_8hpp.html", "_assemble__unknown__jacres_8hpp" ],
+    [ "Assemble_useful_functions.hpp", "_assemble__useful__functions_8hpp.html", "_assemble__useful__functions_8hpp" ],
+    [ "BoundaryConditions.cpp", "_boundary_conditions_8cpp.html", null ],
+    [ "BoundaryConditions.hpp", "_boundary_conditions_8hpp.html", "_boundary_conditions_8hpp" ],
+    [ "CurrentElem.cpp", "_current_elem_8cpp.html", null ],
+    [ "CurrentElem.hpp", "_current_elem_8hpp.html", "_current_elem_8hpp" ],
+    [ "CurrentQuantity.cpp", "_current_quantity_8cpp.html", null ],
+    [ "CurrentQuantity.hpp", "_current_quantity_8hpp.html", "_current_quantity_8hpp" ],
+    [ "DofMap.cpp", "_dof_map_8cpp.html", null ],
+    [ "DofMap.hpp", "_dof_map_8hpp.html", "_dof_map_8hpp" ],
+    [ "Quantity.cpp", "_quantity_8cpp.html", null ],
+    [ "Quantity.hpp", "_quantity_8hpp.html", "_quantity_8hpp" ],
+    [ "SystemTwo.cpp", "_system_two_8cpp.html", null ],
+    [ "SystemTwo.hpp", "_system_two_8hpp.html", "_system_two_8hpp" ],
+    [ "TimeLoop.cpp", "_time_loop_8cpp.html", null ],
+    [ "TimeLoop.hpp", "_time_loop_8hpp.html", "_time_loop_8hpp" ]
+];

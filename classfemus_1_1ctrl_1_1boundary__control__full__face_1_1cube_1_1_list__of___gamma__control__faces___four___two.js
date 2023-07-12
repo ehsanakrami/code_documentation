@@ -1,0 +1,4 @@
+var classfemus_1_1ctrl_1_1boundary__control__full__face_1_1cube_1_1_list__of___gamma__control__faces___four___two =
+[
+    [ "_face_with_extremes_index", "classfemus_1_1ctrl_1_1boundary__control__full__face_1_1cube_1_1_list__of___gamma__control__faces___four___two.html#af3825809af4e1301bcc9f4612a627fea", null ]
+];

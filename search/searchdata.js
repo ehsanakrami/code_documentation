@@ -2,12 +2,12 @@ var indexSectionsWithContent =
 {
   0: "01_abcdefghijklmnopqrstuvwxyz~",
   1: "abcdefghijlmnopqrstuvwz",
-  2: "abcdefilmnprst",
+  2: "adflmnp",
   3: "01abcdefghijklmnopqrstuvwxz",
   4: "_abcdefghijlmnopqrstuvwz~",
   5: "_abcdefghijklmnopqrstuvwxyz",
   6: "abcdfinprstu",
-  7: "bcdefgilmnopsuvw",
+  7: "_bcdefgilmnopsuvw",
   8: "abcdefghijklmnpqrstuvwxz",
   9: "o",
   10: "_abcdefgilmnopqrstuvwyz",
@@ -33,7 +33,7 @@ var indexSectionNames =
 var indexSectionLabels =
 {
   0: "All",
-  1: "Classes",
+  1: "Data Structures",
   2: "Namespaces",
   3: "Files",
   4: "Functions",

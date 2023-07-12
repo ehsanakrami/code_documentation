@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['coarselevelinclude_0',['CoarseLevelInclude',['../d2/db5/_linear_equation_solver_enum_8hpp.html#ad59627f90762138d317c60fed175204b',1,'LinearEquationSolverEnum.hpp']]]
+  ['bdctype_0',['BDCType',['../_b_d_c_type_enum_8hpp.html#ac1efcf28f6f152fe5354b888f616668d',1,'BDCTypeEnum.hpp']]]
 ];

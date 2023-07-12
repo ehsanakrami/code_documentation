@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['fefamily_0',['FEFamily',['../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664',1,'FElemTypeEnum.hpp']]],
-  ['feorder_1',['FEOrder',['../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3ba',1,'FElemTypeEnum.hpp']]],
-  ['fetype_2',['FEType',['../dd/d9a/_f_e_type_enum_8hpp.html#a31f830fd5deccf18a6e312b026bbe13b',1,'FETypeEnum.hpp']]]
+  ['elemtype_0',['ElemType',['../_elem_type_enum_8hpp.html#a1b014294b9757a001707c979e2bab627',1,'ElemTypeEnum.hpp']]]
 ];

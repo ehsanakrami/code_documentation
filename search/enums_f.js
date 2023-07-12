@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['writerenum_0',['WriterEnum',['../db/d1c/_writer_enum_8hpp.html#a18b827c3c1f62b8a57febdcad0c871a8',1,'WriterEnum.hpp']]]
+  ['vbtype_0',['VBType',['../_v_b_type_enum_8hpp.html#a6130f3add5b9fe43338b4c6307ebcdcd',1,'VBTypeEnum.hpp']]]
 ];
