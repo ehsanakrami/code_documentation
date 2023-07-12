@@ -1,4 +1,0 @@
-var classfemus_1_1ctrl_1_1boundary__control__between__extreme_1_1square_1_1_list__of___gamma__control__faces___two___one =
-[
-    [ "_face_with_extremes_index", "dd/d4a/classfemus_1_1ctrl_1_1boundary__control__between__extreme_1_1square_1_1_list__of___gamma__control__faces___two___one.html#a93698d033043b58294b6da8bcd17fbf9", null ]
-];

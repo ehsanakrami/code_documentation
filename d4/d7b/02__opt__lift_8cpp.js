@@ -1,7 +1,0 @@
-var 02__opt__lift_8cpp =
-[
-    [ "main", "d4/d7b/02__opt__lift_8cpp.html#a7a29781a20c5dd4153c3c1cecf0ff328", null ],
-    [ "Solution_set_boundary_conditions_Unknowns", "d4/d7b/02__opt__lift_8cpp.html#ac6fe8e4a590d8b1277210042ad1d1302", null ],
-    [ "Solution_set_initial_conditions_Not_Unknowns", "d4/d7b/02__opt__lift_8cpp.html#a2ef7bb30f56ee76771373bf322c6a103", null ],
-    [ "Solution_set_initial_conditions_Unknowns", "d4/d7b/02__opt__lift_8cpp.html#add09fcc3cba5ab99b085928a8d17ca47", null ]
-];

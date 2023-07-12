@@ -1,6 +1,0 @@
-var classfemus_1_1ctrl_1_1boundary__control__full__face_1_1cube_1_1_list__of___gamma__control__faces___single =
-[
-    [ "_face_with_extremes_extract_subface", "d5/d8d/classfemus_1_1ctrl_1_1boundary__control__full__face_1_1cube_1_1_list__of___gamma__control__faces___single.html#a6c55a850bec66d9ef4193d495dcecddd", null ],
-    [ "_face_with_extremes_extremes_on_tang_surface", "d5/d8d/classfemus_1_1ctrl_1_1boundary__control__full__face_1_1cube_1_1_list__of___gamma__control__faces___single.html#a837f86223cc235c78e74d99a142fe213", null ],
-    [ "_face_with_extremes_index_size", "d5/d8d/classfemus_1_1ctrl_1_1boundary__control__full__face_1_1cube_1_1_list__of___gamma__control__faces___single.html#a045756e059de44482d1044f94f7fe7cc", null ]
-];

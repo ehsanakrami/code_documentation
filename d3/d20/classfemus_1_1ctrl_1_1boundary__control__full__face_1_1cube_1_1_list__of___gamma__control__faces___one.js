@@ -1,4 +1,0 @@
-var classfemus_1_1ctrl_1_1boundary__control__full__face_1_1cube_1_1_list__of___gamma__control__faces___one =
-[
-    [ "_face_with_extremes_index", "d3/d20/classfemus_1_1ctrl_1_1boundary__control__full__face_1_1cube_1_1_list__of___gamma__control__faces___one.html#aca5d762b525aa9396dce3db8ae242671", null ]
-];
