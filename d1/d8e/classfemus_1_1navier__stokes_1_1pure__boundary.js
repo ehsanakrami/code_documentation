@@ -7,7 +7,7 @@ var classfemus_1_1navier__stokes_1_1pure__boundary =
       [ "pos_index_mu", "d1/d8e/classfemus_1_1navier__stokes_1_1pure__boundary.html#a9a781b05546de6348b9bb7e35805f78caa8d779db029f0e0952249337937038b5", null ]
     ] ],
     [ "assemble_ns_dirichlet_control_pure_boundary", "d1/d8e/classfemus_1_1navier__stokes_1_1pure__boundary.html#a42f46177bf4f7ccad5843c71e3f851b3", null ],
-    [ "GetErrorNorm", "d1/d8e/classfemus_1_1navier__stokes_1_1pure__boundary.html#a2d314b9c5f005a5771560afd0690a1f9", null ],
+    [ "GetErrorNorm", "d1/d8e/classfemus_1_1navier__stokes_1_1pure__boundary.html#a13c598231e738cc16c147e521b2c3dbf", null ],
     [ "provide_list_of_unknowns", "d1/d8e/classfemus_1_1navier__stokes_1_1pure__boundary.html#a115b4a2d7b940c1ddbb5778d339fda16", null ],
     [ "provide_state_adj_ctrl_mu_offsets", "d1/d8e/classfemus_1_1navier__stokes_1_1pure__boundary.html#ab8eb5dff21ec3d5bcb8a5c7cd7d856a2", null ],
     [ "_is_block_dctrl_ctrl_inside_main_big_assembly", "d1/d8e/classfemus_1_1navier__stokes_1_1pure__boundary.html#a79e2707afac4a0adbd80f80c784e6f1f", null ],

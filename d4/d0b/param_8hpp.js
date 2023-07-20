@@ -18,7 +18,6 @@ var param_8hpp =
     [ "N_ERASED_LEVELS", "d4/d0b/param_8hpp.html#a6cf2919927f47ad5f49ed95eaef8add9", null ],
     [ "N_UNIFORM_LEVELS", "d4/d0b/param_8hpp.html#a120d118c3e901df3fd09add0c10ad91f", null ],
     [ "NAMESPACE_FOR_GAMMA_C_BOUNDARY_CONDITIONS", "d4/d0b/param_8hpp.html#ad8c200b58e6533a6d03372c11cbf0d69", null ],
-    [ "NORM_GIR_RAV", "d4/d0b/param_8hpp.html#a1b2b15efba1826972c7503cc948219f4", null ],
     [ "Nsplit", "d4/d0b/param_8hpp.html#a3c634d703dcf88c5b98f854de3c0b0ff", null ],
     [ "OFFSET_TO_INCLUDE_LINE", "d4/d0b/param_8hpp.html#a177d52f36dcc0e769a60bd50c70fca4b", null ],
     [ "OP_H1", "d4/d0b/param_8hpp.html#a2b20da92637cd95fc41f37f3b0823724", null ],
