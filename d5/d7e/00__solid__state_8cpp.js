@@ -1,6 +1,6 @@
 var 00__solid__state_8cpp =
 [
-    [ "Solution_generation_1< real_num >", "db/d43/class_solution__generation__1.html", "db/d43/class_solution__generation__1" ],
+    [ "Solution_generation_1", "dd/dc9/classSolution__generation__1.html", "dd/dc9/classSolution__generation__1" ],
     [ "MODEL", "d5/d7e/00__solid__state_8cpp.html#a7c60e913478d07a44ac15c6fb2c5937f", null ],
     [ "AssembleSolidMech", "d5/d7e/00__solid__state_8cpp.html#aea610d910b5d696b3e500ed9636d8367", null ],
     [ "AssembleSolidMech", "d5/d7e/00__solid__state_8cpp.html#a96a01d4289cc795fc7506b8b67ba84bc", null ],

@@ -1,6 +1,6 @@
 var 02__solid__control__lifting_8cpp =
 [
-    [ "Solution_generation_1< real_num >", "db/d43/class_solution__generation__1.html", "db/d43/class_solution__generation__1" ],
+    [ "Solution_generation_1", "dd/dc9/classSolution__generation__1.html", "dd/dc9/classSolution__generation__1" ],
     [ "AssembleSolidMech", "d2/de2/02__solid__control__lifting_8cpp.html#aea610d910b5d696b3e500ed9636d8367", null ],
     [ "AssembleSolidMech", "d2/de2/02__solid__control__lifting_8cpp.html#a96a01d4289cc795fc7506b8b67ba84bc", null ],
     [ "ComputeIntegral", "d2/de2/02__solid__control__lifting_8cpp.html#ad6b2e165d5cf19933c60a49927c5bf64", null ],

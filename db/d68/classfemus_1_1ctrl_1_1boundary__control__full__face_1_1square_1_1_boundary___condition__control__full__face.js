@@ -1,4 +1,0 @@
-var classfemus_1_1ctrl_1_1boundary__control__full__face_1_1square_1_1_boundary___condition__control__full__face =
-[
-    [ "ctrl_or_state_set_dirichlet_flags", "db/d68/classfemus_1_1ctrl_1_1boundary__control__full__face_1_1square_1_1_boundary___condition__control__full__face.html#a24d42f036314e417041017631126247a", null ]
-];

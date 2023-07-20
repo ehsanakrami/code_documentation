@@ -1,6 +1,6 @@
 var ex9_2include_2gmpm_8hpp =
 [
-    [ "GMPM", "d7/dfa/class_g_m_p_m.html", "d7/dfa/class_g_m_p_m" ],
+    [ "GMPM", "d0/d10/classGMPM.html", "d0/d10/classGMPM" ],
     [ "ComputeIndexSet", "db/d60/ex9_2include_2gmpm_8hpp.html#a4ef93269af9754686d4db9bb8552b8cd", null ],
     [ "GaussianEleminationWithPivoting", "db/d60/ex9_2include_2gmpm_8hpp.html#a6f4f47299a046aa18b4ce01b8f73bfb3", null ],
     [ "GetChebyshev", "db/d60/ex9_2include_2gmpm_8hpp.html#aa249ca1a4c7f0ece8cd71c5fff6080e1", null ],

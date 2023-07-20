@@ -1,7 +1,7 @@
 var ex10c_8cpp =
 [
-    [ "cumulants", "d2/d00/ex10c_8cpp.html#a376c2dba5459dc3507eaf5f9bf126914", null ],
-    [ "cumulantsStandardized", "d2/d00/ex10c_8cpp.html#ac8d4d881434ded2dc77d0e6e1465ac07", null ],
+    [ "cumulants", "d2/d00/ex10c_8cpp.html#a079634c03ea638cf3a1d40dbe23d853f", null ],
+    [ "cumulantsStandardized", "d2/d00/ex10c_8cpp.html#acc86ef5873c3cd84da6a7f4d711de935", null ],
     [ "GetAverageL2Error", "d2/d00/ex10c_8cpp.html#a018da95a53649d18f79173da81d6c01b", null ],
     [ "GetCoefficientsForQuantityOfInterest", "d2/d00/ex10c_8cpp.html#a697ebdba628dd826863779ccc00e4fb1", null ],
     [ "GetEigenPair", "d2/d00/ex10c_8cpp.html#a92452c37f0c38e87159187706d580124", null ],
@@ -10,8 +10,8 @@ var ex10c_8cpp =
     [ "GetMomentsAndCumulants", "d2/d00/ex10c_8cpp.html#aba37d0548147ec4ff4e36e1fffd7de34", null ],
     [ "GetQoIStandardizedSamples", "d2/d00/ex10c_8cpp.html#a91ef36c73193516403a11e21941bd648", null ],
     [ "main", "d2/d00/ex10c_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627", null ],
-    [ "moments", "d2/d00/ex10c_8cpp.html#a03efe5c80d2890c68dd1a85e17dd4b55", null ],
-    [ "momentsStandardized", "d2/d00/ex10c_8cpp.html#a9ccd785aad13b10dc83b1662a879af4d", null ],
+    [ "moments", "d2/d00/ex10c_8cpp.html#a7bb0edfc82120c4a6f20db57be67acb2", null ],
+    [ "momentsStandardized", "d2/d00/ex10c_8cpp.html#ac680abee3350be12106acecb82c8f076", null ],
     [ "PlotGCandEDExpansion", "d2/d00/ex10c_8cpp.html#a2f53354e674d33c25e758edc56aee717", null ],
     [ "SetBoundaryCondition", "d2/d00/ex10c_8cpp.html#ab8b0d45993b678f2b4a8aea9fff7fc87", null ],
     [ "bLaplace", "d2/d00/ex10c_8cpp.html#a708f7786b617643c7849e22ae8292116", null ],

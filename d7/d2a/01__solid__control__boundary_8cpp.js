@@ -1,6 +1,6 @@
 var 01__solid__control__boundary_8cpp =
 [
-    [ "Solution_generation_1< real_num >", "db/d43/class_solution__generation__1.html", "db/d43/class_solution__generation__1" ],
+    [ "Solution_generation_1", "dd/dc9/classSolution__generation__1.html", "dd/dc9/classSolution__generation__1" ],
     [ "AXIS_DIRECTION_CONTROL_SIDE", "d7/d2a/01__solid__control__boundary_8cpp.html#a668a0b03c0385e061dad5178865e3b99", null ],
     [ "CTRL_FACE_IDX", "d7/d2a/01__solid__control__boundary_8cpp.html#a8267a4060045c8116d32a821091e43cd", null ],
     [ "FACE_FOR_CONTROL", "d7/d2a/01__solid__control__boundary_8cpp.html#aad0021c0ea41252012aebd17473bcd2e", null ],

@@ -55,6 +55,7 @@ var menudata={children:[
 {text:"x",url:"namespacemembers_x.html#index_x"},
 {text:"z",url:"namespacemembers_z.html#index_z"}]},
 {text:"Functions",url:"namespacemembers_func.html",children:[
+{text:"_",url:"namespacemembers_func.html#index__5F"},
 {text:"a",url:"namespacemembers_func.html#index_a"},
 {text:"b",url:"namespacemembers_func.html#index_b"},
 {text:"c",url:"namespacemembers_func.html#index_c"},
@@ -188,7 +189,7 @@ var menudata={children:[
 {text:"Typedefs",url:"functions_type.html"},
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html"},
-{text:"Related Symbols",url:"functions_rela.html"}]}]},
+{text:"Related Functions",url:"functions_rela.html"}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[

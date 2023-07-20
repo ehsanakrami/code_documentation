@@ -3,7 +3,7 @@ var sgfem__assembly_8hpp =
     [ "AssembleSysSG", "d0/dba/sgfem__assembly_8hpp.html#ac9c09fc531ba83165a878e2fb150eb68", null ],
     [ "ComputeIndexSetJp", "d0/dba/sgfem__assembly_8hpp.html#a69f3c7253670eee4371a3f56b7fce586", null ],
     [ "ComputeTensorProductSet", "d0/dba/sgfem__assembly_8hpp.html#ab134f0bdf4438035ea68f95c88213d43", null ],
-    [ "eigenvalues", "d0/dba/sgfem__assembly_8hpp.html#ae92f94281a2648ebc91e3e7df7bd86f1", null ],
+    [ "eigenvalues", "d0/dba/sgfem__assembly_8hpp.html#aa3a6db2a39e3beab10c04ac01e90324f", null ],
     [ "EvaluateHermitePoly", "d0/dba/sgfem__assembly_8hpp.html#a6792a58a97def6cf9d97721d886b482f", null ],
     [ "EvaluateHermitePolyHistogram", "d0/dba/sgfem__assembly_8hpp.html#a7d4ca49ce5173e1a81488ed2b345afb4", null ],
     [ "EvaluateIntegralsMatrix", "d0/dba/sgfem__assembly_8hpp.html#a61e538c2be2778ad644ccf7d2516c2fd", null ],

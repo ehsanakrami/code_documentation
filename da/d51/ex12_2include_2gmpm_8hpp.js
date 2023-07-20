@@ -1,7 +1,7 @@
 var ex12_2include_2gmpm_8hpp =
 [
-    [ "WindowFunction", "d5/d25/class_window_function.html", "d5/d25/class_window_function" ],
-    [ "GMPM", "d7/dfa/class_g_m_p_m.html", "d7/dfa/class_g_m_p_m" ],
+    [ "WindowFunction", "dd/d49/classWindowFunction.html", "dd/d49/classWindowFunction" ],
+    [ "GMPM", "d0/d10/classGMPM.html", "d0/d10/classGMPM" ],
     [ "ComputeIndexSet", "da/d51/ex12_2include_2gmpm_8hpp.html#a4ef93269af9754686d4db9bb8552b8cd", null ],
     [ "GaussianEleminationWithPivoting", "da/d51/ex12_2include_2gmpm_8hpp.html#a6f4f47299a046aa18b4ce01b8f73bfb3", null ],
     [ "GetChebyshev", "da/d51/ex12_2include_2gmpm_8hpp.html#aa249ca1a4c7f0ece8cd71c5fff6080e1", null ],

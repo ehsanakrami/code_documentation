@@ -36,7 +36,7 @@ var classfemus_1_1uq =
     [ "GetPolynomial", "d6/dc3/classfemus_1_1uq.html#ac179cd8120c97f82bf724dd16da17d9b", null ],
     [ "GetPolynomialHistogram", "d6/dc3/classfemus_1_1uq.html#aa39cb96d8f5b025d26c8a43af9787a80", null ],
     [ "GetQuadraturePoints", "d6/dc3/classfemus_1_1uq.html#a81c44d0f7557f44d102b476a45de6f7e", null ],
-    [ "GetQuadratureType", "d6/dc3/classfemus_1_1uq.html#a5abe5ef0ac735078c2ad2667f61d915a", null ],
+    [ "GetQuadratureType", "d6/dc3/classfemus_1_1uq.html#a0d6631f3e072e02050123092a6c3b7ef", null ],
     [ "GetQuadratureWeights", "d6/dc3/classfemus_1_1uq.html#a840837e75e748de6c8c4d278d9e91ec6", null ],
     [ "GetStochasticMassMatrix", "d6/dc3/classfemus_1_1uq.html#acd5bc1ef867e63af4670ce3041842b54", null ],
     [ "GetTensorProductSet", "d6/dc3/classfemus_1_1uq.html#a11c065f50a0ae191ddf163cf355f26a7", null ],
