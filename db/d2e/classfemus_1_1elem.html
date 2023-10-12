@@ -504,9 +504,10 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">  292</span>  {</div>
 <div class="line"><span class="lineno">  293</span>    <span class="keywordtype">unsigned</span> i;</div>
 <div class="line"><span class="lineno">  294</span>    i = <a class="code hl_function" href="../../db/d2e/classfemus_1_1elem.html#aefab7a6647d4a5a2c4b1eee9c6d9e3da">GetIndex</a>(name);</div>
-<div class="line"><span class="lineno">  295</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#ab294183b3fa7a1786f6ce2f843b6e14e">_nelt</a>[i] += value;</div>
+<div class="line"><span class="lineno">  295</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#ab294183b3fa7a1786f6ce2f843b6e14e">_nelt</a>[i] += <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  296</span>  }</div>
 <div class="ttc" id="aclassfemus_1_1elem_html_aefab7a6647d4a5a2c4b1eee9c6d9e3da"><div class="ttname"><a href="../../db/d2e/classfemus_1_1elem.html#aefab7a6647d4a5a2c4b1eee9c6d9e3da">femus::elem::GetIndex</a></div><div class="ttdeci">unsigned GetIndex(const char name[]) const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d8f/_elem_8cpp_source.html#l00541">Elem.cpp:541</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -539,7 +540,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d8f/_elem_8cpp_source.html#l00297">297</a> of file <a class="el" href="../../d6/d8f/_elem_8cpp_source.html">Elem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  298</span>  {</div>
-<div class="line"><span class="lineno">  299</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#ab294183b3fa7a1786f6ce2f843b6e14e">_nelt</a>[ielt] += value;</div>
+<div class="line"><span class="lineno">  299</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#ab294183b3fa7a1786f6ce2f843b6e14e">_nelt</a>[ielt] += <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  300</span>  }</div>
 </div><!-- fragment -->
 </div>
@@ -1086,11 +1087,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  820</span>                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> l = interfaceDof[soltype][jlevel].begin(k); l &lt; interfaceDof[soltype][jlevel].end(k); l++) {</div>
 <div class="line"><span class="lineno">  821</span>                  <span class="keywordtype">unsigned</span> ldof = interfaceDof[soltype][jlevel][k][l];</div>
 <div class="line"><span class="lineno">  822</span>                  <span class="keywordflow">if</span> (candidateNodes.find(ldof) == candidateNodes.end() || candidateNodes[ldof] != <span class="keyword">false</span>) {</div>
-<div class="line"><span class="lineno">  823</span>                    <span class="keywordtype">double</span> d2 = 0.;</div>
+<div class="line"><span class="lineno">  823</span>                    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> = 0.;</div>
 <div class="line"><span class="lineno">  824</span>                    std::vector&lt;double&gt; xl(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);</div>
 <div class="line"><span class="lineno">  825</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> d = 0; d &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; d++) {</div>
 <div class="line"><span class="lineno">  826</span>                      xl[d] = interfaceNodeCoordinates[jlevel][d][k][l];</div>
-<div class="line"><span class="lineno">  827</span>                      d2 += (xl[d] - xc[d]) * (xl[d] - xc[d]);</div>
+<div class="line"><span class="lineno">  827</span>                      <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> += (xl[d] - xc[d]) * (xl[d] - xc[d]);</div>
 <div class="line"><span class="lineno">  828</span>                    }</div>
 <div class="line"><span class="lineno">  829</span>                    <span class="keywordtype">bool</span> insideHull = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  830</span>                    <span class="keywordflow">if</span> (d2 &gt; r2) {</div>
@@ -1122,7 +1123,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  856</span>                            <span class="keywordtype">unsigned</span> jloc = interfaceLocalDof[ilevel][i][<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>];</div>
 <div class="line"><span class="lineno">  857</span> </div>
 <div class="line"><span class="lineno">  858</span>                            basis* base = msh-&gt;GetBasis(ielType, soltype);</div>
-<div class="line"><span class="lineno">  859</span>                            <span class="keywordtype">double</span> value = base-&gt;eval_phi(jloc, <a class="code hl_variable" href="../../d5/d0f/_refinement_2ex2_2ex2_8cpp.html#a520a4554f772168e7d5b94a7947c8d87">xi</a>);</div>
+<div class="line"><span class="lineno">  859</span>                            <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = base-&gt;eval_phi(jloc, <a class="code hl_variable" href="../../d5/d0f/_refinement_2ex2_2ex2_8cpp.html#a520a4554f772168e7d5b94a7947c8d87">xi</a>);</div>
 <div class="line"><span class="lineno">  860</span> </div>
 <div class="line"><span class="lineno">  861</span>                            <span class="keywordflow">if</span> (fabs(value) &gt;= 1.0e-10) {</div>
 <div class="line"><span class="lineno">  862</span>                              <span class="keywordtype">unsigned</span> jdof = interfaceDof[soltype][ilevel][i][<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>];</div>
@@ -1131,7 +1132,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  865</span>                                <span class="keywordtype">unsigned</span> jdof2  = msh-&gt;GetSolutionDof(jloc, iel, 2);</div>
 <div class="line"><span class="lineno">  866</span>                                interfaceSolidMark[soltype][jdof] = levelInterfaceSolidMark[soltype][ilevel][i][<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>];</div>
 <div class="line"><span class="lineno">  867</span>                              }</div>
-<div class="line"><span class="lineno">  868</span>                              restriction[soltype][jdof][ldof] = value;</div>
+<div class="line"><span class="lineno">  868</span>                              restriction[soltype][jdof][ldof] = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  869</span>                              restriction[soltype][ldof][ldof] = 10.;</div>
 <div class="line"><span class="lineno">  870</span>                              interfaceSolidMark[soltype][ldof] = levelInterfaceSolidMark[soltype][jlevel][k][l];</div>
 <div class="line"><span class="lineno">  871</span>                              candidateNodes[ldof] = <span class="keyword">true</span>;</div>
@@ -1221,9 +1222,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  955</span>              <span class="keywordflow">if</span> (restriction[soltype].find(inode) != restriction[soltype].end()) { <span class="comment">// inode is already defined as master node in _iproc (either it does or does not belong to _iproc)</span></div>
 <div class="line"><span class="lineno">  956</span>                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a> = slaveNodes.begin(i); <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a> &lt; slaveNodes.end(i); <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>++) { <span class="comment">// loop on all the columns of restriction[lproc][inode]</span></div>
 <div class="line"><span class="lineno">  957</span>                  <span class="keywordtype">unsigned</span> jnode = slaveNodes[i][<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>];</div>
-<div class="line"><span class="lineno">  958</span>                  <span class="keywordtype">double</span> value = slaveNodesValues[i][<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>];</div>
+<div class="line"><span class="lineno">  958</span>                  <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = slaveNodesValues[i][<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>];</div>
 <div class="line"><span class="lineno">  959</span>                  <span class="keywordflow">if</span> (inode != jnode || value &gt; 5.) { <span class="comment">// if off-diagonal or hanging node for lproc</span></div>
-<div class="line"><span class="lineno">  960</span>                    restriction[soltype][inode][jnode] =  value;</div>
+<div class="line"><span class="lineno">  960</span>                    restriction[soltype][inode][jnode] =  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  961</span>                  }</div>
 <div class="line"><span class="lineno">  962</span>                  <span class="keywordflow">if</span> (restriction[soltype].find(jnode) == restriction[soltype].end()) { <span class="comment">// if jnode is not yet a master node for _iproc</span></div>
 <div class="line"><span class="lineno">  963</span>                    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a528b2c16b23d4e442c2286fbcc2b120b">counter</a>++;</div>
@@ -1408,6 +1409,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1elem_html_a9389fca6b346d241873c46d1f9357689"><div class="ttname"><a href="../../db/d2e/classfemus_1_1elem.html#a9389fca6b346d241873c46d1f9357689">femus::elem::GetElementType</a></div><div class="ttdeci">short unsigned GetElementType(const unsigned &amp;iel)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d8f/_elem_8cpp_source.html#l00330">Elem.cpp:330</a></div></div>
 <div class="ttc" id="aclassfemus_1_1elem_html_a9b4bb98c0365d283a502ed4dc3c43db7"><div class="ttname"><a href="../../db/d2e/classfemus_1_1elem.html#a9b4bb98c0365d283a502ed4dc3c43db7">femus::elem::GetIG</a></div><div class="ttdeci">const unsigned GetIG(const unsigned &amp;elementType, const unsigned &amp;iface, const unsigned &amp;jnode) const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d8f/_elem_8cpp_source.html#l00625">Elem.cpp:625</a></div></div>
 <div class="ttc" id="aclassfemus_1_1elem_html_add93a6ef1b8c8c3ca75b77c5ba9b5c01"><div class="ttname"><a href="../../db/d2e/classfemus_1_1elem.html#add93a6ef1b8c8c3ca75b77c5ba9b5c01">femus::elem::GetNFACENODES</a></div><div class="ttdeci">const unsigned GetNFACENODES(const unsigned &amp;elementType, const unsigned &amp;jface, const unsigned &amp;dof) const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d8f/_elem_8cpp_source.html#l00615">Elem.cpp:615</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a277407185e318a7ace3879dbe5ae231a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">build_edges_of_volumes.d2</a></div><div class="ttdeci">d2</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00019">build_edges_of_volumes.py:19</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a26952845941ad3ab68f35f0dc647e464"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a26952845941ad3ab68f35f0dc647e464">femus::GetClosestPointInReferenceElement</a></div><div class="ttdeci">void GetClosestPointInReferenceElement(const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;xv, const std::vector&lt; double &gt; &amp;x, const short unsigned &amp;ieltype, std::vector&lt; double &gt; &amp;xi)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d29/_polynomial_bases_8cpp_source.html#l01929">PolynomialBases.cpp:1929</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a434f4672190f9d15cbc5e65705836bda"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a434f4672190f9d15cbc5e65705836bda">femus::GetInverseMapping</a></div><div class="ttdeci">void GetInverseMapping(const unsigned &amp;solType, short unsigned &amp;ielType, const std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; &amp;aP, const std::vector&lt; double &gt; &amp;xl, std::vector&lt; double &gt; &amp;xi)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d29/_polynomial_bases_8cpp_source.html#l01860">PolynomialBases.cpp:1860</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a528b2c16b23d4e442c2286fbcc2b120b"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a528b2c16b23d4e442c2286fbcc2b120b">femus::counter</a></div><div class="ttdeci">unsigned counter</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d75/_f_s_i_time_dependent_assembly_supg___o_l_d_8hpp_source.html#l03071">FSITimeDependentAssemblySupg_OLD.hpp:3071</a></div></div>
@@ -2760,7 +2762,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d8f/_elem_8cpp_source.html#l00600">600</a> of file <a class="el" href="../../d6/d8f/_elem_8cpp_source.html">Elem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  601</span>  {</div>
-<div class="line"><span class="lineno">  602</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a29446f016f7428d0b481dc3dcaa00d2e">_childElem</a>[iel][json] = value;</div>
+<div class="line"><span class="lineno">  602</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a29446f016f7428d0b481dc3dcaa00d2e">_childElem</a>[iel][json] = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  603</span>  }</div>
 </div><!-- fragment -->
 </div>
@@ -2832,7 +2834,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d8f/_elem_8cpp_source.html#l00246">246</a> of file <a class="el" href="../../d6/d8f/_elem_8cpp_source.html">Elem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  247</span>  {</div>
-<div class="line"><span class="lineno">  248</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a6228a3cd61962c26842519e6773fcdf6">_elementDof</a>[iel][inode] = value;</div>
+<div class="line"><span class="lineno">  248</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a6228a3cd61962c26842519e6773fcdf6">_elementDof</a>[iel][inode] = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  249</span>  }</div>
 </div><!-- fragment -->
 </div>
@@ -2867,7 +2869,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d8f/_elem_8cpp_source.html#l00354">354</a> of file <a class="el" href="../../d6/d8f/_elem_8cpp_source.html">Elem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  355</span>  {</div>
-<div class="line"><span class="lineno">  356</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a2e9e4a88ed4f489799fe759cb583fa59">_elementGroup</a>[iel] = value;</div>
+<div class="line"><span class="lineno">  356</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a2e9e4a88ed4f489799fe759cb583fa59">_elementGroup</a>[iel] = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  357</span>  }</div>
 </div><!-- fragment -->
 </div>
@@ -2892,7 +2894,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d8f/_elem_8cpp_source.html#l00386">386</a> of file <a class="el" href="../../d6/d8f/_elem_8cpp_source.html">Elem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  387</span>  {</div>
-<div class="line"><span class="lineno">  388</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a869012b66403d7f2f691d470fa65b0ba">_ngroup</a> = value;</div>
+<div class="line"><span class="lineno">  388</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a869012b66403d7f2f691d470fa65b0ba">_ngroup</a> = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  389</span>  }</div>
 </div><!-- fragment -->
 </div>
@@ -2968,7 +2970,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d8f/_elem_8cpp_source.html#l00362">362</a> of file <a class="el" href="../../d6/d8f/_elem_8cpp_source.html">Elem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  363</span>  {</div>
-<div class="line"><span class="lineno">  364</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a663d9f042bc8cb31511e3d4632443283">_elementMaterial</a>[iel] = value;</div>
+<div class="line"><span class="lineno">  364</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a663d9f042bc8cb31511e3d4632443283">_elementMaterial</a>[iel] = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  365</span>  }</div>
 </div><!-- fragment -->
 </div>
@@ -3053,7 +3055,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d8f/_elem_8cpp_source.html#l00338">338</a> of file <a class="el" href="../../d6/d8f/_elem_8cpp_source.html">Elem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  339</span>  {</div>
-<div class="line"><span class="lineno">  340</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a661a06b78e1acebc442e9ae7ed2a4b23">_elementType</a>[iel] = value;</div>
+<div class="line"><span class="lineno">  340</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a661a06b78e1acebc442e9ae7ed2a4b23">_elementType</a>[iel] = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  341</span>  }</div>
 </div><!-- fragment -->
 </div>
@@ -3094,7 +3096,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d8f/_elem_8cpp_source.html#l00322">322</a> of file <a class="el" href="../../d6/d8f/_elem_8cpp_source.html">Elem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  323</span>  {</div>
-<div class="line"><span class="lineno">  324</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a6c20d4458a80e1af704f5e8c763d7464">_elementNearFace</a>[iel][iface] = value;</div>
+<div class="line"><span class="lineno">  324</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a6c20d4458a80e1af704f5e8c763d7464">_elementNearFace</a>[iel][iface] = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  325</span>  }</div>
 </div><!-- fragment -->
 </div>
@@ -3150,7 +3152,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d8f/_elem_8cpp_source.html#l00270">270</a> of file <a class="el" href="../../d6/d8f/_elem_8cpp_source.html">Elem.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  271</span>  {</div>
-<div class="line"><span class="lineno">  272</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a12200bfdef1e1efff4ec8820267fd39e">_nvt</a> = value;</div>
+<div class="line"><span class="lineno">  272</span>    <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a12200bfdef1e1efff4ec8820267fd39e">_nvt</a> = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  273</span>  }</div>
 </div><!-- fragment -->
 </div>
@@ -3182,7 +3184,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/dd9/_elem_8hpp_source.html#l00137">137</a> of file <a class="el" href="../../df/dd9/_elem_8hpp_source.html">Elem.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  137</span>                                                          {</div>
-<div class="line"><span class="lineno">  138</span>        <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a8bc828bdd77e3c7c22ad88e69958b4cf">_nelr</a> = value;</div>
+<div class="line"><span class="lineno">  138</span>        <a class="code hl_variable" href="../../db/d2e/classfemus_1_1elem.html#a8bc828bdd77e3c7c22ad88e69958b4cf">_nelr</a> = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  139</span>      };</div>
 </div><!-- fragment -->
 </div>
@@ -3789,8 +3791,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/02_mesh/<a class="el" href="../../df/dd9/_elem_8hpp_source.html">Elem.hpp</a></li>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/02_mesh/<a class="el" href="../../d6/d8f/_elem_8cpp_source.html">Elem.cpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/02_mesh/<a class="el" href="../../df/dd9/_elem_8hpp_source.html">Elem.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/02_mesh/<a class="el" href="../../d6/d8f/_elem_8cpp_source.html">Elem.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

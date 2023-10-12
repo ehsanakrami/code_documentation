@@ -97,16 +97,13 @@ $(document).ready(function(){initNavTree('d5/d81/class_domain__square__01by01_1_
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Domain_square_01by01::Function_NonZero_on_boundary_1&lt; type &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.png" usemap="#Domain_5Fsquare_5F01by01::Function_5FNonZero_5Fon_5Fboundary_5F1_3C_20type_20_3E_map" alt=""/>
-  <map id="Domain_5Fsquare_5F01by01::Function_5FNonZero_5Fon_5Fboundary_5F1_3C_20type_20_3E_map" name="Domain_5Fsquare_5F01by01::Function_5FNonZero_5Fon_5Fboundary_5F1_3C_20type_20_3E_map">
-<area href="../../da/d19/classfemus_1_1_math_1_1_function.html" alt="femus::Math::Function&lt; type &gt;" shape="rect" coords="0,0,405,24"/>
-  </map>
-</div></div>
+  <img src="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -116,8 +113,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a70906ee5a1f7b7d923acd08555b73359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4038e3b08f628c0a710ccaad20ea75b"><td class="memItemLeft" align="right" valign="top">type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#aa4038e3b08f628c0a710ccaad20ea75b">laplacian</a> (const std::vector&lt; type &gt; &amp;x) const</td></tr>
 <tr class="separator:aa4038e3b08f628c0a710ccaad20ea75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9dc6aae39da38dc4e1819fcec260ffc"><td class="memItemLeft" align="right" valign="top">type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/classfemus_1_1_math_1_1_function.html#ad9dc6aae39da38dc4e1819fcec260ffc">helmholtz</a> (const std::vector&lt; type &gt; &amp;x) const</td></tr>
-<tr class="separator:ad9dc6aae39da38dc4e1819fcec260ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -127,7 +122,7 @@ Static Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class type = double&gt;<br />
 class Domain_square_01by01::Function_NonZero_on_boundary_1&lt; type &gt;</div>
-<p class="definition">Definition at line <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html#l00117">117</a> of file <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a70906ee5a1f7b7d923acd08555b73359" name="a70906ee5a1f7b7d923acd08555b73359"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70906ee5a1f7b7d923acd08555b73359">&#9670;&#160;</a></span>gradient()</h2>
@@ -150,57 +145,22 @@ template&lt;class type  = double&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="../../da/d19/classfemus_1_1_math_1_1_function.html#a848e5d737cd5e913f3d8ee458cc558e7">femus::Math::Function&lt; type &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html#l00127">127</a> of file <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  127</span>                                                                 {</div>
-<div class="line"><span class="lineno">  128</span> </div>
-<div class="line"><span class="lineno">  129</span>        vector &lt; type &gt; solGrad(x.size());</div>
-<div class="line"><span class="lineno">  130</span> </div>
-<div class="line"><span class="lineno">  131</span>        solGrad[0]  =  - x[0] * x[0] +  (1. - x[0]) * 2. * x[0]  + <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * cos( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[0]) ) * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[1]) );</div>
-<div class="line"><span class="lineno">  132</span>        solGrad[1]  =                                              <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[0]) ) * cos( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[1]) );</div>
-<div class="line"><span class="lineno">  133</span> </div>
-<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">return</span> solGrad;</div>
-<div class="line"><span class="lineno">  135</span>    }</div>
-<div class="ttc" id="aclass_domain__square__01by01_1_1_function___non_zero__on__boundary__1_html_a834a525d4f99ee7ef6c40b666be0257f"><div class="ttname"><a href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">Domain_square_01by01::Function_NonZero_on_boundary_1::pi</a></div><div class="ttdeci">static constexpr double pi</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dec/tutorial__common_8hpp_source.html#l00147">tutorial_common.hpp:147</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ad9dc6aae39da38dc4e1819fcec260ffc" name="ad9dc6aae39da38dc4e1819fcec260ffc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9dc6aae39da38dc4e1819fcec260ffc">&#9670;&#160;</a></span>helmholtz()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class type  = double&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">type <a class="el" href="../../da/d19/classfemus_1_1_math_1_1_function.html">femus::Math::Function</a>&lt; type &gt;::helmholtz </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../dc/dba/_math_8hpp_source.html#l00109">109</a> of file <a class="el" href="../../dc/dba/_math_8hpp_source.html">Math.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  109</span>{ <span class="keywordflow">return</span> ( - <a class="code hl_function" href="../../da/d19/classfemus_1_1_math_1_1_function.html#abc2f78d0749a61fca62209b2bbf384f0">laplacian</a>(x) + <a class="code hl_function" href="../../da/d19/classfemus_1_1_math_1_1_function.html#a76221084dd13f8c158c3df14c3be51f8">value</a>(x) ); };</div>
-<div class="ttc" id="aclassfemus_1_1_math_1_1_function_html_a76221084dd13f8c158c3df14c3be51f8"><div class="ttname"><a href="../../da/d19/classfemus_1_1_math_1_1_function.html#a76221084dd13f8c158c3df14c3be51f8">femus::Math::Function::value</a></div><div class="ttdeci">virtual type value(const std::vector&lt; type &gt; &amp;x) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dba/_math_8hpp_source.html#l00103">Math.hpp:103</a></div></div>
-<div class="ttc" id="aclassfemus_1_1_math_1_1_function_html_abc2f78d0749a61fca62209b2bbf384f0"><div class="ttname"><a href="../../da/d19/classfemus_1_1_math_1_1_function.html#abc2f78d0749a61fca62209b2bbf384f0">femus::Math::Function::laplacian</a></div><div class="ttdeci">virtual type laplacian(const std::vector&lt; type &gt; &amp;x) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dba/_math_8hpp_source.html#l00107">Math.hpp:107</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html#l00058">58</a> of file <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                                                                 {</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>        vector &lt; type &gt; solGrad(x.size());</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>        solGrad[0]  =  - x[0] * x[0] +  (1. - x[0]) * 2. * x[0]  + <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * cos( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[0]) ) * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[1]) );</div>
+<div class="line"><span class="lineno">   63</span>        solGrad[1]  =                                              <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[0]) ) * cos( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[1]) );</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">return</span> solGrad;</div>
+<div class="line"><span class="lineno">   66</span>    }</div>
+<div class="ttc" id="aclass_domain__square__01by01_1_1_function___non_zero__on__boundary__1_html_a834a525d4f99ee7ef6c40b666be0257f"><div class="ttname"><a href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">Domain_square_01by01::Function_NonZero_on_boundary_1::pi</a></div><div class="ttdeci">static constexpr double pi</div><div class="ttdef"><b>Definition</b> <a href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html#l00078">Solution_functions_over_domains_or_mesh_files.hpp:78</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -225,18 +185,16 @@ template&lt;class type  = double&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="../../da/d19/classfemus_1_1_math_1_1_function.html#abc2f78d0749a61fca62209b2bbf384f0">femus::Math::Function&lt; type &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html#l00138">138</a> of file <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  138</span>                                                      {</div>
-<div class="line"><span class="lineno">  139</span>        </div>
-<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">return</span>   - 2. * x[0] +  2. * (1. - x[0])  -  2. * x[0]  - <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[0]) ) * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[1]) ) - <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[0]) ) * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[1]) );</div>
-<div class="line"><span class="lineno">  141</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html#l00069">69</a> of file <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>                                                      {</div>
+<div class="line"><span class="lineno">   70</span>        </div>
+<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">return</span>   - 2. * x[0] +  2. * (1. - x[0])  -  2. * x[0]  - <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[0]) ) * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[1]) ) - <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[0]) ) * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[1]) );</div>
+<div class="line"><span class="lineno">   72</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -261,18 +219,16 @@ template&lt;class type  = double&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="../../da/d19/classfemus_1_1_math_1_1_function.html#a76221084dd13f8c158c3df14c3be51f8">femus::Math::Function&lt; type &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html#l00121">121</a> of file <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  121</span>                                                  {</div>
-<div class="line"><span class="lineno">  122</span>        </div>
-<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">return</span> x[0] * x[0] * (1. - x[0]) + sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[0]) ) * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[1]) );</div>
-<div class="line"><span class="lineno">  124</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html#l00052">52</a> of file <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>                                                  {</div>
+<div class="line"><span class="lineno">   53</span>        </div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">return</span> x[0] * x[0] * (1. - x[0]) + sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[0]) ) * sin( <a class="code hl_variable" href="../../d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html#a834a525d4f99ee7ef6c40b666be0257f">pi</a> * (x[1]) );</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -299,12 +255,12 @@ template&lt;class type  = double&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html#l00147">147</a> of file <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/00_tutorial/<a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/03_solution/<a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

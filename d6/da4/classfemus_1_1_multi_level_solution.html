@@ -1365,7 +1365,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  811</span>            <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a74f58af5fa6f4f1eaca1f1fb78c61e9f">_solution</a>[igridn]-&gt;_Bdc[solIndex]-&gt;set (solDof, 0.);</div>
 <div class="line"><span class="lineno">  812</span> </div>
 <div class="line"><span class="lineno">  813</span> </div>
-<div class="line"><span class="lineno">  814</span>            <span class="keywordtype">double</span> value;</div>
+<div class="line"><span class="lineno">  814</span>            <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  815</span>            std::vector &lt; double &gt; xCord (3);</div>
 <div class="line"><span class="lineno">  816</span>            <span class="keywordtype">unsigned</span> inode_coord_Metis = msh-&gt;GetSolutionDof (i, iel, 2);</div>
 <div class="line"><span class="lineno">  817</span>            xCord[0] = (*msh-&gt;_topology-&gt;_Sol[0]) (inode_coord_Metis);</div>
@@ -1393,6 +1393,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1_mesh_html_a7048c3c810f26183680f9f086baf27ae"><div class="ttname"><a href="../../d9/d8b/classfemus_1_1_mesh.html#a7048c3c810f26183680f9f086baf27ae">femus::Mesh::GetElementGroup</a></div><div class="ttdeci">short unsigned GetElementGroup(const unsigned &amp;iel) const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d06/_mesh_8cpp_source.html#l01204">Mesh.cpp:1204</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_multi_level_solution_html_ac6285c5a1907ad1f93ad7b380a08dabe"><div class="ttname"><a href="../../d6/da4/classfemus_1_1_multi_level_solution.html#ac6285c5a1907ad1f93ad7b380a08dabe">femus::MultiLevelSolution::GetSolutionType</a></div><div class="ttdeci">int GetSolutionType(unsigned i)</div><div class="ttdef"><b>Definition</b> <a href="../../da/dce/_multi_level_solution_8hpp_source.html#l00186">MultiLevelSolution.hpp:186</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_parallel_object_html_a15b46748a2e26bc263e3e6e4690e8a3b"><div class="ttname"><a href="../../dd/d90/classfemus_1_1_parallel_object.html#a15b46748a2e26bc263e3e6e4690e8a3b">femus::ParallelObject::_iproc</a></div><div class="ttdeci">int _iproc</div><div class="ttdef"><b>Definition</b> <a href="../../da/d3d/_parallel_object_8hpp_source.html#l00061">ParallelObject.hpp:61</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1531,9 +1532,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  918</span>                          <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a74f58af5fa6f4f1eaca1f1fb78c61e9f">_solution</a>[igridn]-&gt;_SolOld[solIndex]-&gt;set(inode_Metis, value0);</div>
 <div class="line"><span class="lineno">  919</span>                        }</div>
 <div class="line"><span class="lineno">  920</span>                        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k1 = 0; k1 &lt; solKiIndex.size(); k1++) {</div>
-<div class="line"><span class="lineno">  921</span>                          <span class="keywordtype">double</span> value = 0.;</div>
+<div class="line"><span class="lineno">  921</span>                          <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  922</span>                          <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k2 = 0; k2 &lt; solKiIndex.size(); k2++) {</div>
-<div class="line"><span class="lineno">  923</span>                            value += AI[k1 * solKiIndex.size() + k2] * ivalue[k2];</div>
+<div class="line"><span class="lineno">  923</span>                            <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> += AI[k1 * solKiIndex.size() + k2] * ivalue[k2];</div>
 <div class="line"><span class="lineno">  924</span>                          }</div>
 <div class="line"><span class="lineno">  925</span>                          <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a74f58af5fa6f4f1eaca1f1fb78c61e9f">_solution</a>[igridn]-&gt;_Sol[solKiIndex[k1]]-&gt;set(inode_Metis, value / <a class="code hl_variable" href="../../dd/dab/_s_w_2ex3_2ex3_8cpp.html#a03e28be41881b703c836edbfe9b51b17">dt</a>);</div>
 <div class="line"><span class="lineno">  926</span>                        }</div>
@@ -1572,9 +1573,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  959</span>                        <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a74f58af5fa6f4f1eaca1f1fb78c61e9f">_solution</a>[igridn]-&gt;_SolOld[solIndex]-&gt;set(idof, value0);</div>
 <div class="line"><span class="lineno">  960</span>                      }</div>
 <div class="line"><span class="lineno">  961</span>                      <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k1 = 0; k1 &lt; solKiIndex.size(); k1++) {</div>
-<div class="line"><span class="lineno">  962</span>                        <span class="keywordtype">double</span> value = 0.;</div>
+<div class="line"><span class="lineno">  962</span>                        <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  963</span>                        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k2 = 0; k2 &lt; solKiIndex.size(); k2++) {</div>
-<div class="line"><span class="lineno">  964</span>                          value += AI[k1 * solKiIndex.size() + k2] * ivalue[k2];</div>
+<div class="line"><span class="lineno">  964</span>                          <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> += AI[k1 * solKiIndex.size() + k2] * ivalue[k2];</div>
 <div class="line"><span class="lineno">  965</span>                        }</div>
 <div class="line"><span class="lineno">  966</span>                        <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a74f58af5fa6f4f1eaca1f1fb78c61e9f">_solution</a>[igridn]-&gt;_Bdc[solKiIndex[k1]]-&gt;set(idof, 0.);</div>
 <div class="line"><span class="lineno">  967</span>                        <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a74f58af5fa6f4f1eaca1f1fb78c61e9f">_solution</a>[igridn]-&gt;_Sol[solKiIndex[k1]]-&gt;set(idof, value / <a class="code hl_variable" href="../../dd/dab/_s_w_2ex3_2ex3_8cpp.html#a03e28be41881b703c836edbfe9b51b17">dt</a>);</div>
@@ -2846,7 +2847,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  342</span>        <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a74f58af5fa6f4f1eaca1f1fb78c61e9f">_solution</a>[<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>]-&gt;_Sol[i]-&gt;zero();</div>
 <div class="line"><span class="lineno">  343</span> </div>
 <div class="line"><span class="lineno">  344</span>        <span class="keywordflow">if</span>(func || funcMLProb) {</div>
-<div class="line"><span class="lineno">  345</span>          <span class="keywordtype">double</span> value;</div>
+<div class="line"><span class="lineno">  345</span>          <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  346</span> </div>
 <div class="line"><span class="lineno">  347</span>          <span class="keywordflow">if</span>(sol_type &lt; 3) {</div>
 <div class="line"><span class="lineno">  348</span>            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> isdom = <a class="code hl_variable" href="../../dd/d90/classfemus_1_1_parallel_object.html#a15b46748a2e26bc263e3e6e4690e8a3b">_iproc</a>; isdom &lt; <a class="code hl_variable" href="../../dd/d90/classfemus_1_1_parallel_object.html#a15b46748a2e26bc263e3e6e4690e8a3b">_iproc</a> + 1; isdom++) {</div>
@@ -2862,7 +2863,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  358</span>                  xx[1] = (*<a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0b3054885210f9a51ebff160e52ec2df">_mlMesh</a>-&gt;<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#af0dec057961b41903215bb9927cbfeed">GetLevel</a>(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>)-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#ac436cfb1f4caaec0c4335358ff8a51d8">_topology</a>-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[1])(icoord_Metis);</div>
 <div class="line"><span class="lineno">  359</span>                  xx[2] = (*<a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0b3054885210f9a51ebff160e52ec2df">_mlMesh</a>-&gt;<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#af0dec057961b41903215bb9927cbfeed">GetLevel</a>(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>)-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#ac436cfb1f4caaec0c4335358ff8a51d8">_topology</a>-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[2])(icoord_Metis);</div>
 <div class="line"><span class="lineno">  360</span> </div>
-<div class="line"><span class="lineno">  361</span>                  value = (func) ? func(xx) : funcMLProb(ml_prob, xx, name);</div>
+<div class="line"><span class="lineno">  361</span>                  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = (func) ? func(xx) : funcMLProb(ml_prob, xx, name);</div>
 <div class="line"><span class="lineno">  362</span> </div>
 <div class="line"><span class="lineno">  363</span>                  <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a74f58af5fa6f4f1eaca1f1fb78c61e9f">_solution</a>[<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>]-&gt;_Sol[i]-&gt;set(inode_Metis, value);</div>
 <div class="line"><span class="lineno">  364</span> </div>
@@ -2895,7 +2896,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  391</span>                xx[2] /= nloc_dof;</div>
 <div class="line"><span class="lineno">  392</span>              <span class="comment">// evaluate at average of biquadratic nodes (element center) - END -----</span></div>
 <div class="line"><span class="lineno">  393</span> </div>
-<div class="line"><span class="lineno">  394</span>                value = (func) ? func(xx) : funcMLProb(ml_prob, xx, name);</div>
+<div class="line"><span class="lineno">  394</span>                <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = (func) ? func(xx) : funcMLProb(ml_prob, xx, name);</div>
 <div class="line"><span class="lineno">  395</span>                </div>
 <div class="line"><span class="lineno">  396</span>                <span class="keywordtype">unsigned</span> placeholder_index = 0<span class="comment">/*2*/</span>;</div>
 <div class="line"><span class="lineno">  397</span> </div>
@@ -3025,7 +3026,7 @@ template&lt;class LIST_OF_CTRL_FACES &gt; </div>
 <div class="line"><span class="lineno">  580</span>        <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a74f58af5fa6f4f1eaca1f1fb78c61e9f">_solution</a>[<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>]-&gt;_Sol[i]-&gt;zero();</div>
 <div class="line"><span class="lineno">  581</span> </div>
 <div class="line"><span class="lineno">  582</span>        <span class="keywordflow">if</span>(func || funcMLProb) {</div>
-<div class="line"><span class="lineno">  583</span>          <span class="keywordtype">double</span> value = 0.;</div>
+<div class="line"><span class="lineno">  583</span>          <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  584</span> </div>
 <div class="line"><span class="lineno">  585</span>          <span class="keywordflow">if</span>(sol_type &lt; 3) {</div>
 <div class="line"><span class="lineno">  586</span>              abort();</div>
@@ -3065,7 +3066,7 @@ template&lt;class LIST_OF_CTRL_FACES &gt; </div>
 <div class="line"><span class="lineno">  620</span>  </div>
 <div class="line"><span class="lineno">  621</span>              <span class="keywordflow">for</span>(<span class="keywordtype">int</span> iel = <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0b3054885210f9a51ebff160e52ec2df">_mlMesh</a>-&gt;<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#af0dec057961b41903215bb9927cbfeed">GetLevel</a>(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>)-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#aca17a5dc69b8cfb941b8bbe7ae4a615e">_elementOffset</a>[<a class="code hl_variable" href="../../dd/d90/classfemus_1_1_parallel_object.html#a15b46748a2e26bc263e3e6e4690e8a3b">_iproc</a>];</div>
 <div class="line"><span class="lineno">  622</span>                  iel &lt; <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0b3054885210f9a51ebff160e52ec2df">_mlMesh</a>-&gt;<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#af0dec057961b41903215bb9927cbfeed">GetLevel</a>(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>)-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#aca17a5dc69b8cfb941b8bbe7ae4a615e">_elementOffset</a>[<a class="code hl_variable" href="../../dd/d90/classfemus_1_1_parallel_object.html#a15b46748a2e26bc263e3e6e4690e8a3b">_iproc</a> + 1]; iel++) {</div>
-<div class="line"><span class="lineno">  623</span>                  value = 0.;</div>
+<div class="line"><span class="lineno">  623</span>                  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  624</span> </div>
 <div class="line"><span class="lineno">  625</span><span class="comment">// ------- - BEGIN</span></div>
 <div class="line"><span class="lineno">  626</span>    geom_element_iel.set_coords_at_dofs_and_geom_type(iel, solType_coords);</div>
@@ -3112,7 +3113,7 @@ template&lt;class LIST_OF_CTRL_FACES &gt; </div>
 <div class="line"><span class="lineno">  667</span> </div>
 <div class="line"><span class="lineno">  668</span>                            }</div>
 <div class="line"><span class="lineno">  669</span>                            </div>
-<div class="line"><span class="lineno">  670</span>                 <span class="keywordflow">if</span> (cond_for_tang_component_all == <span class="keyword">true</span>) {  value = 1.; }         </div>
+<div class="line"><span class="lineno">  670</span>                 <span class="keywordflow">if</span> (cond_for_tang_component_all == <span class="keyword">true</span>) {  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 1.; }         </div>
 <div class="line"><span class="lineno">  671</span>                            </div>
 <div class="line"><span class="lineno">  672</span>            }</div>
 <div class="line"><span class="lineno">  673</span> </div>
@@ -4055,7 +4056,7 @@ template&lt;class LIST_OF_CTRL_FACES &gt; </div>
 <div class="line"><span class="lineno"> 1149</span>              xx[1] = (*<a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0b3054885210f9a51ebff160e52ec2df">_mlMesh</a>-&gt;<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#af0dec057961b41903215bb9927cbfeed">GetLevel</a>(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>)-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#ac436cfb1f4caaec0c4335358ff8a51d8">_topology</a>-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[1])(icoord_Metis);</div>
 <div class="line"><span class="lineno"> 1150</span>              xx[2] = (*<a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0b3054885210f9a51ebff160e52ec2df">_mlMesh</a>-&gt;<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#af0dec057961b41903215bb9927cbfeed">GetLevel</a>(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>)-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#ac436cfb1f4caaec0c4335358ff8a51d8">_topology</a>-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[2])(icoord_Metis);</div>
 <div class="line"><span class="lineno"> 1151</span>              xx[3] = time;</div>
-<div class="line"><span class="lineno"> 1152</span>              <span class="keywordtype">double</span> value = func(xx);</div>
+<div class="line"><span class="lineno"> 1152</span>              <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = func(xx);</div>
 <div class="line"><span class="lineno"> 1153</span>              <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a74f58af5fa6f4f1eaca1f1fb78c61e9f">_solution</a>[<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>]-&gt;_Sol[i]-&gt;set(inode_Metis, value);</div>
 <div class="line"><span class="lineno"> 1154</span>            }</div>
 <div class="line"><span class="lineno"> 1155</span>          }</div>
@@ -4079,7 +4080,7 @@ template&lt;class LIST_OF_CTRL_FACES &gt; </div>
 <div class="line"><span class="lineno"> 1173</span>            xx[2] /= nloc_dof;</div>
 <div class="line"><span class="lineno"> 1174</span>            xx[3] = time;</div>
 <div class="line"><span class="lineno"> 1175</span> </div>
-<div class="line"><span class="lineno"> 1176</span>            <span class="keywordtype">double</span> value =  func(xx);</div>
+<div class="line"><span class="lineno"> 1176</span>            <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> =  func(xx);</div>
 <div class="line"><span class="lineno"> 1177</span>            <span class="keywordtype">unsigned</span> solDof = <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0b3054885210f9a51ebff160e52ec2df">_mlMesh</a>-&gt;<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#af0dec057961b41903215bb9927cbfeed">GetLevel</a>(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>)-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ace44edec2dc2ffb42c0456f03fa227ff">GetSolutionDof</a>(2, iel, sol_type);</div>
 <div class="line"><span class="lineno"> 1178</span>            <a class="code hl_variable" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a74f58af5fa6f4f1eaca1f1fb78c61e9f">_solution</a>[<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>]-&gt;_Sol[i]-&gt;set(solDof, value);</div>
 <div class="line"><span class="lineno"> 1179</span>          }</div>
@@ -4773,8 +4774,8 @@ template&lt;class LIST_OF_CTRL_FACES &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/03_solution/<a class="el" href="../../da/dce/_multi_level_solution_8hpp_source.html">MultiLevelSolution.hpp</a></li>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/03_solution/<a class="el" href="../../d2/db0/_multi_level_solution_8cpp_source.html">MultiLevelSolution.cpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/03_solution/<a class="el" href="../../da/dce/_multi_level_solution_8hpp_source.html">MultiLevelSolution.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/03_solution/<a class="el" href="../../d2/db0/_multi_level_solution_8cpp_source.html">MultiLevelSolution.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

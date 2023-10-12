@@ -94,40 +94,42 @@ $(document).ready(function(){initNavTree('dd/da0/todo.html','../../'); initResiz
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Member <a class="el" href="../../df/d2a/07__fractional_8cpp.html#a8d2b7ad817b979696acdbe1f3a2c5d35">AssembleFracProblem</a>  (MultiLevelProblem &amp;ml_prob)</dt>
-<dd><a class="anchor" id="_todo000151"></a>is there a way to put this outside of the ig loop?  </dd>
+<dd><a class="anchor" id="_todo000157"></a>is there a way to put this outside of the ig loop?  </dd>
 <dt>Member <a class="el" href="../../dd/d8a/cylinder__beam__3d__benchmark_8cpp.html#acc581f1710c3ca3eed14d7a4c6c5aec7">BdcFunction</a>  (const std::vector&lt; double &gt; &amp;x, const char name[], double &amp;value, const int facename, const double time)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000126"></a>do I have to leave the displacement of the fluid here free? </p>
-<p class="interdd"><a class="anchor" id="_todo000127"></a>do I have to leave the displacement of the fluid here free? </p>
-<p class="interdd"><a class="anchor" id="_todo000128"></a>do I have to leave the displacement of the fluid here free? </p>
-<p class="interdd"><a class="anchor" id="_todo000129"></a>do I have to leave the displacement of the fluid here free? </p>
-<p class="enddd"><a class="anchor" id="_todo000130"></a>do I have to leave the displacement of the fluid here free?  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000133"></a>do I have to leave the displacement of the fluid here free? </p>
+<p class="interdd"><a class="anchor" id="_todo000134"></a>do I have to leave the displacement of the fluid here free? </p>
+<p class="interdd"><a class="anchor" id="_todo000136"></a>do I have to leave the displacement of the fluid here free? </p>
+<p class="interdd"><a class="anchor" id="_todo000135"></a>do I have to leave the displacement of the fluid here free? </p>
+<p class="enddd"><a class="anchor" id="_todo000132"></a>do I have to leave the displacement of the fluid here free?  </p>
 </dd>
-<dt>Member <a class="el" href="../../d1/ddc/karthik_8cpp.html#a96b52d314527adc4403ebff8a9cb7be9">boundary_loop_2d3d</a>  (const MultiLevelProblem *ml_prob, const Mesh *msh, const MultiLevelSolution *ml_sol, const unsigned iel, <a class="el" href="../../d4/d0f/classfemus_1_1_current_elem.html">CurrentElem&lt; double &gt;</a> &amp;geom_element, const unsigned solType_coords, const std::string solname_u, const unsigned solFEType_u, std::vector&lt; double &gt; &amp;Res, std::vector&lt; std::vector&lt; elem_type_templ_base&lt; real_num, real_num_mov &gt; * &gt; &gt; elem_all, const unsigned dim, const unsigned space_dim, const unsigned max_size)</dt>
-<dd><a class="anchor" id="_todo000119"></a>- should put these outside the iel loop &ndash;  </dd>
 <dt>Class <a class="el" href="../../dd/d15/classfemus_1_1app__specifics.html">femus::app_specifics</a>  </dt>
 <dd><a class="anchor" id="_todo000070"></a>this should be templated as a class, or some of its functions should be templated  </dd>
 <dt>Member <a class="el" href="../../dd/d15/classfemus_1_1app__specifics.html#a117e913d9a22676fd86247fce8e052e3">femus::app_specifics::AssembleFunctionType</a>  )(<a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> &amp;ml_prob)</dt>
 <dd><a class="anchor" id="_todo000071"></a>this should be templated  </dd>
 <dt>Member <a class="el" href="../../d4/d7a/classfemus_1_1assemble__jacobian.html#a6818258dd0a0b3ae898fc00e527f2f0b">femus::assemble_jacobian&lt; real_num, real_num_mov &gt;::print_global_residual</a>  (const <a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> &amp;ml_prob, <a class="el" href="../../da/d12/classfemus_1_1_numeric_vector.html">NumericVector</a> *RES, const unsigned int nonlin_iteration)</dt>
 <dd><a class="anchor" id="_todo000072"></a>why does this close need to be non-const?  </dd>
+<dt>Member <a class="el" href="../../d8/dea/namespacefemus.html#a5efee0775707ca1f35f49df747a099af">femus::AssembleBoussinesqAppoximation_AD</a>  (<a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> &amp;ml_prob)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000131"></a>check this sign </p>
+<p class="enddd"><a class="anchor" id="_todo000130"></a>check this sign  </p>
+</dd>
 <dt>Member <a class="el" href="../../d8/d67/classfemus_1_1ctrl_1_1_gamma__control__equation__fractional__sobolev__differentiability__index.html#a670259b04cc78c25754359dbecaee07c">femus::ctrl::Gamma_control_equation_fractional_sobolev_differentiability_index&lt; LIST_OF_CTRL_FACES, DOMAIN_CONTAINING_CTRL_FACES &gt;::control_eqn_bdry</a>  (const unsigned iproc, const unsigned nprocs, <a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> &amp;ml_prob, <a class="el" href="../../d6/da4/classfemus_1_1_multi_level_solution.html">MultiLevelSolution</a> *ml_sol, const <a class="el" href="../../d4/d40/classfemus_1_1_solution.html">Solution</a> *sol, <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html">Mesh</a> *msh, const <a class="el" href="../../da/d1a/classfemus_1_1_linear_equation_solver.html">LinearEquationSolver</a> *pdeSys, <a class="el" href="../../d4/d0f/classfemus_1_1_current_elem.html">CurrentElem&lt; double &gt;</a> &amp;geom_element_iel, const unsigned int solType_coords, const unsigned int dim, const unsigned int space_dim, const unsigned int dim_bdry, const unsigned int n_unknowns, const vector&lt; std::string &gt; &amp;Solname_Mat, const vector&lt; unsigned &gt; &amp;SolFEType_Mat, const vector&lt; unsigned &gt; &amp;SolIndex_Mat, const vector&lt; unsigned &gt; &amp;SolPdeIndex, vector&lt; unsigned &gt; &amp;Sol_n_el_dofs_Mat, vector&lt; vector&lt; double &gt; &gt; &amp;sol_eldofs_Mat, vector&lt; vector&lt; int &gt; &gt; &amp;L2G_dofmap_Mat, const unsigned int max_size, const unsigned int n_quantities, vector&lt; unsigned &gt; SolFEType_quantities, std::vector&lt; std::vector&lt; std::vector&lt; elem_type_templ_base&lt; double, double &gt; * &gt; &gt; &gt; elem_all, std::vector&lt; std::vector&lt; double &gt; &gt; Jac_iel_bdry_qp_of_iface, std::vector&lt; std::vector&lt; double &gt; &gt; JacI_iel_bdry_qp_of_iface, double detJac_iel_bdry_qp_of_iface, double weight_qp_of_iface, vector&lt; double &gt; phi_ctrl_iel_bdry_qp_of_iface, vector&lt; double &gt; phi_ctrl_x_iel_bdry_qp_of_iface, const unsigned int n_components_ctrl, const unsigned int pos_mat_ctrl, const unsigned int pos_sol_ctrl, const unsigned int is_block_dctrl_ctrl_inside_main_big_assembly, <a class="el" href="../../d3/d61/classfemus_1_1_sparse_matrix.html">SparseMatrix</a> *KK, <a class="el" href="../../da/d12/classfemus_1_1_numeric_vector.html">NumericVector</a> *RES, const bool assembleMatrix, const double alpha, const double beta, const double s_frac, const double check_limits, const unsigned use_Cns, const unsigned int operator_Hhalf, const unsigned int operator_L2, const double rhs_one, const unsigned int unbounded, const std::string node_based_bdry_bdry_in, const unsigned qrule_i, const unsigned qrule_j, const unsigned qrule_k, const unsigned int integration_num_split, const unsigned int integration_split_index, const unsigned int N_div_face_of_face, const bool print_algebra_local)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000157"></a>assume all ctrl components have the same FE family </p>
-<p class="interdd"><a class="anchor" id="_todo000163"></a>is there a way to put this outside of the quadrature loop? </p>
-<p class="interdd"><a class="anchor" id="_todo000162"></a>is this dim or dim_bdry? </p>
-<p class="interdd"><a class="anchor" id="_todo000161"></a>is this dim or dim_bdry? </p>
-<p class="interdd"><a class="anchor" id="_todo000160"></a>check this!!!!!!!!!!!! </p>
-<p class="interdd"><a class="anchor" id="_todo000159"></a>assume all ctrl components have the same FE family </p>
-<p class="interdd"><a class="anchor" id="_todo000158"></a>assume all ctrl components have the same FE family </p>
-<p class="interdd"><a class="anchor" id="_todo000156"></a>all coords have the same ndofs </p>
-<p class="interdd"><a class="anchor" id="_todo000155"></a>future solution: broadcast whole class instances </p>
-<p class="enddd"><a class="anchor" id="_todo000154"></a>1  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000165"></a>assume all ctrl components have the same FE family </p>
+<p class="interdd"><a class="anchor" id="_todo000164"></a>assume all ctrl components have the same FE family </p>
+<p class="interdd"><a class="anchor" id="_todo000163"></a>assume all ctrl components have the same FE family </p>
+<p class="interdd"><a class="anchor" id="_todo000168"></a>is this dim or dim_bdry? </p>
+<p class="interdd"><a class="anchor" id="_todo000167"></a>is this dim or dim_bdry? </p>
+<p class="interdd"><a class="anchor" id="_todo000169"></a>is there a way to put this outside of the quadrature loop? </p>
+<p class="interdd"><a class="anchor" id="_todo000162"></a>all coords have the same ndofs </p>
+<p class="interdd"><a class="anchor" id="_todo000160"></a>1 </p>
+<p class="interdd"><a class="anchor" id="_todo000161"></a>future solution: broadcast whole class instances </p>
+<p class="enddd"><a class="anchor" id="_todo000166"></a>check this!!!!!!!!!!!!  </p>
 </dd>
 <dt>Member <a class="el" href="../../d8/d67/classfemus_1_1ctrl_1_1_gamma__control__equation__fractional__sobolev__differentiability__index.html#a9645408854556a70fefb765665c3b539">femus::ctrl::Gamma_control_equation_fractional_sobolev_differentiability_index&lt; LIST_OF_CTRL_FACES, DOMAIN_CONTAINING_CTRL_FACES &gt;::unbounded_integral_over_exterior_of_boundary_control_face</a>  (const unsigned unbounded, const unsigned dim, const unsigned dim_bdry, const unsigned int operator_Hhalf, const double s_frac, const double check_limits, const double C_ns, const double beta, const <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html">Mesh</a> *msh, const <a class="el" href="../../d4/d40/classfemus_1_1_solution.html">Solution</a> *sol, const <a class="el" href="../../d6/da4/classfemus_1_1_multi_level_solution.html">MultiLevelSolution</a> *ml_sol, const int iel, const unsigned iface, unsigned int i_element_face_index, std::vector&lt; std::vector&lt; int &gt; &gt; control_node_flag_iel_all_faces, std::vector&lt; std::vector&lt; int &gt; &gt; control_node_flag_jel_all_faces, const std::vector&lt; unsigned int &gt; nDof_vol_iel, const double weight_qp_of_iface, const std::vector&lt; double &gt; &amp;x_qp_of_iface, const std::vector&lt; double &gt; &amp;phi_ctrl_iel_bdry_qp_of_iface, const std::vector&lt; double &gt; sol_ctrl_qp_of_iface, std::vector&lt; double &gt; &amp;KK_local_iel_unbounded_integral_analytical_both_ref_and_non_ref, std::vector&lt; double &gt; &amp;Res_local_iel_unbounded_integral_analytical_both_ref_and_non_ref, const int jel, const unsigned jface, const unsigned int j_element_face_index, <a class="el" href="../../d4/d0f/classfemus_1_1_current_elem.html">CurrentElem&lt; double &gt;</a> &amp;geom_element_jel, std::string node_based_bdry_bdry_in, const unsigned n_divisions_face_of_face, std::vector&lt; double &gt; &amp;KK_nonlocal_iel_unbounded_integral_numerical_both_ref_and_non_ref, std::vector&lt; double &gt; &amp;Res_nonlocal_iel_unbounded_integral_numerical_both_ref_and_non_ref, unsigned solType_coords, double &amp;integral)</dt>
-<dd><a class="anchor" id="_todo000153"></a>ONLY DIFFERENCES: the mixed_denominator is numerical, and so also the corresponding Res and Jac. It could be done with a single function  </dd>
+<dd><a class="anchor" id="_todo000159"></a>ONLY DIFFERENCES: the mixed_denominator is numerical, and so also the corresponding Res and Jac. It could be done with a single function  </dd>
 <dt>Member <a class="el" href="../../d0/d9e/classfemus_1_1ctrl_1_1_gamma__control__equation__integer__sobolev__differentiability__index.html#acda52ae1ad7913e87e117244466bd96d">femus::ctrl::Gamma_control_equation_integer_sobolev_differentiability_index&lt; LIST_OF_CTRL_FACES, DOMAIN_CONTAINING_CTRL_FACES &gt;::control_eqn_bdry</a>  (const unsigned iproc, <a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> &amp;ml_prob, <a class="el" href="../../d6/da4/classfemus_1_1_multi_level_solution.html">MultiLevelSolution</a> *ml_sol, const <a class="el" href="../../d4/d40/classfemus_1_1_solution.html">Solution</a> *sol, const <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html">Mesh</a> *msh, const <a class="el" href="../../da/d1a/classfemus_1_1_linear_equation_solver.html">LinearEquationSolver</a> *pdeSys, <a class="el" href="../../d4/d0f/classfemus_1_1_current_elem.html">CurrentElem&lt; double &gt;</a> &amp;geom_element_iel, const unsigned int solType_coords, const unsigned int space_dim, const unsigned int n_unknowns, const vector&lt; std::string &gt; &amp;Solname_Mat, const vector&lt; unsigned &gt; &amp;SolFEType_Mat, const vector&lt; unsigned &gt; &amp;SolIndex_Mat, const vector&lt; unsigned &gt; &amp;SolPdeIndex, vector&lt; unsigned &gt; &amp;Sol_n_el_dofs_Mat, vector&lt; vector&lt; double &gt; &gt; &amp;sol_eldofs_Mat, vector&lt; vector&lt; int &gt; &gt; &amp;L2G_dofmap_Mat, const unsigned max_size, const unsigned int n_quantities, vector&lt; unsigned &gt; SolFEType_quantities, std::vector&lt; std::vector&lt; std::vector&lt; elem_type_templ_base&lt; double, double &gt; * &gt; &gt; &gt; elem_all, std::vector&lt; std::vector&lt; double &gt; &gt; Jac_iel_bdry_iqp_bdry, std::vector&lt; std::vector&lt; double &gt; &gt; JacI_iel_bdry_iqp_bdry, double detJac_iel_bdry_iqp_bdry, double weight_iqp_bdry, vector&lt; double &gt; phi_ctrl_iel_bdry_iqp_bdry, vector&lt; double &gt; phi_ctrl_x_iel_bdry_iqp_bdry, const unsigned int n_components_ctrl, const unsigned int pos_mat_ctrl, const unsigned int pos_sol_ctrl, const unsigned int is_block_dctrl_ctrl_inside_main_big_assembly, <a class="el" href="../../d3/d61/classfemus_1_1_sparse_matrix.html">SparseMatrix</a> *KK, <a class="el" href="../../da/d12/classfemus_1_1_numeric_vector.html">NumericVector</a> *RES, const bool assembleMatrix, const double alpha, const double beta, const double rhs_one, const unsigned int operator_L2, const unsigned int operator_H1semi, const unsigned qrule_i, const bool print_algebra_local)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000165"></a>the active flag is not an unknown! </p>
-<p class="interdd"><a class="anchor" id="_todo000166"></a>fix this absence </p>
-<p class="enddd"><a class="anchor" id="_todo000164"></a>here I have to do it "on the go", for each boundary dof!!!  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000171"></a>the active flag is not an unknown! </p>
+<p class="interdd"><a class="anchor" id="_todo000170"></a>here I have to do it "on the go", for each boundary dof!!! </p>
+<p class="enddd"><a class="anchor" id="_todo000172"></a>fix this absence  </p>
 </dd>
 <dt>Member <a class="el" href="../../d2/dd1/classfemus_1_1ctrl_1_1mixed__state__or__ctrl__inequality.html#adc954491da61629418e3b29bc0db4d61">femus::ctrl::mixed_state_or_ctrl_inequality&lt; INEQUALITY_CONSTRAINT_CLASS &gt;::add_one_times_mu_res_ctrl</a>  (const unsigned iproc, const double ineq_flag, const std::vector&lt; unsigned int &gt; pos_ctrl_in_Mat, const std::vector&lt; unsigned int &gt; pos_mu_in_Mat, const vector&lt; unsigned &gt; &amp;SolIndex, const <a class="el" href="../../d4/d40/classfemus_1_1_solution.html">Solution</a> *sol, const <a class="el" href="../../d1/d09/classfemus_1_1_non_linear_implicit_system_with_primal_dual_active_set_method.html">femus::NonLinearImplicitSystemWithPrimalDualActiveSetMethod</a> *mlPdeSys, const <a class="el" href="../../da/d1a/classfemus_1_1_linear_equation_solver.html">LinearEquationSolver</a> *pdeSys, <a class="el" href="../../da/d12/classfemus_1_1_numeric_vector.html">NumericVector</a> *RES)</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000105"></a>This is being added to a weak form? this is the same for volume or boundary </p>
@@ -136,15 +138,15 @@ $(document).ready(function(){initNavTree('dd/da0/todo.html','../../'); initResiz
 <dt>Member <a class="el" href="../../d2/dd1/classfemus_1_1ctrl_1_1mixed__state__or__ctrl__inequality.html#a53fcde6a8cb427b5da69375d0fe7cd14">femus::ctrl::mixed_state_or_ctrl_inequality&lt; INEQUALITY_CONSTRAINT_CLASS &gt;::update_active_set_flag_for_current_nonlinear_iteration</a>  (const <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html">femus::Mesh</a> *msh, const <a class="el" href="../../d4/d40/classfemus_1_1_solution.html">femus::Solution</a> *sol, const unsigned int iel, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;coords_at_dofs, const std::vector&lt; std::vector&lt; double &gt; &gt; sol_eldofs, const std::vector&lt; unsigned int &gt; &amp;Sol_n_el_dofs, const double c_compl, const std::vector&lt; unsigned int &gt; pos_mu, const std::vector&lt; unsigned int &gt; pos_ctrl, const std::vector&lt; unsigned int &gt; solIndex_act_flag, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;ctrl_lower_dofs, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;ctrl_upper_dofs, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;sol_actflag_dofs)</dt>
 <dd><a class="anchor" id="_todo000102"></a>why not a reference?  </dd>
 <dt>Member <a class="el" href="../../d2/dd1/classfemus_1_1ctrl_1_1mixed__state__or__ctrl__inequality.html#a5bbf9966c909b6892b75899f2a7c61f7">femus::ctrl::mixed_state_or_ctrl_inequality&lt; INEQUALITY_CONSTRAINT_CLASS &gt;::update_active_set_flag_for_current_nonlinear_iteration_bdry</a>  (const <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html">femus::Mesh</a> *msh, const <a class="el" href="../../d4/d40/classfemus_1_1_solution.html">femus::Solution</a> *sol, const unsigned int iel, const unsigned int iface, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;coords_at_dofs, const std::vector&lt; std::vector&lt; double &gt; &gt; sol_eldofs, const std::vector&lt; unsigned int &gt; &amp;Sol_n_el_dofs, const double c_compl, const std::vector&lt; unsigned int &gt; pos_mu, const std::vector&lt; unsigned int &gt; pos_ctrl, const std::vector&lt; unsigned int &gt; solIndex_act_flag, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;ctrl_lower_dofs, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;ctrl_upper_dofs, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;sol_actflag_dofs)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000104"></a>More appropriately, </p>
-<p class="enddd"><a class="anchor" id="_todo000103"></a>why not a reference?  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000103"></a>why not a reference? </p>
+<p class="enddd"><a class="anchor" id="_todo000104"></a>More appropriately,  </p>
 </dd>
 <dt>Member <a class="el" href="../../d2/d6f/classfemus_1_1ctrl_1_1square__or__cube_1_1_list__of__faces.html#add1c4e100aeb8b28ed908e71d6299342">femus::ctrl::square_or_cube::List_of_faces::tangential_direction_to_Gamma_control</a>  (const unsigned int face_index, const unsigned boundary_dim)</dt>
-<dd><a class="anchor" id="_todo000185"></a>this depends on the mesh file  </dd>
+<dd><a class="anchor" id="_todo000191"></a>this depends on the mesh file  </dd>
 <dt>Member <a class="el" href="../../d2/d6f/classfemus_1_1ctrl_1_1square__or__cube_1_1_list__of__faces.html#a25be5fe511986e4921f6c7ba2ffe8e76">femus::ctrl::square_or_cube::List_of_faces::tangential_direction_to_Gamma_control</a>  (const unsigned int face_index)</dt>
-<dd><a class="anchor" id="_todo000186"></a>this depends on the mesh file  </dd>
+<dd><a class="anchor" id="_todo000192"></a>this depends on the mesh file  </dd>
 <dt>Member <a class="el" href="../../d9/ddd/classfemus_1_1ctrl_1_1square__or__cube_1_1mixed__state__or__ctrl__inequality.html#a62cb5e49421c9208532c833e7777d3cc">femus::ctrl::square_or_cube::mixed_state_or_ctrl_inequality::InequalityConstraint</a>  (const unsigned n_components_ctrl, const std::vector&lt; double &gt; &amp;dof_obj_coord, const bool upper)</dt>
-<dd><a class="anchor" id="_todo000187"></a>I believe you need to pass other rows here.........  </dd>
+<dd><a class="anchor" id="_todo000193"></a>I believe you need to pass other rows here.........  </dd>
 <dt>Member <a class="el" href="../../de/d6e/classfemus_1_1_current_quantity.html#ac49ad9c2373c209ecc2b54eb3d0cde9d">femus::CurrentQuantity::curl_g</a>  ()</dt>
 <dd><a class="anchor" id="_todo000075"></a>this function only works for a VECTOR quantity  </dd>
 <dt>Class <a class="el" href="../../db/d2e/classfemus_1_1elem.html">femus::elem</a>  </dt>
@@ -173,12 +175,12 @@ $(document).ready(function(){initNavTree('dd/da0/todo.html','../../'); initResiz
 <dd><a class="anchor" id="_todo000084"></a>this must become a vector because for a Wedge there are 2 boundary quadrature rules, since there are 2 types of geom elems  </dd>
 <dt>Member <a class="el" href="../../d3/dca/classfemus_1_1elem__type.html#aa69848a2a5365dc3647b8b0f756a6ec0">femus::elem_type::_X</a>  </dt>
 <dd><a class="anchor" id="_todo000083"></a>in what order?  </dd>
+<dt>Member <a class="el" href="../../d3/dca/classfemus_1_1elem__type.html#aaa5317cf0e1944adeaca3b5f1d0c3610">femus::elem_type::BuildProlongation</a>  (const <a class="el" href="../../da/de0/classfemus_1_1_linear_equation.html">LinearEquation</a> &amp;lspdef, const <a class="el" href="../../da/de0/classfemus_1_1_linear_equation.html">LinearEquation</a> &amp;lspdec, const int &amp;ielc, <a class="el" href="../../d3/d61/classfemus_1_1_sparse_matrix.html">SparseMatrix</a> *Projmat, const unsigned &amp;index_sol, const unsigned &amp;kkindex_sol) const</dt>
+<dd><a class="anchor" id="_todo000087"></a>move away from here  </dd>
 <dt>Member <a class="el" href="../../d3/dca/classfemus_1_1elem__type.html#a74e95b4f7ca53cff95652599f4048eb0">femus::elem_type::BuildProlongation</a>  (const <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html">Mesh</a> &amp;meshf, const <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html">Mesh</a> &amp;meshc, const int &amp;ielc, <a class="el" href="../../d3/d61/classfemus_1_1_sparse_matrix.html">SparseMatrix</a> *Projmat, const char el_dofs[]) const</dt>
 <dd><a class="anchor" id="_todo000090"></a>move away from here  </dd>
 <dt>Member <a class="el" href="../../d3/dca/classfemus_1_1elem__type.html#acb499269b353c8b3e0ebb5e21254b108">femus::elem_type::BuildProlongation</a>  (const <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html">Mesh</a> &amp;mymesh, const int &amp;iel, <a class="el" href="../../d3/d61/classfemus_1_1_sparse_matrix.html">SparseMatrix</a> *Projmat, <a class="el" href="../../da/d12/classfemus_1_1_numeric_vector.html">NumericVector</a> *NNZ_d, <a class="el" href="../../da/d12/classfemus_1_1_numeric_vector.html">NumericVector</a> *NNZ_o, const unsigned &amp;itype) const</dt>
 <dd><a class="anchor" id="_todo000092"></a>move away from here  </dd>
-<dt>Member <a class="el" href="../../d3/dca/classfemus_1_1elem__type.html#aaa5317cf0e1944adeaca3b5f1d0c3610">femus::elem_type::BuildProlongation</a>  (const <a class="el" href="../../da/de0/classfemus_1_1_linear_equation.html">LinearEquation</a> &amp;lspdef, const <a class="el" href="../../da/de0/classfemus_1_1_linear_equation.html">LinearEquation</a> &amp;lspdec, const int &amp;ielc, <a class="el" href="../../d3/d61/classfemus_1_1_sparse_matrix.html">SparseMatrix</a> *Projmat, const unsigned &amp;index_sol, const unsigned &amp;kkindex_sol) const</dt>
-<dd><a class="anchor" id="_todo000087"></a>move away from here  </dd>
 <dt>Member <a class="el" href="../../d3/dca/classfemus_1_1elem__type.html#a204517efabff34e2692a77f4b8bd44e9">femus::elem_type::BuildRestrictionTranspose</a>  (const <a class="el" href="../../da/de0/classfemus_1_1_linear_equation.html">LinearEquation</a> &amp;lspdef, const <a class="el" href="../../da/de0/classfemus_1_1_linear_equation.html">LinearEquation</a> &amp;lspdec, const int &amp;ielc, <a class="el" href="../../d3/d61/classfemus_1_1_sparse_matrix.html">SparseMatrix</a> *Projmat, const unsigned &amp;index_sol, const unsigned &amp;kkindex_sol, const unsigned &amp;index_pair_sol, const unsigned &amp;kkindex_pair_sol) const</dt>
 <dd><a class="anchor" id="_todo000088"></a>move away from here  </dd>
 <dt>Member <a class="el" href="../../d3/dca/classfemus_1_1elem__type.html#a862601e78f385c32b2b76e8eb79d8d6d">femus::elem_type::deallocate_fe_and_multigrid_parts</a>  ()</dt>
@@ -202,8 +204,8 @@ $(document).ready(function(){initNavTree('dd/da0/todo.html','../../'); initResiz
 <dt>Member <a class="el" href="../../d8/d15/classfemus_1_1elem__type__templ_3_01type_00_01type__mov_00_011_00_013_01_4.html#ab1119d7fc5429a7b4c4c29973a794869">femus::elem_type_templ&lt; type, type_mov, 1, 3 &gt;::JacJacInv</a>  (const std::vector&lt; std::vector&lt; type_mov &gt; &gt; &amp;vt, const unsigned &amp;ig, std::vector&lt; std::vector&lt; type_mov &gt; &gt; &amp;Jac, std::vector&lt; std::vector&lt; type_mov &gt; &gt; &amp;JacI, type_mov &amp;detJac, const unsigned space_dim) const</dt>
 <dd><a class="anchor" id="_todo000094"></a>in the old implementation shouldn't we take the absolute value??? I'd say we don't because it goes both on the lhs and on the rhs...  </dd>
 <dt>Member <a class="el" href="../../d8/d15/classfemus_1_1elem__type__templ_3_01type_00_01type__mov_00_011_00_013_01_4.html#afd217ab00557ccaac78e6ebe1edeb58a">femus::elem_type_templ&lt; type, type_mov, 1, 3 &gt;::shape_funcs_current_elem</a>  (const unsigned &amp;ig, const std::vector&lt; std::vector&lt; type_mov &gt; &gt; &amp;JacI, std::vector&lt; double &gt; &amp;phi, std::vector&lt; type &gt; &amp;gradphi, boost::optional&lt; std::vector&lt; type &gt; &amp; &gt; nablaphi, const unsigned space_dimension) const</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000097"></a>fix this: once space_dim was only 1 </p>
-<p class="enddd"><a class="anchor" id="_todo000098"></a>fix this  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000098"></a>fix this </p>
+<p class="enddd"><a class="anchor" id="_todo000097"></a>fix this: once space_dim was only 1  </p>
 </dd>
 <dt>Member <a class="el" href="../../d8/d15/classfemus_1_1elem__type__templ_3_01type_00_01type__mov_00_011_00_013_01_4.html#af6dad2d21653cae6e37d181e75bcb235">femus::elem_type_templ&lt; type, type_mov, 1, 3 &gt;::shape_funcs_current_elem_flexible</a>  (const unsigned &amp;ig, const std::vector&lt; std::vector&lt; type_mov &gt; &gt; &amp;JacI, double **phi_ref, const std::vector&lt; double ** &gt; &amp;dphidxi_ref, const std::vector&lt; double ** &gt; &amp;d2phidxi2_ref, std::vector&lt; double &gt; &amp;phi, std::vector&lt; type &gt; &amp;gradphi, boost::optional&lt; std::vector&lt; type &gt; &amp; &gt; nablaphi, const unsigned space_dimension) const</dt>
 <dd><a class="anchor" id="_todo000096"></a>fix this: once space_dim was only 1  </dd>
@@ -214,21 +216,21 @@ $(document).ready(function(){initNavTree('dd/da0/todo.html','../../'); initResiz
 <dt>Member <a class="el" href="../../da/ddf/classfemus_1_1elem__type__templ__base.html#a3300a9ca4fcc69e7ad8704552f74cf89">femus::elem_type_templ_base&lt; type, type_mov &gt;::build</a>  (const std::string geom_elem, const std::string fe_fam, const std::string order_gauss, const unsigned space_dimension)</dt>
 <dd><a class="anchor" id="_todo000101"></a>I have to put it here because I need to know what the children are... do separate files if needed  </dd>
 <dt>Member <a class="el" href="../../d7/d9a/classfemus_1_1elliptic_1_1lifting__external.html#a52708ef8c522b82aaac9daececb660d7">femus::elliptic::lifting_external::assemble_elliptic_dirichlet_control</a>  (<a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> &amp;ml_prob)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000176"></a>check this term in control equation </p>
-<p class="interdd"><a class="anchor" id="_todo000177"></a>check this term in control equation </p>
-<p class="interdd"><a class="anchor" id="_todo000174"></a>these are the positions in the MlSol object or in the Matrix? I'd say the matrix, but we have to check where we use it... </p>
-<p class="enddd"><a class="anchor" id="_todo000175"></a>maybe it should be geometry-based  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000183"></a>check this term in control equation </p>
+<p class="interdd"><a class="anchor" id="_todo000182"></a>check this term in control equation </p>
+<p class="interdd"><a class="anchor" id="_todo000181"></a>maybe it should be geometry-based </p>
+<p class="enddd"><a class="anchor" id="_todo000180"></a>these are the positions in the MlSol object or in the Matrix? I'd say the matrix, but we have to check where we use it...  </p>
 </dd>
 <dt>Member <a class="el" href="../../d8/dea/classfemus_1_1elliptic_1_1lifting__internal.html#a349c09d7279d7c2fb3b1421ff176b925">femus::elliptic::lifting_internal::assemble_elliptic_dirichlet_control</a>  (<a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> &amp;ml_prob)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000172"></a>these are the positions in the MlSol object or in the Matrix? I'd say the matrix, but we have to check where we use it... </p>
-<p class="enddd"><a class="anchor" id="_todo000173"></a>this is here because variations of restricted functions are also restricted  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000179"></a>this is here because variations of restricted functions are also restricted </p>
+<p class="enddd"><a class="anchor" id="_todo000178"></a>these are the positions in the MlSol object or in the Matrix? I'd say the matrix, but we have to check where we use it...  </p>
 </dd>
 <dt>Member <a class="el" href="../../dd/d57/classfemus_1_1elliptic_1_1pure__boundary.html#a9a0f0802a002127e6d04040770c4a78a">femus::elliptic::pure_boundary&lt; IS_BOUNDARY_CONTROL_INTEGER_OR_FRACTIONAL &gt;::assemble_elliptic_dirichlet_control</a>  (<a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> &amp;ml_prob)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000171"></a>is it needed? I think so </p>
-<p class="interdd"><a class="anchor" id="_todo000167"></a>these are the positions in the MlSol object or in the Matrix? I'd say the matrix, but we have to check where we use it... </p>
-<p class="interdd"><a class="anchor" id="_todo000170"></a>One very important thing to consider: we have some PENALTIES that were set before during the SUMMATION part. </p>
-<p class="interdd"><a class="anchor" id="_todo000169"></a>fix this absence </p>
-<p class="enddd"><a class="anchor" id="_todo000168"></a>the active flag is not an unknown! However, if I add to the quantities something that has higher order, then I will have error below when I take the max number of dofs on a face. Since the act_flag must have the same FE family as the control, then I can limit this array to n_unknowns instead of n_quantities  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000173"></a>these are the positions in the MlSol object or in the Matrix? I'd say the matrix, but we have to check where we use it... </p>
+<p class="interdd"><a class="anchor" id="_todo000174"></a>the active flag is not an unknown! However, if I add to the quantities something that has higher order, then I will have error below when I take the max number of dofs on a face. Since the act_flag must have the same FE family as the control, then I can limit this array to n_unknowns instead of n_quantities </p>
+<p class="interdd"><a class="anchor" id="_todo000175"></a>fix this absence </p>
+<p class="interdd"><a class="anchor" id="_todo000176"></a>One very important thing to consider: we have some PENALTIES that were set before during the SUMMATION part. </p>
+<p class="enddd"><a class="anchor" id="_todo000177"></a>is it needed? I think so  </p>
 </dd>
 <dt>Member <a class="el" href="../../d4/da0/classfemus_1_1_f_e__convergence.html#a7125df0a3067a9e723b9145416df31d5">femus::FE_convergence&lt; type &gt;::compute_error_norms_volume_or_boundary</a>  (const std::vector&lt; std::vector&lt; elem_type_templ_base&lt; type, double &gt; * &gt; &gt; &amp;elem_all, const std::vector&lt; Gauss &gt; &amp;quad_rules, const <a class="el" href="../../d6/da4/classfemus_1_1_multi_level_solution.html">MultiLevelSolution</a> *ml_sol, const <a class="el" href="../../d6/da4/classfemus_1_1_multi_level_solution.html">MultiLevelSolution</a> *ml_sol_all_levels, const std::string &amp;unknown, const unsigned current_level, const unsigned norm_flag, const unsigned conv_rate_computation_method, const unsigned volume_or_boundary, const Math::Function&lt; type &gt; *ex_sol_in)</dt>
 <dd><a class="anchor" id="_todo000056"></a>THIS IS WRONG! It is NOT the SURFACE GRADIENTTTT, so we have to be careful when we have more than one boundary face!!!  </dd>
@@ -247,13 +249,13 @@ $(document).ready(function(){initNavTree('dd/da0/todo.html','../../'); initResiz
 <dt>Member <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html#a555c4982e81fc0042426c6741a792ca2">femus::Mesh::_finiteElement</a>  [N_GEOM_ELS][5]</dt>
 <dd><a class="anchor" id="_todo000046"></a>this one day should be private  </dd>
 <dt>Member <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html#a45401932c540047981f9b9a6f0c614c0">femus::Mesh::AllocateAndMarkStructureNode</a>  ()</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000036"></a>this function should go inside the Elem class instead </p>
-<p class="interdd"><a class="anchor" id="_todo000037"></a>Where on Earth do we say that 4 is a special flag for the solid </p>
-<p class="enddd"><a class="anchor" id="_todo000048"></a>this should be in a separate FSI environment  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000048"></a>this should be in a separate FSI environment </p>
+<p class="interdd"><a class="anchor" id="_todo000036"></a>this function should go inside the Elem class instead </p>
+<p class="enddd"><a class="anchor" id="_todo000037"></a>Where on Earth do we say that 4 is a special flag for the solid  </p>
 </dd>
 <dt>Member <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html#a41bddc6072d9275bc888eca021b6886f">femus::Mesh::build_dofmap_all_fe_families_and_elem_and_node_structures</a>  ()</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000039"></a>these are actually unused returns </p>
-<p class="enddd"><a class="anchor" id="_todo000038"></a>these are actually unused returns  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000038"></a>these are actually unused returns </p>
+<p class="enddd"><a class="anchor" id="_todo000039"></a>these are actually unused returns  </p>
 </dd>
 <dt>Member <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html#a62689335aebc9de69b7490bfb32f0978">femus::Mesh::el</a>  </dt>
 <dd><a class="anchor" id="_todo000044"></a>should be private  </dd>
@@ -297,21 +299,21 @@ $(document).ready(function(){initNavTree('dd/da0/todo.html','../../'); initResiz
 <dt>Member <a class="el" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a6fdaf035205f26b26decf34a5fcaf6d2">femus::MultiLevelSolution::set_analytical_function</a>  (const char *name, Math::Function&lt; double &gt; *func_in)</dt>
 <dd><a class="anchor" id="_todo000061"></a>  </dd>
 <dt>Member <a class="el" href="../../d2/dc8/classfemus_1_1navier__stokes_1_1lifting__internal.html#a01e52baa10c236ec85bb685f5a1ac876">femus::navier_stokes::lifting_internal::assemble_ns_dirichlet_control_lifting_internal_AD</a>  (<a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> &amp;ml_prob)</dt>
-<dd><a class="anchor" id="_todo000182"></a>change phiV into phi_coords!!!  </dd>
+<dd><a class="anchor" id="_todo000188"></a>change phiV into phi_coords!!!  </dd>
 <dt>Member <a class="el" href="../../d2/dc8/classfemus_1_1navier__stokes_1_1lifting__internal.html#a0ca1783ec64deffda909a437e81f74c2">femus::navier_stokes::lifting_internal::assemble_ns_dirichlet_control_lifting_internal_nonAD</a>  (<a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> &amp;ml_prob)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000184"></a>if I want to restrict the control lifting, I might just set to zero the dof values here! Also, I have to remove the equations for the unneeded dofs with a PENALTY! Well, this can also be done in the Initialization function I think... The problem there is that it is only DOF-BASED, it doesn't receive the ELEMENT INFORMATION. We should change that </p>
-<p class="enddd"><a class="anchor" id="_todo000183"></a>this number affects convergence or not! // penalty for zero control outside  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000190"></a>if I want to restrict the control lifting, I might just set to zero the dof values here! Also, I have to remove the equations for the unneeded dofs with a PENALTY! Well, this can also be done in the Initialization function I think... The problem there is that it is only DOF-BASED, it doesn't receive the ELEMENT INFORMATION. We should change that </p>
+<p class="enddd"><a class="anchor" id="_todo000189"></a>this number affects convergence or not! // penalty for zero control outside  </p>
 </dd>
 <dt>Member <a class="el" href="../../d1/d8e/classfemus_1_1navier__stokes_1_1pure__boundary.html#a42f46177bf4f7ccad5843c71e3f851b3">femus::navier_stokes::pure_boundary::assemble_ns_dirichlet_control_pure_boundary</a>  (<a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> &amp;ml_prob)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000181"></a>at this point, the node flag has been filled for ALL faces </p>
-<p class="interdd"><a class="anchor" id="_todo000179"></a>this should be done for all components of ctrl </p>
-<p class="interdd"><a class="anchor" id="_todo000178"></a>to avoid Petsc complaint about out-of-bounds allocation ******************************* </p>
-<p class="enddd"><a class="anchor" id="_todo000180"></a>the error is in here  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000187"></a>at this point, the node flag has been filled for ALL faces </p>
+<p class="interdd"><a class="anchor" id="_todo000186"></a>the error is in here </p>
+<p class="interdd"><a class="anchor" id="_todo000185"></a>this should be done for all components of ctrl </p>
+<p class="enddd"><a class="anchor" id="_todo000184"></a>to avoid Petsc complaint about out-of-bounds allocation *******************************  </p>
 </dd>
 <dt>Member <a class="el" href="../../d1/d09/classfemus_1_1_non_linear_implicit_system_with_primal_dual_active_set_method.html#a529de2d8ad290a73e347ea1eb24ee99f">femus::NonLinearImplicitSystemWithPrimalDualActiveSetMethod::nonlinear_solve_single_level</a>  (const MgSmootherType &amp;mgSmootherType, double &amp;totalAssembyTime, const unsigned int grid0, const unsigned int igridn)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000107"></a>Be careful!!!! this is needed in the _assemble_function </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000109"></a>what is the relationship between the PDAS convergence and the nonlinear convergence? </p>
 <p class="interdd"><a class="anchor" id="_todo000108"></a>perhaps this one slows things down in parallel!!! </p>
-<p class="enddd"><a class="anchor" id="_todo000109"></a>what is the relationship between the PDAS convergence and the nonlinear convergence?  </p>
+<p class="enddd"><a class="anchor" id="_todo000107"></a>Be careful!!!! this is needed in the _assemble_function  </p>
 </dd>
 <dt>Member <a class="el" href="../../d5/dbd/classfemus_1_1poisson__equation.html#a093561ae038426adab6f22c3ae53aa7a">femus::poisson_equation::natural_loop_2d3d</a>  (const <a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> *ml_prob, const <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html">Mesh</a> *msh, const <a class="el" href="../../d6/da4/classfemus_1_1_multi_level_solution.html">MultiLevelSolution</a> *ml_sol, const unsigned iel, <a class="el" href="../../d4/d0f/classfemus_1_1_current_elem.html">CurrentElem&lt; double &gt;</a> &amp;geom_element, const unsigned solType_coords, const std::string solname_u, const unsigned solFEType_u, std::vector&lt; double &gt; &amp;Res, std::vector&lt; std::vector&lt; elem_type_templ_base&lt; real_num, real_num_mov &gt; * &gt; &gt; elem_all, const unsigned dim, const unsigned space_dim, const unsigned max_size)</dt>
 <dd><a class="anchor" id="_todo000069"></a>- should put these outside the iel loop &ndash;  </dd>
@@ -320,8 +322,8 @@ $(document).ready(function(){initNavTree('dd/da0/todo.html','../../'); initResiz
 <p class="enddd"><a class="anchor" id="_todo000073"></a>Understand why I cannot put this here but it has to be in the <a class="el" href="../../df/d0a/ex40__other__a_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>, there must be some objects that get destroyed, passing the reference is not enough  </p>
 </dd>
 <dt>Member <a class="el" href="../../d8/dea/namespacefemus.html#a47ed9315ef75de950a13364e002d5311">femus::SetBoundaryCondition</a>  (const <a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> *ml_prob, const std::vector&lt; double &gt; &amp;xp, const char name[], double &amp;value, const int facename, const double time)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000145"></a>what is the meaning of value for the Neumann case? </p>
-<p class="enddd"><a class="anchor" id="_todo000146"></a>this does not mean that there is a DIRICHLET condition on PRESSURE... it means DO THE INTEGRAL  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000151"></a>what is the meaning of value for the Neumann case? </p>
+<p class="enddd"><a class="anchor" id="_todo000152"></a>this does not mean that there is a DIRICHLET condition on PRESSURE... it means DO THE INTEGRAL  </p>
 </dd>
 <dt>Member <a class="el" href="../../d8/d1a/classfemus_1_1_solid.html#a27c9df9ee243eee036b95e3aa200e446">femus::Solid::get_Cauchy_stress_tensor</a>  (const unsigned int solid_model, const double &amp;mus, const double &amp;lambda, const bool incompressible, const unsigned int dim, const unsigned int sol_index_displ, const unsigned int sol_pde_index_press, const std::vector&lt; std::vector&lt; real_num_mov &gt; &gt; &amp;gradSolVAR_hat_qp, const std::vector&lt; real_num_mov &gt; &amp;SolVAR_qp, const std::vector&lt; unsigned int &gt; &amp;SolPdeIndex, real_num_mov &amp;J_hat, real_num_mov &amp;trace_e_hat)</dt>
 <dd><a class="anchor" id="_todo000110"></a>check that mus is multiplying everything or only the deformation tensor  </dd>
@@ -335,64 +337,72 @@ $(document).ready(function(){initNavTree('dd/da0/todo.html','../../'); initResiz
 <dd><a class="anchor" id="_todo000068"></a>from now on, it is more stuff that shouldn't be in a basic <a class="el" href="../../d4/d40/classfemus_1_1_solution.html">Solution</a> object <br  />
   </dd>
 <dt>Member <a class="el" href="../../d4/d8d/classfemus_1_1_v_t_k_writer.html#a614c2303244ca6856d68c82cdebf22dc">femus::VTKWriter::print_data_array</a>  (const std::string field_string, const std::string field_datatype, std::ofstream &amp;fout, std::ofstream &amp;Pfout, const unsigned *dim_array_elvar, const ARRAY_TYPE *var_el, std::vector&lt; char &gt; &amp;enc) const</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000053"></a>do we have the guarantee that the std::vector is CONTIGUOUS in memory?? </p>
-<p class="enddd"><a class="anchor" id="_todo000052"></a>do we really need to pass this guy?  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000052"></a>do we really need to pass this guy? </p>
+<p class="enddd"><a class="anchor" id="_todo000053"></a>do we have the guarantee that the std::vector is CONTIGUOUS in memory??  </p>
 </dd>
 <dt>Member <a class="el" href="../../d4/d8d/classfemus_1_1_v_t_k_writer.html#a76bff41138f5450bf4aeac1499b2cbf4">femus::VTKWriter::print_data_array_vector</a>  (const std::string field_string, const std::string field_datatype, const unsigned n_components, std::ofstream &amp;fout, std::ofstream &amp;Pfout, const unsigned *dim_array_elvar, const ARRAY_TYPE *var_el, std::vector&lt; char &gt; &amp;enc) const</dt>
 <dd><a class="anchor" id="_todo000054"></a>do we have the guarantee that the std::vector is CONTIGUOUS in memory??  </dd>
 <dt>Member <a class="el" href="../../d4/d8d/classfemus_1_1_v_t_k_writer.html#a4c26b81f9b8a362b24323f1bcd6b0e75">femus::VTKWriter::Write</a>  (const unsigned my_level, const std::string init_string, const std::string output_path, const std::string suffix_pre_extension, const char order[], const std::vector&lt; std::string &gt; &amp;vars=std::vector&lt; std::string &gt;(), const unsigned time_step=0)</dt>
 <dd><a class="anchor" id="_todo000051"></a>is this deleted? I don't think so  </dd>
 <dt>Member <a class="el" href="../../d6/dd3/_eqn_m_h_d_a_d_8cpp.html#a3087d027394e34e7bf59b1bab68a0906">GenMatRhsMHDAD</a>  (<a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> &amp;ml_prob)</dt>
-<dd><a class="anchor" id="_todo000150"></a>probably this Allocate not needed here  </dd>
-<dt>Member <a class="el" href="../../d8/dd4/00__laplacian__all__dims__dir__neu_8cpp.html#a7a29781a20c5dd4153c3c1cecf0ff328">main</a>  (int argc, char **args)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000111"></a>if this is not set, nothing should happen here </p>
-<p class="enddd"><a class="anchor" id="_todo000122"></a>probably this should go in the Problem, to be accessed from other places  </p>
+<dd><a class="anchor" id="_todo000156"></a>probably this Allocate not needed here  </dd>
+<dt>Member <a class="el" href="../../d6/d4c/classkarthik_1_1poisson__equation.html#a258ea017582716053586e58a8e3643b3">karthik::poisson_equation::natural_loop_2d3d</a>  (const MultiLevelProblem *ml_prob, const Mesh *msh, const MultiLevelSolution *ml_sol, const unsigned iel, <a class="el" href="../../d4/d0f/classfemus_1_1_current_elem.html">CurrentElem&lt; double &gt;</a> &amp;geom_element, const unsigned solType_coords, const std::string solname_u, const unsigned solFEType_u, std::vector&lt; double &gt; &amp;Res, std::vector&lt; std::vector&lt; elem_type_templ_base&lt; real_num, real_num_mov &gt; * &gt; &gt; elem_all, const unsigned dim, const unsigned space_dim, const unsigned max_size)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000119"></a>- should put these outside the iel loop &ndash; </p>
+<p class="enddd"><a class="anchor" id="_todo000120"></a>here we should do a function that provides the gradient at the boundary, and then we do "dot n" with the normal at qp  </p>
+</dd>
+<dt>Member <a class="el" href="../../dc/d7d/shankar_8cpp.html#a7a29781a20c5dd4153c3c1cecf0ff328">main</a>  (int argc, char **args)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000125"></a>if this is not set, nothing should happen here </p>
+<p class="enddd"><a class="anchor" id="_todo000126"></a>probably this should go in the Problem, to be accessed from other places  </p>
 </dd>
 <dt>Member <a class="el" href="../../d9/d10/_optimal_control_202__elliptic__with__given__advection_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>  (int argc, char **argv)</dt>
-<dd><a class="anchor" id="_todo000142"></a>Have to say that you have to call this initialize BEFORE the generation of the boundary conditions; if you called this after, it would superimpose the BOUNDARY VALUES  </dd>
+<dd><a class="anchor" id="_todo000150"></a>you have to initialize also those variables which are NOT unknowns!  </dd>
+<dt>Member <a class="el" href="../../d8/d0e/ex02__poisson__c__manufactured__sol__convergence__class_8cpp.html#a7a29781a20c5dd4153c3c1cecf0ff328">main</a>  (int argc, char **args)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000128"></a>you have to switch it below too, or maybe pass it to MultiLevelProblem provide exact solution, if available = </p>
+<p class="enddd"><a class="anchor" id="_todo000153"></a>this MUST return a REFERENCE, otherwise it doesn't run!  </p>
+</dd>
+<dt>Member <a class="el" href="../../d9/d10/_optimal_control_202__elliptic__with__given__advection_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>  (int argc, char **argv)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000149"></a></p>
+<p class="interdd"><a class="anchor" id="_todo000148"></a>Have to say that you have to call this initialize BEFORE the generation of the boundary conditions; if you called this after, it would superimpose the BOUNDARY VALUES </p>
+<p class="interdd"><a class="anchor" id="_todo000147"></a></p>
+<p class="interdd"><a class="anchor" id="_todo000146"></a>I cannot call it with "All" and with a FUNCTION, because I need the string for "All" as a variable </p>
+<p class="interdd"><a class="anchor" id="_todo000144"></a>I can also call it after instantiation MLProblem </p>
+<p class="interdd"><a class="anchor" id="_todo000143"></a></p>
+<p class="enddd"><a class="anchor" id="_todo000142"></a>you have to call this before you can print  </p>
+</dd>
 <dt>Member <a class="el" href="../../da/d4f/01__distributed__control__elliptic__nonlin_8cpp.html#a7a29781a20c5dd4153c3c1cecf0ff328">main</a>  (int argc, char **args)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000135"></a> </p>
-<p class="interdd"><a class="anchor" id="_todo000131"></a>I believe I have to review how the computation of the normal is performed </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000141"></a> </p>
+<p class="interdd"><a class="anchor" id="_todo000140"></a>it seems like you cannot do this init INSIDE A FUNCTION... understand WHY! </p>
+<p class="interdd"><a class="anchor" id="_todo000111"></a>if this is not set, nothing happens here. It is used to compute absolute errors </p>
+<p class="interdd"><a class="anchor" id="_todo000121"></a>if this is not set, nothing should happen here </p>
+<p class="interdd"><a class="anchor" id="_todo000137"></a>I believe I have to review how the computation of the normal is performed </p>
 <p class="interdd"></p>
-<p class="interdd">let the files be read from each run folder </p>
-<p class="enddd"><a class="anchor" id="_todo000134"></a>it seems like you cannot do this init INSIDE A FUNCTION... understand WHY!  </p>
+<p class="enddd">let the files be read from each run folder  </p>
 </dd>
 <dt>Member <a class="el" href="../../d9/d10/_optimal_control_202__elliptic__with__given__advection_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>  (int argc, char **argv)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000143"></a></p>
-<p class="enddd"><a class="anchor" id="_todo000144"></a>you have to initialize also those variables which are NOT unknowns!  </p>
-</dd>
-<dt>Member <a class="el" href="../../d4/d7b/02__opt__lift_8cpp.html#a7a29781a20c5dd4153c3c1cecf0ff328">main</a>  (int argc, char **args)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000147"></a>this MUST return a REFERENCE, otherwise it doesn't run! </p>
-<p class="interdd"><a class="anchor" id="_todo000124"></a>you have to switch it below too, or maybe pass it to <a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> provide exact solution, if available = </p>
-<p class="enddd"><a class="anchor" id="_todo000123"></a>should write the copy constructor or "=" operator to copy the previous mesh) ==================  </p>
-</dd>
-<dt>Member <a class="el" href="../../d9/d10/_optimal_control_202__elliptic__with__given__advection_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>  (int argc, char **argv)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000140"></a>I cannot call it with "All" and with a FUNCTION, because I need the string for "All" as a variable </p>
-<p class="interdd"><a class="anchor" id="_todo000141"></a></p>
-<p class="interdd"><a class="anchor" id="_todo000139"></a></p>
-<p class="interdd"><a class="anchor" id="_todo000138"></a>I can also call it after instantiation MLProblem </p>
-<p class="interdd"><a class="anchor" id="_todo000137"></a></p>
-<p class="enddd"><a class="anchor" id="_todo000136"></a>you have to call this before you can print  </p>
-</dd>
-<dt>Member <a class="el" href="../../d3/df7/aderezende_8cpp.html#ae95933f0d5a1c3f7fb76b621e8eef213">neumann_loop_2d3d</a>  (const <a class="el" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> *ml_prob, const <a class="el" href="../../d9/d8b/classfemus_1_1_mesh.html">Mesh</a> *msh, const <a class="el" href="../../d6/da4/classfemus_1_1_multi_level_solution.html">MultiLevelSolution</a> *ml_sol, const unsigned iel, <a class="el" href="../../d4/d0f/classfemus_1_1_current_elem.html">CurrentElem&lt; double &gt;</a> &amp;geom_element, const unsigned solType_coords, const std::string solname_u, const unsigned solFEType_u, std::vector&lt; double &gt; &amp;Res, std::vector&lt; std::vector&lt; elem_type_templ_base&lt; real_num, real_num_mov &gt; * &gt; &gt; elem_all, const unsigned dim, const unsigned space_dim, const unsigned max_size)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000112"></a>- should put these outside the iel loop &ndash; </p>
-<p class="interdd"><a class="anchor" id="_todo000121"></a>- should put these outside the iel loop &ndash; </p>
-<p class="interdd"><a class="anchor" id="_todo000120"></a>- should put these outside the iel loop &ndash; </p>
-<p class="interdd"><a class="anchor" id="_todo000117"></a>- should put these outside the iel loop &ndash; </p>
+<dd><a class="anchor" id="_todo000145"></a> </dd>
+<dt>Member <a class="el" href="../../d8/d0e/ex02__poisson__c__manufactured__sol__convergence__class_8cpp.html#a7a29781a20c5dd4153c3c1cecf0ff328">main</a>  (int argc, char **args)</dt>
+<dd><a class="anchor" id="_todo000127"></a>should write the copy constructor or "=" operator to copy the previous mesh) ==================  </dd>
+<dt>Member <a class="el" href="../../df/d7d/fahad_8cpp.html#ae95933f0d5a1c3f7fb76b621e8eef213">neumann_loop_2d3d</a>  (const MultiLevelProblem *ml_prob, const Mesh *msh, const MultiLevelSolution *ml_sol, const unsigned iel, <a class="el" href="../../d4/d0f/classfemus_1_1_current_elem.html">CurrentElem&lt; double &gt;</a> &amp;geom_element, const unsigned solType_coords, const std::string solname_u, const unsigned solFEType_u, std::vector&lt; double &gt; &amp;Res, std::vector&lt; std::vector&lt; elem_type_templ_base&lt; real_num, real_num_mov &gt; * &gt; &gt; elem_all, const unsigned dim, const unsigned space_dim, const unsigned max_size)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000115"></a>- should put these outside the iel loop &ndash; </p>
 <p class="interdd"><a class="anchor" id="_todo000116"></a>- should put these outside the iel loop &ndash; </p>
-<p class="interdd"><a class="anchor" id="_todo000115"></a>- should put these outside the iel loop &ndash; </p>
-<p class="interdd"><a class="anchor" id="_todo000114"></a>- should put these outside the iel loop &ndash; </p>
+<p class="interdd"><a class="anchor" id="_todo000117"></a>- should put these outside the iel loop &ndash; </p>
+<p class="interdd"><a class="anchor" id="_todo000122"></a>- should put these outside the iel loop &ndash; </p>
+<p class="interdd"><a class="anchor" id="_todo000112"></a>- should put these outside the iel loop &ndash; </p>
 <p class="interdd"><a class="anchor" id="_todo000113"></a>- should put these outside the iel loop &ndash; </p>
+<p class="interdd"><a class="anchor" id="_todo000123"></a>- should put these outside the iel loop &ndash; </p>
+<p class="interdd"><a class="anchor" id="_todo000114"></a>- should put these outside the iel loop &ndash; </p>
 <p class="enddd"><a class="anchor" id="_todo000118"></a>- should put these outside the iel loop &ndash;  </p>
 </dd>
+<dt>Member <a class="el" href="../../de/d9b/classshankar_1_1poisson__equation.html#a338d591dde97e796a055f3383d2736f8">shankar::poisson_equation::natural_loop_2d3d</a>  (const MultiLevelProblem *ml_prob, const Mesh *msh, const MultiLevelSolution *ml_sol, const unsigned iel, <a class="el" href="../../d4/d0f/classfemus_1_1_current_elem.html">CurrentElem&lt; double &gt;</a> &amp;geom_element, const unsigned solType_coords, const std::string solname_u, const unsigned solFEType_u, std::vector&lt; double &gt; &amp;Res, std::vector&lt; std::vector&lt; elem_type_templ_base&lt; real_num, real_num_mov &gt; * &gt; &gt; elem_all, const unsigned dim, const unsigned space_dim, const unsigned max_size)</dt>
+<dd><a class="anchor" id="_todo000124"></a>- should put these outside the iel loop &ndash;  </dd>
 <dt>Member <a class="el" href="../../db/d43/class_solution__generation__1.html#a2a0001fac52be7a97cc9cc3c901c5f9f">Solution_generation_1&lt; real_num &gt;::run_on_single_level</a>  (MultiLevelProblem &amp;ml_prob, MultiLevelMesh &amp;ml_mesh, const unsigned i, const std::vector&lt; Unknown &gt; &amp;unknowns, const std::vector&lt; Math::Function&lt; double &gt; * &gt; &amp;exact_sol, const MultiLevelSolution::InitFuncMLProb SetInitialCondition_in, const MultiLevelSolution::BoundaryFuncMLProb SetBoundaryCondition_in, const bool equation_solve) const</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000149"></a>!!!!!!!!!!!!!!! </p>
-<p class="enddd"><a class="anchor" id="_todo000148"></a>!!!!!!!!!!!!!!!  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000154"></a>!!!!!!!!!!!!!!! </p>
+<p class="enddd"><a class="anchor" id="_todo000155"></a>!!!!!!!!!!!!!!!  </p>
 </dd>
 <dt>Member <a class="el" href="../../d8/d61/00__dirichlet__boundary__fractional_8cpp.html#a289eed1333c8d1e87be5d625360d6c45">Solution_set_boundary_conditions_Unknowns</a>  (const MultiLevelProblem *ml_prob, const std::vector&lt; double &gt; &amp;x, const char name[], double &amp;value, const int faceName, const double time)</dt>
-<dd><a class="anchor" id="_todo000133"></a>notice that even if you set Dirichlet from the mesh file, here you can override it  </dd>
+<dd><a class="anchor" id="_todo000139"></a>notice that even if you set Dirichlet from the mesh file, here you can override it  </dd>
 <dt>Member <a class="el" href="../../d8/d61/00__dirichlet__boundary__fractional_8cpp.html#add09fcc3cba5ab99b085928a8d17ca47">Solution_set_initial_conditions_Unknowns</a>  (const MultiLevelProblem *ml_prob, const std::vector&lt; double &gt; &amp;x, const char name[])</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000132"></a>do a very weak impl of Laplacian </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000138"></a>do a very weak impl of Laplacian </p>
 <p class="interdd"></p>
 <p class="interdd">Review the ordering for phi_ctrl_x_bdry </p>
 <p class="interdd"></p>

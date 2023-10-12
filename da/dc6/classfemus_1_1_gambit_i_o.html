@@ -390,8 +390,8 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  150</span>      }</div>
 <div class="line"><span class="lineno">  151</span>      <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i = 0; i &lt; nve; i++) {</div>
 <div class="line"><span class="lineno">  152</span>        <span class="keywordtype">unsigned</span> inode = <a class="code hl_variable" href="../../da/dc6/classfemus_1_1_gambit_i_o.html#a77d9deb807f2abd661b49e16c67ddfa0">GambitIO::GambitToFemusVertexIndex</a>[mesh.el-&gt;GetElementType(iel)][i];</div>
-<div class="line"><span class="lineno">  153</span>        <span class="keywordtype">unsigned</span> value;</div>
-<div class="line"><span class="lineno">  154</span>        <a class="code hl_variable" href="../../d3/de5/_conformal_2ex3_2ex3_8cpp.html#ae162929dc5a88736f3f0afa0ea3601b0">inf</a> &gt;&gt; value;</div>
+<div class="line"><span class="lineno">  153</span>        <span class="keywordtype">unsigned</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
+<div class="line"><span class="lineno">  154</span>        <a class="code hl_variable" href="../../d3/de5/_conformal_2ex3_2ex3_8cpp.html#ae162929dc5a88736f3f0afa0ea3601b0">inf</a> &gt;&gt; <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  155</span>        mesh.el-&gt;SetElementDofIndex(iel, inode, value - 1u);</div>
 <div class="line"><span class="lineno">  156</span>      }</div>
 <div class="line"><span class="lineno">  157</span>    }</div>
@@ -496,10 +496,10 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  256</span>    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k = 0; k &lt; nbcd; k++) {</div>
 <div class="line"><span class="lineno">  257</span>      <span class="keywordflow">while</span>(str2.compare(<span class="stringliteral">&quot;CONDITIONS&quot;</span>) != 0) <a class="code hl_variable" href="../../d3/de5/_conformal_2ex3_2ex3_8cpp.html#ae162929dc5a88736f3f0afa0ea3601b0">inf</a> &gt;&gt; str2;</div>
 <div class="line"><span class="lineno">  258</span>      <a class="code hl_variable" href="../../d3/de5/_conformal_2ex3_2ex3_8cpp.html#ae162929dc5a88736f3f0afa0ea3601b0">inf</a> &gt;&gt; str2;</div>
-<div class="line"><span class="lineno">  259</span>      <span class="keywordtype">int</span> value;</div>
+<div class="line"><span class="lineno">  259</span>      <span class="keywordtype">int</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  260</span>      <span class="keywordtype">unsigned</span> nface;</div>
-<div class="line"><span class="lineno">  261</span>      <a class="code hl_variable" href="../../d3/de5/_conformal_2ex3_2ex3_8cpp.html#ae162929dc5a88736f3f0afa0ea3601b0">inf</a> &gt;&gt; value &gt;&gt; str2 &gt;&gt; nface &gt;&gt; str2 &gt;&gt; str2;</div>
-<div class="line"><span class="lineno">  262</span>      value = -value - 1;</div>
+<div class="line"><span class="lineno">  261</span>      <a class="code hl_variable" href="../../d3/de5/_conformal_2ex3_2ex3_8cpp.html#ae162929dc5a88736f3f0afa0ea3601b0">inf</a> &gt;&gt; <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> &gt;&gt; str2 &gt;&gt; nface &gt;&gt; str2 &gt;&gt; str2;</div>
+<div class="line"><span class="lineno">  262</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = -<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> - 1;</div>
 <div class="line"><span class="lineno">  263</span>      <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i = 0; i &lt; nface; i++) {</div>
 <div class="line"><span class="lineno">  264</span>        <span class="keywordtype">unsigned</span> iel, iface;</div>
 <div class="line"><span class="lineno">  265</span>        <a class="code hl_variable" href="../../d3/de5/_conformal_2ex3_2ex3_8cpp.html#ae162929dc5a88736f3f0afa0ea3601b0">inf</a> &gt;&gt; iel &gt;&gt; str2 &gt;&gt; iface;</div>
@@ -524,6 +524,7 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1_gambit_i_o_html_a16c8d638763d64cd439dcb349f5c0250"><div class="ttname"><a href="../../da/dc6/classfemus_1_1_gambit_i_o.html#a16c8d638763d64cd439dcb349f5c0250">femus::GambitIO::GambitToFemusFaceIndex</a></div><div class="ttdeci">static const unsigned GambitToFemusFaceIndex[N_GEOM_ELS][MAX_EL_N_FACES]</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dd8/_gambit_i_o_8hpp_source.html#l00060">GambitIO.hpp:60</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_gambit_i_o_html_a77d9deb807f2abd661b49e16c67ddfa0"><div class="ttname"><a href="../../da/dc6/classfemus_1_1_gambit_i_o.html#a77d9deb807f2abd661b49e16c67ddfa0">femus::GambitIO::GambitToFemusVertexIndex</a></div><div class="ttdeci">static const unsigned GambitToFemusVertexIndex[N_GEOM_ELS][MAX_EL_N_NODES]</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dd8/_gambit_i_o_8hpp_source.html#l00057">GambitIO.hpp:57</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_mesh_input_html_a51922fa488be9d1c647026714ce25bdb"><div class="ttname"><a href="../../df/d9c/classfemus_1_1_mesh_input.html#a51922fa488be9d1c647026714ce25bdb">femus::MeshInput&lt; Mesh &gt;::GetMesh</a></div><div class="ttdeci">Mesh &amp; GetMesh()</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d3e/_mesh_input_8hpp_source.html#l00076">MeshInput.hpp:137</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -656,8 +657,8 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/02_mesh/01_input/<a class="el" href="../../dc/dd8/_gambit_i_o_8hpp_source.html">GambitIO.hpp</a></li>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/02_mesh/01_input/<a class="el" href="../../dd/d62/_gambit_i_o_8cpp_source.html">GambitIO.cpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/02_mesh/01_input/<a class="el" href="../../dc/dd8/_gambit_i_o_8hpp_source.html">GambitIO.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/02_mesh/01_input/<a class="el" href="../../dd/d62/_gambit_i_o_8cpp_source.html">GambitIO.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

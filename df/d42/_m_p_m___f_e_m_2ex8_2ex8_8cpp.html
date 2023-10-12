@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/MPM_FEM/ex8/ex8.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/MPM_FEM/ex8/ex8.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -1189,12 +1189,12 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  404</span>          std::vector &lt; double &gt; dTk (<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>, 1.);</div>
 <div class="line"><span class="lineno">  405</span>          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> d = 0 ; d &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; d++) {</div>
 <div class="line"><span class="lineno">  406</span>            Tk *= T[i][d][aIdx[k][d]];</div>
-<div class="line"><span class="lineno">  407</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> d2 = 0 ; d2 &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; d2++) {</div>
+<div class="line"><span class="lineno">  407</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> d2 = 0 ; <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a>++) {</div>
 <div class="line"><span class="lineno">  408</span>              <span class="keywordflow">if</span> (d == d2) {</div>
 <div class="line"><span class="lineno">  409</span>                dTk[d] *= dT[i][d][aIdx[k][d]];</div>
 <div class="line"><span class="lineno">  410</span>              }</div>
 <div class="line"><span class="lineno">  411</span>              <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  412</span>                dTk[d] *= T[i][d2][aIdx[k][d2]];</div>
+<div class="line"><span class="lineno">  412</span>                dTk[d] *= T[i][<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a>][aIdx[k][<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a>]];</div>
 <div class="line"><span class="lineno">  413</span>              }</div>
 <div class="line"><span class="lineno">  414</span>            }</div>
 <div class="line"><span class="lineno">  415</span>          }</div>
@@ -1289,6 +1289,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="a_s_w_2ex2_2ex2_8cpp_html_adae8d8a6ff28515e505bb1c07f2b33c8"><div class="ttname"><a href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a></div><div class="ttdeci">double phi</div><div class="ttdef"><b>Definition</b> <a href="../../de/d25/_s_w_2ex2_2ex2_8cpp_source.html#l00038">ex2.cpp:38</a></div></div>
 <div class="ttc" id="aclass_g_m_p_m_html"><div class="ttname"><a href="../../d7/dfa/class_g_m_p_m.html">GMPM</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d34/ex10_2include_2gmpm_8hpp_source.html#l00093">gmpm.hpp:93</a></div></div>
 <div class="ttc" id="afsi_steady_m_g_8cpp_html_a80d402d10e8341004c0caf10133b80ab"><div class="ttname"><a href="../../df/d33/fsi_steady_m_g_8cpp.html#a80d402d10e8341004c0caf10133b80ab">scale</a></div><div class="ttdeci">double scale</div><div class="ttdef"><b>Definition</b> <a href="../../df/d33/fsi_steady_m_g_8cpp_source.html#l00014">fsiSteadyMG.cpp:14</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a277407185e318a7ace3879dbe5ae231a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">build_edges_of_volumes.d2</a></div><div class="ttdeci">d2</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00019">build_edges_of_volumes.py:19</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a7216a0536acdac46863fd54b0320a8e6"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">femus::s</a></div><div class="ttdeci">double * s</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dc5/_f_s_i_time_dependent_assembly_supg_g_c_l_8hpp_source.html#l00036">FSITimeDependentAssemblySupgGCL.hpp:36</a></div></div>
 <div class="ttc" id="asolidopt__params_8hpp_html_a20f4c4490bc8ecbdd1ffcb79acce6035"><div class="ttname"><a href="../../de/d58/solidopt__params_8hpp.html#a20f4c4490bc8ecbdd1ffcb79acce6035">alpha</a></div><div class="ttdeci">double alpha</div><div class="ttdef"><b>Definition</b> <a href="../../de/d58/solidopt__params_8hpp_source.html#l00026">solidopt_params.hpp:26</a></div></div>
 </div><!-- fragment -->

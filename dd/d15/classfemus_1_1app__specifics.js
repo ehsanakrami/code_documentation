@@ -9,6 +9,7 @@ var classfemus_1_1app__specifics =
     [ "_assemble_function_rhs", "dd/d15/classfemus_1_1app__specifics.html#aa0b2bd914e7c02f2a55aede50cb64777", null ],
     [ "_boundary_conditions_types_and_values", "dd/d15/classfemus_1_1app__specifics.html#a394159df9ce24d467be956417d8de6a4", null ],
     [ "_mesh_files", "dd/d15/classfemus_1_1app__specifics.html#a0ed86257982a19941f26fb94e3107a84", null ],
+    [ "_mesh_files_path_relative_to_executable", "dd/d15/classfemus_1_1app__specifics.html#acd8f7889e9b3855d7df6ef90aa9957dc", null ],
     [ "_system_name", "dd/d15/classfemus_1_1app__specifics.html#aacefca7d2e4da1b4f5fbb08cd5fc9c34", null ],
     [ "_true_solution", "dd/d15/classfemus_1_1app__specifics.html#a3fd62791f959390e10c8027968a15b58", null ]
 ];

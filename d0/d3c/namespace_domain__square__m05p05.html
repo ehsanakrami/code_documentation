@@ -103,7 +103,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad49066c7cdf6a24eee06d0bdb8a8a5c9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3c/namespace_domain__square__m05p05.html#ad49066c7cdf6a24eee06d0bdb8a8a5c9">quad9_all_mesh_generation_methods_Structured</a> (const unsigned method_flag, <a class="el" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html">MultiLevelMesh</a> &amp;ml_mesh, const std::string fe_quad_rule)</td></tr>
+<tr class="memitem:ad49066c7cdf6a24eee06d0bdb8a8a5c9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3c/namespace_domain__square__m05p05.html#ad49066c7cdf6a24eee06d0bdb8a8a5c9">quad9_all_mesh_generation_methods_Structured</a> (const unsigned method_flag, MultiLevelMesh &amp;ml_mesh, const std::string fe_quad_rule)</td></tr>
 <tr class="separator:ad49066c7cdf6a24eee06d0bdb8a8a5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -122,7 +122,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html">MultiLevelMesh</a> &amp;&#160;</td>
+          <td class="paramtype">MultiLevelMesh &amp;&#160;</td>
           <td class="paramname"><em>ml_mesh</em>, </td>
         </tr>
         <tr>
@@ -139,59 +139,60 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html#l00457">457</a> of file <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  457</span>                                                                                                                                           {</div>
-<div class="line"><span class="lineno">  458</span>    </div>
-<div class="line"><span class="lineno">  459</span> </div>
-<div class="line"><span class="lineno">  460</span>    </div>
-<div class="line"><span class="lineno">  461</span>  <span class="keywordtype">double</span> scalingFactor = 1.;</div>
-<div class="line"><span class="lineno">  462</span> </div>
-<div class="line"><span class="lineno">  463</span>    std::string mesh_name(<span class="stringliteral">&quot;square&quot;</span>);</div>
-<div class="line"><span class="lineno">  464</span>    </div>
-<div class="line"><span class="lineno">  465</span>    <span class="keywordflow">switch</span>(method_flag) {</div>
-<div class="line"><span class="lineno">  466</span>        <span class="keywordflow">case</span> 0: {</div>
-<div class="line"><span class="lineno">  467</span>            mesh_name += <span class="stringliteral">&quot;_femus&quot;</span>;</div>
-<div class="line"><span class="lineno">  468</span>  <span class="comment">// ======= Mesh, coarse gen, I: from function - BEGIN  ========================</span></div>
-<div class="line"><span class="lineno">  469</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nsub_x = 2;</div>
-<div class="line"><span class="lineno">  470</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nsub_y = 2;</div>
-<div class="line"><span class="lineno">  471</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nsub_z = 0;</div>
-<div class="line"><span class="lineno">  472</span>  <span class="keyword">const</span> std::vector&lt;double&gt; xyz_min = {-0.5,-0.5,0.};</div>
-<div class="line"><span class="lineno">  473</span>  <span class="keyword">const</span> std::vector&lt;double&gt; xyz_max = { 0.5, 0.5,0.};</div>
-<div class="line"><span class="lineno">  474</span>  <span class="keyword">const</span> <a class="code hl_enumeration" href="../../df/d2a/_elem_type_enum_8hpp.html#a1b014294b9757a001707c979e2bab627">ElemType</a> geom_elem_type = <a class="code hl_enumvalue" href="../../df/d2a/_elem_type_enum_8hpp.html#a1b014294b9757a001707c979e2bab627ac17e6803e9d62a4d807c62341c5f7d59">QUAD9</a><span class="comment">/*TRI6*/</span>;</div>
-<div class="line"><span class="lineno">  475</span>  ml_mesh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a0988cbee341d6361df77622b3ce65080">GenerateCoarseBoxMesh</a>(nsub_x, nsub_y, nsub_z, xyz_min[0], xyz_max[0], xyz_min[1], xyz_max[1], xyz_min[2], xyz_max[2], geom_elem_type, fe_quad_rule.c_str() );</div>
-<div class="line"><span class="lineno">  476</span>  <span class="comment">// ======= Mesh, coarse gen, I: from function - END ========================</span></div>
-<div class="line"><span class="lineno">  477</span> </div>
-<div class="line"><span class="lineno">  478</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  479</span>        }</div>
-<div class="line"><span class="lineno">  480</span>        </div>
-<div class="line"><span class="lineno">  481</span>        <span class="keywordflow">case</span> 1: {</div>
-<div class="line"><span class="lineno">  482</span>            mesh_name += <span class="stringliteral">&quot;_salome&quot;</span>;</div>
-<div class="line"><span class="lineno">  483</span><span class="comment">//   // ======= Mesh, coarse gen, III: from Salome - BEGIN  ========================</span></div>
-<div class="line"><span class="lineno">  484</span>   ml_mesh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a29d0d0f9463c9417d390da6149ffc24d">ReadCoarseMesh</a>(<span class="stringliteral">&quot;./input/square_2x2_centered_at_origin.med&quot;</span>, fe_quad_rule.c_str(), scalingFactor);</div>
-<div class="line"><span class="lineno">  485</span><span class="comment">//   // ======= Mesh, coarse gen, III: from Salome - END ========================</span></div>
-<div class="line"><span class="lineno">  486</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  487</span>        }</div>
-<div class="line"><span class="lineno">  488</span>        <span class="keywordflow">case</span> 2: {</div>
-<div class="line"><span class="lineno">  489</span>            mesh_name += <span class="stringliteral">&quot;_gambit&quot;</span>;</div>
-<div class="line"><span class="lineno">  490</span><span class="comment">//   // ======= Mesh, coarse gen, II: from Gambit - BEGIN  ========================</span></div>
-<div class="line"><span class="lineno">  491</span>    ml_mesh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a29d0d0f9463c9417d390da6149ffc24d">ReadCoarseMesh</a>(<span class="stringliteral">&quot;./input/square_quad.neu&quot;</span>, fe_quad_rule.c_str(), scalingFactor);</div>
-<div class="line"><span class="lineno">  492</span><span class="comment">//     ml_mesh.ReadCoarseMesh(&quot;./input/square_tri.neu&quot;, fe_quad_rule.c_str(), scalingFactor);</span></div>
-<div class="line"><span class="lineno">  493</span><span class="comment">//   //   ml_mesh.ReadCoarseMesh(&quot;./input/cube_tet.neu&quot;, fe_quad_rule.c_str(), scalingFactor);</span></div>
-<div class="line"><span class="lineno">  494</span>  <span class="comment">// ======= Mesh, coarse gen, II: from Gambit - END ========================</span></div>
-<div class="line"><span class="lineno">  495</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  496</span>        }</div>
-<div class="line"><span class="lineno">  497</span>        </div>
-<div class="line"><span class="lineno">  498</span>        <span class="keywordflow">default</span>: { abort(); }</div>
-<div class="line"><span class="lineno">  499</span>    }</div>
-<div class="line"><span class="lineno">  500</span>    </div>
-<div class="line"><span class="lineno">  501</span>    </div>
-<div class="line"><span class="lineno">  502</span>    <span class="keywordflow">return</span> mesh_name;</div>
-<div class="line"><span class="lineno">  503</span>    </div>
-<div class="line"><span class="lineno">  504</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/d93/all__mesh__generation__methods_8hpp_source.html#l00012">12</a> of file <a class="el" href="../../dd/d93/all__mesh__generation__methods_8hpp_source.html">all_mesh_generation_methods.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>                                                                                                                                           {</div>
+<div class="line"><span class="lineno">   13</span>    </div>
+<div class="line"><span class="lineno">   14</span>    </div>
+<div class="line"><span class="lineno">   15</span>  <span class="keyword">const</span> std::string relative_path_to_build_directory =  <span class="stringliteral">&quot;../../../&quot;</span>; </div>
+<div class="line"><span class="lineno">   16</span> </div>
+<div class="line"><span class="lineno">   17</span>    </div>
+<div class="line"><span class="lineno">   18</span>  <span class="keywordtype">double</span> scalingFactor = 1.;</div>
+<div class="line"><span class="lineno">   19</span> </div>
+<div class="line"><span class="lineno">   20</span>    std::string mesh_name(<span class="stringliteral">&quot;square&quot;</span>);</div>
+<div class="line"><span class="lineno">   21</span>    </div>
+<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">switch</span>(method_flag) {</div>
+<div class="line"><span class="lineno">   23</span>        <span class="keywordflow">case</span> 0: {</div>
+<div class="line"><span class="lineno">   24</span>            mesh_name += <span class="stringliteral">&quot;_femus&quot;</span>;</div>
+<div class="line"><span class="lineno">   25</span>  <span class="comment">// ======= Mesh, coarse gen, I: from function - BEGIN  ========================</span></div>
+<div class="line"><span class="lineno">   26</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nsub_x = 2;</div>
+<div class="line"><span class="lineno">   27</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nsub_y = 2;</div>
+<div class="line"><span class="lineno">   28</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nsub_z = 0;</div>
+<div class="line"><span class="lineno">   29</span>  <span class="keyword">const</span> std::vector&lt;double&gt; xyz_min = {-0.5,-0.5,0.};</div>
+<div class="line"><span class="lineno">   30</span>  <span class="keyword">const</span> std::vector&lt;double&gt; xyz_max = { 0.5, 0.5,0.};</div>
+<div class="line"><span class="lineno">   31</span>  <span class="keyword">const</span> <a class="code hl_enumeration" href="../../df/d2a/_elem_type_enum_8hpp.html#a1b014294b9757a001707c979e2bab627">ElemType</a> geom_elem_type = <a class="code hl_enumvalue" href="../../df/d2a/_elem_type_enum_8hpp.html#a1b014294b9757a001707c979e2bab627ac17e6803e9d62a4d807c62341c5f7d59">QUAD9</a><span class="comment">/*TRI6*/</span>;</div>
+<div class="line"><span class="lineno">   32</span>  ml_mesh.GenerateCoarseBoxMesh(nsub_x, nsub_y, nsub_z, xyz_min[0], xyz_max[0], xyz_min[1], xyz_max[1], xyz_min[2], xyz_max[2], geom_elem_type, fe_quad_rule.c_str() );</div>
+<div class="line"><span class="lineno">   33</span>  <span class="comment">// ======= Mesh, coarse gen, I: from function - END ========================</span></div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   36</span>        }</div>
+<div class="line"><span class="lineno">   37</span>        </div>
+<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">case</span> 1: {</div>
+<div class="line"><span class="lineno">   39</span>            mesh_name += <span class="stringliteral">&quot;_salome&quot;</span>;</div>
+<div class="line"><span class="lineno">   40</span><span class="comment">//   // ======= Mesh, coarse gen, III: from Salome - BEGIN  ========================</span></div>
+<div class="line"><span class="lineno">   41</span>    <span class="keyword">const</span> std::string mesh_file = relative_path_to_build_directory + <a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#a9474ccd5fe02de808a96182d96ac32ab">DEFAULT_MESH_FILES_PATH</a> + <span class="stringliteral">&quot;00_salome/02_2d/square/-0p5-0p5x-0p5-0p5/square_2x2_centered_at_origin.med&quot;</span>;</div>
+<div class="line"><span class="lineno">   42</span>   ml_mesh.ReadCoarseMesh(mesh_file.c_str(), fe_quad_rule.c_str(), scalingFactor);</div>
+<div class="line"><span class="lineno">   43</span><span class="comment">//   // ======= Mesh, coarse gen, III: from Salome - END ========================</span></div>
+<div class="line"><span class="lineno">   44</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   45</span>        }</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">case</span> 2: {</div>
+<div class="line"><span class="lineno">   47</span>            mesh_name += <span class="stringliteral">&quot;_gambit&quot;</span>;</div>
+<div class="line"><span class="lineno">   48</span><span class="comment">//   // ======= Mesh, coarse gen, II: from Gambit - BEGIN  ========================</span></div>
+<div class="line"><span class="lineno">   49</span>    <span class="keyword">const</span> std::string mesh_file = relative_path_to_build_directory + <a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#a9474ccd5fe02de808a96182d96ac32ab">DEFAULT_MESH_FILES_PATH</a> + <span class="stringliteral">&quot;01_gambit/square/-0p5-0p5x-0p5-0p5/square_2x2_quad.neu&quot;</span>;</div>
+<div class="line"><span class="lineno">   50</span>    ml_mesh.ReadCoarseMesh(mesh_file.c_str(), fe_quad_rule.c_str(), scalingFactor);</div>
+<div class="line"><span class="lineno">   51</span>  <span class="comment">// ======= Mesh, coarse gen, II: from Gambit - END ========================</span></div>
+<div class="line"><span class="lineno">   52</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   53</span>        }</div>
+<div class="line"><span class="lineno">   54</span>        </div>
+<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">default</span>: { abort(); }</div>
+<div class="line"><span class="lineno">   56</span>    }</div>
+<div class="line"><span class="lineno">   57</span>    </div>
+<div class="line"><span class="lineno">   58</span>    </div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> mesh_name;</div>
+<div class="line"><span class="lineno">   60</span>    </div>
+<div class="line"><span class="lineno">   61</span>}</div>
 <div class="ttc" id="a_elem_type_enum_8hpp_html_a1b014294b9757a001707c979e2bab627"><div class="ttname"><a href="../../df/d2a/_elem_type_enum_8hpp.html#a1b014294b9757a001707c979e2bab627">ElemType</a></div><div class="ttdeci">ElemType</div><div class="ttdef"><b>Definition</b> <a href="../../df/d2a/_elem_type_enum_8hpp_source.html#l00006">ElemTypeEnum.hpp:6</a></div></div>
 <div class="ttc" id="a_elem_type_enum_8hpp_html_a1b014294b9757a001707c979e2bab627ac17e6803e9d62a4d807c62341c5f7d59"><div class="ttname"><a href="../../df/d2a/_elem_type_enum_8hpp.html#a1b014294b9757a001707c979e2bab627ac17e6803e9d62a4d807c62341c5f7d59">QUAD9</a></div><div class="ttdeci">@ QUAD9</div><div class="ttdef"><b>Definition</b> <a href="../../df/d2a/_elem_type_enum_8hpp_source.html#l00016">ElemTypeEnum.hpp:16</a></div></div>
-<div class="ttc" id="aclassfemus_1_1_multi_level_mesh_html_a0988cbee341d6361df77622b3ce65080"><div class="ttname"><a href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a0988cbee341d6361df77622b3ce65080">femus::MultiLevelMesh::GenerateCoarseBoxMesh</a></div><div class="ttdeci">void GenerateCoarseBoxMesh(const unsigned int nx, const unsigned int ny, const unsigned int nz, const double xmin, const double xmax, const double ymin, const double ymax, const double zmin, const double zmax, const ElemType type, const char GaussOrder[])</div><div class="ttdef"><b>Definition</b> <a href="../../db/d07/_multi_level_mesh_8cpp_source.html#l00472">MultiLevelMesh.cpp:472</a></div></div>
-<div class="ttc" id="aclassfemus_1_1_multi_level_mesh_html_a29d0d0f9463c9417d390da6149ffc24d"><div class="ttname"><a href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a29d0d0f9463c9417d390da6149ffc24d">femus::MultiLevelMesh::ReadCoarseMesh</a></div><div class="ttdeci">void ReadCoarseMesh(const char mesh_file[], const char GaussOrder[], const double Lref)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d07/_multi_level_mesh_8cpp_source.html#l00389">MultiLevelMesh.cpp:389</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_a9474ccd5fe02de808a96182d96ac32ab"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#a9474ccd5fe02de808a96182d96ac32ab">DEFAULT_MESH_FILES_PATH</a></div><div class="ttdeci">#define DEFAULT_MESH_FILES_PATH</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00044">FemusDefault.hpp:44</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

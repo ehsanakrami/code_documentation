@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/OptimalControl/01_boundary_control_inequality/00_dirichlet/02_dirichlet_lifting_external/02_dirichlet_lifting_external.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/OptimalControl/01_boundary_control_inequality/00_dirichlet/02_dirichlet_lifting_external/02_dirichlet_lifting_external.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('d9/dc5/02__dirichlet__lifting__externa
 <code>#include &quot;<a class="el" href="../../d0/d48/_non_linear_implicit_system_with_primal_dual_active_set_method_8hpp_source.html">NonLinearImplicitSystemWithPrimalDualActiveSetMethod.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/d43/_numeric_vector_8hpp_source.html">NumericVector.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d0b/param_8hpp_source.html">../../../param.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/df7/square__or__cube__03__cost__functional__without__regularization_8hpp_source.html">../../../square_or_cube_03_cost_functional_without_regularization.hpp</a>&quot;</code><br />
+<code>#include &quot;../../../square_or_cube_03_cost_functional_without_regularization.hpp&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/d03/opt__systems__elliptic__dirichlet_8hpp_source.html">../../../opt_systems_elliptic_dirichlet.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../d9/dc5/02__dirichlet__lifting__external_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -375,23 +375,23 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   57</span>                                                                                                                                                                                 {</div>
 <div class="line"><span class="lineno">   58</span> </div>
 <div class="line"><span class="lineno">   59</span>    <span class="keywordtype">bool</span> dirichlet = <span class="keyword">false</span>; <span class="comment">//dirichlet</span></div>
-<div class="line"><span class="lineno">   60</span>    value = 0.;</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   61</span> </div>
 <div class="line"><span class="lineno">   62</span>  <span class="keywordflow">if</span>(!strcmp(name, <span class="stringliteral">&quot;state&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   63</span>       dirichlet = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   64</span>       value = 0.;</div>
+<div class="line"><span class="lineno">   64</span>       <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   65</span>  }</div>
 <div class="line"><span class="lineno">   66</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name, <span class="stringliteral">&quot;control&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   67</span>       dirichlet = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   68</span>       value = 0.;</div>
+<div class="line"><span class="lineno">   68</span>       <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   69</span>  }</div>
 <div class="line"><span class="lineno">   70</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name, <span class="stringliteral">&quot;adjoint&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   71</span>       dirichlet = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   72</span>       value = 0.;</div>
+<div class="line"><span class="lineno">   72</span>       <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   73</span>  }</div>
 <div class="line"><span class="lineno">   74</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name, <span class="stringliteral">&quot;adjoint_ext&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   75</span>       dirichlet = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   76</span>       value = 0.;</div>
+<div class="line"><span class="lineno">   76</span>       <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   77</span>  }</div>
 <div class="line"><span class="lineno">   78</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name, <span class="stringliteral">&quot;mu&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   79</span>        dirichlet = <span class="keyword">false</span>;</div>
@@ -410,6 +410,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   92</span> </div>
 <div class="line"><span class="lineno">   93</span>    <span class="keywordflow">return</span> dirichlet;</div>
 <div class="line"><span class="lineno">   94</span>}</div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -448,35 +449,35 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../d9/dc5/02__dirichlet__lifting__external_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../d9/dc5/02__dirichlet__lifting__external_8cpp_source.html">02_dirichlet_lifting_external.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   23</span>                                                                                                                            {</div>
 <div class="line"><span class="lineno">   24</span> </div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordtype">double</span> value = 0.;</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   26</span> </div>
 <div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;state&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   28</span>        value = 0.;</div>
+<div class="line"><span class="lineno">   28</span>        <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   29</span>    }</div>
 <div class="line"><span class="lineno">   30</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;control&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   31</span>        value = 0.;</div>
+<div class="line"><span class="lineno">   31</span>        <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   32</span>    }</div>
 <div class="line"><span class="lineno">   33</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;adjoint&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   34</span>        value = 0.;</div>
+<div class="line"><span class="lineno">   34</span>        <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   35</span>    }</div>
 <div class="line"><span class="lineno">   36</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;adjoint_ext&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   37</span>        value = 0.;</div>
+<div class="line"><span class="lineno">   37</span>        <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   38</span>    }</div>
 <div class="line"><span class="lineno">   39</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;mu&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   40</span>        value = 0.;</div>
+<div class="line"><span class="lineno">   40</span>        <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   41</span>    }</div>
 <div class="line"><span class="lineno">   42</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;TargReg&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   43</span>        value = ctrl::square_or_cube :: cost_functional_without_regularization::ElementTargetFlag(x);</div>
+<div class="line"><span class="lineno">   43</span>        <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = ctrl::square_or_cube :: cost_functional_without_regularization::ElementTargetFlag(x);</div>
 <div class="line"><span class="lineno">   44</span>    }</div>
 <div class="line"><span class="lineno">   45</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;ContReg&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   46</span>        value = <a class="code hl_function" href="../../d2/da1/classfemus_1_1ctrl_1_1square__or__cube_1_1lifting__external.html#a924aad239d829f9b81d08d716f4f190f">ctrl:: square_or_cube:: lifting_external &lt; ctrl::GAMMA_CONTROL_LIST_OF_FACES_WITH_EXTREMES &gt;::ControlDomainFlag_external_restriction</a>(x);</div>
+<div class="line"><span class="lineno">   46</span>        <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = <a class="code hl_function" href="../../d2/da1/classfemus_1_1ctrl_1_1square__or__cube_1_1lifting__external.html#a924aad239d829f9b81d08d716f4f190f">ctrl:: square_or_cube:: lifting_external &lt; ctrl::GAMMA_CONTROL_LIST_OF_FACES_WITH_EXTREMES &gt;::ControlDomainFlag_external_restriction</a>(x);</div>
 <div class="line"><span class="lineno">   47</span>    }</div>
 <div class="line"><span class="lineno">   48</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;act_flag&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   49</span>        value = 0.;</div>
+<div class="line"><span class="lineno">   49</span>        <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   50</span>    }</div>
 <div class="line"><span class="lineno">   51</span> </div>
 <div class="line"><span class="lineno">   52</span> </div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">return</span> value;</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">   54</span>}</div>
 <div class="ttc" id="aclassfemus_1_1ctrl_1_1square__or__cube_1_1lifting__external_html_a924aad239d829f9b81d08d716f4f190f"><div class="ttname"><a href="../../d2/da1/classfemus_1_1ctrl_1_1square__or__cube_1_1lifting__external.html#a924aad239d829f9b81d08d716f4f190f">femus::ctrl::square_or_cube::lifting_external::ControlDomainFlag_external_restriction</a></div><div class="ttdeci">static int ControlDomainFlag_external_restriction(const std::vector&lt; double &gt; &amp;elem_center)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d54/square__or__cube__01b__control__faces__domain__elements_8hpp_source.html#l00138">square_or_cube_01b_control_faces_domain_elements.hpp:138</a></div></div>
 </div><!-- fragment -->

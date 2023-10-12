@@ -96,16 +96,13 @@ $(document).ready(function(){initNavTree('da/d2c/class_zero.html','../../'); ini
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Zero&lt; type &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="../../da/d2c/class_zero.png" usemap="#Zero_3C_20type_20_3E_map" alt=""/>
-  <map id="Zero_3C_20type_20_3E_map" name="Zero_3C_20type_20_3E_map">
-<area href="../../da/d19/classfemus_1_1_math_1_1_function.html" alt="femus::Math::Function&lt; type &gt;" shape="rect" coords="0,0,196,24"/>
-  </map>
-</div></div>
+  <img src="../../da/d2c/class_zero.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -115,13 +112,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a75f43585d11e04c5a7290c28a2110b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f937d67ae089fdaabcc4da888b1a44e"><td class="memItemLeft" align="right" valign="top">type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2c/class_zero.html#a9f937d67ae089fdaabcc4da888b1a44e">laplacian</a> (const std::vector&lt; type &gt; &amp;x) const</td></tr>
 <tr class="separator:a9f937d67ae089fdaabcc4da888b1a44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9dc6aae39da38dc4e1819fcec260ffc"><td class="memItemLeft" align="right" valign="top">type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d19/classfemus_1_1_math_1_1_function.html#ad9dc6aae39da38dc4e1819fcec260ffc">helmholtz</a> (const std::vector&lt; type &gt; &amp;x) const</td></tr>
-<tr class="separator:ad9dc6aae39da38dc4e1819fcec260ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class type = double&gt;<br />
 class Zero&lt; type &gt;</div>
-<p class="definition">Definition at line <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html#l00080">80</a> of file <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html#l00011">11</a> of file <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a75f43585d11e04c5a7290c28a2110b5a" name="a75f43585d11e04c5a7290c28a2110b5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a75f43585d11e04c5a7290c28a2110b5a">&#9670;&#160;</a></span>gradient()</h2>
@@ -144,56 +139,21 @@ template&lt;class type  = double&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="../../da/d19/classfemus_1_1_math_1_1_function.html#a848e5d737cd5e913f3d8ee458cc558e7">femus::Math::Function&lt; type &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html#l00090">90</a> of file <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   90</span>                                                                 {</div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>        vector &lt; type &gt; solGrad(x.size());</div>
-<div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>        solGrad[0]  =  0.;</div>
-<div class="line"><span class="lineno">   95</span>        solGrad[1]  =  0.;</div>
-<div class="line"><span class="lineno">   96</span> </div>
-<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> solGrad;</div>
-<div class="line"><span class="lineno">   98</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ad9dc6aae39da38dc4e1819fcec260ffc" name="ad9dc6aae39da38dc4e1819fcec260ffc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9dc6aae39da38dc4e1819fcec260ffc">&#9670;&#160;</a></span>helmholtz()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class type  = double&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">type <a class="el" href="../../da/d19/classfemus_1_1_math_1_1_function.html">femus::Math::Function</a>&lt; type &gt;::helmholtz </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../dc/dba/_math_8hpp_source.html#l00109">109</a> of file <a class="el" href="../../dc/dba/_math_8hpp_source.html">Math.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  109</span>{ <span class="keywordflow">return</span> ( - <a class="code hl_function" href="../../da/d19/classfemus_1_1_math_1_1_function.html#abc2f78d0749a61fca62209b2bbf384f0">laplacian</a>(x) + <a class="code hl_function" href="../../da/d19/classfemus_1_1_math_1_1_function.html#a76221084dd13f8c158c3df14c3be51f8">value</a>(x) ); };</div>
-<div class="ttc" id="aclassfemus_1_1_math_1_1_function_html_a76221084dd13f8c158c3df14c3be51f8"><div class="ttname"><a href="../../da/d19/classfemus_1_1_math_1_1_function.html#a76221084dd13f8c158c3df14c3be51f8">femus::Math::Function::value</a></div><div class="ttdeci">virtual type value(const std::vector&lt; type &gt; &amp;x) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dba/_math_8hpp_source.html#l00103">Math.hpp:103</a></div></div>
-<div class="ttc" id="aclassfemus_1_1_math_1_1_function_html_abc2f78d0749a61fca62209b2bbf384f0"><div class="ttname"><a href="../../da/d19/classfemus_1_1_math_1_1_function.html#abc2f78d0749a61fca62209b2bbf384f0">femus::Math::Function::laplacian</a></div><div class="ttdeci">virtual type laplacian(const std::vector&lt; type &gt; &amp;x) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dba/_math_8hpp_source.html#l00107">Math.hpp:107</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html#l00021">21</a> of file <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>                                                                 {</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>        vector &lt; type &gt; solGrad(x.size());</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>        solGrad[0]  =  0.;</div>
+<div class="line"><span class="lineno">   26</span>        solGrad[1]  =  0.;</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">return</span> solGrad;</div>
+<div class="line"><span class="lineno">   29</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -218,18 +178,16 @@ template&lt;class type  = double&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="../../da/d19/classfemus_1_1_math_1_1_function.html#abc2f78d0749a61fca62209b2bbf384f0">femus::Math::Function&lt; type &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html#l00101">101</a> of file <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  101</span>                                                      {</div>
-<div class="line"><span class="lineno">  102</span>        </div>
-<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">return</span>  0.; </div>
-<div class="line"><span class="lineno">  104</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>                                                      {</div>
+<div class="line"><span class="lineno">   33</span>        </div>
+<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">return</span>  0.; </div>
+<div class="line"><span class="lineno">   35</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -254,23 +212,21 @@ template&lt;class type  = double&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="../../da/d19/classfemus_1_1_math_1_1_function.html#a76221084dd13f8c158c3df14c3be51f8">femus::Math::Function&lt; type &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html#l00084">84</a> of file <a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>                                                  {</div>
-<div class="line"><span class="lineno">   85</span>        </div>
-<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">return</span> 0.;</div>
-<div class="line"><span class="lineno">   87</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>                                                  {</div>
+<div class="line"><span class="lineno">   16</span>        </div>
+<div class="line"><span class="lineno">   17</span>        <span class="keywordflow">return</span> 0.;</div>
+<div class="line"><span class="lineno">   18</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/00_tutorial/<a class="el" href="../../d1/dec/tutorial__common_8hpp_source.html">tutorial_common.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/03_solution/<a class="el" href="../../d4/daf/_solution__functions__over__domains__or__mesh__files_8hpp_source.html">Solution_functions_over_domains_or_mesh_files.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

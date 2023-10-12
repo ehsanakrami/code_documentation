@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/Willmore/WillmoreGraph/ex8/ex8.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/Willmore/WillmoreGraph/ex8/ex8.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -994,15 +994,15 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   77</span>  </div>
 <div class="line"><span class="lineno">   78</span>  <a class="code hl_class" href="../../da/d5e/classfemus_1_1_femus_init.html">FemusInit</a> mpinit (argc, args, MPI_COMM_WORLD);</div>
 <div class="line"><span class="lineno">   79</span>  </div>
-<div class="line"><span class="lineno">   80</span>  std::ostringstream filename;</div>
-<div class="line"><span class="lineno">   81</span>  filename &lt;&lt; <span class="stringliteral">&quot;./input/circle_quad4.neu&quot;</span>;</div>
+<div class="line"><span class="lineno">   80</span>  std::ostringstream <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>;</div>
+<div class="line"><span class="lineno">   81</span>  <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> &lt;&lt; <span class="stringliteral">&quot;./input/circle_quad4.neu&quot;</span>;</div>
 <div class="line"><span class="lineno">   82</span>  </div>
 <div class="line"><span class="lineno">   83</span>  </div>
 <div class="line"><span class="lineno">   84</span>  <a class="code hl_class" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html">MultiLevelMesh</a> mlMsh;</div>
 <div class="line"><span class="lineno">   85</span>  <span class="comment">// read coarse level mesh and generate finers level meshes</span></div>
 <div class="line"><span class="lineno">   86</span>  <span class="keywordtype">double</span> scalingFactor = 1.;</div>
 <div class="line"><span class="lineno">   87</span>  <span class="comment">//mlMsh.ReadCoarseMesh(&quot;./input/circle_quad.neu&quot;,&quot;seventh&quot;, scalingFactor);</span></div>
-<div class="line"><span class="lineno">   88</span>  mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a29d0d0f9463c9417d390da6149ffc24d">ReadCoarseMesh</a> (filename.str().c_str(), <span class="stringliteral">&quot;seventh&quot;</span>, scalingFactor);</div>
+<div class="line"><span class="lineno">   88</span>  mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a29d0d0f9463c9417d390da6149ffc24d">ReadCoarseMesh</a> (<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str().c_str(), <span class="stringliteral">&quot;seventh&quot;</span>, scalingFactor);</div>
 <div class="line"><span class="lineno">   89</span>  <span class="comment">/* &quot;seventh&quot; is the order of accuracy that is used in the gauss integration scheme</span></div>
 <div class="line"><span class="lineno">   90</span><span class="comment">   *    probably in the furure it is not going to be an argument of this function   */</span></div>
 <div class="line"><span class="lineno">   91</span>  <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> = mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a65dabdf1e308c1a44ebe5c6a41d09284">GetDimension</a>();</div>
@@ -1102,7 +1102,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  185</span>}</div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3">SECOND</a></div><div class="ttdeci">@ SECOND</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00018">FElemTypeEnum.hpp:17</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a></div><div class="ttdeci">@ LAGRANGE</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00005">FElemTypeEnum.hpp:5</a></div></div>
-<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00040">FemusDefault.hpp:40</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00041">FemusDefault.hpp:41</a></div></div>
 <div class="ttc" id="a_i_s_m_2ex4_2ex4_8cpp_html_a0aca793820b6ff7705450e2043256938"><div class="ttname"><a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#a0aca793820b6ff7705450e2043256938">numberOfUniformLevels</a></div><div class="ttdeci">unsigned numberOfUniformLevels</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp_source.html#l00089">ex4.cpp:89</a></div></div>
 <div class="ttc" id="a_willmore_2_willmore_graph_2ex8_2ex8_8cpp_html_a3a1dd45f5319c38dc3fb232e6545a266"><div class="ttname"><a href="../../dd/d68/_willmore_2_willmore_graph_2ex8_2ex8_8cpp.html#a3a1dd45f5319c38dc3fb232e6545a266">InitalValueHSphere</a></div><div class="ttdeci">double InitalValueHSphere(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d68/_willmore_2_willmore_graph_2ex8_2ex8_8cpp_source.html#l00060">ex8.cpp:60</a></div></div>
 <div class="ttc" id="a_willmore_2_willmore_graph_2ex8_2ex8_8cpp_html_a6e8af606c6593b89b41975e53a8f2f7c"><div class="ttname"><a href="../../dd/d68/_willmore_2_willmore_graph_2ex8_2ex8_8cpp.html#a6e8af606c6593b89b41975e53a8f2f7c">SetBoundaryConditionSphere</a></div><div class="ttdeci">bool SetBoundaryConditionSphere(const std::vector&lt; double &gt; &amp;x, const char SolName[], double &amp;value, const int facename, const double time)</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d68/_willmore_2_willmore_graph_2ex8_2ex8_8cpp_source.html#l00035">ex8.cpp:35</a></div></div>
@@ -1124,6 +1124,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1_non_linear_implicit_system_html_ad2d20975e0c919a9d99bdd9368a0212a"><div class="ttname"><a href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html#ad2d20975e0c919a9d99bdd9368a0212a">femus::NonLinearImplicitSystem::init</a></div><div class="ttdeci">virtual void init()</div><div class="ttdef"><b>Definition</b> <a href="../../de/dff/_non_linear_implicit_system_8cpp_source.html#l00047">NonLinearImplicitSystem.cpp:47</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_system_html_a42a5b5b5d2c7673b1d4c896762d8db9e"><div class="ttname"><a href="../../d5/dc7/classfemus_1_1_system.html#a42a5b5b5d2c7673b1d4c896762d8db9e">femus::System::SetAssembleFunction</a></div><div class="ttdeci">void SetAssembleFunction(AssembleFunctionType)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/de5/_system_8cpp_source.html#l00058">System.cpp:58</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_system_html_a606e07526d7a0d31eed638404ee2ed24"><div class="ttname"><a href="../../d5/dc7/classfemus_1_1_system.html#a606e07526d7a0d31eed638404ee2ed24">femus::System::AddSolutionToSystemPDE</a></div><div class="ttdeci">virtual void AddSolutionToSystemPDE(const char solname[])</div><div class="ttdef"><b>Definition</b> <a href="../../d8/de5/_system_8cpp_source.html#l00075">System.cpp:75</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a8b9aa5b5b104ffacbc115e9ba3c22e6a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">build_edges_of_volumes.filename</a></div><div class="ttdeci">filename</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00009">build_edges_of_volumes.py:9</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1179,22 +1180,23 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   39</span>   <span class="comment">// value = 0;</span></div>
 <div class="line"><span class="lineno">   40</span>    </div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordflow">if</span>(x[1] &gt;= 0){</div>
-<div class="line"><span class="lineno">   42</span>      value = 0.5 * sin( 2. * acos(x[0]) );</div>
+<div class="line"><span class="lineno">   42</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.5 * sin( 2. * acos(x[0]) );</div>
 <div class="line"><span class="lineno">   43</span>    }</div>
 <div class="line"><span class="lineno">   44</span>    <span class="keywordflow">else</span>{</div>
-<div class="line"><span class="lineno">   45</span>      value = 0.5 * sin( 2. * (2. * M_PI - acos(x[0])) );</div>
+<div class="line"><span class="lineno">   45</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.5 * sin( 2. * (2. * M_PI - acos(x[0])) );</div>
 <div class="line"><span class="lineno">   46</span>    }</div>
 <div class="line"><span class="lineno">   47</span>  }</div>
 <div class="line"><span class="lineno">   48</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (<span class="stringliteral">&quot;H&quot;</span>, SolName)) {</div>
 <div class="line"><span class="lineno">   49</span>    <span class="comment">//value = -1. / tan(thetaSphere);</span></div>
-<div class="line"><span class="lineno">   50</span>    value = 0.;</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   51</span>  }</div>
 <div class="line"><span class="lineno">   52</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (<span class="stringliteral">&quot;W&quot;</span>, SolName)) {</div>
 <div class="line"><span class="lineno">   53</span>    <span class="comment">//value = -1. / tan(thetaSphere);</span></div>
-<div class="line"><span class="lineno">   54</span>    value =  0.;</div>
+<div class="line"><span class="lineno">   54</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> =  0.;</div>
 <div class="line"><span class="lineno">   55</span>  }</div>
 <div class="line"><span class="lineno">   56</span>  <span class="keywordflow">return</span> dirichlet;</div>
 <div class="line"><span class="lineno">   57</span>}</div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

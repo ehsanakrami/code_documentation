@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/ISM/magnetic_stents/magnetic_stents.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/ISM/magnetic_stents/magnetic_stents.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -678,7 +678,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno"> 1487</span>    sumHessPhi[i].assign ( 2, 0.);</div>
 <div class="line"><span class="lineno"> 1488</span>  }</div>
 <div class="line"><span class="lineno"> 1489</span> </div>
-<div class="line"><span class="lineno"> 1490</span>  <span class="keywordtype">double</span> value = H0 * RWire * RWire * alphaWire;</div>
+<div class="line"><span class="lineno"> 1490</span>  <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = H0 * RWire * RWire * alphaWire;</div>
 <div class="line"><span class="lineno"> 1491</span> </div>
 <div class="line"><span class="lineno"> 1492</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; numberOfWires; i++ ) {</div>
 <div class="line"><span class="lineno"> 1493</span>    </div>
@@ -688,19 +688,19 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno"> 1497</span>    <span class="keywordtype">double</span> r2 =  x * x + <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>;</div>
 <div class="line"><span class="lineno"> 1498</span>    <span class="keywordtype">double</span> r4 = r2 * r2;</div>
 <div class="line"><span class="lineno"> 1499</span>    </div>
-<div class="line"><span class="lineno"> 1500</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> = value * ( x * cos(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a>) + <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> * sin(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a>) ) / r2;</div>
-<div class="line"><span class="lineno"> 1501</span>    <span class="keywordtype">double</span> phi_x = value * cos ( <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a> ) / r2 - <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. * x / r2;</div>
-<div class="line"><span class="lineno"> 1502</span>    <span class="keywordtype">double</span> phi_y = value * sin ( <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a> ) / r2 - <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> / r2;</div>
+<div class="line"><span class="lineno"> 1500</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> * ( x * cos(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a>) + <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> * sin(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a>) ) / r2;</div>
+<div class="line"><span class="lineno"> 1501</span>    <span class="keywordtype">double</span> phi_x = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> * cos ( <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a> ) / r2 - <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. * x / r2;</div>
+<div class="line"><span class="lineno"> 1502</span>    <span class="keywordtype">double</span> phi_y = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> * sin ( <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a> ) / r2 - <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> / r2;</div>
 <div class="line"><span class="lineno"> 1503</span>    </div>
 <div class="line"><span class="lineno"> 1504</span>    sumGradPhi[0] += phi_x;</div>
 <div class="line"><span class="lineno"> 1505</span>    </div>
 <div class="line"><span class="lineno"> 1506</span>    sumGradPhi[1] += phi_y;</div>
 <div class="line"><span class="lineno"> 1507</span>    </div>
-<div class="line"><span class="lineno"> 1508</span>    sumHessPhi[0][0] += value * cos(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a>) * (- 2. * x ) / r4 - ( phi_x * 2. * x / r2 + <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. / r2 + <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. * x * (- 2. * x) / r4 );</div>
+<div class="line"><span class="lineno"> 1508</span>    sumHessPhi[0][0] += <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> * cos(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a>) * (- 2. * x ) / r4 - ( phi_x * 2. * x / r2 + <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. / r2 + <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. * x * (- 2. * x) / r4 );</div>
 <div class="line"><span class="lineno"> 1509</span> </div>
-<div class="line"><span class="lineno"> 1510</span>    sumHessPhi[1][1] += value * sin(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a>) * (- 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> ) / r4 - ( phi_y * 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> / r2 + <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. / r2 + <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> * (- 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>) / r4 );</div>
+<div class="line"><span class="lineno"> 1510</span>    sumHessPhi[1][1] += <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> * sin(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a>) * (- 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> ) / r4 - ( phi_y * 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> / r2 + <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. / r2 + <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> * (- 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>) / r4 );</div>
 <div class="line"><span class="lineno"> 1511</span>    </div>
-<div class="line"><span class="lineno"> 1512</span>    sumHessPhi[0][1] += value * cos(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a>) * (- 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> ) / r4 - ( phi_y * 2. * x / r2 + <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. * x * (- 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>) / r4 );</div>
+<div class="line"><span class="lineno"> 1512</span>    sumHessPhi[0][1] += <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> * cos(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a>) * (- 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> ) / r4 - ( phi_y * 2. * x / r2 + <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> * 2. * x * (- 2. * <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>) / r4 );</div>
 <div class="line"><span class="lineno"> 1513</span>    </div>
 <div class="line"><span class="lineno"> 1514</span>  }</div>
 <div class="line"><span class="lineno"> 1515</span> </div>
@@ -793,6 +793,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_m_g_a_m_r_2ex9_2_m_g__precond_8m_html_a2fb1c5cf58867b5bbc9a1b145a86f3a0"><div class="ttname"><a href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a></div><div class="ttdeci">y</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m_source.html#l00053">MG_precond.m:53</a></div></div>
 <div class="ttc" id="a_s_w_2ex2_2ex2_8cpp_html_adae8d8a6ff28515e505bb1c07f2b33c8"><div class="ttname"><a href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a></div><div class="ttdeci">double phi</div><div class="ttdef"><b>Definition</b> <a href="../../de/d25/_s_w_2ex2_2ex2_8cpp_source.html#l00038">ex2.cpp:38</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a02e050d6adc3998272b7cd5fa4e7dc46"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">femus::theta</a></div><div class="ttdeci">double * theta</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dc5/_f_s_i_time_dependent_assembly_supg_g_c_l_8hpp_source.html#l00037">FSITimeDependentAssemblySupgGCL.hpp:37</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1560,7 +1561,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a00ea9562f0dbb25e22bb3297d596e3baae117e3533122c80b262257b49b21cddf"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baae117e3533122c80b262257b49b21cddf">ZERO</a></div><div class="ttdeci">@ ZERO</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00014">FElemTypeEnum.hpp:14</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a7c9a70b7c6b5baf5d7942938d770a664a2318cd5622bed5320c47de68813ab4df"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a2318cd5622bed5320c47de68813ab4df">DISCONTINUOUS_POLYNOMIAL</a></div><div class="ttdeci">@ DISCONTINUOUS_POLYNOMIAL</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00006">FElemTypeEnum.hpp:6</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a></div><div class="ttdeci">@ LAGRANGE</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00005">FElemTypeEnum.hpp:5</a></div></div>
-<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00040">FemusDefault.hpp:40</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00041">FemusDefault.hpp:41</a></div></div>
 <div class="ttc" id="a_linear_equation_solver_enum_8hpp_html_a931bb4cb47bfd614eb33cd0e2b822ef9ad01f8361c54d2a35a741f25e2f63038e"><div class="ttname"><a href="../../d2/db5/_linear_equation_solver_enum_8hpp.html#a931bb4cb47bfd614eb33cd0e2b822ef9ad01f8361c54d2a35a741f25e2f63038e">FEMuS_ASM</a></div><div class="ttdeci">@ FEMuS_ASM</div><div class="ttdef"><b>Definition</b> <a href="../../d2/db5/_linear_equation_solver_enum_8hpp_source.html#l00006">LinearEquationSolverEnum.hpp:6</a></div></div>
 <div class="ttc" id="a_marker_type_enum_8hpp_html_ade22213fff69cfb37d8238e8fd3073dfa9d326c2efb1f1ef1840d474c0f9b8a48"><div class="ttname"><a href="../../d7/d4e/_marker_type_enum_8hpp.html#ade22213fff69cfb37d8238e8fd3073dfa9d326c2efb1f1ef1840d474c0f9b8a48">VOLUME</a></div><div class="ttdeci">@ VOLUME</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d4e/_marker_type_enum_8hpp_source.html#l00005">MarkerTypeEnum.hpp:5</a></div></div>
 <div class="ttc" id="a_mg_type_enum_8hpp_html_a35aafc39068a269f658aac64338aa781a3f9d0f8f4400b01209d16d6bd07058cb"><div class="ttname"><a href="../../d5/d41/_mg_type_enum_8hpp.html#a35aafc39068a269f658aac64338aa781a3f9d0f8f4400b01209d16d6bd07058cb">V_CYCLE</a></div><div class="ttdeci">@ V_CYCLE</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d41/_mg_type_enum_8hpp_source.html#l00006">MgTypeEnum.hpp:6</a></div></div>
@@ -1649,7 +1650,7 @@ Variables</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../d2/da2/magnetic__stents_8cpp_source.html#l00595">595</a> of file <a class="el" href="../../d2/da2/magnetic__stents_8cpp_source.html">magnetic_stents.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  596</span>{</div>
 <div class="line"><span class="lineno">  597</span>  <span class="keywordtype">bool</span> test = 1; <span class="comment">//dirichlet</span></div>
-<div class="line"><span class="lineno">  598</span>  value = 0.;</div>
+<div class="line"><span class="lineno">  598</span>  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  599</span> </div>
 <div class="line"><span class="lineno">  600</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> = acos ( -1. );</div>
 <div class="line"><span class="lineno">  601</span> </div>
@@ -1658,11 +1659,11 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  604</span>  <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;V&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  605</span>    <span class="keywordflow">if</span> ( 1 == facename ) {</div>
 <div class="line"><span class="lineno">  606</span>      <span class="keywordtype">double</span> r2 = ( x[0] * 100. ) * ( x[0] * 100. );</div>
-<div class="line"><span class="lineno">  607</span>      value = -0.15 / .81 * ( .81 - r2 ) * ( 1. + 0.25 * sin ( 2.*<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> * time ) ) * ramp; <span class="comment">//inflow</span></div>
+<div class="line"><span class="lineno">  607</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = -0.15 / .81 * ( .81 - r2 ) * ( 1. + 0.25 * sin ( 2.*<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> * time ) ) * ramp; <span class="comment">//inflow</span></div>
 <div class="line"><span class="lineno">  608</span>    }</div>
 <div class="line"><span class="lineno">  609</span>    <span class="keywordflow">if</span> ( 2 == facename || 3 == facename || 7 == facename ) {</div>
 <div class="line"><span class="lineno">  610</span>      test = 0;</div>
-<div class="line"><span class="lineno">  611</span>      value = 0.;</div>
+<div class="line"><span class="lineno">  611</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  612</span>    }</div>
 <div class="line"><span class="lineno">  613</span>  }</div>
 <div class="line"><span class="lineno">  614</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;U&quot;</span> ) ) {</div>
@@ -1672,27 +1673,27 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  618</span><span class="comment">//     }</span></div>
 <div class="line"><span class="lineno">  619</span><span class="comment">//     else if (7 == facename) {</span></div>
 <div class="line"><span class="lineno">  620</span>      test = 0;</div>
-<div class="line"><span class="lineno">  621</span>      value = 0;</div>
+<div class="line"><span class="lineno">  621</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0;</div>
 <div class="line"><span class="lineno">  622</span>    }</div>
 <div class="line"><span class="lineno">  623</span>  }</div>
 <div class="line"><span class="lineno">  624</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;PS&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  625</span>    test = 0;</div>
-<div class="line"><span class="lineno">  626</span>    value = 0.;</div>
+<div class="line"><span class="lineno">  626</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  627</span>  }</div>
 <div class="line"><span class="lineno">  628</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;PF&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  629</span>    test = 0;</div>
-<div class="line"><span class="lineno">  630</span>    value = 0.;</div>
+<div class="line"><span class="lineno">  630</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  631</span>  }</div>
 <div class="line"><span class="lineno">  632</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;DX&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  633</span>    <span class="keywordflow">if</span> ( 7 == facename ) {</div>
 <div class="line"><span class="lineno">  634</span>      test = 0;</div>
-<div class="line"><span class="lineno">  635</span>      value = 0;</div>
+<div class="line"><span class="lineno">  635</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0;</div>
 <div class="line"><span class="lineno">  636</span>    }</div>
 <div class="line"><span class="lineno">  637</span>  }</div>
 <div class="line"><span class="lineno">  638</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;DY&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  639</span>    <span class="keywordflow">if</span> ( 7 == facename ) {</div>
 <div class="line"><span class="lineno">  640</span>      test = 0;</div>
-<div class="line"><span class="lineno">  641</span>      value = 0;</div>
+<div class="line"><span class="lineno">  641</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0;</div>
 <div class="line"><span class="lineno">  642</span>    }</div>
 <div class="line"><span class="lineno">  643</span>  }</div>
 <div class="line"><span class="lineno">  644</span> </div>
@@ -1748,7 +1749,7 @@ Variables</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../d2/da2/magnetic__stents_8cpp_source.html#l00699">699</a> of file <a class="el" href="../../d2/da2/magnetic__stents_8cpp_source.html">magnetic_stents.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  700</span>{</div>
 <div class="line"><span class="lineno">  701</span>  <span class="keywordtype">bool</span> test = 1; <span class="comment">//dirichlet</span></div>
-<div class="line"><span class="lineno">  702</span>  value = 0.;</div>
+<div class="line"><span class="lineno">  702</span>  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  703</span> </div>
 <div class="line"><span class="lineno">  704</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> = acos ( -1. );</div>
 <div class="line"><span class="lineno">  705</span>  <span class="keywordtype">double</span> ramp = ( time &lt; 1 ) ? sin ( <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> / 2 * time ) : 1.;</div>
@@ -1756,7 +1757,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  707</span>  <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;W&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  708</span>    <span class="keywordflow">if</span> ( 1 == facename ) {</div>
 <div class="line"><span class="lineno">  709</span>      <span class="keywordtype">double</span> r2 = ( ( x[0] * x[0] ) + ( x[1] - 0.006 ) * ( x[1] - 0.006 ) ) / ( 0.0035 * 0.0035 );</div>
-<div class="line"><span class="lineno">  710</span>      value = 2 * 0.1 * ( 1. - r2 ) * ( 1. + 0.25 * sin ( 2.*<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> * time ) ) * ramp; <span class="comment">//inflow</span></div>
+<div class="line"><span class="lineno">  710</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 2 * 0.1 * ( 1. - r2 ) * ( 1. + 0.25 * sin ( 2.*<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> * time ) ) * ramp; <span class="comment">//inflow</span></div>
 <div class="line"><span class="lineno">  711</span>      <span class="comment">//value = 1.3 * 0.194 * (1. - r2) * (1. + 0.25 * sin(2.*PI * time)) * ramp; //inflow</span></div>
 <div class="line"><span class="lineno">  712</span><span class="comment">//       double q;</span></div>
 <div class="line"><span class="lineno">  713</span><span class="comment">//       double t = time - floor(time);</span></div>
@@ -1774,37 +1775,37 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  725</span>    }</div>
 <div class="line"><span class="lineno">  726</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( 2 == facename || 3 == facename || 7 == facename ) {</div>
 <div class="line"><span class="lineno">  727</span>      test = 0;</div>
-<div class="line"><span class="lineno">  728</span>      value = 0.;</div>
+<div class="line"><span class="lineno">  728</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  729</span>    }</div>
 <div class="line"><span class="lineno">  730</span>  }</div>
 <div class="line"><span class="lineno">  731</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;U&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  732</span>    <span class="keywordflow">if</span> ( 7 == facename ) {</div>
 <div class="line"><span class="lineno">  733</span>      test = 0;</div>
-<div class="line"><span class="lineno">  734</span>      value = 0.;</div>
+<div class="line"><span class="lineno">  734</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  735</span>    }</div>
 <div class="line"><span class="lineno">  736</span>  }</div>
 <div class="line"><span class="lineno">  737</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;V&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  738</span>    <span class="keywordflow">if</span> ( 7 == facename ) {</div>
 <div class="line"><span class="lineno">  739</span>      test = 0;</div>
-<div class="line"><span class="lineno">  740</span>      value = 0.;</div>
+<div class="line"><span class="lineno">  740</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  741</span>    }</div>
 <div class="line"><span class="lineno">  742</span>  }</div>
 <div class="line"><span class="lineno">  743</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;PS&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  744</span>    test = 0;</div>
-<div class="line"><span class="lineno">  745</span>    value = 0.;</div>
+<div class="line"><span class="lineno">  745</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  746</span>    <span class="keywordflow">if</span> ( 2 == facename || 3 == facename ) {</div>
-<div class="line"><span class="lineno">  747</span>      value = ( 5000 + 2500 * sin ( 2 * <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> * time ) ) * ramp;</div>
+<div class="line"><span class="lineno">  747</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = ( 5000 + 2500 * sin ( 2 * <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> * time ) ) * ramp;</div>
 <div class="line"><span class="lineno">  748</span>      <span class="comment">//value = 5000 * ramp;//13332</span></div>
 <div class="line"><span class="lineno">  749</span>    }</div>
 <div class="line"><span class="lineno">  750</span>  }</div>
 <div class="line"><span class="lineno">  751</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;PF&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  752</span>    test = 0;</div>
-<div class="line"><span class="lineno">  753</span>    value = 0.;</div>
+<div class="line"><span class="lineno">  753</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  754</span>  }</div>
 <div class="line"><span class="lineno">  755</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;DX&quot;</span> ) || !strcmp ( name, <span class="stringliteral">&quot;DY&quot;</span> ) || !strcmp ( name, <span class="stringliteral">&quot;DZ&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  756</span>    <span class="keywordflow">if</span> ( 7 == facename ) {</div>
 <div class="line"><span class="lineno">  757</span>      test = 0;</div>
-<div class="line"><span class="lineno">  758</span>      value = 0;</div>
+<div class="line"><span class="lineno">  758</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0;</div>
 <div class="line"><span class="lineno">  759</span>    }</div>
 <div class="line"><span class="lineno">  760</span>  }</div>
 <div class="line"><span class="lineno">  761</span> </div>
@@ -1860,7 +1861,7 @@ Variables</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../d2/da2/magnetic__stents_8cpp_source.html#l00767">767</a> of file <a class="el" href="../../d2/da2/magnetic__stents_8cpp_source.html">magnetic_stents.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  768</span>{</div>
 <div class="line"><span class="lineno">  769</span>  <span class="keywordtype">bool</span> test = 1; <span class="comment">//dirichlet</span></div>
-<div class="line"><span class="lineno">  770</span>  value = 0.;</div>
+<div class="line"><span class="lineno">  770</span>  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  771</span> </div>
 <div class="line"><span class="lineno">  772</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> = acos ( -1. );</div>
 <div class="line"><span class="lineno">  773</span> </div>
@@ -1871,38 +1872,38 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  778</span>  <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;U&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  779</span>    <span class="keywordflow">if</span> ( 1 == facename ) {</div>
 <div class="line"><span class="lineno">  780</span>      <span class="keywordtype">double</span> r2 = ( x[1] * x[1] ) / ( 0.0004 * 0.0004 );</div>
-<div class="line"><span class="lineno">  781</span>      value = 1.5 * ( u0 * 1.e-2 ) * ( 1. - r2 ) * ramp; <span class="comment">//steady-state inflow</span></div>
+<div class="line"><span class="lineno">  781</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 1.5 * ( u0 * 1.e-2 ) * ( 1. - r2 ) * ramp; <span class="comment">//steady-state inflow</span></div>
 <div class="line"><span class="lineno">  782</span>      <span class="comment">//value = -0.15 / .81 * (.81 - r2) * (1. + 0.25 * sin(2.*PI * time)) * ramp; //time dependent inflow</span></div>
 <div class="line"><span class="lineno">  783</span>    }</div>
 <div class="line"><span class="lineno">  784</span>    <span class="keywordflow">if</span> ( 2 == facename ) {</div>
 <div class="line"><span class="lineno">  785</span>      test = 0;</div>
-<div class="line"><span class="lineno">  786</span>      value = 0.;</div>
+<div class="line"><span class="lineno">  786</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  787</span>    }</div>
 <div class="line"><span class="lineno">  788</span>  }</div>
 <div class="line"><span class="lineno">  789</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;V&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  790</span>    <span class="keywordflow">if</span> ( 2 == facename ) {</div>
 <div class="line"><span class="lineno">  791</span>      test = 0;</div>
-<div class="line"><span class="lineno">  792</span>      value = 0;</div>
+<div class="line"><span class="lineno">  792</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0;</div>
 <div class="line"><span class="lineno">  793</span>    }</div>
 <div class="line"><span class="lineno">  794</span>  }</div>
 <div class="line"><span class="lineno">  795</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;PS&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  796</span>    test = 0;</div>
-<div class="line"><span class="lineno">  797</span>    value = 0.;</div>
+<div class="line"><span class="lineno">  797</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  798</span>  }</div>
 <div class="line"><span class="lineno">  799</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;PF&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  800</span>    test = 0;</div>
-<div class="line"><span class="lineno">  801</span>    value = 0.;</div>
+<div class="line"><span class="lineno">  801</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  802</span>  }</div>
 <div class="line"><span class="lineno">  803</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;DX&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  804</span>    <span class="keywordflow">if</span> ( 5 == facename || 6 == facename ) {</div>
 <div class="line"><span class="lineno">  805</span>      test = 0;</div>
-<div class="line"><span class="lineno">  806</span>      value = 0;</div>
+<div class="line"><span class="lineno">  806</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0;</div>
 <div class="line"><span class="lineno">  807</span>    }</div>
 <div class="line"><span class="lineno">  808</span>  }</div>
 <div class="line"><span class="lineno">  809</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;DY&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  810</span>    <span class="keywordflow">if</span> ( 5 == facename || 6 == facename ) {</div>
 <div class="line"><span class="lineno">  811</span>      test = 0;</div>
-<div class="line"><span class="lineno">  812</span>      value = 0;</div>
+<div class="line"><span class="lineno">  812</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0;</div>
 <div class="line"><span class="lineno">  813</span>    }</div>
 <div class="line"><span class="lineno">  814</span>  }</div>
 <div class="line"><span class="lineno">  815</span> </div>
@@ -1958,7 +1959,7 @@ Variables</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../d2/da2/magnetic__stents_8cpp_source.html#l00650">650</a> of file <a class="el" href="../../d2/da2/magnetic__stents_8cpp_source.html">magnetic_stents.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  651</span>{</div>
 <div class="line"><span class="lineno">  652</span>  <span class="keywordtype">bool</span> test = 1; <span class="comment">//dirichlet</span></div>
-<div class="line"><span class="lineno">  653</span>  value = 0.;</div>
+<div class="line"><span class="lineno">  653</span>  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  654</span> </div>
 <div class="line"><span class="lineno">  655</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> = acos ( -1. );</div>
 <div class="line"><span class="lineno">  656</span>  <span class="keywordtype">double</span> ramp = ( time &lt; 1 ) ? sin ( <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> / 2 * time ) : 1.;</div>
@@ -1966,36 +1967,36 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  658</span>  <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;U&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  659</span>    <span class="keywordflow">if</span> ( 2 == facename ) {</div>
 <div class="line"><span class="lineno">  660</span>      <span class="keywordtype">double</span> r2 = ( ( x[1] - 0.0196 ) * ( x[1] - 0.0196 ) + ( x[2] * x[2] ) ) / ( 0.0035 * 0.0035 );</div>
-<div class="line"><span class="lineno">  661</span>      value = 2 * 0.1 * ( 1. - r2 ) * ( 1. + 0.25 * sin ( 2.*<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> * time ) ) * ramp; <span class="comment">//inflow</span></div>
+<div class="line"><span class="lineno">  661</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 2 * 0.1 * ( 1. - r2 ) * ( 1. + 0.25 * sin ( 2.*<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> * time ) ) * ramp; <span class="comment">//inflow</span></div>
 <div class="line"><span class="lineno">  662</span>      <span class="comment">//value = 2 * 0.1 * (1. - r2) * ramp; //inflow</span></div>
 <div class="line"><span class="lineno">  663</span>    }</div>
 <div class="line"><span class="lineno">  664</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( 1 == facename || 5 == facename ) {</div>
 <div class="line"><span class="lineno">  665</span>      test = 0;</div>
-<div class="line"><span class="lineno">  666</span>      value = 0.;</div>
+<div class="line"><span class="lineno">  666</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  667</span>    }</div>
 <div class="line"><span class="lineno">  668</span>  }</div>
 <div class="line"><span class="lineno">  669</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;V&quot;</span> ) || !strcmp ( name, <span class="stringliteral">&quot;W&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  670</span>    <span class="keywordflow">if</span> ( 1 == facename || 5 == facename ) {</div>
 <div class="line"><span class="lineno">  671</span>      test = 0;</div>
-<div class="line"><span class="lineno">  672</span>      value = 0.;</div>
+<div class="line"><span class="lineno">  672</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  673</span>    }</div>
 <div class="line"><span class="lineno">  674</span>  }</div>
 <div class="line"><span class="lineno">  675</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;PS&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  676</span>    test = 0;</div>
-<div class="line"><span class="lineno">  677</span>    value = 0.;</div>
+<div class="line"><span class="lineno">  677</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  678</span>    <span class="keywordflow">if</span> ( 1 == facename ) {</div>
-<div class="line"><span class="lineno">  679</span>      value = ( 12500 + 2500 * sin ( 2 * <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> * time ) ) * ramp;</div>
+<div class="line"><span class="lineno">  679</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = ( 12500 + 2500 * sin ( 2 * <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#a4e36555c8609254715858261f34dfd94">PI</a> * time ) ) * ramp;</div>
 <div class="line"><span class="lineno">  680</span>      <span class="comment">//value = 13335 * ramp;</span></div>
 <div class="line"><span class="lineno">  681</span>    }</div>
 <div class="line"><span class="lineno">  682</span>  }</div>
 <div class="line"><span class="lineno">  683</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;PF&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  684</span>    test = 0;</div>
-<div class="line"><span class="lineno">  685</span>    value = 0.;</div>
+<div class="line"><span class="lineno">  685</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">  686</span>  }</div>
 <div class="line"><span class="lineno">  687</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !strcmp ( name, <span class="stringliteral">&quot;DX&quot;</span> ) || !strcmp ( name, <span class="stringliteral">&quot;DY&quot;</span> ) || !strcmp ( name, <span class="stringliteral">&quot;DZ&quot;</span> ) ) {</div>
 <div class="line"><span class="lineno">  688</span>    <span class="keywordflow">if</span> ( 5 == facename ) {</div>
 <div class="line"><span class="lineno">  689</span>      test = 0;</div>
-<div class="line"><span class="lineno">  690</span>      value = 0;</div>
+<div class="line"><span class="lineno">  690</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0;</div>
 <div class="line"><span class="lineno">  691</span>    }</div>
 <div class="line"><span class="lineno">  692</span>  }</div>
 <div class="line"><span class="lineno">  693</span> </div>

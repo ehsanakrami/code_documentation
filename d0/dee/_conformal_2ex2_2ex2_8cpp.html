@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/Conformal/ex2/ex2.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/Conformal/ex2/ex2.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -305,7 +305,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  377</span>      <span class="keywordtype">unsigned</span> iXDof  = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ace44edec2dc2ffb42c0456f03fa227ff">GetSolutionDof</a> (i, iel, xType);</div>
 <div class="line"><span class="lineno">  378</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> K = 0; K &lt; <a class="code hl_variable" href="../../d2/d47/_nitsche_2ex1_2ex1_8cpp.html#a2d74540095f3eb8232f3cdefa65b6c61">DIM</a>; K++) {</div>
 <div class="line"><span class="lineno">  379</span>        </div>
-<div class="line"><span class="lineno">  380</span>        solxHat[K][i] = (*msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#ac436cfb1f4caaec0c4335358ff8a51d8">_topology</a>-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[K]) (iXDof) + (<a class="code hl_variable" href="../../d0/dee/_conformal_2ex2_2ex2_8cpp.html#a57451d202e70f5eafc93a3cc5e6c0c6e">counter</a> != 0) * solDx[K][i].value();</div>
+<div class="line"><span class="lineno">  380</span>        solxHat[K][i] = (*msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#ac436cfb1f4caaec0c4335358ff8a51d8">_topology</a>-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[K]) (iXDof) + (<a class="code hl_variable" href="../../d0/dee/_conformal_2ex2_2ex2_8cpp.html#a57451d202e70f5eafc93a3cc5e6c0c6e">counter</a> != 0) * solDx[K][i].<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>();</div>
 <div class="line"><span class="lineno">  381</span>        solx[K][i] = (*msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#ac436cfb1f4caaec0c4335358ff8a51d8">_topology</a>-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[K]) (iXDof) + solDx[K][i];</div>
 <div class="line"><span class="lineno">  382</span>      }</div>
 <div class="line"><span class="lineno">  383</span>    }</div>
@@ -616,6 +616,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1elem_html"><div class="ttname"><a href="../../db/d2e/classfemus_1_1elem.html">femus::elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/_elem_8hpp_source.html#l00040">Elem.hpp:40</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a7216a0536acdac46863fd54b0320a8e6"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">femus::s</a></div><div class="ttdeci">double * s</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dc5/_f_s_i_time_dependent_assembly_supg_g_c_l_8hpp_source.html#l00036">FSITimeDependentAssemblySupgGCL.hpp:36</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a865501b20d45caeb12e3f10935e38cf6"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">femus::ig</a></div><div class="ttdeci">const unsigned ig[N_GEOM_ELS][6][9]</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/_elem_8hpp_source.html#l00345">Elem.hpp:345</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -952,7 +953,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_conformal_2ex2_2ex2_8cpp_html_a60b8a148a388b1ce7cf99830fb343c2d"><div class="ttname"><a href="../../d0/dee/_conformal_2ex2_2ex2_8cpp.html#a60b8a148a388b1ce7cf99830fb343c2d">SetBoundaryCondition</a></div><div class="ttdeci">bool SetBoundaryCondition(const std::vector&lt; double &gt; &amp;x, const char solName[], double &amp;value, const int faceName, const double time)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dee/_conformal_2ex2_2ex2_8cpp_source.html#l00030">ex2.cpp:30</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3">SECOND</a></div><div class="ttdeci">@ SECOND</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00018">FElemTypeEnum.hpp:17</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a></div><div class="ttdeci">@ LAGRANGE</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00005">FElemTypeEnum.hpp:5</a></div></div>
-<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00040">FemusDefault.hpp:40</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00041">FemusDefault.hpp:41</a></div></div>
 <div class="ttc" id="a_i_s_m_2ex4_2ex4_8cpp_html_a0aca793820b6ff7705450e2043256938"><div class="ttname"><a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#a0aca793820b6ff7705450e2043256938">numberOfUniformLevels</a></div><div class="ttdeci">unsigned numberOfUniformLevels</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp_source.html#l00089">ex4.cpp:89</a></div></div>
 <div class="ttc" id="a_writer_enum_8hpp_html_a18b827c3c1f62b8a57febdcad0c871a8a37fb55ddbbe1465cec5f3d154db73e67"><div class="ttname"><a href="../../db/d1c/_writer_enum_8hpp.html#a18b827c3c1f62b8a57febdcad0c871a8a37fb55ddbbe1465cec5f3d154db73e67">VTK</a></div><div class="ttdeci">@ VTK</div><div class="ttdef"><b>Definition</b> <a href="../../db/d1c/_writer_enum_8hpp_source.html#l00004">WriterEnum.hpp:4</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_femus_init_html"><div class="ttname"><a href="../../da/d5e/classfemus_1_1_femus_init.html">femus::FemusInit</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d7c/_femus_init_8hpp_source.html#l00049">FemusInit.hpp:49</a></div></div>
@@ -1022,7 +1023,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>                                                                                                                                      {</div>
 <div class="line"><span class="lineno">   31</span> </div>
 <div class="line"><span class="lineno">   32</span>  <span class="keywordtype">bool</span> dirichlet = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   33</span>  value = 0.;</div>
+<div class="line"><span class="lineno">   33</span>  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   34</span> </div>
 <div class="line"><span class="lineno">   35</span><span class="comment">//   if (!strcmp (solName, &quot;Dx1&quot;)) {</span></div>
 <div class="line"><span class="lineno">   36</span><span class="comment">//     if (1 == faceName ) {</span></div>
@@ -1043,7 +1044,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   51</span>     dirichlet = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   52</span>    }</div>
 <div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (4 == faceName) {</div>
-<div class="line"><span class="lineno">   54</span>      value = 0.5 * sin (x[1] / 0.5 * acos (-1.));</div>
+<div class="line"><span class="lineno">   54</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.5 * sin (x[1] / 0.5 * acos (-1.));</div>
 <div class="line"><span class="lineno">   55</span>    }</div>
 <div class="line"><span class="lineno">   56</span>  }</div>
 <div class="line"><span class="lineno">   57</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (solName, <span class="stringliteral">&quot;Dx2&quot;</span>)) {</div>
@@ -1058,7 +1059,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   66</span>      dirichlet = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   67</span>    }</div>
 <div class="line"><span class="lineno">   68</span>    <span class="keywordflow">if</span> (4 == faceName) {</div>
-<div class="line"><span class="lineno">   69</span>      value = 0.5 * sin (x[1] / 0.5 * acos (-1.));</div>
+<div class="line"><span class="lineno">   69</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.5 * sin (x[1] / 0.5 * acos (-1.));</div>
 <div class="line"><span class="lineno">   70</span>    }</div>
 <div class="line"><span class="lineno">   71</span>  }</div>
 <div class="line"><span class="lineno">   72</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (solName, <span class="stringliteral">&quot;U2&quot;</span>)) {</div>

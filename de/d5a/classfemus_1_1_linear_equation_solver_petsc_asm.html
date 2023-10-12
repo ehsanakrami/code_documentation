@@ -3808,7 +3808,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  163</span>      <span class="keywordflow">if</span> (on_or_off != <span class="stringliteral">&quot;on&quot;</span> &amp;&amp; on_or_off != <span class="stringliteral">&quot;off&quot;</span>)</div>
 <div class="line"><span class="lineno">  164</span>      { std::cout &lt;&lt; <span class="stringliteral">&quot;Must be either on or off diagonal&quot;</span> &lt;&lt; std::endl; abort(); }     </div>
 <div class="line"><span class="lineno">  165</span>          </div>
-<div class="line"><span class="lineno">  166</span>   std::string filename =  filename_base + on_or_off + <span class="stringliteral">&quot;.txt&quot;</span>;</div>
+<div class="line"><span class="lineno">  166</span>   std::string <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> =  filename_base + on_or_off + <span class="stringliteral">&quot;.txt&quot;</span>;</div>
 <div class="line"><span class="lineno">  167</span>      std::ofstream file_pr;</div>
 <div class="line"><span class="lineno">  168</span>      file_pr.open (filename);</div>
 <div class="line"><span class="lineno">  169</span>      </div>
@@ -3830,6 +3830,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  185</span>  </div>
 <div class="line"><span class="lineno">  186</span>  </div>
 <div class="line"><span class="lineno">  187</span>  }</div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a8b9aa5b5b104ffacbc115e9ba3c22e6a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">build_edges_of_volumes.filename</a></div><div class="ttdeci">filename</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00009">build_edges_of_volumes.py:9</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3953,13 +3954,14 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/db4/_linear_equation_solver_petsc_8cpp_source.html#l00415">415</a> of file <a class="el" href="../../db/db4/_linear_equation_solver_petsc_8cpp_source.html">LinearEquationSolverPetsc.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  415</span>                                                         {</div>
-<div class="line"><span class="lineno">  416</span>    std::vector&lt; PetscScalar &gt; value (<a class="code hl_variable" href="../../dd/de2/classfemus_1_1_linear_equation_solver_petsc.html#a8d20a43613ef1fa9c346150c26e8340e">_bdcIndex</a>.size(), 0.);</div>
+<div class="line"><span class="lineno">  416</span>    std::vector&lt; PetscScalar &gt; <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> (<a class="code hl_variable" href="../../dd/de2/classfemus_1_1_linear_equation_solver_petsc.html#a8d20a43613ef1fa9c346150c26e8340e">_bdcIndex</a>.size(), 0.);</div>
 <div class="line"><span class="lineno">  417</span>    Vec RES = (<span class="keyword">static_cast&lt;</span> PetscVector* <span class="keyword">&gt;</span> (<a class="code hl_variable" href="../../da/de0/classfemus_1_1_linear_equation.html#a20ac8999e714492516cd8a2be53fb54f">_RES</a>))-&gt;vec();</div>
 <div class="line"><span class="lineno">  418</span>    VecSetValues (RES, <a class="code hl_variable" href="../../dd/de2/classfemus_1_1_linear_equation_solver_petsc.html#a8d20a43613ef1fa9c346150c26e8340e">_bdcIndex</a>.size(), &amp;<a class="code hl_variable" href="../../dd/de2/classfemus_1_1_linear_equation_solver_petsc.html#a8d20a43613ef1fa9c346150c26e8340e">_bdcIndex</a>[0], &amp;value[0],  INSERT_VALUES);</div>
 <div class="line"><span class="lineno">  419</span> </div>
 <div class="line"><span class="lineno">  420</span>    VecAssemblyBegin (RES);</div>
 <div class="line"><span class="lineno">  421</span>    VecAssemblyEnd (RES);</div>
 <div class="line"><span class="lineno">  422</span>  }</div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5266,8 +5268,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/algebra/<a class="el" href="../../dd/d2a/_linear_equation_solver_petsc_asm_8hpp_source.html">LinearEquationSolverPetscAsm.hpp</a></li>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/algebra/<a class="el" href="../../d2/da3/_linear_equation_solver_petsc_asm_8cpp_source.html">LinearEquationSolverPetscAsm.cpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/algebra/<a class="el" href="../../dd/d2a/_linear_equation_solver_petsc_asm_8hpp_source.html">LinearEquationSolverPetscAsm.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/algebra/<a class="el" href="../../d2/da3/_linear_equation_solver_petsc_asm_8cpp_source.html">LinearEquationSolverPetscAsm.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

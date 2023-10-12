@@ -368,6 +368,12 @@ var annotated_dup =
       [ "WedgeQuadratic", "d6/d9f/classfemus_1_1_wedge_quadratic.html", "d6/d9f/classfemus_1_1_wedge_quadratic" ],
       [ "Writer", "d8/dab/classfemus_1_1_writer.html", "d8/dab/classfemus_1_1_writer" ]
     ] ],
+    [ "karthik", "d3/d5b/namespacekarthik.html", [
+      [ "poisson_equation", "d6/d4c/classkarthik_1_1poisson__equation.html", "d6/d4c/classkarthik_1_1poisson__equation" ]
+    ] ],
+    [ "shankar", "d7/d72/namespaceshankar.html", [
+      [ "poisson_equation", "de/d9b/classshankar_1_1poisson__equation.html", "de/d9b/classshankar_1_1poisson__equation" ]
+    ] ],
     [ "array", "d2/d41/classarray.html", "d2/d41/classarray" ],
     [ "GMPM", "d7/dfa/class_g_m_p_m.html", "d7/dfa/class_g_m_p_m" ],
     [ "MagnFieldExtLagMult", "d8/d57/class_magn_field_ext_lag_mult.html", "d8/d57/class_magn_field_ext_lag_mult" ],

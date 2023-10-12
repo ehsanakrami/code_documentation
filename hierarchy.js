@@ -274,7 +274,8 @@ var hierarchy =
     [ "femus::FemusInputParser< double >", "d5/dbd/classfemus_1_1_femus_input_parser.html", null ],
     [ "femus::FieldSplitTree", "d9/d1f/classfemus_1_1_field_split_tree.html", null ],
     [ "femus::Files", "d6/d0b/classfemus_1_1_files.html", null ],
-    [ "femus::Math::Function< type >", "da/d19/classfemus_1_1_math_1_1_function.html", [
+    [ "femus::Math::Function< type >", "da/d19/classfemus_1_1_math_1_1_function.html", null ],
+    [ "Math::Function", null, [
       [ "Domain_L_shaped::Function_NonZero_on_boundary_2< type >", "da/dee/class_domain___l__shaped_1_1_function___non_zero__on__boundary__2.html", null ],
       [ "Domain_square_01by01::Function_NonZero_on_boundary_1< type >", "d5/d81/class_domain__square__01by01_1_1_function___non_zero__on__boundary__1.html", null ],
       [ "Domain_square_01by01::Function_Zero_on_boundary_1< type >", "d8/d94/class_domain__square__01by01_1_1_function___zero__on__boundary__1.html", null ],
@@ -378,6 +379,8 @@ var hierarchy =
     [ "femus::Phi< real_num_mov >", "dd/d8f/classfemus_1_1_phi.html", null ],
     [ "femus::point_gauss", "de/d84/classfemus_1_1point__gauss.html", null ],
     [ "femus::poisson_equation", "d5/dbd/classfemus_1_1poisson__equation.html", null ],
+    [ "karthik::poisson_equation", "d6/d4c/classkarthik_1_1poisson__equation.html", null ],
+    [ "shankar::poisson_equation", "de/d9b/classshankar_1_1poisson__equation.html", null ],
     [ "femus::Preconditioner", "d9/d80/classfemus_1_1_preconditioner.html", [
       [ "femus::PetscPreconditioner", "d4/d01/classfemus_1_1_petsc_preconditioner.html", null ]
     ] ],
@@ -423,8 +426,8 @@ var hierarchy =
       [ "femus::PetscMatrix", "da/dcf/classfemus_1_1_petsc_matrix.html", null ]
     ] ],
     [ "Sphere", "d3/d62/class_sphere.html", null ],
-    [ "femus::Parallel::status", "db/ded/namespacefemus_1_1_parallel.html#d8/d6c/structfemus_1_1_parallel_1_1status", null ],
     [ "femus::Parallel::Status", "d1/d0e/classfemus_1_1_parallel_1_1_status.html", null ],
+    [ "femus::Parallel::status", "db/ded/namespacefemus_1_1_parallel.html#d8/d6c/structfemus_1_1_parallel_1_1status", null ],
     [ "Stokes", "d7/d84/_p_c_field_split_2ex6_2ex6_8cpp.html#dd/dbe/struct_stokes", null ],
     [ "femus::System", "d5/dc7/classfemus_1_1_system.html", [
       [ "femus::ExplicitSystem", "da/da1/classfemus_1_1_explicit_system.html", [

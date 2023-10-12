@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/MPM_FSI/include/mpmFsi2.hpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/MPM_FSI/include/mpmFsi2.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -902,11 +902,11 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  859</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nDofs; i++) {</div>
 <div class="line"><span class="lineno">  860</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
 <div class="line"><span class="lineno">  861</span>        rhs[ i +  k * nDofs ] = -aRhsD[k][i].value();</div>
-<div class="line"><span class="lineno">  862</span>        rhs[ i + (k + <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>) * nDofs ] = -aRhsV[k][i].value();</div>
+<div class="line"><span class="lineno">  862</span>        rhs[ i + (k + <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>) * nDofs ] = -aRhsV[k][i].<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>();</div>
 <div class="line"><span class="lineno">  863</span>      }</div>
 <div class="line"><span class="lineno">  864</span>    }</div>
 <div class="line"><span class="lineno">  865</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nDofsP; i++) {</div>
-<div class="line"><span class="lineno">  866</span>      rhs[ i + (2 * <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>) * nDofs ] = -aRhsP[i].value();</div>
+<div class="line"><span class="lineno">  866</span>      rhs[ i + (2 * <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>) * nDofs ] = -aRhsP[i].<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>();</div>
 <div class="line"><span class="lineno">  867</span>    }</div>
 <div class="line"><span class="lineno">  868</span> </div>
 <div class="line"><span class="lineno">  869</span>    myRES-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a0440021963af01ac49a6f02df562e44b">add_vector_blocked</a> (rhs, sysDofsAll);</div>
@@ -1021,6 +1021,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="ampm_fsi2_8hpp_html_abb2734287043c22e1b7876d6c1962aba"><div class="ttname"><a href="../../d3/df2/mpm_fsi2_8hpp.html#abb2734287043c22e1b7876d6c1962aba">fluidLine</a></div><div class="ttdeci">Line * fluidLine</div><div class="ttdef"><b>Definition</b> <a href="../../d3/df2/mpm_fsi2_8hpp_source.html#l00013">mpmFsi2.hpp:13</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a7216a0536acdac46863fd54b0320a8e6"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">femus::s</a></div><div class="ttdeci">double * s</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dc5/_f_s_i_time_dependent_assembly_supg_g_c_l_8hpp_source.html#l00036">FSITimeDependentAssemblySupgGCL.hpp:36</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a865501b20d45caeb12e3f10935e38cf6"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">femus::ig</a></div><div class="ttdeci">const unsigned ig[N_GEOM_ELS][6][9]</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/_elem_8hpp_source.html#l00345">Elem.hpp:345</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2677,13 +2678,13 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno"> 1778</span> </div>
 <div class="line"><span class="lineno"> 1779</span>  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> isize = 0; isize &lt; numberOfNodes; isize++) {</div>
 <div class="line"><span class="lineno"> 1780</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno"> 1781</span>      <span class="keywordtype">double</span> value = 0.;</div>
+<div class="line"><span class="lineno"> 1781</span>      <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno"> 1782</span>      MPI_Allreduce (&amp;particleCoordAndMore[isize][k], &amp;value, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);</div>
-<div class="line"><span class="lineno"> 1783</span>      particleCoordAndMore[isize][k] = value;</div>
+<div class="line"><span class="lineno"> 1783</span>      particleCoordAndMore[isize][k] = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno"> 1784</span>    }</div>
-<div class="line"><span class="lineno"> 1785</span>    <span class="keywordtype">double</span> value = 0.;</div>
+<div class="line"><span class="lineno"> 1785</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno"> 1786</span>    MPI_Allreduce (&amp;particleCoordAndMore[isize][<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>], &amp;value, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);</div>
-<div class="line"><span class="lineno"> 1787</span>    particleCoordAndMore[isize][<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>] = value;</div>
+<div class="line"><span class="lineno"> 1787</span>    particleCoordAndMore[isize][<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>] = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno"> 1788</span>  }</div>
 <div class="line"><span class="lineno"> 1789</span> </div>
 <div class="line"><span class="lineno"> 1790</span><span class="comment">//     std::cout&lt;&lt;&quot;iproc = &quot; &lt;&lt; iproc &lt;&lt; std::endl;</span></div>

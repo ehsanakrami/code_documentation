@@ -526,7 +526,8 @@ Private Attributes</h2></td></tr>
 <p>Reimplemented from <a class="el" href="../../d8/dab/classfemus_1_1_writer.html#a17a6789b58e05989d74698904346f699">femus::Writer</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d84/_g_m_v_writer_8hpp_source.html#l00053">53</a> of file <a class="el" href="../../d6/d84/_g_m_v_writer_8hpp_source.html">GMVWriter.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>{ <a class="code hl_variable" href="../../d1/d28/classfemus_1_1_g_m_v_writer.html#aa57f85315e3e6394b41f0b5c32f03fff">_debugOutput</a> = value;}</div>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>{ <a class="code hl_variable" href="../../d1/d28/classfemus_1_1_g_m_v_writer.html#aa57f85315e3e6394b41f0b5c32f03fff">_debugOutput</a> = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;}</div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -812,8 +813,8 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   54</span>    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">   55</span>      filename_prefix = <span class="stringliteral">&quot;mesh&quot;</span>;</div>
 <div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>    std::ostringstream filename;</div>
-<div class="line"><span class="lineno">   58</span>    filename &lt;&lt; output_path &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; filename_prefix &lt;&lt; <span class="stringliteral">&quot;.level&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d8/dab/classfemus_1_1_writer.html#ad9e4841295416233d0943775111fc1d3">_gridn</a> &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; time_step &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; order &lt;&lt; <span class="stringliteral">&quot;.gmv&quot;</span>;</div>
+<div class="line"><span class="lineno">   57</span>    std::ostringstream <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>;</div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> &lt;&lt; output_path &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; filename_prefix &lt;&lt; <span class="stringliteral">&quot;.level&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d8/dab/classfemus_1_1_writer.html#ad9e4841295416233d0943775111fc1d3">_gridn</a> &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; time_step &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; order &lt;&lt; <span class="stringliteral">&quot;.gmv&quot;</span>;</div>
 <div class="line"><span class="lineno">   59</span> </div>
 <div class="line"><span class="lineno">   60</span>    std::ofstream fout;</div>
 <div class="line"><span class="lineno">   61</span> </div>
@@ -821,12 +822,12 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   63</span>      fout.rdbuf();   <span class="comment">//redirect to dev_null</span></div>
 <div class="line"><span class="lineno">   64</span>    }</div>
 <div class="line"><span class="lineno">   65</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   66</span>      fout.open( filename.str().c_str() );</div>
+<div class="line"><span class="lineno">   66</span>      fout.open( <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str().c_str() );</div>
 <div class="line"><span class="lineno">   67</span>      <span class="keywordflow">if</span>( fout.is_open() ) {</div>
-<div class="line"><span class="lineno">   68</span>        std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot; The output is printed to file &quot;</span> &lt;&lt; filename.str() &lt;&lt; <span class="stringliteral">&quot; in GMV format&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   68</span>        std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot; The output is printed to file &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str() &lt;&lt; <span class="stringliteral">&quot; in GMV format&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   69</span>      }</div>
 <div class="line"><span class="lineno">   70</span>      <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   71</span>        std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot; The output file &quot;</span> &lt;&lt; filename.str() &lt;&lt; <span class="stringliteral">&quot; cannot be opened.\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   71</span>        std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot; The output file &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str() &lt;&lt; <span class="stringliteral">&quot; cannot be opened.\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   72</span>        abort();</div>
 <div class="line"><span class="lineno">   73</span>      }</div>
 <div class="line"><span class="lineno">   74</span>    }</div>
@@ -1076,6 +1077,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1_writer_html_a980ede81568e7ff655ee380e92d3a57a"><div class="ttname"><a href="../../d8/dab/classfemus_1_1_writer.html#a980ede81568e7ff655ee380e92d3a57a">femus::Writer::_ml_sol</a></div><div class="ttdeci">MultiLevelSolution * _ml_sol</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d2f/_writer_8hpp_source.html#l00102">Writer.hpp:102</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_writer_html_ad9e4841295416233d0943775111fc1d3"><div class="ttname"><a href="../../d8/dab/classfemus_1_1_writer.html#ad9e4841295416233d0943775111fc1d3">femus::Writer::_gridn</a></div><div class="ttdeci">int _gridn</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d2f/_writer_8hpp_source.html#l00107">Writer.hpp:107</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_writer_html_afbf272e5db3b204bb2c4679d19096688"><div class="ttname"><a href="../../d8/dab/classfemus_1_1_writer.html#afbf272e5db3b204bb2c4679d19096688">femus::Writer::_ml_mesh</a></div><div class="ttdeci">MultiLevelMesh * _ml_mesh</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d2f/_writer_8hpp_source.html#l00105">Writer.hpp:105</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a8b9aa5b5b104ffacbc115e9ba3c22e6a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">build_edges_of_volumes.filename</a></div><div class="ttdeci">filename</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00009">build_edges_of_volumes.py:9</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a1786af08b95428d62dc20935c9ecfea2"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a1786af08b95428d62dc20935c9ecfea2">femus::NVE</a></div><div class="ttdeci">const unsigned NVE[N_GEOM_ELS][5]</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/_elem_8hpp_source.html#l00314">Elem.hpp:314</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1531,8 +1533,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/03_solution/01_output/<a class="el" href="../../d6/d84/_g_m_v_writer_8hpp_source.html">GMVWriter.hpp</a></li>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/03_solution/01_output/<a class="el" href="../../d1/d33/_g_m_v_writer_8cpp_source.html">GMVWriter.cpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/03_solution/01_output/<a class="el" href="../../d6/d84/_g_m_v_writer_8hpp_source.html">GMVWriter.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/03_solution/01_output/<a class="el" href="../../d1/d33/_g_m_v_writer_8cpp_source.html">GMVWriter.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

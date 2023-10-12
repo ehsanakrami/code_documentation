@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/MPM_FEM/ex1/ex1.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/MPM_FEM/ex1/ex1.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -467,10 +467,10 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  383</span>      system.AttachGetTimeIntervalFunction(<a class="code hl_function" href="../../d6/d57/_m_p_m___f_e_m_2ex1_2ex1_8cpp.html#ad47bed7d7095b356056b518e0842c75a">SetVariableTimeStep</a>);</div>
 <div class="line"><span class="lineno">  384</span>     </div>
 <div class="line"><span class="lineno">  385</span>      </div>
-<div class="line"><span class="lineno">  386</span>      std::ostringstream filename;</div>
-<div class="line"><span class="lineno">  387</span>      filename &lt;&lt;outputFolder.str()&lt;&lt; <span class="stringliteral">&quot;/centerOfMass.txt&quot;</span>;</div>
+<div class="line"><span class="lineno">  386</span>      std::ostringstream <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>;</div>
+<div class="line"><span class="lineno">  387</span>      <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> &lt;&lt;outputFolder.str()&lt;&lt; <span class="stringliteral">&quot;/centerOfMass.txt&quot;</span>;</div>
 <div class="line"><span class="lineno">  388</span>      std::ofstream fout;</div>
-<div class="line"><span class="lineno">  389</span>      fout.open( filename.str().c_str() );</div>
+<div class="line"><span class="lineno">  389</span>      fout.open( <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str().c_str() );</div>
 <div class="line"><span class="lineno">  390</span>      fout &lt;&lt; <span class="stringliteral">&quot;iteration, time, analytic, &quot;</span>;</div>
 <div class="line"><span class="lineno">  391</span>      fout &lt;&lt; <span class="stringliteral">&quot;E&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../d0/d40/fsi_time_dep_m_g_8cpp.html#a690064f1b48fbafe61db31c7960292bb">simulation</a>.first  &lt;&lt; <span class="stringliteral">&quot;Level&quot;</span>&lt;&lt;<a class="code hl_variable" href="../../d0/d40/fsi_time_dep_m_g_8cpp.html#a690064f1b48fbafe61db31c7960292bb">simulation</a>.second &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  392</span>      fout &lt;&lt; <span class="stringliteral">&quot;0, 0., 0., 0.&quot;</span> &lt;&lt; std::endl;</div>
@@ -517,10 +517,10 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  433</span>    }</div>
 <div class="line"><span class="lineno">  434</span>  }</div>
 <div class="line"><span class="lineno">  435</span>  </div>
-<div class="line"><span class="lineno">  436</span>  std::ostringstream filename;</div>
-<div class="line"><span class="lineno">  437</span>  filename &lt;&lt; <span class="stringliteral">&quot;./centerOfMass.txt&quot;</span>;</div>
+<div class="line"><span class="lineno">  436</span>  std::ostringstream <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>;</div>
+<div class="line"><span class="lineno">  437</span>  <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> &lt;&lt; <span class="stringliteral">&quot;./centerOfMass.txt&quot;</span>;</div>
 <div class="line"><span class="lineno">  438</span>  std::ofstream fout;</div>
-<div class="line"><span class="lineno">  439</span>  fout.open( filename.str().c_str() );</div>
+<div class="line"><span class="lineno">  439</span>  fout.open( <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str().c_str() );</div>
 <div class="line"><span class="lineno">  440</span>  fout &lt;&lt; <span class="stringliteral">&quot;iteration, time, analytic, &quot;</span>;</div>
 <div class="line"><span class="lineno">  441</span>  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> mat = mat0; mat &lt; matn; mat++){</div>
 <div class="line"><span class="lineno">  442</span>    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> nl = nl0; nl &lt; nln; nl++) {</div>
@@ -587,6 +587,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="ampm_fem_8hpp_html_a9cacb6e58bfbb75917b4db134476686d"><div class="ttname"><a href="../../d1/dcf/mpm_fem_8hpp.html#a9cacb6e58bfbb75917b4db134476686d">scalingFactor1</a></div><div class="ttdeci">double scalingFactor1</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dcf/mpm_fem_8hpp_source.html#l00009">mpmFem.hpp:9</a></div></div>
 <div class="ttc" id="ampm_fem_8hpp_html_aa0fdc51a36f86cd151f897c5bc1c121e"><div class="ttname"><a href="../../d1/dcf/mpm_fem_8hpp.html#aa0fdc51a36f86cd151f897c5bc1c121e">linea</a></div><div class="ttdeci">Line * linea</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dcf/mpm_fem_8hpp_source.html#l00012">mpmFem.hpp:12</a></div></div>
 <div class="ttc" id="ampm_fem_8hpp_html_af96698c1b5e86b79e9a0ae9b766ff8c9"><div class="ttname"><a href="../../d1/dcf/mpm_fem_8hpp.html#af96698c1b5e86b79e9a0ae9b766ff8c9">scalingFactor2</a></div><div class="ttdeci">double scalingFactor2</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dcf/mpm_fem_8hpp_source.html#l00010">mpmFem.hpp:10</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a8b9aa5b5b104ffacbc115e9ba3c22e6a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">build_edges_of_volumes.filename</a></div><div class="ttdeci">filename</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00009">build_edges_of_volumes.py:9</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a02e050d6adc3998272b7cd5fa4e7dc46"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">femus::theta</a></div><div class="ttdeci">double * theta</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dc5/_f_s_i_time_dependent_assembly_supg_g_c_l_8hpp_source.html#l00037">FSITimeDependentAssemblySupgGCL.hpp:37</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a7216a0536acdac46863fd54b0320a8e6"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">femus::s</a></div><div class="ttdeci">double * s</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dc5/_f_s_i_time_dependent_assembly_supg_g_c_l_8hpp_source.html#l00036">FSITimeDependentAssemblySupgGCL.hpp:36</a></div></div>
 <div class="ttc" id="anamespacefemus_html_ab218007e286871c1b8c469f8e78a96b4"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#ab218007e286871c1b8c469f8e78a96b4">femus::PrintLine</a></div><div class="ttdeci">void PrintLine(const std::string output_path, const std::string file, const std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; &amp;xn, const unsigned &amp;step)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d29/_polynomial_bases_8cpp_source.html#l01952">PolynomialBases.cpp:1952</a></div></div>
@@ -641,37 +642,38 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
 <div class="line"><span class="lineno">   41</span>    </div>
 <div class="line"><span class="lineno">   42</span>  <span class="keywordtype">bool</span> test = 1; <span class="comment">//dirichlet</span></div>
-<div class="line"><span class="lineno">   43</span>  value = 0.;</div>
+<div class="line"><span class="lineno">   43</span>  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   44</span> </div>
 <div class="line"><span class="lineno">   45</span>  <span class="keywordflow">if</span>(!strcmp(name, <span class="stringliteral">&quot;DY&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span>(2 == facename || 3 == facename || 4 == facename) {</div>
 <div class="line"><span class="lineno">   47</span>      test = 0;</div>
-<div class="line"><span class="lineno">   48</span>      value = 0;</div>
+<div class="line"><span class="lineno">   48</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0;</div>
 <div class="line"><span class="lineno">   49</span>    }</div>
 <div class="line"><span class="lineno">   50</span>  }</div>
 <div class="line"><span class="lineno">   51</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name, <span class="stringliteral">&quot;DX&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span>(2 == facename || 3 == facename || 4 == facename) {</div>
 <div class="line"><span class="lineno">   53</span>      test = 0;</div>
-<div class="line"><span class="lineno">   54</span>      value = 0;</div>
+<div class="line"><span class="lineno">   54</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0;</div>
 <div class="line"><span class="lineno">   55</span>    }</div>
 <div class="line"><span class="lineno">   56</span>  }</div>
 <div class="line"><span class="lineno">   57</span>  </div>
 <div class="line"><span class="lineno">   58</span>  <span class="keywordflow">if</span>(!strcmp(name, <span class="stringliteral">&quot;VY&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   59</span>    <span class="keywordflow">if</span>(2 == facename || 3 == facename || 4 == facename) {</div>
 <div class="line"><span class="lineno">   60</span>      test = 0;</div>
-<div class="line"><span class="lineno">   61</span>      value = 0;</div>
+<div class="line"><span class="lineno">   61</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0;</div>
 <div class="line"><span class="lineno">   62</span>    }</div>
 <div class="line"><span class="lineno">   63</span>  }</div>
 <div class="line"><span class="lineno">   64</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name, <span class="stringliteral">&quot;VX&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   65</span>    <span class="keywordflow">if</span>(2 == facename || 3 == facename || 4 == facename ) {</div>
 <div class="line"><span class="lineno">   66</span>      test = 0;</div>
-<div class="line"><span class="lineno">   67</span>      value = 0;</div>
+<div class="line"><span class="lineno">   67</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0;</div>
 <div class="line"><span class="lineno">   68</span>    }</div>
 <div class="line"><span class="lineno">   69</span>  }</div>
 <div class="line"><span class="lineno">   70</span> </div>
 <div class="line"><span class="lineno">   71</span>  <span class="keywordflow">return</span> test;</div>
 <div class="line"><span class="lineno">   72</span> </div>
 <div class="line"><span class="lineno">   73</span>}</div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

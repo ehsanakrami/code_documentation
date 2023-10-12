@@ -9,7 +9,7 @@ var searchData=
   ['petscvector_6',['PetscVector',['../d2/d9c/classfemus_1_1_petsc_vector.html',1,'femus']]],
   ['phi_7',['Phi',['../dd/d8f/classfemus_1_1_phi.html',1,'femus']]],
   ['point_5fgauss_8',['point_gauss',['../de/d84/classfemus_1_1point__gauss.html',1,'femus']]],
-  ['poisson_5fequation_9',['poisson_equation',['../d5/dbd/classfemus_1_1poisson__equation.html',1,'femus']]],
+  ['poisson_5fequation_9',['poisson_equation',['../d5/dbd/classfemus_1_1poisson__equation.html',1,'femus::poisson_equation'],['../d6/d4c/classkarthik_1_1poisson__equation.html',1,'karthik::poisson_equation'],['../de/d9b/classshankar_1_1poisson__equation.html',1,'shankar::poisson_equation']]],
   ['preconditioner_10',['Preconditioner',['../d9/d80/classfemus_1_1_preconditioner.html',1,'femus']]],
   ['pressure_11',['Pressure',['../d2/da5/class_pressure.html',1,'']]],
   ['pressureadj_12',['PressureAdj',['../d4/d47/class_pressure_adj.html',1,'']]],

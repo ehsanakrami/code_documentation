@@ -1392,7 +1392,8 @@ template&lt;class ARRAY_TYPE &gt; </div>
 <p>Reimplemented from <a class="el" href="../../d8/dab/classfemus_1_1_writer.html#a17a6789b58e05989d74698904346f699">femus::Writer</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/df7/_v_t_k_writer_8hpp_source.html#l00072">72</a> of file <a class="el" href="../../d8/df7/_v_t_k_writer_8hpp_source.html">VTKWriter.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   72</span>{ <a class="code hl_variable" href="../../d4/d8d/classfemus_1_1_v_t_k_writer.html#a1b11e5e3b881a699285cf9e85fba6476">_debugOutput</a> = value; }</div>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>{ <a class="code hl_variable" href="../../d4/d8d/classfemus_1_1_v_t_k_writer.html#a1b11e5e3b881a699285cf9e85fba6476">_debugOutput</a> = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>; }</div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1974,12 +1975,12 @@ template&lt;class ARRAY_TYPE &gt; </div>
 <div class="line"><span class="lineno">  294</span> </div>
 <div class="line"><span class="lineno">  295</span>    std::ofstream fout;</div>
 <div class="line"><span class="lineno">  296</span> </div>
-<div class="line"><span class="lineno">  297</span>    std::ostringstream filename;</div>
-<div class="line"><span class="lineno">  298</span>    filename &lt;&lt; output_path &lt;&lt; <span class="stringliteral">&quot;./&quot;</span> &lt;&lt; dirnamePVTK &lt;&lt; filename_prefix &lt;&lt; level_name &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../dd/d90/classfemus_1_1_parallel_object.html#a15b46748a2e26bc263e3e6e4690e8a3b">_iproc</a> &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; time_step &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; order &lt;&lt; suffix_pre_extension &lt;&lt; <span class="stringliteral">&quot;.vtu&quot;</span>;</div>
+<div class="line"><span class="lineno">  297</span>    std::ostringstream <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>;</div>
+<div class="line"><span class="lineno">  298</span>    <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> &lt;&lt; output_path &lt;&lt; <span class="stringliteral">&quot;./&quot;</span> &lt;&lt; dirnamePVTK &lt;&lt; filename_prefix &lt;&lt; level_name &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; <a class="code hl_variable" href="../../dd/d90/classfemus_1_1_parallel_object.html#a15b46748a2e26bc263e3e6e4690e8a3b">_iproc</a> &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; time_step &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; order &lt;&lt; suffix_pre_extension &lt;&lt; <span class="stringliteral">&quot;.vtu&quot;</span>;</div>
 <div class="line"><span class="lineno">  299</span> </div>
-<div class="line"><span class="lineno">  300</span>    fout.open( filename.str().c_str() );</div>
+<div class="line"><span class="lineno">  300</span>    fout.open( <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str().c_str() );</div>
 <div class="line"><span class="lineno">  301</span>    <span class="keywordflow">if</span>( !fout.is_open() ) {</div>
-<div class="line"><span class="lineno">  302</span>      std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot; The output file &quot;</span> &lt;&lt; filename.str() &lt;&lt; <span class="stringliteral">&quot; cannot be opened.\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  302</span>      std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot; The output file &quot;</span> &lt;&lt; <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str() &lt;&lt; <span class="stringliteral">&quot; cannot be opened.\n&quot;</span>;</div>
 <div class="line"><span class="lineno">  303</span>      abort();</div>
 <div class="line"><span class="lineno">  304</span>    }</div>
 <div class="line"><span class="lineno">  305</span>    <span class="comment">// *********** open vtu streams - END *************</span></div>
@@ -2376,6 +2377,7 @@ template&lt;class ARRAY_TYPE &gt; </div>
 <div class="ttc" id="aclassfemus_1_1_v_t_k_writer_html_abf560a6a82c7c7e309e4b071d94bf543"><div class="ttname"><a href="../../d4/d8d/classfemus_1_1_v_t_k_writer.html#abf560a6a82c7c7e309e4b071d94bf543">femus::VTKWriter::print_all_sols</a></div><div class="ttdeci">bool print_all_sols(const std::vector&lt; std::string &gt; &amp;vars) const</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d3c/_v_t_k_writer_8cpp_source.html#l00218">VTKWriter.cpp:218</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_v_t_k_writer_html_ad740c9e547a616d0e1d53246e9292926"><div class="ttname"><a href="../../d4/d8d/classfemus_1_1_v_t_k_writer.html#ad740c9e547a616d0e1d53246e9292926">femus::VTKWriter::size_connectivity_proc</a></div><div class="ttdeci">unsigned size_connectivity_proc(const Mesh *mesh, const unsigned index) const</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d3c/_v_t_k_writer_8cpp_source.html#l00180">VTKWriter.cpp:180</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_writer_html_afbf272e5db3b204bb2c4679d19096688"><div class="ttname"><a href="../../d8/dab/classfemus_1_1_writer.html#afbf272e5db3b204bb2c4679d19096688">femus::Writer::_ml_mesh</a></div><div class="ttdeci">MultiLevelMesh * _ml_mesh</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d2f/_writer_8hpp_source.html#l00105">Writer.hpp:105</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a8b9aa5b5b104ffacbc115e9ba3c22e6a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">build_edges_of_volumes.filename</a></div><div class="ttdeci">filename</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00009">build_edges_of_volumes.py:9</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2794,8 +2796,8 @@ template&lt;class ARRAY_TYPE &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/03_solution/01_output/<a class="el" href="../../d8/df7/_v_t_k_writer_8hpp_source.html">VTKWriter.hpp</a></li>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/03_solution/01_output/<a class="el" href="../../d5/d3c/_v_t_k_writer_8cpp_source.html">VTKWriter.cpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/03_solution/01_output/<a class="el" href="../../d8/df7/_v_t_k_writer_8hpp_source.html">VTKWriter.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/03_solution/01_output/<a class="el" href="../../d5/d3c/_v_t_k_writer_8cpp_source.html">VTKWriter.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

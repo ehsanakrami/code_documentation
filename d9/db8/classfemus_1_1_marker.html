@@ -2380,9 +2380,9 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  613</span>      <a class="code hl_function" href="../../d8/dea/namespacefemus.html#ac278a2a73ea84ae1978b3c39ef49cf73">GetBoundingBox</a>(xv, xe, 0.1);</div>
 <div class="line"><span class="lineno">  614</span> </div>
 <div class="line"><span class="lineno">  615</span>      <span class="keywordtype">double</span> radius2 = radius * radius;</div>
-<div class="line"><span class="lineno">  616</span>      <span class="keywordtype">double</span> d2 = 0.;</div>
+<div class="line"><span class="lineno">  616</span>      <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> = 0.;</div>
 <div class="line"><span class="lineno">  617</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> d = 0; d &lt; <a class="code hl_variable" href="../../d9/db8/classfemus_1_1_marker.html#aa3a6dcde3a45016e0501b23aa886d523">_dim</a>; d++) {</div>
-<div class="line"><span class="lineno">  618</span>        d2 += xcs[d] * xcs[d];</div>
+<div class="line"><span class="lineno">  618</span>        <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> += xcs[d] * xcs[d];</div>
 <div class="line"><span class="lineno">  619</span>      }</div>
 <div class="line"><span class="lineno">  620</span>      <span class="keywordtype">bool</span> insideHull = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  621</span>      <span class="keywordflow">if</span> (d2 &gt; radius2) {</div>
@@ -2560,6 +2560,7 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="a_marker_8cpp_html_adebc17ceb41745f528f8bccb6a795050"><div class="ttname"><a href="../../d5/dfd/_marker_8cpp.html#adebc17ceb41745f528f8bccb6a795050">facePoints</a></div><div class="ttdeci">const unsigned facePoints[6][3][9]</div><div class="ttdef"><b>Definition</b> <a href="../../d5/dfd/_marker_8cpp_source.html#l00044">Marker.cpp:44</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_marker_html_ae7645a968e13fd6471ff3a94f5169f25"><div class="ttname"><a href="../../d9/db8/classfemus_1_1_marker.html#ae7645a968e13fd6471ff3a94f5169f25">femus::Marker::FastForward</a></div><div class="ttdeci">int FastForward(const unsigned &amp;currentElem, const unsigned &amp;previousElem, Solution *sol, const double &amp;s)</div><div class="ttdef"><b>Definition</b> <a href="../../d5/dfd/_marker_8cpp_source.html#l00483">Marker.cpp:483</a></div></div>
 <div class="ttc" id="ainternal__waves__zlevel_8cpp_html_a2941385b1be5280d3b1f546356f7ec99"><div class="ttname"><a href="../../dc/d97/internal__waves__zlevel_8cpp.html#a2941385b1be5280d3b1f546356f7ec99">A</a></div><div class="ttdeci">double A</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d97/internal__waves__zlevel_8cpp_source.html#l00043">internal_waves_zlevel.cpp:43</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a277407185e318a7ace3879dbe5ae231a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">build_edges_of_volumes.d2</a></div><div class="ttdeci">d2</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00019">build_edges_of_volumes.py:19</a></div></div>
 <div class="ttc" id="anamespacefemus_1_1_parallel_html_a17c680b5adf174b6185a5aeea86e5188"><div class="ttname"><a href="../../db/ded/namespacefemus_1_1_parallel.html#a17c680b5adf174b6185a5aeea86e5188">femus::Parallel::sum</a></div><div class="ttdeci">void sum(T &amp;r)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dec/_parallel_8hpp_source.html#l01658">Parallel.hpp:1658</a></div></div>
 <div class="ttc" id="anamespacefemus_html_ac278a2a73ea84ae1978b3c39ef49cf73"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#ac278a2a73ea84ae1978b3c39ef49cf73">femus::GetBoundingBox</a></div><div class="ttdeci">void GetBoundingBox(const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;xv, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;xe, const double tolerance)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d29/_polynomial_bases_8cpp_source.html#l01838">PolynomialBases.cpp:1838</a></div></div>
 <div class="ttc" id="anamespacefemus_html_ac631173e3dbf1b7a766d150aca10eab1"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#ac631173e3dbf1b7a766d150aca10eab1">femus::GetConvexHullSphere</a></div><div class="ttdeci">void GetConvexHullSphere(const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;xv, std::vector&lt; double &gt; &amp;xc, double &amp;r, const double tolerance)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d29/_polynomial_bases_8cpp_source.html#l01816">PolynomialBases.cpp:1816</a></div></div>
@@ -2709,9 +2710,9 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 1224</span>      <a class="code hl_function" href="../../d8/dea/namespacefemus.html#ac278a2a73ea84ae1978b3c39ef49cf73">GetBoundingBox</a>(xvv, xe, 0.5);</div>
 <div class="line"><span class="lineno"> 1225</span> </div>
 <div class="line"><span class="lineno"> 1226</span>      <span class="keywordtype">double</span> radius2 = radius * radius;</div>
-<div class="line"><span class="lineno"> 1227</span>      <span class="keywordtype">double</span> d2 = 0.;</div>
+<div class="line"><span class="lineno"> 1227</span>      <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> = 0.;</div>
 <div class="line"><span class="lineno"> 1228</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> d = 0; d &lt; <a class="code hl_variable" href="../../d9/db8/classfemus_1_1_marker.html#aa3a6dcde3a45016e0501b23aa886d523">_dim</a>; d++) {</div>
-<div class="line"><span class="lineno"> 1229</span>        d2 += xcs[d] * xcs[d];</div>
+<div class="line"><span class="lineno"> 1229</span>        <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> += xcs[d] * xcs[d];</div>
 <div class="line"><span class="lineno"> 1230</span>      }</div>
 <div class="line"><span class="lineno"> 1231</span>      <span class="keywordtype">bool</span> insideHull = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno"> 1232</span>      <span class="keywordflow">if</span> (d2 &gt; radius2) {</div>
@@ -3113,9 +3114,9 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  888</span>      <a class="code hl_function" href="../../d8/dea/namespacefemus.html#ac278a2a73ea84ae1978b3c39ef49cf73">GetBoundingBox</a>(xvv, xe, 0.5);</div>
 <div class="line"><span class="lineno">  889</span> </div>
 <div class="line"><span class="lineno">  890</span>      <span class="keywordtype">double</span> radius2 = radius * radius;</div>
-<div class="line"><span class="lineno">  891</span>      <span class="keywordtype">double</span> d2 = 0.;</div>
+<div class="line"><span class="lineno">  891</span>      <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> = 0.;</div>
 <div class="line"><span class="lineno">  892</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> d = 0; d &lt; <a class="code hl_variable" href="../../d9/db8/classfemus_1_1_marker.html#aa3a6dcde3a45016e0501b23aa886d523">_dim</a>; d++) {</div>
-<div class="line"><span class="lineno">  893</span>        d2 += xcs[d] * xcs[d];</div>
+<div class="line"><span class="lineno">  893</span>        <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> += xcs[d] * xcs[d];</div>
 <div class="line"><span class="lineno">  894</span>      }</div>
 <div class="line"><span class="lineno">  895</span>      <span class="keywordtype">bool</span> insideHull = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  896</span>      <span class="keywordflow">if</span> (d2 &gt; radius2) {</div>
@@ -5133,8 +5134,8 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/ism/<a class="el" href="../../db/d84/_marker_8hpp_source.html">Marker.hpp</a></li>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/ism/<a class="el" href="../../d5/dfd/_marker_8cpp_source.html">Marker.cpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/ism/<a class="el" href="../../db/d84/_marker_8hpp_source.html">Marker.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/ism/<a class="el" href="../../d5/dfd/_marker_8cpp_source.html">Marker.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

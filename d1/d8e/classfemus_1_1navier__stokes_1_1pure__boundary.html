@@ -197,11 +197,11 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000178">Todo:</a></b></dt><dd>to avoid Petsc complaint about out-of-bounds allocation ******************************* </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000179">Todo:</a></b></dt><dd>this should be done for all components of ctrl </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000180">Todo:</a></b></dt><dd>the error is in here </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000184">Todo:</a></b></dt><dd>to avoid Petsc complaint about out-of-bounds allocation ******************************* </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000185">Todo:</a></b></dt><dd>this should be done for all components of ctrl </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000186">Todo:</a></b></dt><dd>the error is in here </dd></dl>
 <p>phi_bd_gss_fe[SolFEType_Mat[theta_index]][i]</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000181">Todo:</a></b></dt><dd>at this point, the node flag has been filled for ALL faces </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000187">Todo:</a></b></dt><dd>at this point, the node flag has been filled for ALL faces </dd></dl>
 <p>This is needed for the parallel, when splitting the add part from the insert part!!!</p>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/dec/opt__systems__ns__dirichlet_8hpp_source.html#l00171">171</a> of file <a class="el" href="../../d8/dec/opt__systems__ns__dirichlet_8hpp_source.html">opt_systems_ns_dirichlet.hpp</a>.</p>
@@ -292,7 +292,7 @@ Static Public Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  255</span> </div>
 <div class="line"><span class="lineno">  256</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_components_ctrl = <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>;</div>
 <div class="line"><span class="lineno">  257</span> </div>
-<div class="line"><span class="lineno">  258</span>  std::vector&lt; Unknown &gt; unknowns = <a class="code hl_function" href="../../d5/d9b/zzz__giorgiobornia__collect__all_8cpp.html#aa6cf7e343af28b995b6fab3d3528f6ef">provide_list_of_unknowns</a>( <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> );</div>
+<div class="line"><span class="lineno">  258</span>  std::vector&lt; Unknown &gt; unknowns = <a class="code hl_function" href="../../d9/d2b/ex02__poisson__a__all__dims__dir__neu__multiple__domains_8cpp.html#aa6cf7e343af28b995b6fab3d3528f6ef">provide_list_of_unknowns</a>( <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> );</div>
 <div class="line"><span class="lineno">  259</span>  </div>
 <div class="line"><span class="lineno">  260</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> n_unknowns = unknowns.size();</div>
 <div class="line"><span class="lineno">  261</span>    </div>
@@ -1622,6 +1622,7 @@ Static Public Attributes</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1pure__boundary_html_a79e2707afac4a0adbd80f80c784e6f1f"><div class="ttname"><a href="../../df/dfc/classfemus_1_1pure__boundary.html#a79e2707afac4a0adbd80f80c784e6f1f">femus::pure_boundary::_is_block_dctrl_ctrl_inside_main_big_assembly</a></div><div class="ttdeci">static constexpr int _is_block_dctrl_ctrl_inside_main_big_assembly</div><div class="ttdef"><b>Definition</b> <a href="../../db/d91/01__opt__system_8hpp_source.html#l00021">01_opt_system.hpp:21</a></div></div>
 <div class="ttc" id="aclassfemus_1_1pure__boundary_html_a9f711205a2e98f8ddc727bebb338f771"><div class="ttname"><a href="../../df/dfc/classfemus_1_1pure__boundary.html#a9f711205a2e98f8ddc727bebb338f771">femus::pure_boundary::_node_based_bdry_bdry</a></div><div class="ttdeci">static const std::string _node_based_bdry_bdry</div><div class="ttdef"><b>Definition</b> <a href="../../db/d91/01__opt__system_8hpp_source.html#l00025">01_opt_system.hpp:25</a></div></div>
 <div class="ttc" id="aclassfemus_1_1pure__boundary_html_aea23a0ce7365598071a68933ffe028f8"><div class="ttname"><a href="../../df/dfc/classfemus_1_1pure__boundary.html#aea23a0ce7365598071a68933ffe028f8">femus::pure_boundary::_rhs_one</a></div><div class="ttdeci">static constexpr double _rhs_one</div><div class="ttdef"><b>Definition</b> <a href="../../db/d91/01__opt__system_8hpp_source.html#l00014">01_opt_system.hpp:14</a></div></div>
+<div class="ttc" id="aex02__poisson__a__all__dims__dir__neu__multiple__domains_8cpp_html_aa6cf7e343af28b995b6fab3d3528f6ef"><div class="ttname"><a href="../../d9/d2b/ex02__poisson__a__all__dims__dir__neu__multiple__domains_8cpp.html#aa6cf7e343af28b995b6fab3d3528f6ef">provide_list_of_unknowns</a></div><div class="ttdeci">const std::vector&lt; Unknown &gt; provide_list_of_unknowns()</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d2b/ex02__poisson__a__all__dims__dir__neu__multiple__domains_8cpp_source.html#l00774">ex02_poisson_a_all_dims_dir_neu_multiple_domains.cpp:774</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a1b29338e7b459c8d48cb62c828f9db64"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a1b29338e7b459c8d48cb62c828f9db64">femus::get_theta_value</a></div><div class="ttdeci">static const double get_theta_value(const unsigned int nprocs, const Solution *sol, const unsigned int sol_theta_index)</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dc2/00__cost__functional_8hpp_source.html#l00024">00_cost_functional.hpp:24</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a58e58ec75c1599370f2636943a6f6c33"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a58e58ec75c1599370f2636943a6f6c33">femus::print_global_residual_jacobian</a></div><div class="ttdeci">void print_global_residual_jacobian(const bool print_algebra_global, const MultiLevelProblem &amp;ml_prob, const NonLinearImplicitSystem *mlPdeSys, LinearEquationSolver *pdeSys, NumericVector *RES, SparseMatrix *JAC, const unsigned iproc, const bool assembleMatrix)</div><div class="ttdef"><b>Definition</b> <a href="../../db/d2c/_assemble__useful__functions_8hpp_source.html#l00073">Assemble_useful_functions.hpp:73</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a5c8de27577e91a34919582fcbebe452a"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a5c8de27577e91a34919582fcbebe452a">femus::force</a></div><div class="ttdeci">double force[3]</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d17/nsopt__params_8hpp_source.html#l00012">nsopt_params.hpp:12</a></div></div>
@@ -1648,7 +1649,6 @@ Static Public Attributes</h2></td></tr>
 <div class="ttc" id="aparam_8hpp_html_afda9bab2acf38d389a9a920e9349000f"><div class="ttname"><a href="../../d4/d0b/param_8hpp.html#afda9bab2acf38d389a9a920e9349000f">COST_FUNCTIONAL_COEFF</a></div><div class="ttdeci">#define COST_FUNCTIONAL_COEFF</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d0b/param_8hpp_source.html#l00082">param.hpp:82</a></div></div>
 <div class="ttc" id="asolidopt__params_8hpp_html_a101671cfe5078b188740d5d892832ea9"><div class="ttname"><a href="../../de/d58/solidopt__params_8hpp.html#a101671cfe5078b188740d5d892832ea9">cost_functional_coeff</a></div><div class="ttdeci">double cost_functional_coeff</div><div class="ttdef"><b>Definition</b> <a href="../../de/d58/solidopt__params_8hpp_source.html#l00025">solidopt_params.hpp:25</a></div></div>
 <div class="ttc" id="asolidopt__params_8hpp_html_a20f4c4490bc8ecbdd1ffcb79acce6035"><div class="ttname"><a href="../../de/d58/solidopt__params_8hpp.html#a20f4c4490bc8ecbdd1ffcb79acce6035">alpha</a></div><div class="ttdeci">double alpha</div><div class="ttdef"><b>Definition</b> <a href="../../de/d58/solidopt__params_8hpp_source.html#l00026">solidopt_params.hpp:26</a></div></div>
-<div class="ttc" id="azzz__giorgiobornia__collect__all_8cpp_html_aa6cf7e343af28b995b6fab3d3528f6ef"><div class="ttname"><a href="../../d5/d9b/zzz__giorgiobornia__collect__all_8cpp.html#aa6cf7e343af28b995b6fab3d3528f6ef">provide_list_of_unknowns</a></div><div class="ttdeci">const std::vector&lt; Unknown &gt; provide_list_of_unknowns()</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d9b/zzz__giorgiobornia__collect__all_8cpp_source.html#l00617">zzz_giorgiobornia_collect_all.cpp:617</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2285,7 +2285,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/OptimalControl/<a class="el" href="../../d8/dec/opt__systems__ns__dirichlet_8hpp_source.html">opt_systems_ns_dirichlet.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/OptimalControl/<a class="el" href="../../d8/dec/opt__systems__ns__dirichlet_8hpp_source.html">opt_systems_ns_dirichlet.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

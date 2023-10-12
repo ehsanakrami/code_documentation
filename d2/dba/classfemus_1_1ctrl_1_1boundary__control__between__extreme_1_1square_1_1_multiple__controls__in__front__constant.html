@@ -190,28 +190,29 @@ template&lt;class LIST_OF_CTRL_FACES &gt; </div>
 <div class="line"><span class="lineno">  174</span> </div>
 <div class="line"><span class="lineno">  175</span>        <span class="keywordflow">if</span> (is_facename_a_control_face) {</div>
 <div class="line"><span class="lineno">  176</span> </div>
-<div class="line"><span class="lineno">  177</span>              <span class="keywordflow">if</span>(faceName == face_for_control_principal) {  value = 0.; }</div>
+<div class="line"><span class="lineno">  177</span>              <span class="keywordflow">if</span>(faceName == face_for_control_principal) {  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.; }</div>
 <div class="line"><span class="lineno">  178</span> </div>
 <div class="line"><span class="lineno">  179</span>              <span class="keywordflow">else</span> <span class="keywordflow">if</span> (faceName == <span class="comment">/*ctrl::*/</span> LIST_OF_CTRL_FACES :: opposite_face(face_for_control_principal)){</div>
-<div class="line"><span class="lineno">  180</span>                       <span class="keywordflow">if</span> ( !(is_bndry_cntrl_region) )   { value =  gamma * domain_length; }</div>
-<div class="line"><span class="lineno">  181</span>                       <span class="keywordflow">else</span> {value = 0.; }</div>
+<div class="line"><span class="lineno">  180</span>                       <span class="keywordflow">if</span> ( !(is_bndry_cntrl_region) )   { <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> =  gamma * domain_length; }</div>
+<div class="line"><span class="lineno">  181</span>                       <span class="keywordflow">else</span> {<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.; }</div>
 <div class="line"><span class="lineno">  182</span>              }</div>
 <div class="line"><span class="lineno">  183</span> </div>
 <div class="line"><span class="lineno">  184</span>              <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  185</span>                     <span class="keywordflow">if</span> ( !(is_bndry_cntrl_region) ) {</div>
-<div class="line"><span class="lineno">  186</span>                         value = square_or_cube :: Boundary_Condition&lt;LIST_OF_CTRL_FACES &gt;::linear_function_normal_direction(domain_length, gamma,face_for_control_principal, x);</div>
+<div class="line"><span class="lineno">  186</span>                         <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = square_or_cube :: Boundary_Condition&lt;LIST_OF_CTRL_FACES &gt;::linear_function_normal_direction(domain_length, gamma,face_for_control_principal, x);</div>
 <div class="line"><span class="lineno">  187</span>                         }</div>
-<div class="line"><span class="lineno">  188</span>                     <span class="keywordflow">else</span> {value = 0.; }</div>
+<div class="line"><span class="lineno">  188</span>                     <span class="keywordflow">else</span> {<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.; }</div>
 <div class="line"><span class="lineno">  189</span>              }</div>
 <div class="line"><span class="lineno">  190</span>        }</div>
-<div class="line"><span class="lineno">  191</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (faceName == <span class="comment">/*ctrl::*/</span> LIST_OF_CTRL_FACES :: opposite_face(face_for_control_principal)) { value =  gamma * domain_length; }</div>
-<div class="line"><span class="lineno">  192</span>        <span class="keywordflow">else</span>      { value = square_or_cube :: Boundary_Condition&lt;LIST_OF_CTRL_FACES &gt;::linear_function_normal_direction(domain_length, gamma,face_for_control_principal, x);}</div>
+<div class="line"><span class="lineno">  191</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (faceName == <span class="comment">/*ctrl::*/</span> LIST_OF_CTRL_FACES :: opposite_face(face_for_control_principal)) { <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> =  gamma * domain_length; }</div>
+<div class="line"><span class="lineno">  192</span>        <span class="keywordflow">else</span>      { <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = square_or_cube :: Boundary_Condition&lt;LIST_OF_CTRL_FACES &gt;::linear_function_normal_direction(domain_length, gamma,face_for_control_principal, x);}</div>
 <div class="line"><span class="lineno">  193</span> </div>
-<div class="line"><span class="lineno">  194</span>   value += <a class="code hl_define" href="../../d4/d0b/param_8hpp.html#aa05ae077dd8304955611f202d03236b2">PENALTY_OUTSIDE_CONTROL_DOMAIN_BOUNDARY_VALUE_CONSISTENT_WITH_BOUNDARY_OF_BOUNDARY</a>;</div>
+<div class="line"><span class="lineno">  194</span>   <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> += <a class="code hl_define" href="../../d4/d0b/param_8hpp.html#aa05ae077dd8304955611f202d03236b2">PENALTY_OUTSIDE_CONTROL_DOMAIN_BOUNDARY_VALUE_CONSISTENT_WITH_BOUNDARY_OF_BOUNDARY</a>;</div>
 <div class="line"><span class="lineno">  195</span> </div>
-<div class="line"><span class="lineno">  196</span>   <span class="keywordflow">return</span> value;</div>
+<div class="line"><span class="lineno">  196</span>   <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  197</span>             }</div>
 <div class="ttc" id="aclassfemus_1_1ctrl_1_1square__or__cube_1_1_boundary___condition_html_a0336d2e13655a69cdffeaa82546781f9"><div class="ttname"><a href="../../dd/ded/classfemus_1_1ctrl_1_1square__or__cube_1_1_boundary___condition.html#a0336d2e13655a69cdffeaa82546781f9">femus::ctrl::square_or_cube::Boundary_Condition::is_boundary_of_boundary_region</a></div><div class="ttdeci">static std::pair&lt; bool, bool &gt; is_boundary_of_boundary_region(const int faceName, const std::vector&lt; double &gt; &amp;x, unsigned number_of_tangential_direction_components)</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d56/square__or__cube__02__boundary__conditions_8hpp_source.html#l00034">square_or_cube_02_boundary_conditions.hpp:34</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 <div class="ttc" id="aparam_8hpp_html_aa05ae077dd8304955611f202d03236b2"><div class="ttname"><a href="../../d4/d0b/param_8hpp.html#aa05ae077dd8304955611f202d03236b2">PENALTY_OUTSIDE_CONTROL_DOMAIN_BOUNDARY_VALUE_CONSISTENT_WITH_BOUNDARY_OF_BOUNDARY</a></div><div class="ttdeci">#define PENALTY_OUTSIDE_CONTROL_DOMAIN_BOUNDARY_VALUE_CONSISTENT_WITH_BOUNDARY_OF_BOUNDARY</div><div class="ttdef"><b>Definition</b> <a href="../../d4/d0b/param_8hpp_source.html#l00175">param.hpp:175</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -282,7 +283,7 @@ template&lt;class LIST_OF_CTRL_FACES &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/OptimalControl/<a class="el" href="../../d2/d56/square__or__cube__02__boundary__conditions_8hpp_source.html">square_or_cube_02_boundary_conditions.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/OptimalControl/<a class="el" href="../../d2/d56/square__or__cube__02__boundary__conditions_8hpp_source.html">square_or_cube_02_boundary_conditions.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

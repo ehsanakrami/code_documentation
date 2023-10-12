@@ -1186,7 +1186,7 @@ Protected Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">  657</span>  {</div>
 <div class="line"><span class="lineno">  658</span>      </div>
 <div class="line"><span class="lineno">  659</span>    vector&lt;int&gt; cols(<a class="code hl_variable" href="../../d3/dca/classfemus_1_1elem__type.html#aeaf5fcedea91ceb9894f5a385eebddab">_nc</a>);</div>
-<div class="line"><span class="lineno">  660</span>    vector&lt;double&gt; value(<a class="code hl_variable" href="../../d3/dca/classfemus_1_1elem__type.html#aeaf5fcedea91ceb9894f5a385eebddab">_nc</a>);</div>
+<div class="line"><span class="lineno">  660</span>    vector&lt;double&gt; <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>(<a class="code hl_variable" href="../../d3/dca/classfemus_1_1elem__type.html#aeaf5fcedea91ceb9894f5a385eebddab">_nc</a>);</div>
 <div class="line"><span class="lineno">  661</span>    <span class="keywordtype">bool</span> identity = (<a class="code hl_variable" href="../../d3/dca/classfemus_1_1elem__type.html#a7ffed37a1c710167fc1aed224cce45f4">_nlag</a>[itype] &lt;= <a class="code hl_variable" href="../../d3/dca/classfemus_1_1elem__type.html#aeaf5fcedea91ceb9894f5a385eebddab">_nc</a>) ? <span class="keyword">true</span> : false;</div>
 <div class="line"><span class="lineno">  662</span>    </div>
 <div class="line"><span class="lineno">  663</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../d3/dca/classfemus_1_1elem__type.html#a7ffed37a1c710167fc1aed224cce45f4">_nlag</a>[itype]; i++) {</div>
@@ -1198,7 +1198,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  669</span>        <span class="keywordtype">double</span> <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a> = (identity) ? 1. : <a class="code hl_variable" href="../../d3/dca/classfemus_1_1elem__type.html#a74ff85a1f6d5439f08c25d4d0321c609">_pt_basis</a>-&gt;eval_phi(<a class="code hl_variable" href="../../d3/dca/classfemus_1_1elem__type.html#a74ff85a1f6d5439f08c25d4d0321c609">_pt_basis</a>-&gt;GetIND(k), <a class="code hl_variable" href="../../d3/dca/classfemus_1_1elem__type.html#a74ff85a1f6d5439f08c25d4d0321c609">_pt_basis</a>-&gt;GetXcoarse(i));</div>
 <div class="line"><span class="lineno">  670</span>        <span class="keywordflow">if</span>(fabs(<a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a>) &gt; 1.0e-14) {</div>
 <div class="line"><span class="lineno">  671</span>          cols[<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a528b2c16b23d4e442c2286fbcc2b120b">counter</a>]  = (identity) ? mesh.GetSolutionDof(i, iel, <a class="code hl_variable" href="../../d3/dca/classfemus_1_1elem__type.html#a3278ebbdc41e6e7c03aea23995220dab">_SolType</a>) : mesh.GetSolutionDof(k, iel, <a class="code hl_variable" href="../../d3/dca/classfemus_1_1elem__type.html#a3278ebbdc41e6e7c03aea23995220dab">_SolType</a>);</div>
-<div class="line"><span class="lineno">  672</span>          value[<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a528b2c16b23d4e442c2286fbcc2b120b">counter</a>] = <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a>;</div>
+<div class="line"><span class="lineno">  672</span>          <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>[<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a528b2c16b23d4e442c2286fbcc2b120b">counter</a>] = <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a>;</div>
 <div class="line"><span class="lineno">  673</span>          <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a528b2c16b23d4e442c2286fbcc2b120b">counter</a>++;</div>
 <div class="line"><span class="lineno">  674</span>        }</div>
 <div class="line"><span class="lineno">  675</span>      }</div>
@@ -1214,6 +1214,7 @@ Protected Attributes</h2></td></tr>
 <div class="ttc" id="a_s_w_2ex2_2ex2_8cpp_html_adae8d8a6ff28515e505bb1c07f2b33c8"><div class="ttname"><a href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a></div><div class="ttdeci">double phi</div><div class="ttdef"><b>Definition</b> <a href="../../de/d25/_s_w_2ex2_2ex2_8cpp_source.html#l00038">ex2.cpp:38</a></div></div>
 <div class="ttc" id="aclassfemus_1_1elem__type_html_a7ffed37a1c710167fc1aed224cce45f4"><div class="ttname"><a href="../../d3/dca/classfemus_1_1elem__type.html#a7ffed37a1c710167fc1aed224cce45f4">femus::elem_type::_nlag</a></div><div class="ttdeci">int _nlag[4]</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df9/_elem_type_8hpp_source.html#l00161">ElemType.hpp:161</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a528b2c16b23d4e442c2286fbcc2b120b"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a528b2c16b23d4e442c2286fbcc2b120b">femus::counter</a></div><div class="ttdeci">unsigned counter</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d75/_f_s_i_time_dependent_assembly_supg___o_l_d_8hpp_source.html#l03071">FSITimeDependentAssemblySupg_OLD.hpp:3071</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5764,8 +5765,8 @@ template&lt;class type &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/fe/<a class="el" href="../../d8/df9/_elem_type_8hpp_source.html">ElemType.hpp</a></li>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/fe/<a class="el" href="../../d0/d41/_elem_type_8cpp_source.html">ElemType.cpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/fe/<a class="el" href="../../d8/df9/_elem_type_8hpp_source.html">ElemType.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/fe/<a class="el" href="../../d0/d41/_elem_type_8cpp_source.html">ElemType.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

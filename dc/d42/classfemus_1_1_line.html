@@ -1115,8 +1115,8 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 1354</span>          <span class="keywordtype">double</span> <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a528b2c16b23d4e442c2286fbcc2b120b">counter</a> = 0.;</div>
 <div class="line"><span class="lineno"> 1355</span>          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsM; i++) {</div>
 <div class="line"><span class="lineno"> 1356</span>            <span class="keywordtype">unsigned</span> idof = <a class="code hl_variable" href="../../dc/d42/classfemus_1_1_line.html#a003ecb79dc7e0e6bac2df2a57c0d8204">_mesh</a>-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ace44edec2dc2ffb42c0456f03fa227ff">GetSolutionDof</a> (i, iel, solTypeM); <span class="comment">// global to global mapping for mass solution</span></div>
-<div class="line"><span class="lineno"> 1357</span>            <span class="keywordtype">double</span> value = (*<a class="code hl_variable" href="../../dc/d42/classfemus_1_1_line.html#a7440631b2be87b8038601d35602034c8">_sol</a>-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[solIndexM]) (idof);</div>
-<div class="line"><span class="lineno"> 1358</span>            <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a528b2c16b23d4e442c2286fbcc2b120b">counter</a> += value;</div>
+<div class="line"><span class="lineno"> 1357</span>            <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = (*<a class="code hl_variable" href="../../dc/d42/classfemus_1_1_line.html#a7440631b2be87b8038601d35602034c8">_sol</a>-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[solIndexM]) (idof);</div>
+<div class="line"><span class="lineno"> 1358</span>            <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a528b2c16b23d4e442c2286fbcc2b120b">counter</a> += <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno"> 1359</span>          }</div>
 <div class="line"><span class="lineno"> 1360</span>          <a class="code hl_variable" href="../../dc/d42/classfemus_1_1_line.html#a7440631b2be87b8038601d35602034c8">_sol</a>-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[solIndexMat]-&gt;set (idofMat, <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a528b2c16b23d4e442c2286fbcc2b120b">counter</a>);</div>
 <div class="line"><span class="lineno"> 1361</span>        }</div>
@@ -1145,6 +1145,7 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1_mesh_html_af92bd9944b1d887562b460ede06acf44"><div class="ttname"><a href="../../d9/d8b/classfemus_1_1_mesh.html#af92bd9944b1d887562b460ede06acf44">femus::Mesh::GetElementType</a></div><div class="ttdeci">short unsigned GetElementType(const unsigned &amp;iel) const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d06/_mesh_8cpp_source.html#l01212">Mesh.cpp:1212</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_solution_html_a279aabd5d616f57b3d6ba6bf3ce1042b"><div class="ttname"><a href="../../d4/d40/classfemus_1_1_solution.html#a279aabd5d616f57b3d6ba6bf3ce1042b">femus::Solution::_Bdc</a></div><div class="ttdeci">std::vector&lt; NumericVector * &gt; _Bdc</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d0d/_solution_8hpp_source.html#l00206">Solution.hpp:206</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_solution_html_a5c725da69d0b94b7ff4a4e2509c86d53"><div class="ttname"><a href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">femus::Solution::_Sol</a></div><div class="ttdeci">std::vector&lt; NumericVector * &gt; _Sol</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d0d/_solution_8hpp_source.html#l00151">Solution.hpp:151</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2662,8 +2663,8 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/ism/<a class="el" href="../../d5/d3a/_line_8hpp_source.html">Line.hpp</a></li>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/ism/<a class="el" href="../../d4/d82/ism_2_line_8cpp_source.html">Line.cpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/ism/<a class="el" href="../../d5/d3a/_line_8hpp_source.html">Line.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/ism/<a class="el" href="../../d4/d82/ism_2_line_8cpp_source.html">Line.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

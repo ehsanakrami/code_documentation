@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/00_tutorial/00_laplacian_all_dims_dir_neu_class_2021_2022/joloftin/joloftin.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/00_tutorial/ex02_poisson_a_all_dims_dir_neu_class_2021_2022/joloftin/joloftin.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -183,7 +183,7 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   35</span>                                                                                                                                                                        {</div>
 <div class="line"><span class="lineno">   36</span> </div>
 <div class="line"><span class="lineno">   37</span>  <span class="keywordtype">bool</span> dirichlet = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   38</span>  value = 0.;</div>
+<div class="line"><span class="lineno">   38</span>  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   39</span>    </div>
 <div class="line"><span class="lineno">   40</span> </div>
 <div class="line"><span class="lineno">   41</span> <span class="keywordflow">if</span> (ml_prob-&gt;<a class="code hl_function" href="../../de/d6a/classfemus_1_1_multi_level_problem.html#a9dc09c9eb3027257b1524248fd3cf0a2">GetMLMesh</a>()-&gt;<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a65dabdf1e308c1a44ebe5c6a41d09284">GetDimension</a>() == 2 )  {</div>
@@ -191,11 +191,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   43</span>     </div>
 <div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (face_name == 1) {</div>
 <div class="line"><span class="lineno">   45</span>      dirichlet = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   46</span>        value = 0.;</div>
+<div class="line"><span class="lineno">   46</span>        <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   47</span>  }</div>
 <div class="line"><span class="lineno">   48</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (face_name == 2) {</div>
 <div class="line"><span class="lineno">   49</span>      dirichlet = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   50</span>        value = 0.;</div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   51</span>  }</div>
 <div class="line"><span class="lineno">   52</span>   </div>
 <div class="line"><span class="lineno">   53</span> </div>
@@ -208,6 +208,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   60</span> }</div>
 <div class="ttc" id="aclassfemus_1_1_multi_level_mesh_html_a65dabdf1e308c1a44ebe5c6a41d09284"><div class="ttname"><a href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a65dabdf1e308c1a44ebe5c6a41d09284">femus::MultiLevelMesh::GetDimension</a></div><div class="ttdeci">const unsigned GetDimension() const</div><div class="ttdef"><b>Definition</b> <a href="../../db/d07/_multi_level_mesh_8cpp_source.html#l00541">MultiLevelMesh.cpp:541</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_multi_level_problem_html_a9dc09c9eb3027257b1524248fd3cf0a2"><div class="ttname"><a href="../../de/d6a/classfemus_1_1_multi_level_problem.html#a9dc09c9eb3027257b1524248fd3cf0a2">femus::MultiLevelProblem::GetMLMesh</a></div><div class="ttdeci">const MultiLevelMesh * GetMLMesh() const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dbc/_multi_level_problem_8hpp_source.html#l00133">MultiLevelProblem.hpp:133</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1178,7 +1179,7 @@ template&lt;class real_num , class real_num_mov &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="../../dir_bc623bb5c626d1209c788e33f57707c6.html">applications</a></li><li class="navelem"><a class="el" href="../../dir_e4a47d695701f5c84fc8b0d5cd2e604d.html">00_tutorial</a></li><li class="navelem"><a class="el" href="../../dir_fba134ceb1c22ae335a3368294aab286.html">00_laplacian_all_dims_dir_neu_class_2021_2022</a></li><li class="navelem"><a class="el" href="../../dir_1213888731018809694093cf888f28ff.html">joloftin</a></li><li class="navelem"><a class="el" href="../../d0/ddd/joloftin_8cpp.html">joloftin.cpp</a></li>
+    <li class="navelem"><a class="el" href="../../dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="../../dir_bc623bb5c626d1209c788e33f57707c6.html">applications</a></li><li class="navelem"><a class="el" href="../../dir_e4a47d695701f5c84fc8b0d5cd2e604d.html">00_tutorial</a></li><li class="navelem"><a class="el" href="../../dir_493f28e74cf2d0728b1afb21b98a974c.html">ex02_poisson_a_all_dims_dir_neu_class_2021_2022</a></li><li class="navelem"><a class="el" href="../../dir_d19f98c74871c1b93f029c02c5376e46.html">joloftin</a></li><li class="navelem"><a class="el" href="../../d0/ddd/joloftin_8cpp.html">joloftin.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

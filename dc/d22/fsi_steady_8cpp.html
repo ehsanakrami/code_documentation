@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/FSI/SteadyState/Benchmarks/fsiSteady.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/FSI/SteadyState/Benchmarks/fsiSteady.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -168,7 +168,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000131">Todo:</a></b></dt><dd><p class="startdd">I believe I have to review how the computation of the normal is performed </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000137">Todo:</a></b></dt><dd><p class="startdd">I believe I have to review how the computation of the normal is performed </p>
 <p class="enddd">let the files be read from each run folder </p>
 </dd></dl>
 
@@ -347,7 +347,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  204</span>  }</div>
 <div class="line"><span class="lineno">  205</span> </div>
 <div class="line"><span class="lineno">  206</span>  cout &lt;&lt; <span class="stringliteral">&quot; Loading symbol BdcFunction...&quot;</span>;</div>
-<div class="line"><span class="lineno">  207</span>  <span class="keyword">typedef</span> bool (*BdcFunction_t)(<span class="keyword">const</span> std::vector &lt; double &gt;&amp; x,<span class="keyword">const</span> <span class="keywordtype">char</span> name[], <span class="keywordtype">double</span> &amp;value, <span class="keyword">const</span> <span class="keywordtype">int</span> facename, <span class="keyword">const</span> <span class="keywordtype">double</span> time);</div>
+<div class="line"><span class="lineno">  207</span>  <span class="keyword">typedef</span> bool (*BdcFunction_t)(<span class="keyword">const</span> std::vector &lt; double &gt;&amp; x,<span class="keyword">const</span> <span class="keywordtype">char</span> name[], <span class="keywordtype">double</span> &amp;<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>, <span class="keyword">const</span> <span class="keywordtype">int</span> facename, <span class="keyword">const</span> <span class="keywordtype">double</span> time);</div>
 <div class="line"><span class="lineno">  208</span> </div>
 <div class="line"><span class="lineno">  209</span>  <span class="comment">// reset errors</span></div>
 <div class="line"><span class="lineno">  210</span>  dlerror();</div>
@@ -699,6 +699,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="anamespacefemus_html_a750d1225c760c69990082ecdb0a1568f"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a750d1225c760c69990082ecdb0a1568f">femus::FSISteadyStateAssembly</a></div><div class="ttdeci">void FSISteadyStateAssembly(MultiLevelProblem &amp;ml_prob)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d76/_f_s_i_2_steady_state_2include_2_f_s_i_steady_state_assembly_8hpp_source.html#l00012">FSISteadyStateAssembly.hpp:12</a></div></div>
 <div class="ttc" id="anamespacefemus_html_aac41bc27c960be0327dee98cc2d449f4"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#aac41bc27c960be0327dee98cc2d449f4">femus::Compute_normal_stress_interface</a></div><div class="ttdeci">void Compute_normal_stress_interface(const MultiLevelProblem &amp;ml_prob, const unsigned level, const std::vector&lt; int &gt; all_face_flags, const unsigned stress_component, std::vector&lt; MyMatrix&lt; int &gt; &gt; &amp;element_faces, const MonolithicFSINonLinearImplicitSystem *mlPdeSys)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d76/_f_s_i_2_steady_state_2include_2_f_s_i_steady_state_assembly_8hpp_source.html#l01599">FSISteadyStateAssembly.hpp:1599</a></div></div>
 <div class="ttc" id="anamespacefemus_html_af292684b7839fddd6ca5000925baa7b4"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#af292684b7839fddd6ca5000925baa7b4">femus::FSISteadyStateAssemblyWithNoPivoting</a></div><div class="ttdeci">void FSISteadyStateAssemblyWithNoPivoting(MultiLevelProblem &amp;ml_prob)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d76/_f_s_i_2_steady_state_2include_2_f_s_i_steady_state_assembly_8hpp_source.html#l00673">FSISteadyStateAssembly.hpp:673</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -917,10 +918,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  704</span>        <span class="keywordflow">if</span> (str1.compare(<span class="stringliteral">&quot;solver&quot;</span>) == 0) {</div>
 <div class="line"><span class="lineno">  705</span>          <a class="code hl_variable" href="../../d3/de5/_conformal_2ex3_2ex3_8cpp.html#ae162929dc5a88736f3f0afa0ea3601b0">inf</a> &gt;&gt; str1;</div>
 <div class="line"><span class="lineno">  706</span>          <span class="keywordflow">if</span> (str1.compare(<span class="stringliteral">&quot;time:&quot;</span>) == 0) {</div>
-<div class="line"><span class="lineno">  707</span>            <span class="keywordtype">double</span> value;</div>
-<div class="line"><span class="lineno">  708</span>            <a class="code hl_variable" href="../../d3/de5/_conformal_2ex3_2ex3_8cpp.html#ae162929dc5a88736f3f0afa0ea3601b0">inf</a> &gt;&gt; value;</div>
+<div class="line"><span class="lineno">  707</span>            <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
+<div class="line"><span class="lineno">  708</span>            <a class="code hl_variable" href="../../d3/de5/_conformal_2ex3_2ex3_8cpp.html#ae162929dc5a88736f3f0afa0ea3601b0">inf</a> &gt;&gt; <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  709</span>            ++<a class="code hl_variable" href="../../d5/dfd/_marker_8cpp.html#a57451d202e70f5eafc93a3cc5e6c0c6e">counter</a>;</div>
-<div class="line"><span class="lineno">  710</span>            ave_lin_solver_time += value;</div>
+<div class="line"><span class="lineno">  710</span>            ave_lin_solver_time += <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  711</span>          }</div>
 <div class="line"><span class="lineno">  712</span>        }</div>
 <div class="line"><span class="lineno">  713</span>      }</div>

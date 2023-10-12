@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/MPM_FSI/include/mpmFsi4.hpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/MPM_FSI/include/mpmFsi4.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -817,11 +817,11 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  698</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; nDofs; i++) {</div>
 <div class="line"><span class="lineno">  699</span>      <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
 <div class="line"><span class="lineno">  700</span>        rhs[ i +  k * nDofs ] = -aRhsD[k][i].value();</div>
-<div class="line"><span class="lineno">  701</span>        rhs[ i + (k + <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>) * nDofs ] = -aRhsV[k][i].value();</div>
+<div class="line"><span class="lineno">  701</span>        rhs[ i + (k + <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>) * nDofs ] = -aRhsV[k][i].<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>();</div>
 <div class="line"><span class="lineno">  702</span>      }</div>
 <div class="line"><span class="lineno">  703</span>    }</div>
 <div class="line"><span class="lineno">  704</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; nDofsP; i++) {</div>
-<div class="line"><span class="lineno">  705</span>      rhs[ i + (2 * <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>) * nDofs ] = -aRhsP[i].value();</div>
+<div class="line"><span class="lineno">  705</span>      rhs[ i + (2 * <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>) * nDofs ] = -aRhsP[i].<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>();</div>
 <div class="line"><span class="lineno">  706</span>    }</div>
 <div class="line"><span class="lineno">  707</span> </div>
 <div class="line"><span class="lineno">  708</span>    myRES-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a0440021963af01ac49a6f02df562e44b">add_vector_blocked</a>(rhs, sysDofsAll);</div>
@@ -936,6 +936,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="ampm_fsi4_8hpp_html_abb2734287043c22e1b7876d6c1962aba"><div class="ttname"><a href="../../dd/d2b/mpm_fsi4_8hpp.html#abb2734287043c22e1b7876d6c1962aba">fluidLine</a></div><div class="ttdeci">Line * fluidLine</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d2b/mpm_fsi4_8hpp_source.html#l00014">mpmFsi4.hpp:14</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a7216a0536acdac46863fd54b0320a8e6"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">femus::s</a></div><div class="ttdeci">double * s</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dc5/_f_s_i_time_dependent_assembly_supg_g_c_l_8hpp_source.html#l00036">FSITimeDependentAssemblySupgGCL.hpp:36</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a865501b20d45caeb12e3f10935e38cf6"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">femus::ig</a></div><div class="ttdeci">const unsigned ig[N_GEOM_ELS][6][9]</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/_elem_8hpp_source.html#l00345">Elem.hpp:345</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1794,9 +1795,9 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno"> 1400</span> </div>
 <div class="line"><span class="lineno"> 1401</span>    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofs; i++) {  <span class="comment">// loop on the nodes of the reference elements now considered as independent points</span></div>
 <div class="line"><span class="lineno"> 1402</span>      <span class="keywordflow">if</span>(!nodeFlag[i]) {</div>
-<div class="line"><span class="lineno"> 1403</span>        <span class="keywordtype">double</span> d2 = 0.;</div>
+<div class="line"><span class="lineno"> 1403</span>        <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> = 0.;</div>
 <div class="line"><span class="lineno"> 1404</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno"> 1405</span>          d2 += (xp[i][k] - xc[k]) * (xp[i][k] - xc[k]);</div>
+<div class="line"><span class="lineno"> 1405</span>          <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> += (xp[i][k] - xc[k]) * (xp[i][k] - xc[k]);</div>
 <div class="line"><span class="lineno"> 1406</span>        }</div>
 <div class="line"><span class="lineno"> 1407</span>        <span class="keywordtype">bool</span> insideHull = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno"> 1408</span>        <span class="keywordflow">if</span>(d2 &gt; r2) {</div>
@@ -1964,6 +1965,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1_mesh_html_afda8ae7465daaa274ea35dac5d8c3dc1"><div class="ttname"><a href="../../d9/d8b/classfemus_1_1_mesh.html#afda8ae7465daaa274ea35dac5d8c3dc1">femus::Mesh::GetTotalNumberOfDofs</a></div><div class="ttdeci">unsigned GetTotalNumberOfDofs(const unsigned &amp;type) const</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d4a/_mesh_8hpp_source.html#l00357">Mesh.hpp:357</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_parallel_object_html_af6629fca51be192be664c76eb8aecc79"><div class="ttname"><a href="../../dd/d90/classfemus_1_1_parallel_object.html#af6629fca51be192be664c76eb8aecc79">femus::ParallelObject::n_processors</a></div><div class="ttdeci">int n_processors() const</div><div class="ttdef"><b>Definition</b> <a href="../../da/d3d/_parallel_object_8hpp_source.html#l00048">ParallelObject.hpp:48</a></div></div>
 <div class="ttc" id="aex44_8cpp_html_a12d76d4d554cf7de7d613e0c8832ec02"><div class="ttname"><a href="../../da/da0/ex44_8cpp.html#a12d76d4d554cf7de7d613e0c8832ec02">c0</a></div><div class="ttdeci">int c0</div><div class="ttdef"><b>Definition</b> <a href="../../da/da0/ex44_8cpp_source.html#l00031">ex44.cpp:31</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a277407185e318a7ace3879dbe5ae231a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">build_edges_of_volumes.d2</a></div><div class="ttdeci">d2</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00019">build_edges_of_volumes.py:19</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a26952845941ad3ab68f35f0dc647e464"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a26952845941ad3ab68f35f0dc647e464">femus::GetClosestPointInReferenceElement</a></div><div class="ttdeci">void GetClosestPointInReferenceElement(const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;xv, const std::vector&lt; double &gt; &amp;x, const short unsigned &amp;ieltype, std::vector&lt; double &gt; &amp;xi)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d29/_polynomial_bases_8cpp_source.html#l01929">PolynomialBases.cpp:1929</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a434f4672190f9d15cbc5e65705836bda"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a434f4672190f9d15cbc5e65705836bda">femus::GetInverseMapping</a></div><div class="ttdeci">void GetInverseMapping(const unsigned &amp;solType, short unsigned &amp;ielType, const std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; &amp;aP, const std::vector&lt; double &gt; &amp;xl, std::vector&lt; double &gt; &amp;xi)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d29/_polynomial_bases_8cpp_source.html#l01860">PolynomialBases.cpp:1860</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a7da70cafeeeae70a143195ebc5f991de"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a7da70cafeeeae70a143195ebc5f991de">femus::CheckIfPointIsInsideReferenceDomain</a></div><div class="ttdeci">bool CheckIfPointIsInsideReferenceDomain(std::vector&lt; double &gt; &amp;xi, const short unsigned &amp;ielType, const double &amp;eps)</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d29/_polynomial_bases_8cpp_source.html#l01480">PolynomialBases.cpp:1480</a></div></div>

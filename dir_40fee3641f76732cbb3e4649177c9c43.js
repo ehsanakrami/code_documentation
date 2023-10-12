@@ -1,7 +1,9 @@
 var dir_40fee3641f76732cbb3e4649177c9c43 =
 [
     [ "00_norm_of_errors_of_unknowns.hpp", "d4/d46/00__norm__of__errors__of__unknowns_8hpp.html", "d4/d46/00__norm__of__errors__of__unknowns_8hpp" ],
+    [ "00_poisson_eqn_with_all_dirichlet_bc.hpp", "dd/d03/00__poisson__eqn__with__all__dirichlet__bc_8hpp.html", "dd/d03/00__poisson__eqn__with__all__dirichlet__bc_8hpp" ],
     [ "00_poisson_eqn_with_dirichlet_or_neumann_bc.hpp", "d6/d91/00__poisson__eqn__with__dirichlet__or__neumann__bc_8hpp.html", "d6/d91/00__poisson__eqn__with__dirichlet__or__neumann__bc_8hpp" ],
+    [ "04_boussinesq.hpp", "d3/d5c/04__boussinesq_8hpp.html", "d3/d5c/04__boussinesq_8hpp" ],
     [ "app_specifics.hpp", "dc/d5b/app__specifics_8hpp.html", "dc/d5b/app__specifics_8hpp" ],
     [ "Assemble_jacobian.cpp", "d5/d88/_assemble__jacobian_8cpp.html", null ],
     [ "Assemble_jacobian.hpp", "d0/db7/_assemble__jacobian_8hpp.html", "d0/db7/_assemble__jacobian_8hpp" ],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/Willmore/WillmoreGraph/ex2/ex2.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/Willmore/WillmoreGraph/ex2/ex2.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -395,9 +395,9 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  549</span> </div>
 <div class="line"><span class="lineno">  550</span>            <span class="comment">// *** phi_i loop ***</span></div>
 <div class="line"><span class="lineno">  551</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nve; i++) {</div>
-<div class="line"><span class="lineno">  552</span>              <span class="keywordtype">double</span> value = <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a>[i] * tau * weight;</div>
+<div class="line"><span class="lineno">  552</span>              <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = <a class="code hl_variable" href="../../de/d25/_s_w_2ex2_2ex2_8cpp.html#adae8d8a6ff28515e505bb1c07f2b33c8">phi</a>[i] * tau * weight;</div>
 <div class="line"><span class="lineno">  553</span>              <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ilocal = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ad18fca5dab8c3567b644996e682043d3">GetLocalFaceVertexIndex</a> (iel, jface, i);</div>
-<div class="line"><span class="lineno">  554</span>              aResW[ilocal]   += value;</div>
+<div class="line"><span class="lineno">  554</span>              aResW[ilocal]   += <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  555</span>            }</div>
 <div class="line"><span class="lineno">  556</span>          }</div>
 <div class="line"><span class="lineno">  557</span>        }</div>
@@ -487,6 +487,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="ainternal__waves__zlevel_8cpp_html_a2941385b1be5280d3b1f546356f7ec99"><div class="ttname"><a href="../../dc/d97/internal__waves__zlevel_8cpp.html#a2941385b1be5280d3b1f546356f7ec99">A</a></div><div class="ttdeci">double A</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d97/internal__waves__zlevel_8cpp_source.html#l00043">internal_waves_zlevel.cpp:43</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a7216a0536acdac46863fd54b0320a8e6"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">femus::s</a></div><div class="ttdeci">double * s</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dc5/_f_s_i_time_dependent_assembly_supg_g_c_l_8hpp_source.html#l00036">FSITimeDependentAssemblySupgGCL.hpp:36</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a865501b20d45caeb12e3f10935e38cf6"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">femus::ig</a></div><div class="ttdeci">const unsigned ig[N_GEOM_ELS][6][9]</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/_elem_8hpp_source.html#l00345">Elem.hpp:345</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -956,20 +957,20 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  149</span> </div>
 <div class="line"><span class="lineno">  150</span>  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; maxNumberOfMeshes; i++) {   <span class="comment">// loop on the mesh level</span></div>
 <div class="line"><span class="lineno">  151</span> </div>
-<div class="line"><span class="lineno">  152</span>    std::ostringstream filename;</div>
+<div class="line"><span class="lineno">  152</span>    std::ostringstream <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>;</div>
 <div class="line"><span class="lineno">  153</span> </div>
 <div class="line"><span class="lineno">  154</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/d82/_willmore_2_willmore_graph_2ex2_2ex2_8cpp.html#a3fc7ce4e53beaaf18198c05f97845d4b">simulation</a> == 1) {</div>
-<div class="line"><span class="lineno">  155</span>      filename &lt;&lt; <span class="stringliteral">&quot;./input/circle_quad&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;.neu&quot;</span>;</div>
+<div class="line"><span class="lineno">  155</span>      <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> &lt;&lt; <span class="stringliteral">&quot;./input/circle_quad&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;.neu&quot;</span>;</div>
 <div class="line"><span class="lineno">  156</span>    }</div>
 <div class="line"><span class="lineno">  157</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/d82/_willmore_2_willmore_graph_2ex2_2ex2_8cpp.html#a3fc7ce4e53beaaf18198c05f97845d4b">simulation</a> == 2) {</div>
-<div class="line"><span class="lineno">  158</span>      filename &lt;&lt; <span class="stringliteral">&quot;./input/torus30_&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;.neu&quot;</span>;</div>
+<div class="line"><span class="lineno">  158</span>      <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> &lt;&lt; <span class="stringliteral">&quot;./input/torus30_&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;.neu&quot;</span>;</div>
 <div class="line"><span class="lineno">  159</span>    }</div>
 <div class="line"><span class="lineno">  160</span> </div>
 <div class="line"><span class="lineno">  161</span>    <a class="code hl_class" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html">MultiLevelMesh</a> mlMsh;</div>
 <div class="line"><span class="lineno">  162</span>    <span class="comment">// read coarse level mesh and generate finers level meshes</span></div>
 <div class="line"><span class="lineno">  163</span>    <span class="keywordtype">double</span> scalingFactor = 1.;</div>
 <div class="line"><span class="lineno">  164</span>    <span class="comment">//mlMsh.ReadCoarseMesh(&quot;./input/circle_quad.neu&quot;,&quot;seventh&quot;, scalingFactor);</span></div>
-<div class="line"><span class="lineno">  165</span>    mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a29d0d0f9463c9417d390da6149ffc24d">ReadCoarseMesh</a> (filename.str().c_str(), <span class="stringliteral">&quot;seventh&quot;</span>, scalingFactor);</div>
+<div class="line"><span class="lineno">  165</span>    mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a29d0d0f9463c9417d390da6149ffc24d">ReadCoarseMesh</a> (<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str().c_str(), <span class="stringliteral">&quot;seventh&quot;</span>, scalingFactor);</div>
 <div class="line"><span class="lineno">  166</span>    <span class="comment">/* &quot;seventh&quot; is the order of accuracy that is used in the gauss integration scheme</span></div>
 <div class="line"><span class="lineno">  167</span><span class="comment">    probably in the furure it is not going to be an argument of this function   */</span></div>
 <div class="line"><span class="lineno">  168</span>    <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> = mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a65dabdf1e308c1a44ebe5c6a41d09284">GetDimension</a>();</div>
@@ -1111,7 +1112,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3">SECOND</a></div><div class="ttdeci">@ SECOND</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00018">FElemTypeEnum.hpp:17</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a00ea9562f0dbb25e22bb3297d596e3baae3061383e18f31bbeb7e22fd9f34396e"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baae3061383e18f31bbeb7e22fd9f34396e">SERENDIPITY</a></div><div class="ttdeci">@ SERENDIPITY</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00016">FElemTypeEnum.hpp:16</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a></div><div class="ttdeci">@ LAGRANGE</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00005">FElemTypeEnum.hpp:5</a></div></div>
-<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00040">FemusDefault.hpp:40</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00041">FemusDefault.hpp:41</a></div></div>
 <div class="ttc" id="a_i_s_m_2ex4_2ex4_8cpp_html_a0aca793820b6ff7705450e2043256938"><div class="ttname"><a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#a0aca793820b6ff7705450e2043256938">numberOfUniformLevels</a></div><div class="ttdeci">unsigned numberOfUniformLevels</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp_source.html#l00089">ex4.cpp:89</a></div></div>
 <div class="ttc" id="a_willmore_2_willmore_graph_2ex2_2ex2_8cpp_html_a6e8af606c6593b89b41975e53a8f2f7c"><div class="ttname"><a href="../../d9/d82/_willmore_2_willmore_graph_2ex2_2ex2_8cpp.html#a6e8af606c6593b89b41975e53a8f2f7c">SetBoundaryConditionSphere</a></div><div class="ttdeci">bool SetBoundaryConditionSphere(const std::vector&lt; double &gt; &amp;x, const char SolName[], double &amp;value, const int facename, const double time)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d82/_willmore_2_willmore_graph_2ex2_2ex2_8cpp_source.html#l00032">ex2.cpp:32</a></div></div>
 <div class="ttc" id="a_willmore_2_willmore_graph_2ex2_2ex2_8cpp_html_a84fd32667634b56c9ac739d85348532a"><div class="ttname"><a href="../../d9/d82/_willmore_2_willmore_graph_2ex2_2ex2_8cpp.html#a84fd32667634b56c9ac739d85348532a">SetBoundaryConditionTorus</a></div><div class="ttdeci">bool SetBoundaryConditionTorus(const std::vector&lt; double &gt; &amp;x, const char SolName[], double &amp;value, const int facename, const double time)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d82/_willmore_2_willmore_graph_2ex2_2ex2_8cpp_source.html#l00056">ex2.cpp:56</a></div></div>
@@ -1134,6 +1135,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1_system_html_a42a5b5b5d2c7673b1d4c896762d8db9e"><div class="ttname"><a href="../../d5/dc7/classfemus_1_1_system.html#a42a5b5b5d2c7673b1d4c896762d8db9e">femus::System::SetAssembleFunction</a></div><div class="ttdeci">void SetAssembleFunction(AssembleFunctionType)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/de5/_system_8cpp_source.html#l00058">System.cpp:58</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_system_html_a606e07526d7a0d31eed638404ee2ed24"><div class="ttname"><a href="../../d5/dc7/classfemus_1_1_system.html#a606e07526d7a0d31eed638404ee2ed24">femus::System::AddSolutionToSystemPDE</a></div><div class="ttdeci">virtual void AddSolutionToSystemPDE(const char solname[])</div><div class="ttdef"><b>Definition</b> <a href="../../d8/de5/_system_8cpp_source.html#l00075">System.cpp:75</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_v_t_k_writer_html"><div class="ttname"><a href="../../d4/d8d/classfemus_1_1_v_t_k_writer.html">femus::VTKWriter</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_v_t_k_writer_8hpp_source.html#l00046">VTKWriter.hpp:46</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a8b9aa5b5b104ffacbc115e9ba3c22e6a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">build_edges_of_volumes.filename</a></div><div class="ttdeci">filename</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00009">build_edges_of_volumes.py:9</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1186,11 +1188,11 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   33</span>  <span class="keywordtype">bool</span> dirichlet = <span class="keyword">true</span>; <span class="comment">//dirichlet</span></div>
 <div class="line"><span class="lineno">   34</span> </div>
 <div class="line"><span class="lineno">   35</span>  <span class="keywordflow">if</span> (!strcmp (<span class="stringliteral">&quot;u&quot;</span>, SolName)) {</div>
-<div class="line"><span class="lineno">   36</span>    value = tan (<a class="code hl_variable" href="../../d9/d82/_willmore_2_willmore_graph_2ex2_2ex2_8cpp.html#aea53509286d2f06360618eb830c62fb9">thetaSphere</a>);</div>
+<div class="line"><span class="lineno">   36</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = tan (<a class="code hl_variable" href="../../d9/d82/_willmore_2_willmore_graph_2ex2_2ex2_8cpp.html#aea53509286d2f06360618eb830c62fb9">thetaSphere</a>);</div>
 <div class="line"><span class="lineno">   37</span>  }</div>
 <div class="line"><span class="lineno">   38</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (<span class="stringliteral">&quot;W&quot;</span>, SolName)) {</div>
 <div class="line"><span class="lineno">   39</span>    dirichlet = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   40</span>    value = cos(<a class="code hl_variable" href="../../d9/d82/_willmore_2_willmore_graph_2ex2_2ex2_8cpp.html#aea53509286d2f06360618eb830c62fb9">thetaSphere</a>);</div>
+<div class="line"><span class="lineno">   40</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = cos(<a class="code hl_variable" href="../../d9/d82/_willmore_2_willmore_graph_2ex2_2ex2_8cpp.html#aea53509286d2f06360618eb830c62fb9">thetaSphere</a>);</div>
 <div class="line"><span class="lineno">   41</span>  }</div>
 <div class="line"><span class="lineno">   42</span> </div>
 <div class="line"><span class="lineno">   43</span>  <span class="keywordflow">return</span> dirichlet;</div>
@@ -1250,7 +1252,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   60</span>  <span class="keywordtype">double</span> z = sin (<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a02e050d6adc3998272b7cd5fa4e7dc46">theta</a>);</div>
 <div class="line"><span class="lineno">   61</span> </div>
 <div class="line"><span class="lineno">   62</span>  <span class="keywordflow">if</span> (!strcmp (<span class="stringliteral">&quot;u&quot;</span>, SolName)) {</div>
-<div class="line"><span class="lineno">   63</span>    value = z;</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = z;</div>
 <div class="line"><span class="lineno">   64</span>  }</div>
 <div class="line"><span class="lineno">   65</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (<span class="stringliteral">&quot;W&quot;</span>, SolName)) {</div>
 <div class="line"><span class="lineno">   66</span>       <span class="comment">//dirichlet = false;</span></div>
@@ -1262,12 +1264,12 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (facename == 1) {</div>
 <div class="line"><span class="lineno">   73</span>      dirichlet = <span class="keyword">false</span>;<span class="comment">//Neumann</span></div>
 <div class="line"><span class="lineno">   74</span>      <span class="comment">//value = - A * H1; </span></div>
-<div class="line"><span class="lineno">   75</span>      value = sqrt(3)/2.;</div>
+<div class="line"><span class="lineno">   75</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = sqrt(3)/2.;</div>
 <div class="line"><span class="lineno">   76</span>    }</div>
 <div class="line"><span class="lineno">   77</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (facename == 2) {</div>
 <div class="line"><span class="lineno">   78</span>      dirichlet = <span class="keyword">false</span>;<span class="comment">//Neumann</span></div>
 <div class="line"><span class="lineno">   79</span>      <span class="comment">//value = - A * H2;</span></div>
-<div class="line"><span class="lineno">   80</span>     value = sqrt(3)/2.;</div>
+<div class="line"><span class="lineno">   80</span>     <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = sqrt(3)/2.;</div>
 <div class="line"><span class="lineno">   81</span>    }</div>
 <div class="line"><span class="lineno">   82</span>  }</div>
 <div class="line"><span class="lineno">   83</span>  <span class="keywordflow">return</span> dirichlet;</div>

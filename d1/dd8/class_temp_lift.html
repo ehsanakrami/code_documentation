@@ -280,7 +280,7 @@ Public Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  315</span> </div>
 <div class="line"><span class="lineno">  316</span>  <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  317</span>}</div>
-<div class="ttc" id="a_femus_default_8hpp_html_a3b117a1f0753d4692c37c05ac12c7e35"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#a3b117a1f0753d4692c37c05ac12c7e35">DEFAULT_BDRY_TOLL</a></div><div class="ttdeci">#define DEFAULT_BDRY_TOLL</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00063">FemusDefault.hpp:63</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_a3b117a1f0753d4692c37c05ac12c7e35"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#a3b117a1f0753d4692c37c05ac12c7e35">DEFAULT_BDRY_TOLL</a></div><div class="ttdeci">#define DEFAULT_BDRY_TOLL</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00067">FemusDefault.hpp:67</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_box_html"><div class="ttname"><a href="../../da/d8d/classfemus_1_1_box.html">femus::Box</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/df1/_box_8hpp_source.html#l00028">Box.hpp:28</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_box_html_a443727a5ad255d5352e92c33fac03958"><div class="ttname"><a href="../../da/d8d/classfemus_1_1_box.html#a443727a5ad255d5352e92c33fac03958">femus::Box::_lb</a></div><div class="ttdeci">std::vector&lt; double &gt; _lb</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df1/_box_8hpp_source.html#l00034">Box.hpp:34</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_box_html_a65fed8de18221ad064d17a440e3f3b04"><div class="ttname"><a href="../../da/d8d/classfemus_1_1_box.html#a65fed8de18221ad064d17a440e3f3b04">femus::Box::_le</a></div><div class="ttdeci">std::vector&lt; double &gt; _le</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df1/_box_8hpp_source.html#l00035">Box.hpp:35</a></div></div>
@@ -387,14 +387,15 @@ Public Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  384</span>  std::vector&lt;double&gt; x_rotshift(<a class="code hl_variable" href="../../d8/d5a/classfemus_1_1_quantity.html#a0298acf9a0633002493ec18fbd3ec612">_qtymap</a>.<a class="code hl_function" href="../../d5/d5a/classfemus_1_1_quantity_map.html#ab3a013a0c7a50c67d4c4a1c63bf8876d">GetMeshTwo</a>()-&gt;<a class="code hl_function" href="../../d9/d52/classfemus_1_1_multi_level_mesh_two.html#a767181491d990e3b808571309b153eb9">get_dim</a>());</div>
 <div class="line"><span class="lineno">  385</span>  <a class="code hl_variable" href="../../d8/d5a/classfemus_1_1_quantity.html#a0298acf9a0633002493ec18fbd3ec612">_qtymap</a>.<a class="code hl_function" href="../../d5/d5a/classfemus_1_1_quantity_map.html#ab3a013a0c7a50c67d4c4a1c63bf8876d">GetMeshTwo</a>()-&gt;<a class="code hl_variable" href="../../d9/d52/classfemus_1_1_multi_level_mesh_two.html#aeadabac66a6ee1c7fe8ec9b53c47a01b">_domain</a>-&gt;<a class="code hl_function" href="../../dc/d19/classfemus_1_1_domain.html#afde27aa114c601801cc727ef9edf31de">TransformPointToRef</a>(xp,&amp;x_rotshift[0]); </div>
 <div class="line"><span class="lineno">  386</span> </div>
-<div class="line"><span class="lineno">  387</span>    value[0] = 1.;</div>
+<div class="line"><span class="lineno">  387</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>[0] = 1.;</div>
 <div class="line"><span class="lineno">  388</span>  <span class="keywordflow">if</span> ((box-&gt;<a class="code hl_variable" href="../../da/d8d/classfemus_1_1_box.html#a65fed8de18221ad064d17a440e3f3b04">_le</a>[1]-box-&gt;<a class="code hl_variable" href="../../da/d8d/classfemus_1_1_box.html#a443727a5ad255d5352e92c33fac03958">_lb</a>[1]) -(x_rotshift[1]) &gt; -bdry_toll &amp;&amp;  (box-&gt;<a class="code hl_variable" href="../../da/d8d/classfemus_1_1_box.html#a65fed8de18221ad064d17a440e3f3b04">_le</a>[1]-box-&gt;<a class="code hl_variable" href="../../da/d8d/classfemus_1_1_box.html#a443727a5ad255d5352e92c33fac03958">_lb</a>[1]) -(x_rotshift[1]) &lt; bdry_toll)  {</div>
-<div class="line"><span class="lineno">  389</span>    value[0] = 0.; </div>
+<div class="line"><span class="lineno">  389</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>[0] = 0.; </div>
 <div class="line"><span class="lineno">  390</span>  }</div>
 <div class="line"><span class="lineno">  391</span> </div>
 <div class="line"><span class="lineno">  392</span> </div>
 <div class="line"><span class="lineno">  393</span>  <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  394</span>}</div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -633,8 +634,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/OptimalControl/02_elliptic_with_given_advection/<a class="el" href="../../d4/d4b/02__elliptic__with__given__advection_2_temp_quantities_8hpp_source.html">TempQuantities.hpp</a></li>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/OptimalControl/02_elliptic_with_given_advection/<a class="el" href="../../dd/d0d/02__elliptic__with__given__advection_2_temp_quantities_8cpp_source.html">TempQuantities.cpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/OptimalControl/02_elliptic_with_given_advection/<a class="el" href="../../d4/d4b/02__elliptic__with__given__advection_2_temp_quantities_8hpp_source.html">TempQuantities.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/OptimalControl/02_elliptic_with_given_advection/<a class="el" href="../../dd/d0d/02__elliptic__with__given__advection_2_temp_quantities_8cpp_source.html">TempQuantities.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

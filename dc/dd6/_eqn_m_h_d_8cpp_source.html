@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/OptimalControl/05_mhdopt/01_control_lifting_internal/EqnMHD.cpp Source File</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/OptimalControl/05_mhdopt/01_control_lifting_internal/EqnMHD.cpp Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -335,9 +335,9 @@ $(document).ready(function(){initNavTree('dc/dd6/_eqn_m_h_d_8cpp_source.html','.
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    </div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      Bext_vecQuant.<a class="code hl_function" href="../../de/d6e/classfemus_1_1_current_quantity.html#ac49ad9c2373c209ecc2b54eb3d0cde9d">curl_g</a>();          <span class="comment">//----- for Curl Curl RHS         //THE EXTENSION of the DOFS to 3D is done INSIDE!!</span></div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>       <a class="code hl_function" href="../../d0/d3b/namespacefemus_1_1_math.html#a7c61609663b61259ec67232f7eba0d3c">Math::extend</a>(&amp;Vel_vec_val_g[0],&amp;Vel_vec_val_g3D[0],space_dim);                    <span class="comment">//----- for Advection RHS</span></div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>       <a class="code hl_function" href="../../d0/d3b/namespacefemus_1_1_math.html#a7c61609663b61259ec67232f7eba0d3c">Math::extend</a>(&amp;Bext_vec_val_g[0],&amp;Bext_vec_val_g3D[0],space_dim);                    <span class="comment">//----- for Advection RHS</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>       <a class="code hl_function" href="../../d0/d3b/namespacefemus_1_1_math.html#a06daa97a94cd109a7d0229d4e23a40d6">Math::cross</a>(&amp;Vel_vec_val_g3D[0],&amp;Bext_vec_val_g3D[0],vXBe_g3D);          <span class="comment">//----- for Advection RHS</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>       Math::extend(&amp;Vel_vec_val_g[0],&amp;Vel_vec_val_g3D[0],space_dim);                    <span class="comment">//----- for Advection RHS</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>       Math::extend(&amp;Bext_vec_val_g[0],&amp;Bext_vec_val_g3D[0],space_dim);                    <span class="comment">//----- for Advection RHS</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>       Math::cross(&amp;Vel_vec_val_g3D[0],&amp;Bext_vec_val_g3D[0],vXBe_g3D);          <span class="comment">//----- for Advection RHS</span></div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">//================================</span></div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">//========= FILLING ELEMENT MAT/RHS</span></div>
@@ -548,8 +548,6 @@ $(document).ready(function(){initNavTree('dc/dd6/_eqn_m_h_d_8cpp_source.html','.
 <div class="ttc" id="aclassfemus_1_1_system_two_html"><div class="ttname"><a href="../../dd/d68/classfemus_1_1_system_two.html">femus::SystemTwo</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/da5/_system_two_8hpp_source.html#l00049">SystemTwo.hpp:49</a></div></div>
 <div class="ttc" id="aclassfemus_1_1elem__type_html_a7597b01400759749a8b76e01722cd89b"><div class="ttname"><a href="../../d3/dca/classfemus_1_1elem__type.html#a7597b01400759749a8b76e01722cd89b">femus::elem_type::GetNDofs</a></div><div class="ttdeci">int GetNDofs() const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/df9/_elem_type_8hpp_source.html#l00130">ElemType.hpp:130</a></div></div>
 <div class="ttc" id="aclassfemus_1_1elem_html"><div class="ttname"><a href="../../db/d2e/classfemus_1_1elem.html">femus::elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/_elem_8hpp_source.html#l00040">Elem.hpp:40</a></div></div>
-<div class="ttc" id="anamespacefemus_1_1_math_html_a06daa97a94cd109a7d0229d4e23a40d6"><div class="ttname"><a href="../../d0/d3b/namespacefemus_1_1_math.html#a06daa97a94cd109a7d0229d4e23a40d6">femus::Math::cross</a></div><div class="ttdeci">void cross(const double *a, const double *b, double *res)</div><div class="ttdoc">Cross product.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dba/_math_8hpp_source.html#l00060">Math.hpp:60</a></div></div>
-<div class="ttc" id="anamespacefemus_1_1_math_html_a7c61609663b61259ec67232f7eba0d3c"><div class="ttname"><a href="../../d0/d3b/namespacefemus_1_1_math.html#a7c61609663b61259ec67232f7eba0d3c">femus::Math::extend</a></div><div class="ttdeci">void extend(const double *a, double *a3D, const uint spacedim)</div><div class="ttdoc">extend to a 3D vector a vector with dimension</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dba/_math_8hpp_source.html#l00069">Math.hpp:69</a></div></div>
 <div class="ttc" id="anamespacefemus_html"><div class="ttname"><a href="../../d8/dea/namespacefemus.html">femus</a></div><div class="ttdoc">Class FemusInit.</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d03/_geom_el_type_enum_8hpp_source.html#l00007">GeomElTypeEnum.hpp:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

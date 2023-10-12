@@ -9,8 +9,8 @@ var searchData=
   ['sparsegrid_6',['sparseGrid',['../d5/dc3/classfemus_1_1sparse_grid.html',1,'femus']]],
   ['sparsematrix_7',['SparseMatrix',['../d3/d61/classfemus_1_1_sparse_matrix.html',1,'femus']]],
   ['sphere_8',['Sphere',['../d3/d62/class_sphere.html',1,'']]],
-  ['status_9',['status',['../db/ded/namespacefemus_1_1_parallel.html#d8/d6c/structfemus_1_1_parallel_1_1status',1,'femus::Parallel']]],
-  ['status_10',['Status',['../d1/d0e/classfemus_1_1_parallel_1_1_status.html',1,'femus::Parallel']]],
+  ['status_9',['Status',['../d1/d0e/classfemus_1_1_parallel_1_1_status.html',1,'femus::Parallel']]],
+  ['status_10',['status',['../db/ded/namespacefemus_1_1_parallel.html#d8/d6c/structfemus_1_1_parallel_1_1status',1,'femus::Parallel']]],
   ['stokes_11',['Stokes',['../d7/d84/_p_c_field_split_2ex6_2ex6_8cpp.html#dd/dbe/struct_stokes',1,'']]],
   ['system_12',['System',['../d5/dc7/classfemus_1_1_system.html',1,'femus']]],
   ['systemtwo_13',['SystemTwo',['../dd/d68/classfemus_1_1_system_two.html',1,'femus']]]

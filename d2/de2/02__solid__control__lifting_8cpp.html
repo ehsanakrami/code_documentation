@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/OptimalControl/04_solidopt/02_solid_control_lifting/02_solid_control_lifting.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/OptimalControl/04_solidopt/02_solid_control_lifting/02_solid_control_lifting.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -1246,7 +1246,7 @@ template&lt;class system_type , class real_num , class real_num_mov &gt; </div>
 <div class="line"><span class="lineno">  306</span> </div>
 <div class="line"><span class="lineno">  307</span>  <span class="comment">// ======= Unknowns ========================</span></div>
 <div class="line"><span class="lineno">  308</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dimension = ml_mesh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a65dabdf1e308c1a44ebe5c6a41d09284">GetDimension</a>();  </div>
-<div class="line"><span class="lineno">  309</span>  std::vector&lt; Unknown &gt; unknowns = <a class="code hl_function" href="../../d5/d9b/zzz__giorgiobornia__collect__all_8cpp.html#aa6cf7e343af28b995b6fab3d3528f6ef">provide_list_of_unknowns</a>(dimension);</div>
+<div class="line"><span class="lineno">  309</span>  std::vector&lt; Unknown &gt; unknowns = <a class="code hl_function" href="../../d9/d2b/ex02__poisson__a__all__dims__dir__neu__multiple__domains_8cpp.html#aa6cf7e343af28b995b6fab3d3528f6ef">provide_list_of_unknowns</a>(dimension);</div>
 <div class="line"><span class="lineno">  310</span>  </div>
 <div class="line"><span class="lineno">  311</span>  <span class="comment">// ======= Normal run ========================   //if you don&#39;t want the convergence study</span></div>
 <div class="line"><span class="lineno">  312</span>  <a class="code hl_class" href="../../db/d43/class_solution__generation__1.html">Solution_generation_1&lt; adept::adouble &gt;</a> my_main;</div>
@@ -1285,9 +1285,9 @@ template&lt;class system_type , class real_num , class real_num_mov &gt; </div>
 <div class="ttc" id="a02__solid__control__lifting_8cpp_html_a5dec9191b407f5f1913e563b23777741"><div class="ttname"><a href="../../d2/de2/02__solid__control__lifting_8cpp.html#a5dec9191b407f5f1913e563b23777741">Solution_set_initial_conditions</a></div><div class="ttdeci">double Solution_set_initial_conditions(const MultiLevelProblem *ml_prob, const std::vector&lt; double &gt; &amp;x, const char name[])</div><div class="ttdef"><b>Definition</b> <a href="../../d2/de2/02__solid__control__lifting_8cpp_source.html#l00023">02_solid_control_lifting.cpp:23</a></div></div>
 <div class="ttc" id="a_elem_type_enum_8hpp_html_a1b014294b9757a001707c979e2bab627"><div class="ttname"><a href="../../df/d2a/_elem_type_enum_8hpp.html#a1b014294b9757a001707c979e2bab627">ElemType</a></div><div class="ttdeci">ElemType</div><div class="ttdef"><b>Definition</b> <a href="../../df/d2a/_elem_type_enum_8hpp_source.html#l00006">ElemTypeEnum.hpp:6</a></div></div>
 <div class="ttc" id="a_elem_type_enum_8hpp_html_a1b014294b9757a001707c979e2bab627ac17e6803e9d62a4d807c62341c5f7d59"><div class="ttname"><a href="../../df/d2a/_elem_type_enum_8hpp.html#a1b014294b9757a001707c979e2bab627ac17e6803e9d62a4d807c62341c5f7d59">QUAD9</a></div><div class="ttdeci">@ QUAD9</div><div class="ttdef"><b>Definition</b> <a href="../../df/d2a/_elem_type_enum_8hpp_source.html#l00016">ElemTypeEnum.hpp:16</a></div></div>
-<div class="ttc" id="a_femus_default_8hpp_html_a8e12c4926d6c36bf00835a092bc0e310"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#a8e12c4926d6c36bf00835a092bc0e310">DEFAULT_INPUTDIR</a></div><div class="ttdeci">#define DEFAULT_INPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00039">FemusDefault.hpp:39</a></div></div>
-<div class="ttc" id="aclass_solution__generation__1_html"><div class="ttname"><a href="../../db/d43/class_solution__generation__1.html">Solution_generation_1</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d2b/ex02__poisson__convergence_8cpp_source.html#l00116">ex02_poisson_convergence.cpp:116</a></div></div>
-<div class="ttc" id="aclass_solution__generation__1_html_a2a0001fac52be7a97cc9cc3c901c5f9f"><div class="ttname"><a href="../../db/d43/class_solution__generation__1.html#a2a0001fac52be7a97cc9cc3c901c5f9f">Solution_generation_1::run_on_single_level</a></div><div class="ttdeci">const MultiLevelSolution run_on_single_level(MultiLevelProblem &amp;ml_prob, MultiLevelMesh &amp;ml_mesh, const unsigned i, const std::vector&lt; Unknown &gt; &amp;unknowns, const std::vector&lt; Math::Function&lt; double &gt; * &gt; &amp;exact_sol, const MultiLevelSolution::InitFuncMLProb SetInitialCondition_in, const MultiLevelSolution::BoundaryFuncMLProb SetBoundaryCondition_in, const bool equation_solve) const</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d2b/ex02__poisson__convergence_8cpp_source.html#l00307">ex02_poisson_convergence.cpp:307</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_a8e12c4926d6c36bf00835a092bc0e310"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#a8e12c4926d6c36bf00835a092bc0e310">DEFAULT_INPUTDIR</a></div><div class="ttdeci">#define DEFAULT_INPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00040">FemusDefault.hpp:40</a></div></div>
+<div class="ttc" id="aclass_solution__generation__1_html"><div class="ttname"><a href="../../db/d43/class_solution__generation__1.html">Solution_generation_1</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/d0e/ex02__poisson__c__manufactured__sol__convergence__class_8cpp_source.html#l00119">ex02_poisson_c_manufactured_sol_convergence_class.cpp:119</a></div></div>
+<div class="ttc" id="aclass_solution__generation__1_html_a2a0001fac52be7a97cc9cc3c901c5f9f"><div class="ttname"><a href="../../db/d43/class_solution__generation__1.html#a2a0001fac52be7a97cc9cc3c901c5f9f">Solution_generation_1::run_on_single_level</a></div><div class="ttdeci">const MultiLevelSolution run_on_single_level(MultiLevelProblem &amp;ml_prob, MultiLevelMesh &amp;ml_mesh, const unsigned i, const std::vector&lt; Unknown &gt; &amp;unknowns, const std::vector&lt; Math::Function&lt; double &gt; * &gt; &amp;exact_sol, const MultiLevelSolution::InitFuncMLProb SetInitialCondition_in, const MultiLevelSolution::BoundaryFuncMLProb SetBoundaryCondition_in, const bool equation_solve) const</div><div class="ttdef"><b>Definition</b> <a href="../../d8/d0e/ex02__poisson__c__manufactured__sol__convergence__class_8cpp_source.html#l00312">ex02_poisson_c_manufactured_sol_convergence_class.cpp:312</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_femus_init_html"><div class="ttname"><a href="../../da/d5e/classfemus_1_1_femus_init.html">femus::FemusInit</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d7c/_femus_init_8hpp_source.html#l00049">FemusInit.hpp:49</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_files_html"><div class="ttname"><a href="../../d6/d0b/classfemus_1_1_files.html">femus::Files</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d4e/_files_8hpp_source.html#l00040">Files.hpp:40</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_files_html_aac199200ffda7ba50611cc41f6a874bc"><div class="ttname"><a href="../../d6/d0b/classfemus_1_1_files.html#aac199200ffda7ba50611cc41f6a874bc">femus::Files::RedirectCout</a></div><div class="ttdeci">void RedirectCout(const bool redirect_cout_to_file) const</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dce/_files_8cpp_source.html#l00553">Files.cpp:553</a></div></div>
@@ -1298,8 +1298,8 @@ template&lt;class system_type , class real_num , class real_num_mov &gt; </div>
 <div class="ttc" id="aclassfemus_1_1_multi_level_problem_html"><div class="ttname"><a href="../../de/d6a/classfemus_1_1_multi_level_problem.html">femus::MultiLevelProblem</a></div><div class="ttdef"><b>Definition</b> <a href="../../d6/dbc/_multi_level_problem_8hpp_source.html#l00054">MultiLevelProblem.hpp:54</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_multi_level_problem_html_a623bdc2aefd83cf0c6d74fc265ee5c3f"><div class="ttname"><a href="../../de/d6a/classfemus_1_1_multi_level_problem.html#a623bdc2aefd83cf0c6d74fc265ee5c3f">femus::MultiLevelProblem::SetFilesHandler</a></div><div class="ttdeci">void SetFilesHandler(const Files *files_in)</div><div class="ttdef"><b>Definition</b> <a href="../../d6/dbc/_multi_level_problem_8hpp_source.html#l00423">MultiLevelProblem.hpp:423</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_multi_level_problem_html_a8b72e984b63d5ff97c1e7a0f0a5eee5a"><div class="ttname"><a href="../../de/d6a/classfemus_1_1_multi_level_problem.html#a8b72e984b63d5ff97c1e7a0f0a5eee5a">femus::MultiLevelProblem::SetQuadratureRuleAllGeomElems</a></div><div class="ttdeci">void SetQuadratureRuleAllGeomElems(const std::string quadr_order_in)</div><div class="ttdef"><b>Definition</b> <a href="../../d9/dc6/_multi_level_problem_8cpp_source.html#l00177">MultiLevelProblem.cpp:177</a></div></div>
+<div class="ttc" id="aex02__poisson__a__all__dims__dir__neu__multiple__domains_8cpp_html_aa6cf7e343af28b995b6fab3d3528f6ef"><div class="ttname"><a href="../../d9/d2b/ex02__poisson__a__all__dims__dir__neu__multiple__domains_8cpp.html#aa6cf7e343af28b995b6fab3d3528f6ef">provide_list_of_unknowns</a></div><div class="ttdeci">const std::vector&lt; Unknown &gt; provide_list_of_unknowns()</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d2b/ex02__poisson__a__all__dims__dir__neu__multiple__domains_8cpp_source.html#l00774">ex02_poisson_a_all_dims_dir_neu_multiple_domains.cpp:774</a></div></div>
 <div class="ttc" id="asolidopt__params_8hpp_html_a40646ef4581e21d1eac608c36580fff3"><div class="ttname"><a href="../../de/d58/solidopt__params_8hpp.html#a40646ef4581e21d1eac608c36580fff3">NSUB</a></div><div class="ttdeci">#define NSUB</div><div class="ttdef"><b>Definition</b> <a href="../../de/d58/solidopt__params_8hpp_source.html#l00007">solidopt_params.hpp:7</a></div></div>
-<div class="ttc" id="azzz__giorgiobornia__collect__all_8cpp_html_aa6cf7e343af28b995b6fab3d3528f6ef"><div class="ttname"><a href="../../d5/d9b/zzz__giorgiobornia__collect__all_8cpp.html#aa6cf7e343af28b995b6fab3d3528f6ef">provide_list_of_unknowns</a></div><div class="ttdeci">const std::vector&lt; Unknown &gt; provide_list_of_unknowns()</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d9b/zzz__giorgiobornia__collect__all_8cpp_source.html#l00617">zzz_giorgiobornia_collect_all.cpp:617</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1448,7 +1448,7 @@ template&lt;class system_type , class real_num , class real_num_mov &gt; </div>
 <div class="line"><span class="lineno">   73</span>  <span class="comment">//1: bottom (y=y_min) //2: right (x=x_max)  //3: top (y=y_max)  //4: left (x=x_min) //5: (z=z_min)  //6:  (z=z_max) (in 3D, I guess...)</span></div>
 <div class="line"><span class="lineno">   74</span>  </div>
 <div class="line"><span class="lineno">   75</span>  <span class="keywordtype">bool</span> dirichlet  = <span class="keyword">true</span>; </div>
-<div class="line"><span class="lineno">   76</span>  value = 0.;</div>
+<div class="line"><span class="lineno">   76</span>  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   77</span>  </div>
 <div class="line"><span class="lineno">   78</span>        <span class="keywordflow">if</span> (facename == 2) {</div>
 <div class="line"><span class="lineno">   79</span>       <span class="keywordflow">if</span> (!strcmp(SolName, <span class="stringliteral">&quot;DX_CTRL&quot;</span>))   { dirichlet = <span class="keyword">false</span>; }</div>
@@ -1536,6 +1536,7 @@ template&lt;class system_type , class real_num , class real_num_mov &gt; </div>
 <div class="line"><span class="lineno">  161</span>      </div>
 <div class="line"><span class="lineno">  162</span> <span class="keywordflow">return</span> dirichlet;</div>
 <div class="line"><span class="lineno">  163</span>}</div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1574,49 +1575,49 @@ template&lt;class system_type , class real_num , class real_num_mov &gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../d2/de2/02__solid__control__lifting_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../d2/de2/02__solid__control__lifting_8cpp_source.html">02_solid_control_lifting.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   23</span>                                                                                                                            {</div>
 <div class="line"><span class="lineno">   24</span>         </div>
-<div class="line"><span class="lineno">   25</span>           <span class="keywordtype">double</span> value = 0.;</div>
+<div class="line"><span class="lineno">   25</span>           <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   26</span> </div>
 <div class="line"><span class="lineno">   27</span>             <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;DX&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   28</span>                 value = 0.;</div>
+<div class="line"><span class="lineno">   28</span>                 <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   29</span>             }</div>
 <div class="line"><span class="lineno">   30</span>             <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;DY&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   31</span>                 value = 0.;</div>
+<div class="line"><span class="lineno">   31</span>                 <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   32</span>             }</div>
 <div class="line"><span class="lineno">   33</span>             <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;DZ&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   34</span>                 value = 0.;</div>
+<div class="line"><span class="lineno">   34</span>                 <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   35</span>             }</div>
 <div class="line"><span class="lineno">   36</span>             <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;P&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   37</span>                 value = 0.;</div>
+<div class="line"><span class="lineno">   37</span>                 <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   38</span>             }</div>
 <div class="line"><span class="lineno">   39</span> </div>
 <div class="line"><span class="lineno">   40</span>             <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;DX_ADJ&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   41</span>                 value = 0.;</div>
+<div class="line"><span class="lineno">   41</span>                 <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   42</span>             }</div>
 <div class="line"><span class="lineno">   43</span>             <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;DY_ADJ&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   44</span>                 value = 0.;</div>
+<div class="line"><span class="lineno">   44</span>                 <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   45</span>             }</div>
 <div class="line"><span class="lineno">   46</span>             <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;DZ_ADJ&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   47</span>                 value = 0.;</div>
+<div class="line"><span class="lineno">   47</span>                 <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   48</span>             }</div>
 <div class="line"><span class="lineno">   49</span>             <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;P_ADJ&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   50</span>                 value = 0.;</div>
+<div class="line"><span class="lineno">   50</span>                 <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   51</span>             }</div>
 <div class="line"><span class="lineno">   52</span>             </div>
 <div class="line"><span class="lineno">   53</span>             <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;DX_CTRL&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   54</span>                 value = 0.;</div>
+<div class="line"><span class="lineno">   54</span>                 <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   55</span>             }</div>
 <div class="line"><span class="lineno">   56</span>             <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;DY_CTRL&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   57</span>                 value = 0.;</div>
+<div class="line"><span class="lineno">   57</span>                 <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   58</span>             }</div>
 <div class="line"><span class="lineno">   59</span>             <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;DZ_CTRL&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   60</span>                 value = 0.;</div>
+<div class="line"><span class="lineno">   60</span>                 <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   61</span>             }</div>
 <div class="line"><span class="lineno">   62</span>             <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(name,<span class="stringliteral">&quot;P_CTRL&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   63</span>                 value = 0.;</div>
+<div class="line"><span class="lineno">   63</span>                 <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   64</span>             }</div>
 <div class="line"><span class="lineno">   65</span>          </div>
 <div class="line"><span class="lineno">   66</span>    </div>
-<div class="line"><span class="lineno">   67</span>      <span class="keywordflow">return</span> value;   </div>
+<div class="line"><span class="lineno">   67</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;   </div>
 <div class="line"><span class="lineno">   68</span>}  </div>
 </div><!-- fragment -->
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/OptimalControl/02_elliptic_with_given_advection/main.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/OptimalControl/02_elliptic_with_given_advection/main.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -857,15 +857,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000136">Todo:</a></b></dt><dd>you have to call this before you can print </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000137">Todo:</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000138">Todo:</a></b></dt><dd>I can also call it after instantiation MLProblem </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000139">Todo:</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000140">Todo:</a></b></dt><dd>I cannot call it with "All" and with a FUNCTION, because I need the string for "All" as a variable </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000141">Todo:</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000142">Todo:</a></b></dt><dd>Have to say that you have to call this initialize BEFORE the generation of the boundary conditions; if you called this after, it would superimpose the BOUNDARY VALUES </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000142">Todo:</a></b></dt><dd>you have to call this before you can print </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000143">Todo:</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000144">Todo:</a></b></dt><dd>you have to initialize also those variables which are NOT unknowns! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000144">Todo:</a></b></dt><dd>I can also call it after instantiation MLProblem </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000145">Todo:</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000146">Todo:</a></b></dt><dd>I cannot call it with "All" and with a FUNCTION, because I need the string for "All" as a variable </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000147">Todo:</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000148">Todo:</a></b></dt><dd>Have to say that you have to call this initialize BEFORE the generation of the boundary conditions; if you called this after, it would superimpose the BOUNDARY VALUES </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000149">Todo:</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000150">Todo:</a></b></dt><dd>you have to initialize also those variables which are NOT unknowns! </dd></dl>
 <p>what the heck do these parameters mean?</p>
 <p>=====================</p>
 
@@ -984,7 +984,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  152</span> </div>
 <div class="line"><span class="lineno">  159</span> </div>
 <div class="line"><span class="lineno">  160</span>  <span class="comment">// ******* Set boundary function function *******</span></div>
-<div class="line"><span class="lineno">  161</span>  ml_sol.AttachSetBoundaryConditionFunction(<a class="code hl_function" href="../../d8/dd4/00__laplacian__all__dims__dir__neu_8cpp.html#a7732c3f33d29ade096cab9095c2fd987">SetBoundaryCondition</a>);</div>
+<div class="line"><span class="lineno">  161</span>  ml_sol.AttachSetBoundaryConditionFunction(<a class="code hl_function" href="../../d0/d63/arani_8cpp.html#a7732c3f33d29ade096cab9095c2fd987">SetBoundaryCondition</a>);</div>
 <div class="line"><span class="lineno">  162</span> </div>
 <div class="line"><span class="lineno">  163</span>  <span class="comment">// ******* Generate boundary conditions *******</span></div>
 <div class="line"><span class="lineno">  164</span>  ml_sol.GenerateBdc(<span class="stringliteral">&quot;Qty_Temperature&quot;</span>,<span class="stringliteral">&quot;Steady&quot;</span>,&amp;ml_prob);</div>
@@ -1116,7 +1116,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  291</span> </div>
 <div class="line"><span class="lineno">  292</span>  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><span class="lineno">  293</span>}</div>
-<div class="ttc" id="a00__laplacian__all__dims__dir__neu_8cpp_html_a7732c3f33d29ade096cab9095c2fd987"><div class="ttname"><a href="../../d8/dd4/00__laplacian__all__dims__dir__neu_8cpp.html#a7732c3f33d29ade096cab9095c2fd987">SetBoundaryCondition</a></div><div class="ttdeci">bool SetBoundaryCondition(const MultiLevelProblem *ml_prob, const std::vector&lt; double &gt; &amp;x, const char name[], double &amp;value, const int face_name, const double time)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/dd4/00__laplacian__all__dims__dir__neu_8cpp_source.html#l00048">00_laplacian_all_dims_dir_neu.cpp:48</a></div></div>
 <div class="ttc" id="a_dirichlet_b_c_type_enum_8hpp_html_a642eeb34fa6e30051fcb1258b649e241ae89b184be7715e004d61356eec9639f5"><div class="ttname"><a href="../../d2/d61/_dirichlet_b_c_type_enum_8hpp.html#a642eeb34fa6e30051fcb1258b649e241ae89b184be7715e004d61356eec9639f5">ELIMINATION</a></div><div class="ttdeci">@ ELIMINATION</div><div class="ttdef"><b>Definition</b> <a href="../../d2/d61/_dirichlet_b_c_type_enum_8hpp_source.html#l00007">DirichletBCTypeEnum.hpp:6</a></div></div>
 <div class="ttc" id="a_elem_type_enum_8hpp_html_a1b014294b9757a001707c979e2bab627ac17e6803e9d62a4d807c62341c5f7d59"><div class="ttname"><a href="../../df/d2a/_elem_type_enum_8hpp.html#a1b014294b9757a001707c979e2bab627ac17e6803e9d62a4d807c62341c5f7d59">QUAD9</a></div><div class="ttdeci">@ QUAD9</div><div class="ttdef"><b>Definition</b> <a href="../../df/d2a/_elem_type_enum_8hpp_source.html#l00016">ElemTypeEnum.hpp:16</a></div></div>
 <div class="ttc" id="a_f_e_type_enum_8hpp_html_a31f830fd5deccf18a6e312b026bbe13ba11ea57bac296f79f8acbaf6fdf6bcc20"><div class="ttname"><a href="../../dd/d9a/_f_e_type_enum_8hpp.html#a31f830fd5deccf18a6e312b026bbe13ba11ea57bac296f79f8acbaf6fdf6bcc20">LL</a></div><div class="ttdeci">@ LL</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d9a/_f_e_type_enum_8hpp_source.html#l00005">FETypeEnum.hpp:5</a></div></div>
@@ -1137,6 +1136,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="a_solvertype_enum_8hpp_html_a8b06041d7c1fb05f379714f4312306ecac8f49d1c89cf479bb8dc2878524b71d2"><div class="ttname"><a href="../../de/dd2/_solvertype_enum_8hpp.html#a8b06041d7c1fb05f379714f4312306ecac8f49d1c89cf479bb8dc2878524b71d2">GMRES</a></div><div class="ttdeci">@ GMRES</div><div class="ttdef"><b>Definition</b> <a href="../../de/dd2/_solvertype_enum_8hpp_source.html#l00016">SolvertypeEnum.hpp:16</a></div></div>
 <div class="ttc" id="a_writer_enum_8hpp_html_a18b827c3c1f62b8a57febdcad0c871a8a37fb55ddbbe1465cec5f3d154db73e67"><div class="ttname"><a href="../../db/d1c/_writer_enum_8hpp.html#a18b827c3c1f62b8a57febdcad0c871a8a37fb55ddbbe1465cec5f3d154db73e67">VTK</a></div><div class="ttdeci">@ VTK</div><div class="ttdef"><b>Definition</b> <a href="../../db/d1c/_writer_enum_8hpp_source.html#l00004">WriterEnum.hpp:4</a></div></div>
 <div class="ttc" id="a_writer_enum_8hpp_html_a18b827c3c1f62b8a57febdcad0c871a8a641b584776a4c2eddd6afcb50498422f"><div class="ttname"><a href="../../db/d1c/_writer_enum_8hpp.html#a18b827c3c1f62b8a57febdcad0c871a8a641b584776a4c2eddd6afcb50498422f">XDMF</a></div><div class="ttdeci">@ XDMF</div><div class="ttdef"><b>Definition</b> <a href="../../db/d1c/_writer_enum_8hpp_source.html#l00006">WriterEnum.hpp:6</a></div></div>
+<div class="ttc" id="aarani_8cpp_html_a7732c3f33d29ade096cab9095c2fd987"><div class="ttname"><a href="../../d0/d63/arani_8cpp.html#a7732c3f33d29ade096cab9095c2fd987">SetBoundaryCondition</a></div><div class="ttdeci">bool SetBoundaryCondition(const MultiLevelProblem *ml_prob, const std::vector&lt; double &gt; &amp;x, const char name[], double &amp;value, const int face_name, const double time)</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d63/arani_8cpp_source.html#l00035">arani.cpp:35</a></div></div>
 <div class="ttc" id="aclass_pressure_html"><div class="ttname"><a href="../../d2/da5/class_pressure.html">Pressure</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d4b/02__elliptic__with__given__advection_2_temp_quantities_8hpp_source.html#l00047">TempQuantities.hpp:47</a></div></div>
 <div class="ttc" id="aclass_temp_adj_html"><div class="ttname"><a href="../../df/dff/class_temp_adj.html">TempAdj</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d4b/02__elliptic__with__given__advection_2_temp_quantities_8hpp_source.html#l00037">TempQuantities.hpp:37</a></div></div>
 <div class="ttc" id="aclass_temp_lift_html"><div class="ttname"><a href="../../d1/dd8/class_temp_lift.html">TempLift</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/d4b/02__elliptic__with__given__advection_2_temp_quantities_8hpp_source.html#l00026">TempQuantities.hpp:26</a></div></div>

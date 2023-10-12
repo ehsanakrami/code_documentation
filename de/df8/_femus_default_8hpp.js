@@ -1,5 +1,6 @@
 var _femus_default_8hpp =
 [
+    [ "DEFAULT_APPLICATIONS_DIR", "de/df8/_femus_default_8hpp.html#a95bac3473270188ef66454507fe9e6a5", null ],
     [ "DEFAULT_AUX_XDMF", "de/df8/_femus_default_8hpp.html#ad29f342215fe272e83e1b96aaceaff3d", null ],
     [ "DEFAULT_BASECASE", "de/df8/_femus_default_8hpp.html#ad18f86404d953315eba83703faae2e6c", null ],
     [ "DEFAULT_BASEMESH", "de/df8/_femus_default_8hpp.html#a5b5019cb538300e8a8d530323847de00", null ],
@@ -24,17 +25,20 @@ var _femus_default_8hpp =
     [ "DEFAULT_INPUTDIR", "de/df8/_femus_default_8hpp.html#a8e12c4926d6c36bf00835a092bc0e310", null ],
     [ "DEFAULT_LAST_RUN", "de/df8/_femus_default_8hpp.html#a28c053773e242ca00c1f63ddcd3c2168", null ],
     [ "DEFAULT_MAXITS_LSOLV", "de/df8/_femus_default_8hpp.html#a7bfcdce4711e2019fb92fd7e59e42f08", null ],
+    [ "DEFAULT_MESH_FILES_PATH", "de/df8/_femus_default_8hpp.html#a9474ccd5fe02de808a96182d96ac32ab", null ],
     [ "DEFAULT_MG_GAMMA", "de/df8/_femus_default_8hpp.html#aa6458acc1fd5bf491e4121ebb5c115e1", null ],
     [ "DEFAULT_NC_COARSE", "de/df8/_femus_default_8hpp.html#a95a240c38b468754cc507c3597c90807", null ],
     [ "DEFAULT_NC_POST", "de/df8/_femus_default_8hpp.html#a0f88c327f74f1f82803c5a506d426b92", null ],
     [ "DEFAULT_NC_PRE", "de/df8/_femus_default_8hpp.html#a56e01beffdefa0f94bdf92f9bfc990f6", null ],
     [ "DEFAULT_NDIGITS", "de/df8/_femus_default_8hpp.html#a54b71b34ccee274b9d8c99c4f1d70c41", null ],
     [ "DEFAULT_OUTPUTDIR", "de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b", null ],
+    [ "DEFAULT_PACKAGE_DIR", "de/df8/_femus_default_8hpp.html#aea5c61ec1e5de0df5bd912de050ce7fd", null ],
     [ "DEFAULT_PRINT_CONV", "de/df8/_femus_default_8hpp.html#ab14c3814f8fddfa53833e59adaf1bebf", null ],
     [ "DEFAULT_PRINT_INFO", "de/df8/_femus_default_8hpp.html#a338265e1e58b9f60faac609ac1c5580a", null ],
     [ "DEFAULT_PRINT_TIME", "de/df8/_femus_default_8hpp.html#ac16b66b1d0df49a5fec75a870b1e1cac", null ],
     [ "DEFAULT_REST_SIMPLE", "de/df8/_femus_default_8hpp.html#a98182a4de3bd63ade9cdf09303e65cec", null ],
     [ "DEFAULT_RUN_LOG", "de/df8/_femus_default_8hpp.html#ae3a869847a89d2f407d0ff01c7992d94", null ],
     [ "DEFAULT_RUNTIMECONF", "de/df8/_femus_default_8hpp.html#a9e9f49d2dbc7aa4211c0b2690f15c3bf", null ],
-    [ "DEFAULT_SOL_NCHARS", "de/df8/_femus_default_8hpp.html#a14e3aeb7c489893cc1a70b8c60e2ccd7", null ]
+    [ "DEFAULT_SOL_NCHARS", "de/df8/_femus_default_8hpp.html#a14e3aeb7c489893cc1a70b8c60e2ccd7", null ],
+    [ "DEFAULT_SOURCE_DIR", "de/df8/_femus_default_8hpp.html#a9e64ee8deb18daea4c9b0696f4d615be", null ]
 ];

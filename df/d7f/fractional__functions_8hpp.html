@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/OptimalControl/fractional_functions.hpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/OptimalControl/fractional_functions.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -699,18 +699,19 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   18</span>{</div>
 <div class="line"><span class="lineno">   19</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> TOLERANCE = 1.0e-10;</div>
 <div class="line"><span class="lineno">   20</span>  <span class="keywordtype">double</span> term = a * <a class="code hl_variable" href="../../dd/d80/_u_q_2ex12_2ex12_8cpp.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a> * x / c;</div>
-<div class="line"><span class="lineno">   21</span>  <span class="keywordtype">double</span> value = 1.0 + term;</div>
+<div class="line"><span class="lineno">   21</span>  <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 1.0 + term;</div>
 <div class="line"><span class="lineno">   22</span>  <span class="keywordtype">int</span> n = 1;</div>
 <div class="line"><span class="lineno">   23</span> </div>
 <div class="line"><span class="lineno">   24</span>  <span class="keywordflow">while</span>(abs(term) &gt; TOLERANCE) {</div>
 <div class="line"><span class="lineno">   25</span>    a++, <a class="code hl_variable" href="../../dd/d80/_u_q_2ex12_2ex12_8cpp.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a>++, c++, n++;</div>
 <div class="line"><span class="lineno">   26</span>    term *= a * <a class="code hl_variable" href="../../dd/d80/_u_q_2ex12_2ex12_8cpp.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a> * x / c / n;</div>
-<div class="line"><span class="lineno">   27</span>    value += term;</div>
+<div class="line"><span class="lineno">   27</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> += term;</div>
 <div class="line"><span class="lineno">   28</span>  }</div>
 <div class="line"><span class="lineno">   29</span> </div>
-<div class="line"><span class="lineno">   30</span>  <span class="keywordflow">return</span> value;</div>
+<div class="line"><span class="lineno">   30</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">   31</span>}</div>
 <div class="ttc" id="a_u_q_2ex12_2ex12_8cpp_html_a1510a66dacf9cf3586de5fc89ae2a073"><div class="ttname"><a href="../../dd/d80/_u_q_2ex12_2ex12_8cpp.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a></div><div class="ttdeci">double b</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d80/_u_q_2ex12_2ex12_8cpp_source.html#l00053">ex12.cpp:53</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

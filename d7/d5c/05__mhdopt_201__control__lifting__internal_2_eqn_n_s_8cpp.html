@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/OptimalControl/05_mhdopt/01_control_lifting_internal/EqnNS.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/OptimalControl/05_mhdopt/01_control_lifting_internal/EqnNS.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -403,7 +403,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  285</span>     <span class="comment">//Summing them    //Extending them,     //Whatever is performed on the Vect._val_dofs</span></div>
 <div class="line"><span class="lineno">  286</span> </div>
 <div class="line"><span class="lineno">  287</span><span class="comment">//======SUM Bhom and Bext  //from now on, you&#39;ll only use Bmag //Bmag,Bext and Bhom must have the same orders!</span></div>
-<div class="line"><span class="lineno">  288</span>    <a class="code hl_function" href="../../d0/d3b/namespacefemus_1_1_math.html#a1ac507af12e3ceaf078b640984b82059">Math::zeroN</a>(&amp;Bmag._val_dofs[0],Bmag._dim*Bmag._ndof);</div>
+<div class="line"><span class="lineno">  288</span>    Math::zeroN(&amp;Bmag._val_dofs[0],Bmag._dim*Bmag._ndof);</div>
 <div class="line"><span class="lineno">  289</span> </div>
 <div class="line"><span class="lineno">  290</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="../../d5/dd2/_typedefs_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> ivarq=0; ivarq &lt; Bmag._dim; ivarq++)    { <span class="comment">//ivarq is like idim</span></div>
 <div class="line"><span class="lineno">  291</span>          <span class="keywordflow">for</span> (<a class="code hl_typedef" href="../../d5/dd2/_typedefs_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> d=0; d &lt;  Bmag._ndof; d++)    {</div>
@@ -499,11 +499,11 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  381</span>     Bmag.val_g();</div>
 <div class="line"><span class="lineno">  382</span> </div>
 <div class="line"><span class="lineno">  383</span><span class="comment">//compute curlBxB</span></div>
-<div class="line"><span class="lineno">  384</span>          <a class="code hl_function" href="../../d0/d3b/namespacefemus_1_1_math.html#a7c61609663b61259ec67232f7eba0d3c">Math::extend</a>(&amp;Bmag._val_g[0],&amp;Bmag._val_g3D[0],space_dim);                    <span class="comment">//fills _val_g3D</span></div>
-<div class="line"><span class="lineno">  385</span>          <a class="code hl_function" href="../../d0/d3b/namespacefemus_1_1_math.html#a06daa97a94cd109a7d0229d4e23a40d6">Math::cross</a>(&amp;Bmag._curl_g3D[0],&amp;Bmag._val_g3D[0],curlBXB_g3D);</div>
+<div class="line"><span class="lineno">  384</span>          Math::extend(&amp;Bmag._val_g[0],&amp;Bmag._val_g3D[0],space_dim);                    <span class="comment">//fills _val_g3D</span></div>
+<div class="line"><span class="lineno">  385</span>          Math::cross(&amp;Bmag._curl_g3D[0],&amp;Bmag._val_g3D[0],curlBXB_g3D);</div>
 <div class="line"><span class="lineno">  386</span> </div>
 <div class="line"><span class="lineno">  387</span><span class="comment">//compute JxB</span></div>
-<div class="line"><span class="lineno">  388</span>          <a class="code hl_function" href="../../d0/d3b/namespacefemus_1_1_math.html#a06daa97a94cd109a7d0229d4e23a40d6">Math::cross</a>(Jext_g3D,&amp;Bmag._val_g3D[0],JextXB_g3D);</div>
+<div class="line"><span class="lineno">  388</span>          Math::cross(Jext_g3D,&amp;Bmag._val_g3D[0],JextXB_g3D);</div>
 <div class="line"><span class="lineno">  389</span> </div>
 <div class="line"><span class="lineno">  390</span>          </div>
 <div class="line"><span class="lineno">  391</span>          </div>
@@ -817,9 +817,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1_system_two_html"><div class="ttname"><a href="../../dd/d68/classfemus_1_1_system_two.html">femus::SystemTwo</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/da5/_system_two_8hpp_source.html#l00049">SystemTwo.hpp:49</a></div></div>
 <div class="ttc" id="aclassfemus_1_1elem_html"><div class="ttname"><a href="../../db/d2e/classfemus_1_1elem.html">femus::elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/_elem_8hpp_source.html#l00040">Elem.hpp:40</a></div></div>
 <div class="ttc" id="ampm_fem_8hpp_html_a3b98a21c9701599b0260b0e7e10f78b6"><div class="ttname"><a href="../../d1/dcf/mpm_fem_8hpp.html#a3b98a21c9701599b0260b0e7e10f78b6">gravity</a></div><div class="ttdeci">double gravity[3]</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dcf/mpm_fem_8hpp_source.html#l00008">mpmFem.hpp:8</a></div></div>
-<div class="ttc" id="anamespacefemus_1_1_math_html_a06daa97a94cd109a7d0229d4e23a40d6"><div class="ttname"><a href="../../d0/d3b/namespacefemus_1_1_math.html#a06daa97a94cd109a7d0229d4e23a40d6">femus::Math::cross</a></div><div class="ttdeci">void cross(const double *a, const double *b, double *res)</div><div class="ttdoc">Cross product.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dba/_math_8hpp_source.html#l00060">Math.hpp:60</a></div></div>
-<div class="ttc" id="anamespacefemus_1_1_math_html_a1ac507af12e3ceaf078b640984b82059"><div class="ttname"><a href="../../d0/d3b/namespacefemus_1_1_math.html#a1ac507af12e3ceaf078b640984b82059">femus::Math::zeroN</a></div><div class="ttdeci">void zeroN(double *x, const uint N)</div><div class="ttdoc">set to zero - n components</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dba/_math_8hpp_source.html#l00032">Math.hpp:32</a></div></div>
-<div class="ttc" id="anamespacefemus_1_1_math_html_a7c61609663b61259ec67232f7eba0d3c"><div class="ttname"><a href="../../d0/d3b/namespacefemus_1_1_math.html#a7c61609663b61259ec67232f7eba0d3c">femus::Math::extend</a></div><div class="ttdeci">void extend(const double *a, double *a3D, const uint spacedim)</div><div class="ttdoc">extend to a 3D vector a vector with dimension</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dba/_math_8hpp_source.html#l00069">Math.hpp:69</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

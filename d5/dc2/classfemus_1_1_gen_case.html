@@ -1057,9 +1057,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 1640</span>        std::string f_rest    = <a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#afabe91b16d34f7c1759f0a383a2e9cc2">DEFAULT_F_REST</a>;</div>
 <div class="line"><span class="lineno"> 1641</span>        std::string ext_h5    = <a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#a88cc18ae6f1376162580864906e9fcef">DEFAULT_EXT_H5</a>;</div>
 <div class="line"><span class="lineno"> 1642</span> </div>
-<div class="line"><span class="lineno"> 1643</span>        std::ostringstream filename;</div>
-<div class="line"><span class="lineno"> 1644</span>        filename &lt;&lt; output_path &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; f_rest &lt;&lt; ext_h5;</div>
-<div class="line"><span class="lineno"> 1645</span>        hid_t file = H5Fcreate(filename.str().c_str(), H5F_ACC_TRUNC, H5P_DEFAULT,H5P_DEFAULT);</div>
+<div class="line"><span class="lineno"> 1643</span>        std::ostringstream <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>;</div>
+<div class="line"><span class="lineno"> 1644</span>        <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> &lt;&lt; output_path &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; f_rest &lt;&lt; ext_h5;</div>
+<div class="line"><span class="lineno"> 1645</span>        hid_t file = H5Fcreate(<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str().c_str(), H5F_ACC_TRUNC, H5P_DEFAULT,H5P_DEFAULT);</div>
 <div class="line"><span class="lineno"> 1646</span> </div>
 <div class="line"><span class="lineno"> 1647</span>  </div>
 <div class="line"><span class="lineno"> 1648</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> Level1 = 0; Level1 &lt; <a class="code hl_variable" href="../../d9/d52/classfemus_1_1_multi_level_mesh_two.html#a68f3f358a51963417fbaeb9255d2c2c3">_NoLevels</a>-1; Level1++) {  <span class="comment">//Level1 is the COARSE level (OUTPUT level)</span></div>
@@ -1266,7 +1266,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 1849</span>                }</div>
 <div class="line"><span class="lineno"> 1850</span>            }</div>
 <div class="line"><span class="lineno"> 1851</span> </div>
-<div class="line"><span class="lineno"> 1852</span>            XDMFWriter::PrintOneVarMGOperatorHDF5(filename.str(),groupname_lev.str(),n_dofs_fe_lev[fe],count[fe],Rest_pos[fe],Rest_val[fe],lenG[fe],lenoffG[fe],FEXLevel_c[fe],FEXLevel_f[fe],fe);</div>
+<div class="line"><span class="lineno"> 1852</span>            XDMFWriter::PrintOneVarMGOperatorHDF5(<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str(),groupname_lev.str(),n_dofs_fe_lev[fe],count[fe],Rest_pos[fe],Rest_val[fe],lenG[fe],lenoffG[fe],FEXLevel_c[fe],FEXLevel_f[fe],fe);</div>
 <div class="line"><span class="lineno"> 1853</span> </div>
 <div class="line"><span class="lineno"> 1854</span>            <span class="keyword">delete</span> [] lenG[fe];</div>
 <div class="line"><span class="lineno"> 1855</span>            <span class="keyword">delete</span> [] lenoffG[fe];</div>
@@ -1304,6 +1304,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="a_femus_default_8hpp_html_afabe91b16d34f7c1759f0a383a2e9cc2"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#afabe91b16d34f7c1759f0a383a2e9cc2">DEFAULT_F_REST</a></div><div class="ttdeci">#define DEFAULT_F_REST</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00025">FemusDefault.hpp:25</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_elem_sto_vol_html_a4800376b85eeccc97f7c12c5c91a8070"><div class="ttname"><a href="../../d2/dd4/classfemus_1_1_elem_sto_vol.html#a4800376b85eeccc97f7c12c5c91a8070">femus::ElemStoVol::_elchs</a></div><div class="ttdeci">int * _elchs</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbd/_elem_sto_8hpp_source.html#l00059">ElemSto.hpp:59</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_elem_sto_vol_html_ae157383dd2c483093c6354fbfc1d0116"><div class="ttname"><a href="../../d2/dd4/classfemus_1_1_elem_sto_vol.html#ae157383dd2c483093c6354fbfc1d0116">femus::ElemStoVol::_nch</a></div><div class="ttdeci">int _nch</div><div class="ttdef"><b>Definition</b> <a href="../../d1/dbd/_elem_sto_8hpp_source.html#l00058">ElemSto.hpp:58</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a8b9aa5b5b104ffacbc115e9ba3c22e6a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">build_edges_of_volumes.filename</a></div><div class="ttdeci">filename</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00009">build_edges_of_volumes.py:9</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1983,7 +1984,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  195</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  196</span>}</div>
 <div class="ttc" id="a_conformal_2ex3_2ex3_8cpp_html_ae162929dc5a88736f3f0afa0ea3601b0"><div class="ttname"><a href="../../d3/de5/_conformal_2ex3_2ex3_8cpp.html#ae162929dc5a88736f3f0afa0ea3601b0">inf</a></div><div class="ttdeci">double inf</div><div class="ttdef"><b>Definition</b> <a href="../../d3/de5/_conformal_2ex3_2ex3_8cpp_source.html#l00024">ex3.cpp:24</a></div></div>
-<div class="ttc" id="a_femus_default_8hpp_html_a8e12c4926d6c36bf00835a092bc0e310"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#a8e12c4926d6c36bf00835a092bc0e310">DEFAULT_INPUTDIR</a></div><div class="ttdeci">#define DEFAULT_INPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00039">FemusDefault.hpp:39</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_a8e12c4926d6c36bf00835a092bc0e310"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#a8e12c4926d6c36bf00835a092bc0e310">DEFAULT_INPUTDIR</a></div><div class="ttdeci">#define DEFAULT_INPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00040">FemusDefault.hpp:40</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_multi_level_mesh_two_html_a2e69e092b1871b1d3023e22ad7748d30"><div class="ttname"><a href="../../d9/d52/classfemus_1_1_multi_level_mesh_two.html#a2e69e092b1871b1d3023e22ad7748d30">femus::MultiLevelMeshTwo::_mesh_file</a></div><div class="ttdeci">std::string _mesh_file</div><div class="ttdef"><b>Definition</b> <a href="../../d7/d0c/_multi_level_mesh_two_8hpp_source.html#l00129">MultiLevelMeshTwo.hpp:129</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_multi_level_mesh_two_html_ab9d25c5c55f650ac17469b863a7586d1"><div class="ttname"><a href="../../d9/d52/classfemus_1_1_multi_level_mesh_two.html#ab9d25c5c55f650ac17469b863a7586d1">femus::MultiLevelMeshTwo::GetDomain</a></div><div class="ttdeci">Domain * GetDomain() const</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d0a/_multi_level_mesh_two_8cpp_source.html#l00172">MultiLevelMeshTwo.cpp:172</a></div></div>
 </div><!-- fragment -->
@@ -2603,18 +2604,18 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 2122</span>    std::string       f_prol = <a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#a2246e654bedf09d71456edd5ac222a0f">DEFAULT_F_PROL</a>;</div>
 <div class="line"><span class="lineno"> 2123</span>    std::string       ext_h5 = <a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#a88cc18ae6f1376162580864906e9fcef">DEFAULT_EXT_H5</a>;</div>
 <div class="line"><span class="lineno"> 2124</span> </div>
-<div class="line"><span class="lineno"> 2125</span>    std::ostringstream filename;</div>
+<div class="line"><span class="lineno"> 2125</span>    std::ostringstream <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>;</div>
 <div class="line"><span class="lineno"> 2126</span>    std::string filename_base;</div>
 <div class="line"><span class="lineno"> 2127</span>    filename_base = output_path + <span class="stringliteral">&quot;/&quot;</span>;</div>
 <div class="line"><span class="lineno"> 2128</span>    </div>
-<div class="line"><span class="lineno"> 2129</span>        filename.str(<span class="stringliteral">&quot;&quot;</span>);     filename &lt;&lt; filename_base &lt;&lt; f_rest &lt;&lt; ext_h5;</div>
-<div class="line"><span class="lineno"> 2130</span>        <a class="code hl_function" href="../../d5/dc2/classfemus_1_1_gen_case.html#a37997ccf132703dfabf7bead831f6f38">ReadRest</a>(filename.str(),mysys);</div>
+<div class="line"><span class="lineno"> 2129</span>        <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str(<span class="stringliteral">&quot;&quot;</span>);     <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> &lt;&lt; filename_base &lt;&lt; f_rest &lt;&lt; ext_h5;</div>
+<div class="line"><span class="lineno"> 2130</span>        <a class="code hl_function" href="../../d5/dc2/classfemus_1_1_gen_case.html#a37997ccf132703dfabf7bead831f6f38">ReadRest</a>(<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str(),mysys);</div>
 <div class="line"><span class="lineno"> 2131</span>    </div>
-<div class="line"><span class="lineno"> 2132</span>        filename.str(<span class="stringliteral">&quot;&quot;</span>);   filename &lt;&lt; filename_base &lt;&lt; f_matrix &lt;&lt; ext_h5;</div>
-<div class="line"><span class="lineno"> 2133</span>        <a class="code hl_function" href="../../d5/dc2/classfemus_1_1_gen_case.html#a2b47da5519d3b8d3d3d4778bc07deef3">ReadMatrix</a>(filename.str(),mysys);</div>
+<div class="line"><span class="lineno"> 2132</span>        <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str(<span class="stringliteral">&quot;&quot;</span>);   <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> &lt;&lt; filename_base &lt;&lt; f_matrix &lt;&lt; ext_h5;</div>
+<div class="line"><span class="lineno"> 2133</span>        <a class="code hl_function" href="../../d5/dc2/classfemus_1_1_gen_case.html#a2b47da5519d3b8d3d3d4778bc07deef3">ReadMatrix</a>(<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str(),mysys);</div>
 <div class="line"><span class="lineno"> 2134</span>  </div>
-<div class="line"><span class="lineno"> 2135</span>        filename.str(<span class="stringliteral">&quot;&quot;</span>);    filename &lt;&lt; filename_base &lt;&lt; f_prol &lt;&lt; ext_h5;</div>
-<div class="line"><span class="lineno"> 2136</span>        <a class="code hl_function" href="../../d5/dc2/classfemus_1_1_gen_case.html#a537015fb25eb05e896a2ab4da02d4c9f">ReadProl</a>(filename.str(),mysys);</div>
+<div class="line"><span class="lineno"> 2135</span>        <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str(<span class="stringliteral">&quot;&quot;</span>);    <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> &lt;&lt; filename_base &lt;&lt; f_prol &lt;&lt; ext_h5;</div>
+<div class="line"><span class="lineno"> 2136</span>        <a class="code hl_function" href="../../d5/dc2/classfemus_1_1_gen_case.html#a537015fb25eb05e896a2ab4da02d4c9f">ReadProl</a>(<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str(),mysys);</div>
 <div class="line"><span class="lineno"> 2137</span> </div>
 <div class="line"><span class="lineno"> 2138</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno"> 2139</span>}</div>
@@ -4324,8 +4325,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/02_mesh/gencase/<a class="el" href="../../d7/db9/_gen_case_8hpp_source.html">GenCase.hpp</a></li>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/02_mesh/gencase/<a class="el" href="../../d7/d36/_gen_case_8cpp_source.html">GenCase.cpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/02_mesh/gencase/<a class="el" href="../../d7/db9/_gen_case_8hpp_source.html">GenCase.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/02_mesh/gencase/<a class="el" href="../../d7/d36/_gen_case_8cpp_source.html">GenCase.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

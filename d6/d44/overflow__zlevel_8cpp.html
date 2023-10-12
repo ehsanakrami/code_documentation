@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/SW/overflow_zlevel/overflow_zlevel.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/SW/overflow_zlevel/overflow_zlevel.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -242,14 +242,14 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  265</span>  }</div>
 <div class="line"><span class="lineno">  266</span>  </div>
 <div class="line"><span class="lineno">  267</span>  <span class="comment">//BEGIN </span></div>
-<div class="line"><span class="lineno">  268</span>  <span class="keywordtype">double</span> d1 = 500.;</div>
-<div class="line"><span class="lineno">  269</span>  <span class="keywordtype">double</span> d2 = 2000.;</div>
+<div class="line"><span class="lineno">  268</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8c91c5e9d2a7ede89cfe9caf8088ae4b">d1</a> = 500.;</div>
+<div class="line"><span class="lineno">  269</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> = 2000.;</div>
 <div class="line"><span class="lineno">  270</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a> = 40000.;</div>
 <div class="line"><span class="lineno">  271</span>  vector &lt; double &gt; z(NLayers);</div>
 <div class="line"><span class="lineno">  272</span>  vector &lt; double &gt; x_intersec(NLayers);</div>
 <div class="line"><span class="lineno">  273</span>  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k = 0; k &lt; NLayers; k++){</div>
 <div class="line"><span class="lineno">  274</span>    z[k] = <a class="code hl_variable" href="../../d6/d44/overflow__zlevel_8cpp.html#ae8687ac9f3e6cab8f2e98e121ca69bb8">hRest</a>[0] * k;</div>
-<div class="line"><span class="lineno">  275</span>    <span class="keywordtype">double</span> argument = - 1 + 2.*(z[k]-d1)/(d2-d1);</div>
+<div class="line"><span class="lineno">  275</span>    <span class="keywordtype">double</span> argument = - 1 + 2.*(z[k]-<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8c91c5e9d2a7ede89cfe9caf8088ae4b">d1</a>)/(d2-d1);</div>
 <div class="line"><span class="lineno">  276</span>    <span class="keywordflow">if</span>(argument&lt;1 &amp;&amp; argument&gt;-1){</div>
 <div class="line"><span class="lineno">  277</span>      x_intersec[k] = (atanh(- 1 + 2.*(z[k]-d1)/(d2-d1)))*7000+<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>;   </div>
 <div class="line"><span class="lineno">  278</span>      x_intersec[k] -= 100000;</div>
@@ -329,10 +329,10 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  352</span>    <span class="keywordtype">double</span> dx = x[1] - x[0];</div>
 <div class="line"><span class="lineno">  353</span>    </div>
 <div class="line"><span class="lineno">  354</span>    <span class="keywordtype">double</span> xmid = 0.5*(x[1] + x[0]);</div>
-<div class="line"><span class="lineno">  355</span>    <span class="keywordtype">double</span> d1 = 500;</div>
-<div class="line"><span class="lineno">  356</span>    <span class="keywordtype">double</span> d2 = 2000;</div>
+<div class="line"><span class="lineno">  355</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8c91c5e9d2a7ede89cfe9caf8088ae4b">d1</a> = 500;</div>
+<div class="line"><span class="lineno">  356</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> = 2000;</div>
 <div class="line"><span class="lineno">  357</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a> = 40000;</div>
-<div class="line"><span class="lineno">  358</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../dd/d80/_u_q_2ex12_2ex12_8cpp.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a> = d1 + 0.5*(d2-d1)*(1 + tanh((xmid-<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>)/7000));</div>
+<div class="line"><span class="lineno">  358</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../dd/d80/_u_q_2ex12_2ex12_8cpp.html#a1510a66dacf9cf3586de5fc89ae2a073">b</a> = <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8c91c5e9d2a7ede89cfe9caf8088ae4b">d1</a> + 0.5*(<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a>-<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8c91c5e9d2a7ede89cfe9caf8088ae4b">d1</a>)*(1 + tanh((xmid-<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>)/7000));</div>
 <div class="line"><span class="lineno">  359</span>        </div>
 <div class="line"><span class="lineno">  360</span>    <span class="keywordtype">double</span> hTot = 0.;</div>
 <div class="line"><span class="lineno">  361</span>    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k = 0; k &lt; NLayers; k++) {</div>
@@ -349,9 +349,9 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  372</span>    std::vector &lt; double &gt; w(NLayers+1, 0.);</div>
 <div class="line"><span class="lineno">  373</span>          </div>
 <div class="line"><span class="lineno">  374</span>    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k = NLayers; k&gt;1; k--){</div>
-<div class="line"><span class="lineno">  375</span>      w[k-1] = w[k] - (  0.5 * ( solh[k-1].value() + solhp[k-1].value() ) * solvp[k-1].value() </div>
-<div class="line"><span class="lineno">  376</span>                       - 0.5 * ( solh[k-1].value() + solhm[k-1].value() ) * solvm[k-1].value() )/dx </div>
-<div class="line"><span class="lineno">  377</span>                    - ( hALE[k-1] - solh[k-1].value()) / <a class="code hl_variable" href="../../d6/d44/overflow__zlevel_8cpp.html#a03e28be41881b703c836edbfe9b51b17">dt</a>;<span class="comment">//TODO                  </span></div>
+<div class="line"><span class="lineno">  375</span>      w[k-1] = w[k] - (  0.5 * ( solh[k-1].value() + solhp[k-1].value() ) * solvp[k-1].<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>() </div>
+<div class="line"><span class="lineno">  376</span>                       - 0.5 * ( solh[k-1].value() + solhm[k-1].value() ) * solvm[k-1].<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>() )/dx </div>
+<div class="line"><span class="lineno">  377</span>                    - ( hALE[k-1] - solh[k-1].<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>()) / <a class="code hl_variable" href="../../d6/d44/overflow__zlevel_8cpp.html#a03e28be41881b703c836edbfe9b51b17">dt</a>;<span class="comment">//TODO                  </span></div>
 <div class="line"><span class="lineno">  378</span>                    <span class="comment">//std::cout&lt;&lt;&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;&lt;&lt;w[k-1]&lt;&lt;std::endl;</span></div>
 <div class="line"><span class="lineno">  379</span>    }</div>
 <div class="line"><span class="lineno">  380</span>      </div>
@@ -491,11 +491,11 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  514</span>    </div>
 <div class="line"><span class="lineno">  515</span>    <span class="keywordtype">double</span> x_check = 0.5 * (xmidm+xmidp);</div>
 <div class="line"><span class="lineno">  516</span>    </div>
-<div class="line"><span class="lineno">  517</span>    <span class="keywordtype">double</span> d1 = 500;</div>
-<div class="line"><span class="lineno">  518</span>    <span class="keywordtype">double</span> d2 = 2000;</div>
+<div class="line"><span class="lineno">  517</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8c91c5e9d2a7ede89cfe9caf8088ae4b">d1</a> = 500;</div>
+<div class="line"><span class="lineno">  518</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> = 2000;</div>
 <div class="line"><span class="lineno">  519</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a> = 40000;</div>
-<div class="line"><span class="lineno">  520</span>    <span class="keywordtype">double</span> bm = d1 + 0.5*(d2-d1)*(1 + tanh((xmidm-<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>)/7000));</div>
-<div class="line"><span class="lineno">  521</span>    <span class="keywordtype">double</span> bp = d1 + 0.5*(d2-d1)*(1 + tanh((xmidp-<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>)/7000));</div>
+<div class="line"><span class="lineno">  520</span>    <span class="keywordtype">double</span> bm = <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8c91c5e9d2a7ede89cfe9caf8088ae4b">d1</a> + 0.5*(<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a>-<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8c91c5e9d2a7ede89cfe9caf8088ae4b">d1</a>)*(1 + tanh((xmidm-<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>)/7000));</div>
+<div class="line"><span class="lineno">  521</span>    <span class="keywordtype">double</span> bp = <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8c91c5e9d2a7ede89cfe9caf8088ae4b">d1</a> + 0.5*(<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a>-<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8c91c5e9d2a7ede89cfe9caf8088ae4b">d1</a>)*(1 + tanh((xmidp-<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>)/7000));</div>
 <div class="line"><span class="lineno">  522</span>        </div>
 <div class="line"><span class="lineno">  523</span>    <span class="keywordtype">double</span> hTotm = 0.;</div>
 <div class="line"><span class="lineno">  524</span>    <span class="keywordtype">double</span> hTotp = 0.;    </div>
@@ -800,7 +800,10 @@ Variables</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1elem_html"><div class="ttname"><a href="../../db/d2e/classfemus_1_1elem.html">femus::elem</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/_elem_8hpp_source.html#l00040">Elem.hpp:40</a></div></div>
 <div class="ttc" id="ainternal__waves__zlevel_8cpp_html_a2941385b1be5280d3b1f546356f7ec99"><div class="ttname"><a href="../../dc/d97/internal__waves__zlevel_8cpp.html#a2941385b1be5280d3b1f546356f7ec99">A</a></div><div class="ttdeci">double A</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d97/internal__waves__zlevel_8cpp_source.html#l00043">internal_waves_zlevel.cpp:43</a></div></div>
 <div class="ttc" id="ainternal__waves__zlevel_8cpp_html_ae553c80321ef2d7c454cc4f62b42d0d1"><div class="ttname"><a href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a></div><div class="ttdeci">double x0</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d97/internal__waves__zlevel_8cpp_source.html#l00046">internal_waves_zlevel.cpp:46</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a277407185e318a7ace3879dbe5ae231a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">build_edges_of_volumes.d2</a></div><div class="ttdeci">d2</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00019">build_edges_of_volumes.py:19</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a8c91c5e9d2a7ede89cfe9caf8088ae4b"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a8c91c5e9d2a7ede89cfe9caf8088ae4b">build_edges_of_volumes.d1</a></div><div class="ttdeci">d1</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00019">build_edges_of_volumes.py:19</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a7216a0536acdac46863fd54b0320a8e6"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">femus::s</a></div><div class="ttdeci">double * s</div><div class="ttdef"><b>Definition</b> <a href="../../d0/dc5/_f_s_i_time_dependent_assembly_supg_g_c_l_8hpp_source.html#l00036">FSITimeDependentAssemblySupgGCL.hpp:36</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 <div class="ttc" id="aoverflow__zlevel_8cpp_html_a03e28be41881b703c836edbfe9b51b17"><div class="ttname"><a href="../../d6/d44/overflow__zlevel_8cpp.html#a03e28be41881b703c836edbfe9b51b17">dt</a></div><div class="ttdeci">double dt</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d44/overflow__zlevel_8cpp_source.html#l00035">overflow_zlevel.cpp:35</a></div></div>
 <div class="ttc" id="aoverflow__zlevel_8cpp_html_a7adc750d395e26424054cf5d3794cd87"><div class="ttname"><a href="../../d6/d44/overflow__zlevel_8cpp.html#a7adc750d395e26424054cf5d3794cd87">rho1</a></div><div class="ttdeci">double rho1[20]</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d44/overflow__zlevel_8cpp_source.html#l00029">overflow_zlevel.cpp:29</a></div></div>
 <div class="ttc" id="aoverflow__zlevel_8cpp_html_a8bbed1516a6d7e1b00f660dd54e232c1"><div class="ttname"><a href="../../d6/d44/overflow__zlevel_8cpp.html#a8bbed1516a6d7e1b00f660dd54e232c1">NumberOfLayers</a></div><div class="ttdeci">const unsigned NumberOfLayers</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d44/overflow__zlevel_8cpp_source.html#l00037">overflow_zlevel.cpp:37</a></div></div>
@@ -828,8 +831,8 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/d44/overflow__zlevel_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d6/d44/overflow__zlevel_8cpp_source.html">overflow_zlevel.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   62</span>{</div>
-<div class="line"><span class="lineno">   63</span>  <span class="keywordtype">double</span> d1 = 500;</div>
-<div class="line"><span class="lineno">   64</span>  <span class="keywordtype">double</span> d2 = 2000;</div>
+<div class="line"><span class="lineno">   63</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8c91c5e9d2a7ede89cfe9caf8088ae4b">d1</a> = 500;</div>
+<div class="line"><span class="lineno">   64</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a277407185e318a7ace3879dbe5ae231a">d2</a> = 2000;</div>
 <div class="line"><span class="lineno">   65</span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a> = 40000; </div>
 <div class="line"><span class="lineno">   66</span>  <span class="keywordflow">return</span> (d1 + 0.5*(d2-d1)*(1 + tanh((x[0]-<a class="code hl_variable" href="../../dc/d97/internal__waves__zlevel_8cpp.html#ae553c80321ef2d7c454cc4f62b42d0d1">x0</a>)/7000)));</div>
 <div class="line"><span class="lineno">   67</span>}</div>
@@ -1035,7 +1038,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a00ea9562f0dbb25e22bb3297d596e3baae117e3533122c80b262257b49b21cddf"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baae117e3533122c80b262257b49b21cddf">ZERO</a></div><div class="ttdeci">@ ZERO</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00014">FElemTypeEnum.hpp:14</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a7c9a70b7c6b5baf5d7942938d770a664a2318cd5622bed5320c47de68813ab4df"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a2318cd5622bed5320c47de68813ab4df">DISCONTINUOUS_POLYNOMIAL</a></div><div class="ttdeci">@ DISCONTINUOUS_POLYNOMIAL</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00006">FElemTypeEnum.hpp:6</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a></div><div class="ttdeci">@ LAGRANGE</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00005">FElemTypeEnum.hpp:5</a></div></div>
-<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00040">FemusDefault.hpp:40</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00041">FemusDefault.hpp:41</a></div></div>
 <div class="ttc" id="a_i_s_m_2ex4_2ex4_8cpp_html_a0aca793820b6ff7705450e2043256938"><div class="ttname"><a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#a0aca793820b6ff7705450e2043256938">numberOfUniformLevels</a></div><div class="ttdeci">unsigned numberOfUniformLevels</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp_source.html#l00089">ex4.cpp:89</a></div></div>
 <div class="ttc" id="a_writer_enum_8hpp_html_a18b827c3c1f62b8a57febdcad0c871a8a37fb55ddbbe1465cec5f3d154db73e67"><div class="ttname"><a href="../../db/d1c/_writer_enum_8hpp.html#a18b827c3c1f62b8a57febdcad0c871a8a37fb55ddbbe1465cec5f3d154db73e67">VTK</a></div><div class="ttdeci">@ VTK</div><div class="ttdef"><b>Definition</b> <a href="../../db/d1c/_writer_enum_8hpp_source.html#l00004">WriterEnum.hpp:4</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_femus_init_html"><div class="ttname"><a href="../../da/d5e/classfemus_1_1_femus_init.html">femus::FemusInit</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d7c/_femus_init_8hpp_source.html#l00049">FemusInit.hpp:49</a></div></div>
@@ -1102,7 +1105,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   71</span>{</div>
 <div class="line"><span class="lineno">   72</span>  <span class="keywordtype">bool</span> dirichlet = <span class="keyword">false</span>; <span class="comment">//dirichlet</span></div>
 <div class="line"><span class="lineno">   73</span>  <span class="keywordflow">if</span>( facename == 1 || facename == 2) dirichlet = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   74</span>  value = 0.;</div>
+<div class="line"><span class="lineno">   74</span>  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   75</span>  <span class="keywordflow">return</span> dirichlet;</div>
 <div class="line"><span class="lineno">   76</span>}</div>
 </div><!-- fragment -->

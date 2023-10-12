@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/00_tutorial/ex06b_navier_stokes/ex06b_navier_stokes.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/00_tutorial/ex06b_navier_stokes/ex06b_navier_stokes.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -130,296 +130,299 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000131">Todo:</a></b></dt><dd>check this sign </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/d93/ex06b__navier__stokes_8cpp_source.html#l00149">149</a> of file <a class="el" href="../../df/d93/ex06b__navier__stokes_8cpp_source.html">ex06b_navier_stokes.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  149</span>                                                                   {</div>
-<div class="line"><span class="lineno">  150</span>  <span class="comment">//  ml_prob is the global object from/to where get/set all the data</span></div>
-<div class="line"><span class="lineno">  151</span>  <span class="comment">//  level is the level of the PDE system to be assembled</span></div>
-<div class="line"><span class="lineno">  152</span>  <span class="comment">//  levelMax is the Maximum level of the MultiLevelProblem</span></div>
-<div class="line"><span class="lineno">  153</span>  <span class="comment">//  assembleMatrix is a flag that tells if only the residual or also the matrix should be assembled</span></div>
-<div class="line"><span class="lineno">  154</span> </div>
-<div class="line"><span class="lineno">  155</span>  <span class="comment">// call the adept stack object</span></div>
-<div class="line"><span class="lineno">  156</span>  adept::Stack&amp; <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a> = <a class="code hl_variable" href="../../da/d5e/classfemus_1_1_femus_init.html#ab48c1191eb7ebb370a323d3ec4f713c9">FemusInit::_adeptStack</a>;</div>
-<div class="line"><span class="lineno">  157</span> </div>
-<div class="line"><span class="lineno">  158</span>  <span class="comment">//  extract pointers to the several objects that we are going to use</span></div>
-<div class="line"><span class="lineno">  159</span>  <a class="code hl_class" href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html">NonLinearImplicitSystem</a>* mlPdeSys   = &amp;ml_prob.<a class="code hl_function" href="../../de/d6a/classfemus_1_1_multi_level_problem.html#a3d90edba93be2c202ea2bf8e87e20854">get_system</a>&lt;<a class="code hl_class" href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html">NonLinearImplicitSystem</a>&gt; (<span class="stringliteral">&quot;NS&quot;</span>);   <span class="comment">// pointer to the linear implicit system named &quot;Poisson&quot;</span></div>
-<div class="line"><span class="lineno">  160</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> level = mlPdeSys-&gt;<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a16af0d7b8849d6ea983a5e425fb90fee">GetLevelToAssemble</a>();</div>
-<div class="line"><span class="lineno">  161</span> </div>
-<div class="line"><span class="lineno">  162</span>  <a class="code hl_class" href="../../d9/d8b/classfemus_1_1_mesh.html">Mesh</a>*          msh          = ml_prob.<a class="code hl_variable" href="../../de/d6a/classfemus_1_1_multi_level_problem.html#a946d39c3fba7fac859822702248fe065">_ml_msh</a>-&gt;<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#af0dec057961b41903215bb9927cbfeed">GetLevel</a>(level);    <span class="comment">// pointer to the mesh (level) object</span></div>
-<div class="line"><span class="lineno">  163</span>  <a class="code hl_class" href="../../db/d2e/classfemus_1_1elem.html">elem</a>*          el         = msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#a62689335aebc9de69b7490bfb32f0978">el</a>;  <span class="comment">// pointer to the elem object in msh (level)</span></div>
-<div class="line"><span class="lineno">  164</span> </div>
-<div class="line"><span class="lineno">  165</span>  <a class="code hl_class" href="../../d6/da4/classfemus_1_1_multi_level_solution.html">MultiLevelSolution</a>*  mlSol        = ml_prob.<a class="code hl_variable" href="../../de/d6a/classfemus_1_1_multi_level_problem.html#a6dd8fec26a0ffbaae07e6df7ea42d12b">_ml_sol</a>;  <span class="comment">// pointer to the multilevel solution object</span></div>
-<div class="line"><span class="lineno">  166</span>  <a class="code hl_class" href="../../d4/d40/classfemus_1_1_solution.html">Solution</a>*    sol        = ml_prob.<a class="code hl_variable" href="../../de/d6a/classfemus_1_1_multi_level_problem.html#a6dd8fec26a0ffbaae07e6df7ea42d12b">_ml_sol</a>-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a9bb3681ff25b06b030d75b1ab1bdfdc3">GetSolutionLevel</a>(level);    <span class="comment">// pointer to the solution (level) object</span></div>
-<div class="line"><span class="lineno">  167</span> </div>
-<div class="line"><span class="lineno">  168</span> </div>
-<div class="line"><span class="lineno">  169</span>  <a class="code hl_class" href="../../da/d1a/classfemus_1_1_linear_equation_solver.html">LinearEquationSolver</a>* pdeSys        = mlPdeSys-&gt;<a class="code hl_variable" href="../../d8/d4a/classfemus_1_1_linear_implicit_system.html#a58ebbec8ab1f2eb863cba438f30404e0">_LinSolver</a>[level]; <span class="comment">// pointer to the equation (level) object</span></div>
-<div class="line"><span class="lineno">  170</span>  <a class="code hl_class" href="../../d3/d61/classfemus_1_1_sparse_matrix.html">SparseMatrix</a>*    <a class="code hl_enumvalue" href="../../dd/d9a/_f_e_type_enum_8hpp.html#a31f830fd5deccf18a6e312b026bbe13ba886f39d2f1a5889032091a8a4244f451">KK</a>         = pdeSys-&gt;<a class="code hl_variable" href="../../da/de0/classfemus_1_1_linear_equation.html#aa10eb0eb318cf0d449f5ecdcec2823bc">_KK</a>;  <span class="comment">// pointer to the global stifness matrix object in pdeSys (level)</span></div>
-<div class="line"><span class="lineno">  171</span>  <a class="code hl_class" href="../../da/d12/classfemus_1_1_numeric_vector.html">NumericVector</a>*   RES          = pdeSys-&gt;<a class="code hl_variable" href="../../da/de0/classfemus_1_1_linear_equation.html#a20ac8999e714492516cd8a2be53fb54f">_RES</a>; <span class="comment">// pointer to the global residual vector object in pdeSys (level)</span></div>
-<div class="line"><span class="lineno">  172</span> </div>
-<div class="line"><span class="lineno">  173</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span>  <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#a6f753fa456d2313d902bf184c4bb9e3b">GetDimension</a>(); <span class="comment">// get the domain dimension of the problem</span></div>
+<p class="definition">Definition at line <a class="el" href="../../df/d93/ex06b__navier__stokes_8cpp_source.html#l00151">151</a> of file <a class="el" href="../../df/d93/ex06b__navier__stokes_8cpp_source.html">ex06b_navier_stokes.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  151</span>                                                                   {</div>
+<div class="line"><span class="lineno">  152</span>  <span class="comment">//  ml_prob is the global object from/to where get/set all the data</span></div>
+<div class="line"><span class="lineno">  153</span>  <span class="comment">//  level is the level of the PDE system to be assembled</span></div>
+<div class="line"><span class="lineno">  154</span>  <span class="comment">//  levelMax is the Maximum level of the MultiLevelProblem</span></div>
+<div class="line"><span class="lineno">  155</span>  <span class="comment">//  assembleMatrix is a flag that tells if only the residual or also the matrix should be assembled</span></div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>  <span class="comment">// call the adept stack object</span></div>
+<div class="line"><span class="lineno">  158</span>  adept::Stack&amp; <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a> = <a class="code hl_variable" href="../../da/d5e/classfemus_1_1_femus_init.html#ab48c1191eb7ebb370a323d3ec4f713c9">FemusInit::_adeptStack</a>;</div>
+<div class="line"><span class="lineno">  159</span> </div>
+<div class="line"><span class="lineno">  160</span>  <span class="comment">//  extract pointers to the several objects that we are going to use</span></div>
+<div class="line"><span class="lineno">  161</span>  <a class="code hl_class" href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html">NonLinearImplicitSystem</a>* mlPdeSys   = &amp;ml_prob.<a class="code hl_function" href="../../de/d6a/classfemus_1_1_multi_level_problem.html#a3d90edba93be2c202ea2bf8e87e20854">get_system</a>&lt;<a class="code hl_class" href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html">NonLinearImplicitSystem</a>&gt; (<span class="stringliteral">&quot;NS&quot;</span>);   <span class="comment">// pointer to the linear implicit system named &quot;Poisson&quot;</span></div>
+<div class="line"><span class="lineno">  162</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> level = mlPdeSys-&gt;<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a16af0d7b8849d6ea983a5e425fb90fee">GetLevelToAssemble</a>();</div>
+<div class="line"><span class="lineno">  163</span> </div>
+<div class="line"><span class="lineno">  164</span>  <a class="code hl_class" href="../../d9/d8b/classfemus_1_1_mesh.html">Mesh</a>*          msh          = ml_prob.<a class="code hl_variable" href="../../de/d6a/classfemus_1_1_multi_level_problem.html#a946d39c3fba7fac859822702248fe065">_ml_msh</a>-&gt;<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#af0dec057961b41903215bb9927cbfeed">GetLevel</a>(level);    <span class="comment">// pointer to the mesh (level) object</span></div>
+<div class="line"><span class="lineno">  165</span>  <a class="code hl_class" href="../../db/d2e/classfemus_1_1elem.html">elem</a>*          el         = msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#a62689335aebc9de69b7490bfb32f0978">el</a>;  <span class="comment">// pointer to the elem object in msh (level)</span></div>
+<div class="line"><span class="lineno">  166</span> </div>
+<div class="line"><span class="lineno">  167</span>  <a class="code hl_class" href="../../d6/da4/classfemus_1_1_multi_level_solution.html">MultiLevelSolution</a>*  mlSol        = ml_prob.<a class="code hl_variable" href="../../de/d6a/classfemus_1_1_multi_level_problem.html#a6dd8fec26a0ffbaae07e6df7ea42d12b">_ml_sol</a>;  <span class="comment">// pointer to the multilevel solution object</span></div>
+<div class="line"><span class="lineno">  168</span>  <a class="code hl_class" href="../../d4/d40/classfemus_1_1_solution.html">Solution</a>*    sol        = ml_prob.<a class="code hl_variable" href="../../de/d6a/classfemus_1_1_multi_level_problem.html#a6dd8fec26a0ffbaae07e6df7ea42d12b">_ml_sol</a>-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a9bb3681ff25b06b030d75b1ab1bdfdc3">GetSolutionLevel</a>(level);    <span class="comment">// pointer to the solution (level) object</span></div>
+<div class="line"><span class="lineno">  169</span> </div>
+<div class="line"><span class="lineno">  170</span> </div>
+<div class="line"><span class="lineno">  171</span>  <a class="code hl_class" href="../../da/d1a/classfemus_1_1_linear_equation_solver.html">LinearEquationSolver</a>* pdeSys        = mlPdeSys-&gt;<a class="code hl_variable" href="../../d8/d4a/classfemus_1_1_linear_implicit_system.html#a58ebbec8ab1f2eb863cba438f30404e0">_LinSolver</a>[level]; <span class="comment">// pointer to the equation (level) object</span></div>
+<div class="line"><span class="lineno">  172</span>  <a class="code hl_class" href="../../d3/d61/classfemus_1_1_sparse_matrix.html">SparseMatrix</a>*    <a class="code hl_enumvalue" href="../../dd/d9a/_f_e_type_enum_8hpp.html#a31f830fd5deccf18a6e312b026bbe13ba886f39d2f1a5889032091a8a4244f451">KK</a>         = pdeSys-&gt;<a class="code hl_variable" href="../../da/de0/classfemus_1_1_linear_equation.html#aa10eb0eb318cf0d449f5ecdcec2823bc">_KK</a>;  <span class="comment">// pointer to the global stifness matrix object in pdeSys (level)</span></div>
+<div class="line"><span class="lineno">  173</span>  <a class="code hl_class" href="../../da/d12/classfemus_1_1_numeric_vector.html">NumericVector</a>*   RES          = pdeSys-&gt;<a class="code hl_variable" href="../../da/de0/classfemus_1_1_linear_equation.html#a20ac8999e714492516cd8a2be53fb54f">_RES</a>; <span class="comment">// pointer to the global residual vector object in pdeSys (level)</span></div>
 <div class="line"><span class="lineno">  174</span> </div>
-<div class="line"><span class="lineno">  175</span>  <span class="keywordtype">unsigned</span>    iproc = msh-&gt;<a class="code hl_function" href="../../dd/d90/classfemus_1_1_parallel_object.html#a6438b3ffcc8cde2d6ccfb4ec563dfce1">processor_id</a>(); <span class="comment">// get the process_id (for parallel computation)</span></div>
+<div class="line"><span class="lineno">  175</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span>  <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#a6f753fa456d2313d902bf184c4bb9e3b">GetDimension</a>(); <span class="comment">// get the domain dimension of the problem</span></div>
 <div class="line"><span class="lineno">  176</span> </div>
-<div class="line"><span class="lineno">  177</span>  <span class="comment">// reserve memory for the local standar vectors</span></div>
-<div class="line"><span class="lineno">  178</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> maxSize = <span class="keyword">static_cast&lt;</span> <span class="keywordtype">unsigned</span> <span class="keyword">&gt;</span>(ceil(pow(3, <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>)));          <span class="comment">// conservative: based on line3, quad9, hex27</span></div>
-<div class="line"><span class="lineno">  179</span> </div>
-<div class="line"><span class="lineno">  180</span>  <span class="comment">//solution variable</span></div>
-<div class="line"><span class="lineno">  181</span>  vector &lt; unsigned &gt; solVIndex(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);</div>
-<div class="line"><span class="lineno">  182</span>  solVIndex[0] = mlSol-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0c3d81a9146a8e96552da43955f0c7ae">GetIndex</a>(<span class="stringliteral">&quot;U&quot;</span>);    <span class="comment">// get the position of &quot;U&quot; in the ml_sol object</span></div>
-<div class="line"><span class="lineno">  183</span>  solVIndex[1] = mlSol-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0c3d81a9146a8e96552da43955f0c7ae">GetIndex</a>(<span class="stringliteral">&quot;V&quot;</span>);    <span class="comment">// get the position of &quot;V&quot; in the ml_sol object</span></div>
-<div class="line"><span class="lineno">  184</span> </div>
-<div class="line"><span class="lineno">  185</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> == 3) solVIndex[2] = mlSol-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0c3d81a9146a8e96552da43955f0c7ae">GetIndex</a>(<span class="stringliteral">&quot;W&quot;</span>);      <span class="comment">// get the position of &quot;V&quot; in the ml_sol object</span></div>
+<div class="line"><span class="lineno">  177</span>  <span class="keywordtype">unsigned</span>    iproc = msh-&gt;<a class="code hl_function" href="../../dd/d90/classfemus_1_1_parallel_object.html#a6438b3ffcc8cde2d6ccfb4ec563dfce1">processor_id</a>(); <span class="comment">// get the process_id (for parallel computation)</span></div>
+<div class="line"><span class="lineno">  178</span> </div>
+<div class="line"><span class="lineno">  179</span>  <span class="comment">// reserve memory for the local standar vectors</span></div>
+<div class="line"><span class="lineno">  180</span>  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> maxSize = <span class="keyword">static_cast&lt;</span> <span class="keywordtype">unsigned</span> <span class="keyword">&gt;</span>(ceil(pow(3, <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>)));          <span class="comment">// conservative: based on line3, quad9, hex27</span></div>
+<div class="line"><span class="lineno">  181</span> </div>
+<div class="line"><span class="lineno">  182</span>  <span class="comment">//solution variable</span></div>
+<div class="line"><span class="lineno">  183</span>  vector &lt; unsigned &gt; solVIndex(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);</div>
+<div class="line"><span class="lineno">  184</span>  solVIndex[0] = mlSol-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0c3d81a9146a8e96552da43955f0c7ae">GetIndex</a>(<span class="stringliteral">&quot;U&quot;</span>);    <span class="comment">// get the position of &quot;U&quot; in the ml_sol object</span></div>
+<div class="line"><span class="lineno">  185</span>  solVIndex[1] = mlSol-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0c3d81a9146a8e96552da43955f0c7ae">GetIndex</a>(<span class="stringliteral">&quot;V&quot;</span>);    <span class="comment">// get the position of &quot;V&quot; in the ml_sol object</span></div>
 <div class="line"><span class="lineno">  186</span> </div>
-<div class="line"><span class="lineno">  187</span>  <span class="keywordtype">unsigned</span> solVType = mlSol-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#ac6285c5a1907ad1f93ad7b380a08dabe">GetSolutionType</a>(solVIndex[0]);    <span class="comment">// get the finite element type for &quot;u&quot;</span></div>
+<div class="line"><span class="lineno">  187</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> == 3) solVIndex[2] = mlSol-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0c3d81a9146a8e96552da43955f0c7ae">GetIndex</a>(<span class="stringliteral">&quot;W&quot;</span>);      <span class="comment">// get the position of &quot;V&quot; in the ml_sol object</span></div>
 <div class="line"><span class="lineno">  188</span> </div>
-<div class="line"><span class="lineno">  189</span>  <span class="keywordtype">unsigned</span> solPIndex;</div>
-<div class="line"><span class="lineno">  190</span>  solPIndex = mlSol-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0c3d81a9146a8e96552da43955f0c7ae">GetIndex</a>(<span class="stringliteral">&quot;P&quot;</span>);    <span class="comment">// get the position of &quot;P&quot; in the ml_sol object</span></div>
-<div class="line"><span class="lineno">  191</span>  <span class="keywordtype">unsigned</span> solPType = mlSol-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#ac6285c5a1907ad1f93ad7b380a08dabe">GetSolutionType</a>(solPIndex);    <span class="comment">// get the finite element type for &quot;u&quot;</span></div>
-<div class="line"><span class="lineno">  192</span> </div>
-<div class="line"><span class="lineno">  193</span>  vector &lt; unsigned &gt; solVPdeIndex(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);</div>
-<div class="line"><span class="lineno">  194</span>  solVPdeIndex[0] = mlPdeSys-&gt;<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a4ebc859deb32b54c9936fa28f1485a93">GetSolPdeIndex</a>(<span class="stringliteral">&quot;U&quot;</span>);    <span class="comment">// get the position of &quot;U&quot; in the pdeSys object</span></div>
-<div class="line"><span class="lineno">  195</span>  solVPdeIndex[1] = mlPdeSys-&gt;<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a4ebc859deb32b54c9936fa28f1485a93">GetSolPdeIndex</a>(<span class="stringliteral">&quot;V&quot;</span>);    <span class="comment">// get the position of &quot;V&quot; in the pdeSys object</span></div>
-<div class="line"><span class="lineno">  196</span> </div>
-<div class="line"><span class="lineno">  197</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> == 3) solVPdeIndex[2] = mlPdeSys-&gt;<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a4ebc859deb32b54c9936fa28f1485a93">GetSolPdeIndex</a>(<span class="stringliteral">&quot;W&quot;</span>);</div>
+<div class="line"><span class="lineno">  189</span>  <span class="keywordtype">unsigned</span> solVType = mlSol-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#ac6285c5a1907ad1f93ad7b380a08dabe">GetSolutionType</a>(solVIndex[0]);    <span class="comment">// get the finite element type for &quot;u&quot;</span></div>
+<div class="line"><span class="lineno">  190</span> </div>
+<div class="line"><span class="lineno">  191</span>  <span class="keywordtype">unsigned</span> solPIndex;</div>
+<div class="line"><span class="lineno">  192</span>  solPIndex = mlSol-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#a0c3d81a9146a8e96552da43955f0c7ae">GetIndex</a>(<span class="stringliteral">&quot;P&quot;</span>);    <span class="comment">// get the position of &quot;P&quot; in the ml_sol object</span></div>
+<div class="line"><span class="lineno">  193</span>  <span class="keywordtype">unsigned</span> solPType = mlSol-&gt;<a class="code hl_function" href="../../d6/da4/classfemus_1_1_multi_level_solution.html#ac6285c5a1907ad1f93ad7b380a08dabe">GetSolutionType</a>(solPIndex);    <span class="comment">// get the finite element type for &quot;u&quot;</span></div>
+<div class="line"><span class="lineno">  194</span> </div>
+<div class="line"><span class="lineno">  195</span>  vector &lt; unsigned &gt; solVPdeIndex(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);</div>
+<div class="line"><span class="lineno">  196</span>  solVPdeIndex[0] = mlPdeSys-&gt;<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a4ebc859deb32b54c9936fa28f1485a93">GetSolPdeIndex</a>(<span class="stringliteral">&quot;U&quot;</span>);    <span class="comment">// get the position of &quot;U&quot; in the pdeSys object</span></div>
+<div class="line"><span class="lineno">  197</span>  solVPdeIndex[1] = mlPdeSys-&gt;<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a4ebc859deb32b54c9936fa28f1485a93">GetSolPdeIndex</a>(<span class="stringliteral">&quot;V&quot;</span>);    <span class="comment">// get the position of &quot;V&quot; in the pdeSys object</span></div>
 <div class="line"><span class="lineno">  198</span> </div>
-<div class="line"><span class="lineno">  199</span>  <span class="keywordtype">unsigned</span> solPPdeIndex;</div>
-<div class="line"><span class="lineno">  200</span>  solPPdeIndex = mlPdeSys-&gt;<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a4ebc859deb32b54c9936fa28f1485a93">GetSolPdeIndex</a>(<span class="stringliteral">&quot;P&quot;</span>);    <span class="comment">// get the position of &quot;P&quot; in the pdeSys object</span></div>
-<div class="line"><span class="lineno">  201</span> </div>
-<div class="line"><span class="lineno">  202</span>  vector &lt; vector &lt; adept::adouble &gt; &gt;  solV(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);    <span class="comment">// local solution</span></div>
-<div class="line"><span class="lineno">  203</span>  vector &lt; adept::adouble &gt;  solP; <span class="comment">// local solution</span></div>
-<div class="line"><span class="lineno">  204</span> </div>
-<div class="line"><span class="lineno">  205</span>  vector&lt; vector &lt; adept::adouble &gt; &gt; aResV(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);    <span class="comment">// local redidual vector</span></div>
-<div class="line"><span class="lineno">  206</span>  vector&lt; adept::adouble &gt; aResP; <span class="comment">// local redidual vector</span></div>
-<div class="line"><span class="lineno">  207</span> </div>
-<div class="line"><span class="lineno">  208</span>  vector &lt; vector &lt; double &gt; &gt; coordX(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);    <span class="comment">// local coordinates</span></div>
-<div class="line"><span class="lineno">  209</span>  <span class="keywordtype">unsigned</span> coordXType = 2; <span class="comment">// get the finite element type for &quot;x&quot;, it is always 2 (LAGRANGE QUADRATIC)</span></div>
-<div class="line"><span class="lineno">  210</span> </div>
-<div class="line"><span class="lineno">  211</span>  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  212</span>    solV[k].reserve(maxSize);</div>
-<div class="line"><span class="lineno">  213</span>    aResV[k].reserve(maxSize);</div>
-<div class="line"><span class="lineno">  214</span>    coordX[k].reserve(maxSize);</div>
-<div class="line"><span class="lineno">  215</span>  }</div>
-<div class="line"><span class="lineno">  216</span> </div>
-<div class="line"><span class="lineno">  217</span>  solP.reserve(maxSize);</div>
-<div class="line"><span class="lineno">  218</span>  aResP.reserve(maxSize);</div>
-<div class="line"><span class="lineno">  219</span> </div>
-<div class="line"><span class="lineno">  220</span> </div>
-<div class="line"><span class="lineno">  221</span>  vector &lt;double&gt; phiV;  <span class="comment">// local test function for velocity</span></div>
-<div class="line"><span class="lineno">  222</span>  vector &lt;double&gt; phiV_x; <span class="comment">// local test function first order partial derivatives</span></div>
-<div class="line"><span class="lineno">  223</span> </div>
-<div class="line"><span class="lineno">  224</span>  phiV.reserve(maxSize);</div>
-<div class="line"><span class="lineno">  225</span>  phiV_x.reserve(maxSize * <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);</div>
-<div class="line"><span class="lineno">  226</span>  </div>
-<div class="line"><span class="lineno">  227</span>  <span class="keywordtype">double</span>* phiP; <span class="comment">// local test function for the pressure</span></div>
-<div class="line"><span class="lineno">  228</span>  <span class="keywordtype">double</span> weight; <span class="comment">// gauss point weight</span></div>
-<div class="line"><span class="lineno">  229</span> </div>
-<div class="line"><span class="lineno">  230</span>  vector&lt; int &gt; sysDof; <span class="comment">// local to global pdeSys dofs</span></div>
-<div class="line"><span class="lineno">  231</span>  sysDof.reserve((<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + 1) * maxSize);</div>
-<div class="line"><span class="lineno">  232</span> </div>
-<div class="line"><span class="lineno">  233</span>  vector&lt; double &gt; Res; <span class="comment">// local redidual vector</span></div>
-<div class="line"><span class="lineno">  234</span>  Res.reserve((<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + 1) * maxSize);</div>
-<div class="line"><span class="lineno">  235</span> </div>
-<div class="line"><span class="lineno">  236</span>  vector &lt; double &gt; Jac;</div>
-<div class="line"><span class="lineno">  237</span>  Jac.reserve((<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + 1) * maxSize * (<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + 1) * maxSize);</div>
-<div class="line"><span class="lineno">  238</span> </div>
-<div class="line"><span class="lineno">  239</span>  RES-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a80b1efdc7101659f2035c2da880360e7">zero</a>(); <span class="comment">// Set to zero all the entries of the Global Residual vector</span></div>
-<div class="line"><span class="lineno">  240</span>  <a class="code hl_enumvalue" href="../../dd/d9a/_f_e_type_enum_8hpp.html#a31f830fd5deccf18a6e312b026bbe13ba886f39d2f1a5889032091a8a4244f451">KK</a>-&gt;zero(); <span class="comment">// Set to zero all the entries of the Global Matrix</span></div>
-<div class="line"><span class="lineno">  241</span> </div>
-<div class="line"><span class="lineno">  242</span>  <span class="comment">// element loop: each process loops only on the elements that owns</span></div>
-<div class="line"><span class="lineno">  243</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iel = msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#aca17a5dc69b8cfb941b8bbe7ae4a615e">_elementOffset</a>[iproc]; iel &lt; msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#aca17a5dc69b8cfb941b8bbe7ae4a615e">_elementOffset</a>[iproc + 1]; iel++) {</div>
-<div class="line"><span class="lineno">  244</span> </div>
-<div class="line"><span class="lineno">  245</span>    <span class="keywordtype">short</span> <span class="keywordtype">unsigned</span> ielGeom = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#af92bd9944b1d887562b460ede06acf44">GetElementType</a>(iel);</div>
+<div class="line"><span class="lineno">  199</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> == 3) solVPdeIndex[2] = mlPdeSys-&gt;<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a4ebc859deb32b54c9936fa28f1485a93">GetSolPdeIndex</a>(<span class="stringliteral">&quot;W&quot;</span>);</div>
+<div class="line"><span class="lineno">  200</span> </div>
+<div class="line"><span class="lineno">  201</span>  <span class="keywordtype">unsigned</span> solPPdeIndex;</div>
+<div class="line"><span class="lineno">  202</span>  solPPdeIndex = mlPdeSys-&gt;<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a4ebc859deb32b54c9936fa28f1485a93">GetSolPdeIndex</a>(<span class="stringliteral">&quot;P&quot;</span>);    <span class="comment">// get the position of &quot;P&quot; in the pdeSys object</span></div>
+<div class="line"><span class="lineno">  203</span> </div>
+<div class="line"><span class="lineno">  204</span>  vector &lt; vector &lt; adept::adouble &gt; &gt;  solV(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);    <span class="comment">// local solution</span></div>
+<div class="line"><span class="lineno">  205</span>  vector &lt; adept::adouble &gt;  solP; <span class="comment">// local solution</span></div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>  vector&lt; vector &lt; adept::adouble &gt; &gt; aResV(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);    <span class="comment">// local redidual vector</span></div>
+<div class="line"><span class="lineno">  208</span>  vector&lt; adept::adouble &gt; aResP; <span class="comment">// local redidual vector</span></div>
+<div class="line"><span class="lineno">  209</span> </div>
+<div class="line"><span class="lineno">  210</span>  vector &lt; vector &lt; double &gt; &gt; coordX(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);    <span class="comment">// local coordinates</span></div>
+<div class="line"><span class="lineno">  211</span>  <span class="keywordtype">unsigned</span> coordXType = 2; <span class="comment">// get the finite element type for &quot;x&quot;, it is always 2 (LAGRANGE QUADRATIC)</span></div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  214</span>    solV[k].reserve(maxSize);</div>
+<div class="line"><span class="lineno">  215</span>    aResV[k].reserve(maxSize);</div>
+<div class="line"><span class="lineno">  216</span>    coordX[k].reserve(maxSize);</div>
+<div class="line"><span class="lineno">  217</span>  }</div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span>  solP.reserve(maxSize);</div>
+<div class="line"><span class="lineno">  220</span>  aResP.reserve(maxSize);</div>
+<div class="line"><span class="lineno">  221</span> </div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>  vector &lt;double&gt; phiV;  <span class="comment">// local test function for velocity</span></div>
+<div class="line"><span class="lineno">  224</span>  vector &lt;double&gt; phiV_x; <span class="comment">// local test function first order partial derivatives</span></div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span>  phiV.reserve(maxSize);</div>
+<div class="line"><span class="lineno">  227</span>  phiV_x.reserve(maxSize * <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);</div>
+<div class="line"><span class="lineno">  228</span>  </div>
+<div class="line"><span class="lineno">  229</span>  <span class="keywordtype">double</span>* phiP; <span class="comment">// local test function for the pressure</span></div>
+<div class="line"><span class="lineno">  230</span>  <span class="keywordtype">double</span> weight; <span class="comment">// gauss point weight</span></div>
+<div class="line"><span class="lineno">  231</span> </div>
+<div class="line"><span class="lineno">  232</span>  vector&lt; int &gt; sysDof; <span class="comment">// local to global pdeSys dofs</span></div>
+<div class="line"><span class="lineno">  233</span>  sysDof.reserve((<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + 1) * maxSize);</div>
+<div class="line"><span class="lineno">  234</span> </div>
+<div class="line"><span class="lineno">  235</span>  vector&lt; double &gt; Res; <span class="comment">// local redidual vector</span></div>
+<div class="line"><span class="lineno">  236</span>  Res.reserve((<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + 1) * maxSize);</div>
+<div class="line"><span class="lineno">  237</span> </div>
+<div class="line"><span class="lineno">  238</span>  vector &lt; double &gt; Jac;</div>
+<div class="line"><span class="lineno">  239</span>  Jac.reserve((<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + 1) * maxSize * (<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + 1) * maxSize);</div>
+<div class="line"><span class="lineno">  240</span> </div>
+<div class="line"><span class="lineno">  241</span>  RES-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a80b1efdc7101659f2035c2da880360e7">zero</a>(); <span class="comment">// Set to zero all the entries of the Global Residual vector</span></div>
+<div class="line"><span class="lineno">  242</span>  <a class="code hl_enumvalue" href="../../dd/d9a/_f_e_type_enum_8hpp.html#a31f830fd5deccf18a6e312b026bbe13ba886f39d2f1a5889032091a8a4244f451">KK</a>-&gt;zero(); <span class="comment">// Set to zero all the entries of the Global Matrix</span></div>
+<div class="line"><span class="lineno">  243</span> </div>
+<div class="line"><span class="lineno">  244</span>  <span class="comment">// element loop: each process loops only on the elements that owns</span></div>
+<div class="line"><span class="lineno">  245</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iel = msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#aca17a5dc69b8cfb941b8bbe7ae4a615e">_elementOffset</a>[iproc]; iel &lt; msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#aca17a5dc69b8cfb941b8bbe7ae4a615e">_elementOffset</a>[iproc + 1]; iel++) {</div>
 <div class="line"><span class="lineno">  246</span> </div>
-<div class="line"><span class="lineno">  247</span>    <span class="keywordtype">unsigned</span> nDofsV = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#a679fa1625833f437ea38d2cc651c7462">GetElementDofNumber</a>(iel, solVType);    <span class="comment">// number of solution element dofs</span></div>
-<div class="line"><span class="lineno">  248</span>    <span class="keywordtype">unsigned</span> nDofsP = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#a679fa1625833f437ea38d2cc651c7462">GetElementDofNumber</a>(iel, solPType);    <span class="comment">// number of solution element dofs</span></div>
-<div class="line"><span class="lineno">  249</span>        </div>
-<div class="line"><span class="lineno">  250</span>    <span class="keywordtype">unsigned</span> nDofsVP = <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> * nDofsV + nDofsP;</div>
-<div class="line"><span class="lineno">  251</span>    <span class="comment">// resize local arrays</span></div>
-<div class="line"><span class="lineno">  252</span>    sysDof.resize(nDofsVP);</div>
-<div class="line"><span class="lineno">  253</span> </div>
-<div class="line"><span class="lineno">  254</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  255</span>      solV[k].resize(nDofsV);</div>
-<div class="line"><span class="lineno">  256</span>      coordX[k].resize(nDofsV);</div>
-<div class="line"><span class="lineno">  257</span>    }</div>
-<div class="line"><span class="lineno">  258</span>    solP.resize(nDofsP);</div>
-<div class="line"><span class="lineno">  259</span> </div>
-<div class="line"><span class="lineno">  260</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  261</span>      aResV[k].assign(nDofsV,0.);</div>
-<div class="line"><span class="lineno">  262</span>    }</div>
-<div class="line"><span class="lineno">  263</span>    aResP.assign(nDofsP,0.);</div>
-<div class="line"><span class="lineno">  264</span> </div>
-<div class="line"><span class="lineno">  265</span>    <span class="comment">// local storage of global mapping and solution</span></div>
-<div class="line"><span class="lineno">  266</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsV; i++) {</div>
-<div class="line"><span class="lineno">  267</span>      <span class="keywordtype">unsigned</span> solVDof = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ace44edec2dc2ffb42c0456f03fa227ff">GetSolutionDof</a>(i, iel, solVType);    <span class="comment">// local to global mapping between solution node and solution dof</span></div>
-<div class="line"><span class="lineno">  268</span> </div>
-<div class="line"><span class="lineno">  269</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  270</span>        solV[k][i] = (*sol-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[solVIndex[k]])(solVDof);      <span class="comment">// global extraction and local storage for the solution</span></div>
-<div class="line"><span class="lineno">  271</span>        sysDof[k * nDofsV + i] = pdeSys-&gt;<a class="code hl_function" href="../../da/de0/classfemus_1_1_linear_equation.html#a4e339f53ed51e108cd33e1577dae9c18">GetSystemDof</a>(solVIndex[k], solVPdeIndex[k], i, iel);    <span class="comment">// global to global mapping between solution node and pdeSys dof</span></div>
-<div class="line"><span class="lineno">  272</span>      }</div>
-<div class="line"><span class="lineno">  273</span>    }</div>
-<div class="line"><span class="lineno">  274</span> </div>
-<div class="line"><span class="lineno">  275</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsP; i++) {</div>
-<div class="line"><span class="lineno">  276</span>      <span class="keywordtype">unsigned</span> solPDof = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ace44edec2dc2ffb42c0456f03fa227ff">GetSolutionDof</a>(i, iel, solPType);    <span class="comment">// local to global mapping between solution node and solution dof</span></div>
-<div class="line"><span class="lineno">  277</span>      solP[i] = (*sol-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[solPIndex])(solPDof);      <span class="comment">// global extraction and local storage for the solution</span></div>
-<div class="line"><span class="lineno">  278</span>      sysDof[<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> * nDofsV + i ] = pdeSys-&gt;<a class="code hl_function" href="../../da/de0/classfemus_1_1_linear_equation.html#a4e339f53ed51e108cd33e1577dae9c18">GetSystemDof</a>(solPIndex, solPPdeIndex, i, iel);    <span class="comment">// global to global mapping between solution node and pdeSys dof</span></div>
-<div class="line"><span class="lineno">  279</span>    }</div>
-<div class="line"><span class="lineno">  280</span> </div>
-<div class="line"><span class="lineno">  281</span>    <span class="comment">// local storage of coordinates</span></div>
-<div class="line"><span class="lineno">  282</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsV; i++) {</div>
-<div class="line"><span class="lineno">  283</span>      <span class="keywordtype">unsigned</span> coordXDof  = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ace44edec2dc2ffb42c0456f03fa227ff">GetSolutionDof</a>(i, iel, coordXType);    <span class="comment">// local to global mapping between coordinates node and coordinate dof</span></div>
-<div class="line"><span class="lineno">  284</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  285</span>        coordX[k][i] = (*msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#ac436cfb1f4caaec0c4335358ff8a51d8">_topology</a>-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[k])(coordXDof);      <span class="comment">// global extraction and local storage for the element coordinates</span></div>
-<div class="line"><span class="lineno">  286</span>      }</div>
-<div class="line"><span class="lineno">  287</span>    }</div>
-<div class="line"><span class="lineno">  288</span> </div>
-<div class="line"><span class="lineno">  289</span>    <span class="comment">// start a new recording of all the operations involving adept::adouble variables</span></div>
-<div class="line"><span class="lineno">  290</span>    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.new_recording();</div>
-<div class="line"><span class="lineno">  291</span>    </div>
-<div class="line"><span class="lineno">  292</span>    <span class="comment">// *** Face Gauss point loop (boundary Integral) ***</span></div>
-<div class="line"><span class="lineno">  293</span>    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> jface = 0; jface &lt; msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#a5a0c1124aca095fd4327252ebac3660f">GetElementFaceNumber</a> ( iel ); jface++ ) {</div>
-<div class="line"><span class="lineno">  294</span>      <span class="keywordtype">int</span> faceIndex = el-&gt;<a class="code hl_function" href="../../db/d2e/classfemus_1_1elem.html#a54ac1afbd613fe46b8c98be14a1c896f">GetBoundaryIndex</a>(iel, jface);</div>
-<div class="line"><span class="lineno">  295</span>      <span class="comment">// look for boundary faces</span></div>
-<div class="line"><span class="lineno">  296</span>      <span class="keywordflow">if</span> ( faceIndex == 3 ) {  </div>
-<div class="line"><span class="lineno">  297</span>        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> faceGeom = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#a57f92951660269429cc7f04ee3c26c17">GetElementFaceType</a> ( iel, jface );</div>
-<div class="line"><span class="lineno">  298</span>        <span class="keywordtype">unsigned</span> faceDofs = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#af372596998e5d55a1fa15d6c5f58f52b">GetElementFaceDofNumber</a> (iel, jface, solVType);</div>
-<div class="line"><span class="lineno">  299</span>                    </div>
-<div class="line"><span class="lineno">  300</span>        vector  &lt; vector  &lt;  double&gt; &gt; faceCoordinates ( <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> ); <span class="comment">// A matrix holding the face coordinates rowwise.</span></div>
-<div class="line"><span class="lineno">  301</span>        <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++ ) {</div>
-<div class="line"><span class="lineno">  302</span>          faceCoordinates[k].resize (faceDofs);</div>
-<div class="line"><span class="lineno">  303</span>        }</div>
-<div class="line"><span class="lineno">  304</span>        <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; faceDofs; i++ ) {</div>
-<div class="line"><span class="lineno">  305</span>          <span class="keywordtype">unsigned</span> inode = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ad18fca5dab8c3567b644996e682043d3">GetLocalFaceVertexIndex</a> ( iel, jface, i ); <span class="comment">// face-to-element local node mapping.</span></div>
-<div class="line"><span class="lineno">  306</span>          <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++ ) {</div>
-<div class="line"><span class="lineno">  307</span>            faceCoordinates[k][i] =  coordX[k][inode]; <span class="comment">// We extract the local coordinates on the face from local coordinates on the element.</span></div>
-<div class="line"><span class="lineno">  308</span>          }</div>
-<div class="line"><span class="lineno">  309</span>        }</div>
-<div class="line"><span class="lineno">  310</span>        <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a> = 0; <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>  &lt;  msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#a555c4982e81fc0042426c6741a792ca2">_finiteElement</a>[faceGeom][solVType]-&gt;<a class="code hl_function" href="../../d3/dca/classfemus_1_1elem__type.html#a3fa8f889f9ae97586b3db574acb4448e">GetGaussPointNumber</a>(); <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>++ ) { </div>
-<div class="line"><span class="lineno">  311</span>            <span class="comment">// We call the method GetGaussPointNumber from the object finiteElement in the mesh object msh. </span></div>
-<div class="line"><span class="lineno">  312</span>          vector &lt; double&gt; normal;</div>
-<div class="line"><span class="lineno">  313</span>          msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#a555c4982e81fc0042426c6741a792ca2">_finiteElement</a>[faceGeom][solVType]-&gt;<a class="code hl_function" href="../../d3/dca/classfemus_1_1elem__type.html#a41bf5e7188a121649319194e846e533f">JacobianSur</a> ( faceCoordinates, <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>, weight, phiV, phiV_x, normal );</div>
-<div class="line"><span class="lineno">  314</span>            </div>
-<div class="line"><span class="lineno">  315</span>          vector&lt; double &gt; xg(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>,0.);</div>
-<div class="line"><span class="lineno">  316</span>          <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; faceDofs; i++ ) {</div>
-<div class="line"><span class="lineno">  317</span>            <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> k=0; k&lt;<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++){</div>
-<div class="line"><span class="lineno">  318</span>              xg[k] += phiV[i] * faceCoordinates[k][i]; <span class="comment">// xg(ig)= \sum_{i=0}^faceDofs phi[i](xig) facecoordinates[i]     </span></div>
-<div class="line"><span class="lineno">  319</span>            }</div>
-<div class="line"><span class="lineno">  320</span>          }</div>
-<div class="line"><span class="lineno">  321</span>          <span class="keywordtype">double</span> tau; <span class="comment">// a(u)*grad_u\cdot normal</span></div>
-<div class="line"><span class="lineno">  322</span>          <a class="code hl_function" href="../../df/d93/ex06b__navier__stokes_8cpp.html#ab8b0d45993b678f2b4a8aea9fff7fc87">SetBoundaryCondition</a>( xg, <span class="stringliteral">&quot;P&quot;</span>, tau, faceIndex, 0. ); <span class="comment">// return tau</span></div>
-<div class="line"><span class="lineno">  323</span>          <span class="comment">// *** phi_i loop ***</span></div>
-<div class="line"><span class="lineno">  324</span>          <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; faceDofs; i++ ) {</div>
-<div class="line"><span class="lineno">  325</span>            <span class="keywordtype">unsigned</span> inode = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ad18fca5dab8c3567b644996e682043d3">GetLocalFaceVertexIndex</a> ( iel, jface, i );</div>
-<div class="line"><span class="lineno">  326</span>            <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k=0;k&lt;<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>;k++){</div>
-<div class="line"><span class="lineno">  327</span>              aResV[k][inode] +=  -phiV[i] * tau * normal[k] * weight;</div>
-<div class="line"><span class="lineno">  328</span>            }</div>
-<div class="line"><span class="lineno">  329</span>          }        </div>
-<div class="line"><span class="lineno">  330</span>        }</div>
-<div class="line"><span class="lineno">  331</span>      }</div>
-<div class="line"><span class="lineno">  332</span>    }   </div>
-<div class="line"><span class="lineno">  333</span> </div>
-<div class="line"><span class="lineno">  334</span>    <span class="comment">// *** Gauss point loop ***</span></div>
-<div class="line"><span class="lineno">  335</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a> = 0; <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a> &lt; msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#a555c4982e81fc0042426c6741a792ca2">_finiteElement</a>[ielGeom][solVType]-&gt;<a class="code hl_function" href="../../d3/dca/classfemus_1_1elem__type.html#a3fa8f889f9ae97586b3db574acb4448e">GetGaussPointNumber</a>(); <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>++) {</div>
-<div class="line"><span class="lineno">  336</span>      <span class="comment">// *** get gauss point weight, test function and test function partial derivatives ***</span></div>
-<div class="line"><span class="lineno">  337</span>      msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#a555c4982e81fc0042426c6741a792ca2">_finiteElement</a>[ielGeom][solVType]-&gt;<a class="code hl_function" href="../../d3/dca/classfemus_1_1elem__type.html#a64c3ed0fd9cd8afcb765144362147a2e">Jacobian</a>(coordX, <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>, weight, phiV, phiV_x);</div>
-<div class="line"><span class="lineno">  338</span>      phiP = msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#a555c4982e81fc0042426c6741a792ca2">_finiteElement</a>[ielGeom][solPType]-&gt;<a class="code hl_function" href="../../d3/dca/classfemus_1_1elem__type.html#af9c2379b41e7c7228229d82968959b23">GetPhi</a>(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>);</div>
-<div class="line"><span class="lineno">  339</span> </div>
-<div class="line"><span class="lineno">  340</span>      vector &lt; adept::adouble &gt; solV_gss(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>, 0);</div>
-<div class="line"><span class="lineno">  341</span>      vector &lt; vector &lt; adept::adouble &gt; &gt; gradSolV_gss(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);</div>
-<div class="line"><span class="lineno">  342</span> </div>
-<div class="line"><span class="lineno">  343</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  344</span>        gradSolV_gss[k].assign(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>,0.);</div>
-<div class="line"><span class="lineno">  345</span>      }</div>
+<div class="line"><span class="lineno">  247</span>    <span class="keywordtype">short</span> <span class="keywordtype">unsigned</span> ielGeom = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#af92bd9944b1d887562b460ede06acf44">GetElementType</a>(iel);</div>
+<div class="line"><span class="lineno">  248</span> </div>
+<div class="line"><span class="lineno">  249</span>    <span class="keywordtype">unsigned</span> nDofsV = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#a679fa1625833f437ea38d2cc651c7462">GetElementDofNumber</a>(iel, solVType);    <span class="comment">// number of solution element dofs</span></div>
+<div class="line"><span class="lineno">  250</span>    <span class="keywordtype">unsigned</span> nDofsP = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#a679fa1625833f437ea38d2cc651c7462">GetElementDofNumber</a>(iel, solPType);    <span class="comment">// number of solution element dofs</span></div>
+<div class="line"><span class="lineno">  251</span>        </div>
+<div class="line"><span class="lineno">  252</span>    <span class="keywordtype">unsigned</span> nDofsVP = <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> * nDofsV + nDofsP;</div>
+<div class="line"><span class="lineno">  253</span>    <span class="comment">// resize local arrays</span></div>
+<div class="line"><span class="lineno">  254</span>    sysDof.resize(nDofsVP);</div>
+<div class="line"><span class="lineno">  255</span> </div>
+<div class="line"><span class="lineno">  256</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  257</span>      solV[k].resize(nDofsV);</div>
+<div class="line"><span class="lineno">  258</span>      coordX[k].resize(nDofsV);</div>
+<div class="line"><span class="lineno">  259</span>    }</div>
+<div class="line"><span class="lineno">  260</span>    solP.resize(nDofsP);</div>
+<div class="line"><span class="lineno">  261</span> </div>
+<div class="line"><span class="lineno">  262</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  263</span>      aResV[k].assign(nDofsV,0.);</div>
+<div class="line"><span class="lineno">  264</span>    }</div>
+<div class="line"><span class="lineno">  265</span>    aResP.assign(nDofsP,0.);</div>
+<div class="line"><span class="lineno">  266</span> </div>
+<div class="line"><span class="lineno">  267</span>    <span class="comment">// local storage of global mapping and solution</span></div>
+<div class="line"><span class="lineno">  268</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsV; i++) {</div>
+<div class="line"><span class="lineno">  269</span>      <span class="keywordtype">unsigned</span> solVDof = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ace44edec2dc2ffb42c0456f03fa227ff">GetSolutionDof</a>(i, iel, solVType);    <span class="comment">// local to global mapping between solution node and solution dof</span></div>
+<div class="line"><span class="lineno">  270</span> </div>
+<div class="line"><span class="lineno">  271</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  272</span>        solV[k][i] = (*sol-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[solVIndex[k]])(solVDof);      <span class="comment">// global extraction and local storage for the solution</span></div>
+<div class="line"><span class="lineno">  273</span>        sysDof[k * nDofsV + i] = pdeSys-&gt;<a class="code hl_function" href="../../da/de0/classfemus_1_1_linear_equation.html#a4e339f53ed51e108cd33e1577dae9c18">GetSystemDof</a>(solVIndex[k], solVPdeIndex[k], i, iel);    <span class="comment">// global to global mapping between solution node and pdeSys dof</span></div>
+<div class="line"><span class="lineno">  274</span>      }</div>
+<div class="line"><span class="lineno">  275</span>    }</div>
+<div class="line"><span class="lineno">  276</span> </div>
+<div class="line"><span class="lineno">  277</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsP; i++) {</div>
+<div class="line"><span class="lineno">  278</span>      <span class="keywordtype">unsigned</span> solPDof = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ace44edec2dc2ffb42c0456f03fa227ff">GetSolutionDof</a>(i, iel, solPType);    <span class="comment">// local to global mapping between solution node and solution dof</span></div>
+<div class="line"><span class="lineno">  279</span>      solP[i] = (*sol-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[solPIndex])(solPDof);      <span class="comment">// global extraction and local storage for the solution</span></div>
+<div class="line"><span class="lineno">  280</span>      sysDof[<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> * nDofsV + i ] = pdeSys-&gt;<a class="code hl_function" href="../../da/de0/classfemus_1_1_linear_equation.html#a4e339f53ed51e108cd33e1577dae9c18">GetSystemDof</a>(solPIndex, solPPdeIndex, i, iel);    <span class="comment">// global to global mapping between solution node and pdeSys dof</span></div>
+<div class="line"><span class="lineno">  281</span>    }</div>
+<div class="line"><span class="lineno">  282</span> </div>
+<div class="line"><span class="lineno">  283</span>    <span class="comment">// local storage of coordinates</span></div>
+<div class="line"><span class="lineno">  284</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsV; i++) {</div>
+<div class="line"><span class="lineno">  285</span>      <span class="keywordtype">unsigned</span> coordXDof  = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ace44edec2dc2ffb42c0456f03fa227ff">GetSolutionDof</a>(i, iel, coordXType);    <span class="comment">// local to global mapping between coordinates node and coordinate dof</span></div>
+<div class="line"><span class="lineno">  286</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  287</span>        coordX[k][i] = (*msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#ac436cfb1f4caaec0c4335358ff8a51d8">_topology</a>-&gt;<a class="code hl_variable" href="../../d4/d40/classfemus_1_1_solution.html#a5c725da69d0b94b7ff4a4e2509c86d53">_Sol</a>[k])(coordXDof);      <span class="comment">// global extraction and local storage for the element coordinates</span></div>
+<div class="line"><span class="lineno">  288</span>      }</div>
+<div class="line"><span class="lineno">  289</span>    }</div>
+<div class="line"><span class="lineno">  290</span> </div>
+<div class="line"><span class="lineno">  291</span>    <span class="comment">// start a new recording of all the operations involving adept::adouble variables</span></div>
+<div class="line"><span class="lineno">  292</span>    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.new_recording();</div>
+<div class="line"><span class="lineno">  293</span>    </div>
+<div class="line"><span class="lineno">  294</span>    <span class="comment">// *** Face Gauss point loop (boundary Integral) - BEGIN ***</span></div>
+<div class="line"><span class="lineno">  295</span>    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> jface = 0; jface &lt; msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#a5a0c1124aca095fd4327252ebac3660f">GetElementFaceNumber</a> ( iel ); jface++ ) {</div>
+<div class="line"><span class="lineno">  296</span>      <span class="keywordtype">int</span> faceIndex = el-&gt;<a class="code hl_function" href="../../db/d2e/classfemus_1_1elem.html#a54ac1afbd613fe46b8c98be14a1c896f">GetBoundaryIndex</a>(iel, jface);</div>
+<div class="line"><span class="lineno">  297</span>      <span class="comment">// look for boundary faces</span></div>
+<div class="line"><span class="lineno">  298</span>      <span class="keywordflow">if</span> ( faceIndex == 3 ) {  </div>
+<div class="line"><span class="lineno">  299</span>        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> faceGeom = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#a57f92951660269429cc7f04ee3c26c17">GetElementFaceType</a> ( iel, jface );</div>
+<div class="line"><span class="lineno">  300</span>        <span class="keywordtype">unsigned</span> faceDofs = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#af372596998e5d55a1fa15d6c5f58f52b">GetElementFaceDofNumber</a> (iel, jface, solVType);</div>
+<div class="line"><span class="lineno">  301</span>                    </div>
+<div class="line"><span class="lineno">  302</span>        vector  &lt; vector  &lt;  double&gt; &gt; faceCoordinates ( <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> ); <span class="comment">// A matrix holding the face coordinates rowwise.</span></div>
+<div class="line"><span class="lineno">  303</span>        <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++ ) {</div>
+<div class="line"><span class="lineno">  304</span>          faceCoordinates[k].resize (faceDofs);</div>
+<div class="line"><span class="lineno">  305</span>        }</div>
+<div class="line"><span class="lineno">  306</span>        <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; faceDofs; i++ ) {</div>
+<div class="line"><span class="lineno">  307</span>          <span class="keywordtype">unsigned</span> inode = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ad18fca5dab8c3567b644996e682043d3">GetLocalFaceVertexIndex</a> ( iel, jface, i ); <span class="comment">// face-to-element local node mapping.</span></div>
+<div class="line"><span class="lineno">  308</span>          <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++ ) {</div>
+<div class="line"><span class="lineno">  309</span>            faceCoordinates[k][i] =  coordX[k][inode]; <span class="comment">// We extract the local coordinates on the face from local coordinates on the element.</span></div>
+<div class="line"><span class="lineno">  310</span>          }</div>
+<div class="line"><span class="lineno">  311</span>        }</div>
+<div class="line"><span class="lineno">  312</span>        <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a> = 0; <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>  &lt;  msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#a555c4982e81fc0042426c6741a792ca2">_finiteElement</a>[faceGeom][solVType]-&gt;<a class="code hl_function" href="../../d3/dca/classfemus_1_1elem__type.html#a3fa8f889f9ae97586b3db574acb4448e">GetGaussPointNumber</a>(); <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>++ ) { </div>
+<div class="line"><span class="lineno">  313</span>            <span class="comment">// We call the method GetGaussPointNumber from the object finiteElement in the mesh object msh. </span></div>
+<div class="line"><span class="lineno">  314</span>          vector &lt; double&gt; normal;</div>
+<div class="line"><span class="lineno">  315</span>          msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#a555c4982e81fc0042426c6741a792ca2">_finiteElement</a>[faceGeom][solVType]-&gt;<a class="code hl_function" href="../../d3/dca/classfemus_1_1elem__type.html#a41bf5e7188a121649319194e846e533f">JacobianSur</a> ( faceCoordinates, <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>, weight, phiV, phiV_x, normal );</div>
+<div class="line"><span class="lineno">  316</span>            </div>
+<div class="line"><span class="lineno">  317</span>          vector&lt; double &gt; xg(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>,0.);</div>
+<div class="line"><span class="lineno">  318</span>          <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; faceDofs; i++ ) {</div>
+<div class="line"><span class="lineno">  319</span>            <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> k=0; k&lt;<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++){</div>
+<div class="line"><span class="lineno">  320</span>              xg[k] += phiV[i] * faceCoordinates[k][i]; <span class="comment">// xg(ig)= \sum_{i=0}^faceDofs phi[i](xig) facecoordinates[i]     </span></div>
+<div class="line"><span class="lineno">  321</span>            }</div>
+<div class="line"><span class="lineno">  322</span>          }</div>
+<div class="line"><span class="lineno">  323</span>          <span class="keywordtype">double</span> tau; <span class="comment">// a(u)*grad_u\cdot normal</span></div>
+<div class="line"><span class="lineno">  324</span>          <a class="code hl_function" href="../../df/d93/ex06b__navier__stokes_8cpp.html#ab8b0d45993b678f2b4a8aea9fff7fc87">SetBoundaryCondition</a>( xg, <span class="stringliteral">&quot;P&quot;</span>, tau, faceIndex, 0. ); <span class="comment">// return tau</span></div>
+<div class="line"><span class="lineno">  325</span>          <span class="comment">// *** phi_i loop ***</span></div>
+<div class="line"><span class="lineno">  326</span>          <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; faceDofs; i++ ) {</div>
+<div class="line"><span class="lineno">  327</span>            <span class="keywordtype">unsigned</span> inode = msh-&gt;<a class="code hl_function" href="../../d9/d8b/classfemus_1_1_mesh.html#ad18fca5dab8c3567b644996e682043d3">GetLocalFaceVertexIndex</a> ( iel, jface, i );</div>
+<div class="line"><span class="lineno">  328</span>            <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> k=0;k&lt;<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>;k++){</div>
+<div class="line"><span class="lineno">  329</span>              aResV[k][inode] +=  -phiV[i] * tau * normal[k] * weight;</div>
+<div class="line"><span class="lineno">  330</span>            }</div>
+<div class="line"><span class="lineno">  331</span>          }        </div>
+<div class="line"><span class="lineno">  332</span>        }</div>
+<div class="line"><span class="lineno">  333</span>      }</div>
+<div class="line"><span class="lineno">  334</span>    }   </div>
+<div class="line"><span class="lineno">  335</span>    <span class="comment">// *** Face Gauss point loop (boundary Integral) - END ***</span></div>
+<div class="line"><span class="lineno">  336</span>    </div>
+<div class="line"><span class="lineno">  337</span> </div>
+<div class="line"><span class="lineno">  338</span>    <span class="comment">// *** Gauss point loop ***</span></div>
+<div class="line"><span class="lineno">  339</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a> = 0; <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a> &lt; msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#a555c4982e81fc0042426c6741a792ca2">_finiteElement</a>[ielGeom][solVType]-&gt;<a class="code hl_function" href="../../d3/dca/classfemus_1_1elem__type.html#a3fa8f889f9ae97586b3db574acb4448e">GetGaussPointNumber</a>(); <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>++) {</div>
+<div class="line"><span class="lineno">  340</span>      <span class="comment">// *** get gauss point weight, test function and test function partial derivatives ***</span></div>
+<div class="line"><span class="lineno">  341</span>      msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#a555c4982e81fc0042426c6741a792ca2">_finiteElement</a>[ielGeom][solVType]-&gt;<a class="code hl_function" href="../../d3/dca/classfemus_1_1elem__type.html#a64c3ed0fd9cd8afcb765144362147a2e">Jacobian</a>(coordX, <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>, weight, phiV, phiV_x);</div>
+<div class="line"><span class="lineno">  342</span>      phiP = msh-&gt;<a class="code hl_variable" href="../../d9/d8b/classfemus_1_1_mesh.html#a555c4982e81fc0042426c6741a792ca2">_finiteElement</a>[ielGeom][solPType]-&gt;<a class="code hl_function" href="../../d3/dca/classfemus_1_1elem__type.html#af9c2379b41e7c7228229d82968959b23">GetPhi</a>(<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>);</div>
+<div class="line"><span class="lineno">  343</span> </div>
+<div class="line"><span class="lineno">  344</span>      vector &lt; adept::adouble &gt; solV_gss(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>, 0);</div>
+<div class="line"><span class="lineno">  345</span>      vector &lt; vector &lt; adept::adouble &gt; &gt; gradSolV_gss(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>);</div>
 <div class="line"><span class="lineno">  346</span> </div>
-<div class="line"><span class="lineno">  347</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsV; i++) {</div>
-<div class="line"><span class="lineno">  348</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  349</span>          solV_gss[k] += solV[k][i] * phiV[i];</div>
-<div class="line"><span class="lineno">  350</span>        }</div>
-<div class="line"><span class="lineno">  351</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a> = 0; <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a> &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>++) {</div>
-<div class="line"><span class="lineno">  352</span>          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  353</span>            gradSolV_gss[k][<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>] += solV[k][i] * phiV_x[i * <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>];</div>
-<div class="line"><span class="lineno">  354</span>          }</div>
-<div class="line"><span class="lineno">  355</span>        }</div>
-<div class="line"><span class="lineno">  356</span>      }</div>
-<div class="line"><span class="lineno">  357</span> </div>
-<div class="line"><span class="lineno">  358</span>      adept::adouble solP_gss = 0;</div>
-<div class="line"><span class="lineno">  359</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsP; i++) {</div>
-<div class="line"><span class="lineno">  360</span>        solP_gss += phiP[i] * solP[i];</div>
-<div class="line"><span class="lineno">  361</span>      }</div>
-<div class="line"><span class="lineno">  362</span> </div>
-<div class="line"><span class="lineno">  363</span>      <span class="keywordtype">double</span> nu = 1;</div>
-<div class="line"><span class="lineno">  364</span> </div>
-<div class="line"><span class="lineno">  365</span>      <span class="comment">// *** phiV_i loop ***</span></div>
-<div class="line"><span class="lineno">  366</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsV; i++) {</div>
-<div class="line"><span class="lineno">  367</span>        vector &lt; adept::adouble &gt; NSV(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>, 0.);</div>
-<div class="line"><span class="lineno">  368</span>        </div>
-<div class="line"><span class="lineno">  369</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) { <span class="comment">//momentum equation in k </span></div>
-<div class="line"><span class="lineno">  370</span>          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a> = 0; <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a> &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>++) { <span class="comment">// second index j in each equation</span></div>
-<div class="line"><span class="lineno">  371</span>            NSV[k]   +=  nu * phiV_x[i * <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>] * (gradSolV_gss[k][<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>] + gradSolV_gss[<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>][k]); <span class="comment">// laplace</span></div>
-<div class="line"><span class="lineno">  372</span>            NSV[k]   +=  phiV[i] * (solV_gss[<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>] * gradSolV_gss[k][<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>]); <span class="comment">// non-linear term</span></div>
-<div class="line"><span class="lineno">  373</span>          }</div>
-<div class="line"><span class="lineno">  374</span>          NSV[k] += -solP_gss * phiV_x[i * <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + k]; <span class="comment">// pressure gradient</span></div>
-<div class="line"><span class="lineno">  375</span>        }</div>
-<div class="line"><span class="lineno">  376</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  377</span>          aResV[k][i] += NSV[k] * weight;</div>
-<div class="line"><span class="lineno">  378</span>        }</div>
-<div class="line"><span class="lineno">  379</span>      } <span class="comment">// end phiV_i loop</span></div>
-<div class="line"><span class="lineno">  380</span> </div>
-<div class="line"><span class="lineno">  381</span>      <span class="comment">// *** phiP_i loop ***</span></div>
-<div class="line"><span class="lineno">  382</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsP; i++) {</div>
-<div class="line"><span class="lineno">  383</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  384</span>          aResP[i] += - (gradSolV_gss[k][k]) * phiP[i]  * weight;</div>
-<div class="line"><span class="lineno">  385</span>        }</div>
-<div class="line"><span class="lineno">  386</span>      } <span class="comment">// end phiP_i loop</span></div>
-<div class="line"><span class="lineno">  387</span> </div>
-<div class="line"><span class="lineno">  388</span>    } <span class="comment">// end gauss point loop</span></div>
-<div class="line"><span class="lineno">  389</span> </div>
-<div class="line"><span class="lineno">  390</span>    <span class="comment">//--------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><span class="lineno">  391</span>    <span class="comment">// Add the local Matrix/Vector into the global Matrix/Vector</span></div>
-<div class="line"><span class="lineno">  392</span> </div>
-<div class="line"><span class="lineno">  393</span>    <span class="comment">//copy the value of the adept::adoube aRes in double Res and store them in RES</span></div>
-<div class="line"><span class="lineno">  394</span>    Res.resize(nDofsVP);    <span class="comment">//resize</span></div>
-<div class="line"><span class="lineno">  395</span> </div>
-<div class="line"><span class="lineno">  396</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nDofsV; i++) {</div>
-<div class="line"><span class="lineno">  397</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  398</span>        Res[ k * nDofsV + i ] = -aResV[k][i].value();</div>
-<div class="line"><span class="lineno">  399</span>      }</div>
-<div class="line"><span class="lineno">  400</span>    }</div>
-<div class="line"><span class="lineno">  401</span> </div>
-<div class="line"><span class="lineno">  402</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nDofsP; i++) {</div>
-<div class="line"><span class="lineno">  403</span>      Res[ <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> * nDofsV + i ] = -aResP[i].value();</div>
+<div class="line"><span class="lineno">  347</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  348</span>        gradSolV_gss[k].assign(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>,0.);</div>
+<div class="line"><span class="lineno">  349</span>      }</div>
+<div class="line"><span class="lineno">  350</span> </div>
+<div class="line"><span class="lineno">  351</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsV; i++) {</div>
+<div class="line"><span class="lineno">  352</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  353</span>          solV_gss[k] += solV[k][i] * phiV[i];</div>
+<div class="line"><span class="lineno">  354</span>        }</div>
+<div class="line"><span class="lineno">  355</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a> = 0; <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a> &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>++) {</div>
+<div class="line"><span class="lineno">  356</span>          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  357</span>            gradSolV_gss[k][<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>] += solV[k][i] * phiV_x[i * <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>];</div>
+<div class="line"><span class="lineno">  358</span>          }</div>
+<div class="line"><span class="lineno">  359</span>        }</div>
+<div class="line"><span class="lineno">  360</span>      }</div>
+<div class="line"><span class="lineno">  361</span> </div>
+<div class="line"><span class="lineno">  362</span>      adept::adouble solP_gss = 0;</div>
+<div class="line"><span class="lineno">  363</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsP; i++) {</div>
+<div class="line"><span class="lineno">  364</span>        solP_gss += phiP[i] * solP[i];</div>
+<div class="line"><span class="lineno">  365</span>      }</div>
+<div class="line"><span class="lineno">  366</span> </div>
+<div class="line"><span class="lineno">  367</span>      <span class="keywordtype">double</span> nu = 1.;</div>
+<div class="line"><span class="lineno">  368</span> </div>
+<div class="line"><span class="lineno">  369</span>      <span class="comment">// *** phiV_i loop ***</span></div>
+<div class="line"><span class="lineno">  370</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsV; i++) {</div>
+<div class="line"><span class="lineno">  371</span>        vector &lt; adept::adouble &gt; NSV(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>, 0.);</div>
+<div class="line"><span class="lineno">  372</span>        </div>
+<div class="line"><span class="lineno">  373</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) { <span class="comment">//momentum equation in k </span></div>
+<div class="line"><span class="lineno">  374</span>          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a> = 0; <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a> &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>++) { <span class="comment">// second index j in each equation</span></div>
+<div class="line"><span class="lineno">  375</span>            NSV[k]   +=  nu * phiV_x[i * <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + <a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>] * (gradSolV_gss[k][<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>] + gradSolV_gss[<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>][k]); <span class="comment">// laplace</span></div>
+<div class="line"><span class="lineno">  376</span>            NSV[k]   +=  phiV[i] * (solV_gss[<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>] * gradSolV_gss[k][<a class="code hl_variable" href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>]); <span class="comment">// non-linear term</span></div>
+<div class="line"><span class="lineno">  377</span>          }</div>
+<div class="line"><span class="lineno">  378</span>          NSV[k] += -solP_gss * phiV_x[i * <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> + k]; <span class="comment">// pressure gradient</span></div>
+<div class="line"><span class="lineno">  379</span>        }</div>
+<div class="line"><span class="lineno">  380</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  381</span>          aResV[k][i] += NSV[k] * weight;  </div>
+<div class="line"><span class="lineno">  382</span>        }</div>
+<div class="line"><span class="lineno">  383</span>      } <span class="comment">// end phiV_i loop</span></div>
+<div class="line"><span class="lineno">  384</span> </div>
+<div class="line"><span class="lineno">  385</span>      <span class="comment">// *** phiP_i loop ***</span></div>
+<div class="line"><span class="lineno">  386</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; nDofsP; i++) {</div>
+<div class="line"><span class="lineno">  387</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  388</span>          aResP[i] += - (gradSolV_gss[k][k]) * phiP[i]  * weight;</div>
+<div class="line"><span class="lineno">  389</span>        }</div>
+<div class="line"><span class="lineno">  390</span>      } <span class="comment">// end phiP_i loop</span></div>
+<div class="line"><span class="lineno">  391</span> </div>
+<div class="line"><span class="lineno">  392</span>    } <span class="comment">// end gauss point loop</span></div>
+<div class="line"><span class="lineno">  393</span> </div>
+<div class="line"><span class="lineno">  394</span>    <span class="comment">//--------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  395</span>    <span class="comment">// Add the local Matrix/Vector into the global Matrix/Vector</span></div>
+<div class="line"><span class="lineno">  396</span> </div>
+<div class="line"><span class="lineno">  397</span>    <span class="comment">//copy the value of the adept::adoube aRes in double Res and store them in RES</span></div>
+<div class="line"><span class="lineno">  398</span>    Res.resize(nDofsVP);    <span class="comment">//resize</span></div>
+<div class="line"><span class="lineno">  399</span> </div>
+<div class="line"><span class="lineno">  400</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nDofsV; i++) {</div>
+<div class="line"><span class="lineno">  401</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  402</span>        Res[ k * nDofsV + i ] = -aResV[k][i].value();</div>
+<div class="line"><span class="lineno">  403</span>      }</div>
 <div class="line"><span class="lineno">  404</span>    }</div>
 <div class="line"><span class="lineno">  405</span> </div>
-<div class="line"><span class="lineno">  406</span>    RES-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a0440021963af01ac49a6f02df562e44b">add_vector_blocked</a>(Res, sysDof);</div>
-<div class="line"><span class="lineno">  407</span> </div>
-<div class="line"><span class="lineno">  408</span>    <span class="comment">//Extract and store the Jacobian</span></div>
+<div class="line"><span class="lineno">  406</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nDofsP; i++) {</div>
+<div class="line"><span class="lineno">  407</span>      Res[ <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> * nDofsV + i ] = -aResP[i].value();</div>
+<div class="line"><span class="lineno">  408</span>    }</div>
 <div class="line"><span class="lineno">  409</span> </div>
-<div class="line"><span class="lineno">  410</span>    Jac.resize(nDofsVP * nDofsVP);</div>
-<div class="line"><span class="lineno">  411</span>    <span class="comment">// define the dependent variables</span></div>
-<div class="line"><span class="lineno">  412</span> </div>
-<div class="line"><span class="lineno">  413</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  414</span>      <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.dependent(&amp;aResV[k][0], nDofsV);</div>
-<div class="line"><span class="lineno">  415</span>    }</div>
-<div class="line"><span class="lineno">  416</span>    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.dependent(&amp;aResP[0], nDofsP);</div>
-<div class="line"><span class="lineno">  417</span> </div>
-<div class="line"><span class="lineno">  418</span>    <span class="comment">// define the independent variables</span></div>
-<div class="line"><span class="lineno">  419</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
-<div class="line"><span class="lineno">  420</span>      <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.independent(&amp;solV[k][0], nDofsV);</div>
-<div class="line"><span class="lineno">  421</span>    }</div>
-<div class="line"><span class="lineno">  422</span>    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.independent(&amp;solP[0], nDofsP);</div>
-<div class="line"><span class="lineno">  423</span> </div>
-<div class="line"><span class="lineno">  424</span>    <span class="comment">// get the and store jacobian matrix (row-major)</span></div>
-<div class="line"><span class="lineno">  425</span>    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.jacobian(&amp;Jac[0] , <span class="keyword">true</span>); <span class="comment">// This is rowwise order.</span></div>
-<div class="line"><span class="lineno">  426</span>    <a class="code hl_enumvalue" href="../../dd/d9a/_f_e_type_enum_8hpp.html#a31f830fd5deccf18a6e312b026bbe13ba886f39d2f1a5889032091a8a4244f451">KK</a>-&gt;add_matrix_blocked(Jac, sysDof, sysDof);</div>
+<div class="line"><span class="lineno">  410</span>    RES-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a0440021963af01ac49a6f02df562e44b">add_vector_blocked</a>(Res, sysDof);</div>
+<div class="line"><span class="lineno">  411</span> </div>
+<div class="line"><span class="lineno">  412</span>    <span class="comment">//Extract and store the Jacobian</span></div>
+<div class="line"><span class="lineno">  413</span> </div>
+<div class="line"><span class="lineno">  414</span>    Jac.resize(nDofsVP * nDofsVP);</div>
+<div class="line"><span class="lineno">  415</span>    <span class="comment">// define the dependent variables</span></div>
+<div class="line"><span class="lineno">  416</span> </div>
+<div class="line"><span class="lineno">  417</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  418</span>      <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.dependent(&amp;aResV[k][0], nDofsV);</div>
+<div class="line"><span class="lineno">  419</span>    }</div>
+<div class="line"><span class="lineno">  420</span>    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.dependent(&amp;aResP[0], nDofsP);</div>
+<div class="line"><span class="lineno">  421</span> </div>
+<div class="line"><span class="lineno">  422</span>    <span class="comment">// define the independent variables</span></div>
+<div class="line"><span class="lineno">  423</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span>  k = 0; k &lt; <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>; k++) {</div>
+<div class="line"><span class="lineno">  424</span>      <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.independent(&amp;solV[k][0], nDofsV);</div>
+<div class="line"><span class="lineno">  425</span>    }</div>
+<div class="line"><span class="lineno">  426</span>    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.independent(&amp;solP[0], nDofsP);</div>
 <div class="line"><span class="lineno">  427</span> </div>
-<div class="line"><span class="lineno">  428</span>    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.clear_independents();</div>
-<div class="line"><span class="lineno">  429</span>    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.clear_dependents();</div>
-<div class="line"><span class="lineno">  430</span> </div>
-<div class="line"><span class="lineno">  431</span>  } <span class="comment">//end element loop for each process</span></div>
-<div class="line"><span class="lineno">  432</span> </div>
-<div class="line"><span class="lineno">  433</span>  RES-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a80eb1dc1f53018fd7d08bcc4a511cc09">close</a>();</div>
-<div class="line"><span class="lineno">  434</span>  <a class="code hl_enumvalue" href="../../dd/d9a/_f_e_type_enum_8hpp.html#a31f830fd5deccf18a6e312b026bbe13ba886f39d2f1a5889032091a8a4244f451">KK</a>-&gt;close();</div>
-<div class="line"><span class="lineno">  435</span>  <span class="comment">// ***************** END ASSEMBLY *******************</span></div>
-<div class="line"><span class="lineno">  436</span>}</div>
+<div class="line"><span class="lineno">  428</span>    <span class="comment">// get the and store jacobian matrix (row-major)</span></div>
+<div class="line"><span class="lineno">  429</span>    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.jacobian(&amp;Jac[0] , <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  430</span>    <a class="code hl_enumvalue" href="../../dd/d9a/_f_e_type_enum_8hpp.html#a31f830fd5deccf18a6e312b026bbe13ba886f39d2f1a5889032091a8a4244f451">KK</a>-&gt;add_matrix_blocked(Jac, sysDof, sysDof);</div>
+<div class="line"><span class="lineno">  431</span> </div>
+<div class="line"><span class="lineno">  432</span>    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.clear_independents();</div>
+<div class="line"><span class="lineno">  433</span>    <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a7216a0536acdac46863fd54b0320a8e6">s</a>.clear_dependents();</div>
+<div class="line"><span class="lineno">  434</span> </div>
+<div class="line"><span class="lineno">  435</span>  } <span class="comment">//end element loop for each process</span></div>
+<div class="line"><span class="lineno">  436</span> </div>
+<div class="line"><span class="lineno">  437</span>  RES-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a80eb1dc1f53018fd7d08bcc4a511cc09">close</a>();</div>
+<div class="line"><span class="lineno">  438</span>  <a class="code hl_enumvalue" href="../../dd/d9a/_f_e_type_enum_8hpp.html#a31f830fd5deccf18a6e312b026bbe13ba886f39d2f1a5889032091a8a4244f451">KK</a>-&gt;close();</div>
+<div class="line"><span class="lineno">  439</span>  <span class="comment">// ***************** END ASSEMBLY *******************</span></div>
+<div class="line"><span class="lineno">  440</span>}</div>
 <div class="ttc" id="a_f_e_type_enum_8hpp_html_a31f830fd5deccf18a6e312b026bbe13ba886f39d2f1a5889032091a8a4244f451"><div class="ttname"><a href="../../dd/d9a/_f_e_type_enum_8hpp.html#a31f830fd5deccf18a6e312b026bbe13ba886f39d2f1a5889032091a8a4244f451">KK</a></div><div class="ttdeci">@ KK</div><div class="ttdef"><b>Definition</b> <a href="../../dd/d9a/_f_e_type_enum_8hpp_source.html#l00005">FETypeEnum.hpp:5</a></div></div>
 <div class="ttc" id="a_i_s_m_2ex4_2ex4_8cpp_html_aece1bc3fff4b670afc08354a6d995a0e"><div class="ttname"><a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a></div><div class="ttdeci">unsigned dim</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp_source.html#l00031">ex4.cpp:31</a></div></div>
 <div class="ttc" id="a_m_g_a_m_r_2ex9_2_m_g__precond_8m_html_ac86694252f8dfdb19aaeadc4b7c342c6"><div class="ttname"><a href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a></div><div class="ttdeci">for j</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d46/_m_g_a_m_r_2ex9_2_m_g__precond_8m_source.html#l00032">MG_precond.m:32</a></div></div>
@@ -512,81 +515,84 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   74</span>  <span class="comment">// read coarse level mesh and generate finers level meshes</span></div>
 <div class="line"><span class="lineno">   75</span>  <span class="keywordtype">double</span> scalingFactor = 1.;</div>
 <div class="line"><span class="lineno">   76</span>  <span class="comment">//mlMsh.ReadCoarseMesh(&quot;./input/cube_hex.neu&quot;, &quot;seventh&quot;, scalingFactor);</span></div>
-<div class="line"><span class="lineno">   77</span>  mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a29d0d0f9463c9417d390da6149ffc24d">ReadCoarseMesh</a> ( <span class="stringliteral">&quot;./input/rectangle.neu&quot;</span>, <span class="stringliteral">&quot;seventh&quot;</span>, scalingFactor );</div>
-<div class="line"><span class="lineno">   78</span>  <span class="comment">/* &quot;seventh&quot; is the order of accuracy that is used in the gauss integration scheme</span></div>
-<div class="line"><span class="lineno">   79</span><span class="comment">     probably in the furure it is not going to be an argument of this function   */</span></div>
-<div class="line"><span class="lineno">   80</span>  <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> = mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a65dabdf1e308c1a44ebe5c6a41d09284">GetDimension</a>();</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>  <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#a0aca793820b6ff7705450e2043256938">numberOfUniformLevels</a> = 6;</div>
-<div class="line"><span class="lineno">   83</span>  <span class="keywordtype">unsigned</span> numberOfSelectiveLevels = 0;</div>
-<div class="line"><span class="lineno">   84</span>  mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a06c4fe014434c2bafdd2c6e94e018620">RefineMesh</a>(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#a0aca793820b6ff7705450e2043256938">numberOfUniformLevels</a> , <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#a0aca793820b6ff7705450e2043256938">numberOfUniformLevels</a> + numberOfSelectiveLevels, NULL);</div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>  <span class="comment">// erase all the coarse mesh levels</span></div>
-<div class="line"><span class="lineno">   87</span>  <span class="comment">//mlMsh.EraseCoarseLevels(numberOfUniformLevels - 1);</span></div>
-<div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>  <span class="comment">// print mesh info</span></div>
-<div class="line"><span class="lineno">   90</span>  mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a09c12975f18035d5369ae411c0208648">PrintInfo</a>();</div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>  <a class="code hl_class" href="../../d6/da4/classfemus_1_1_multi_level_solution.html">MultiLevelSolution</a> mlSol(&amp;mlMsh);</div>
+<div class="line"><span class="lineno">   77</span>  <span class="keyword">const</span> std::string relative_path_to_build_directory =  <span class="stringliteral">&quot;../../../&quot;</span>;</div>
+<div class="line"><span class="lineno">   78</span>  <span class="keyword">const</span> std::string mesh_file = relative_path_to_build_directory + <a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#a9474ccd5fe02de808a96182d96ac32ab">DEFAULT_MESH_FILES_PATH</a> + <span class="stringliteral">&quot;01_gambit/rectangle-2p5-2p5x-0p5-0p5/rectangle_quad.neu&quot;</span>;</div>
+<div class="line"><span class="lineno">   79</span>  mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a29d0d0f9463c9417d390da6149ffc24d">ReadCoarseMesh</a> (mesh_file.c_str(), <span class="stringliteral">&quot;seventh&quot;</span>, scalingFactor );</div>
+<div class="line"><span class="lineno">   80</span>  <span class="comment">/* &quot;seventh&quot; is the order of accuracy that is used in the gauss integration scheme</span></div>
+<div class="line"><span class="lineno">   81</span><span class="comment">     probably in the furure it is not going to be an argument of this function   */</span></div>
+<div class="line"><span class="lineno">   82</span>  <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> = mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a65dabdf1e308c1a44ebe5c6a41d09284">GetDimension</a>();</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>  <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#a0aca793820b6ff7705450e2043256938">numberOfUniformLevels</a> = 6;</div>
+<div class="line"><span class="lineno">   85</span>  <span class="keywordtype">unsigned</span> numberOfSelectiveLevels = 0;</div>
+<div class="line"><span class="lineno">   86</span>  mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a06c4fe014434c2bafdd2c6e94e018620">RefineMesh</a>(<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#a0aca793820b6ff7705450e2043256938">numberOfUniformLevels</a> , <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#a0aca793820b6ff7705450e2043256938">numberOfUniformLevels</a> + numberOfSelectiveLevels, NULL);</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>  <span class="comment">// erase all the coarse mesh levels</span></div>
+<div class="line"><span class="lineno">   89</span>  <span class="comment">//mlMsh.EraseCoarseLevels(numberOfUniformLevels - 1);</span></div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>  <span class="comment">// print mesh info</span></div>
+<div class="line"><span class="lineno">   92</span>  mlMsh.<a class="code hl_function" href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html#a09c12975f18035d5369ae411c0208648">PrintInfo</a>();</div>
 <div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>  <span class="comment">// add variables to mlSol</span></div>
-<div class="line"><span class="lineno">   95</span>  mlSol.AddSolution(<span class="stringliteral">&quot;U&quot;</span>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3">SECOND</a>);</div>
-<div class="line"><span class="lineno">   96</span>  mlSol.AddSolution(<span class="stringliteral">&quot;V&quot;</span>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3">SECOND</a>);</div>
-<div class="line"><span class="lineno">   97</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> == 3) mlSol.AddSolution(<span class="stringliteral">&quot;W&quot;</span>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3">SECOND</a>);</div>
-<div class="line"><span class="lineno">   98</span>  mlSol.AddSolution(<span class="stringliteral">&quot;P&quot;</span>,  <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a2318cd5622bed5320c47de68813ab4df">DISCONTINUOUS_POLYNOMIAL</a>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa6a7856cca1833641e731676636b193f1">FIRST</a>);</div>
-<div class="line"><span class="lineno">   99</span>  </div>
-<div class="line"><span class="lineno">  100</span>  <span class="comment">//  Taylor-hood</span></div>
-<div class="line"><span class="lineno">  101</span>  <span class="comment">//  mlSol.AddSolution(&quot;U&quot;, LAGRANGE, SERENDIPITY);</span></div>
-<div class="line"><span class="lineno">  102</span>  <span class="comment">//  mlSol.AddSolution(&quot;V&quot;, LAGRANGE, SERENDIPITY);</span></div>
-<div class="line"><span class="lineno">  103</span>  <span class="comment">//  if (dim == 3) mlSol.AddSolution(&quot;W&quot;, LAGRANGE, SERENDIPITY);</span></div>
-<div class="line"><span class="lineno">  104</span>  <span class="comment">//  mlSol.AddSolution(&quot;P&quot;, LAGRANGE, FIRST);</span></div>
-<div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>  </div>
-<div class="line"><span class="lineno">  107</span>  mlSol.Initialize(<span class="stringliteral">&quot;All&quot;</span>);</div>
-<div class="line"><span class="lineno">  108</span> </div>
-<div class="line"><span class="lineno">  109</span>  <span class="comment">// attach the boundary condition function and generate boundary data</span></div>
-<div class="line"><span class="lineno">  110</span>  mlSol.AttachSetBoundaryConditionFunction(<a class="code hl_function" href="../../df/d93/ex06b__navier__stokes_8cpp.html#ab8b0d45993b678f2b4a8aea9fff7fc87">SetBoundaryCondition</a>);</div>
-<div class="line"><span class="lineno">  111</span>  <span class="comment">//mlSol.FixSolutionAtOnePoint(&quot;P&quot;);</span></div>
-<div class="line"><span class="lineno">  112</span>  </div>
-<div class="line"><span class="lineno">  113</span>  mlSol.GenerateBdc(<span class="stringliteral">&quot;All&quot;</span>);</div>
-<div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span>  <span class="comment">// define the multilevel problem attach the mlSol object to it</span></div>
-<div class="line"><span class="lineno">  116</span>  <a class="code hl_class" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> mlProb(&amp;mlSol);</div>
-<div class="line"><span class="lineno">  117</span> </div>
-<div class="line"><span class="lineno">  118</span>  <span class="comment">// add system Poisson in mlProb as a Linear Implicit System</span></div>
-<div class="line"><span class="lineno">  119</span>  <a class="code hl_class" href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html">NonLinearImplicitSystem</a>&amp; system = mlProb.add_system &lt; <a class="code hl_class" href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html">NonLinearImplicitSystem</a> &gt; (<span class="stringliteral">&quot;NS&quot;</span>);</div>
-<div class="line"><span class="lineno">  120</span> </div>
-<div class="line"><span class="lineno">  121</span>  <span class="comment">// add solution &quot;u&quot; to system</span></div>
-<div class="line"><span class="lineno">  122</span>  system.<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a606e07526d7a0d31eed638404ee2ed24">AddSolutionToSystemPDE</a>(<span class="stringliteral">&quot;U&quot;</span>);</div>
-<div class="line"><span class="lineno">  123</span>  system.<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a606e07526d7a0d31eed638404ee2ed24">AddSolutionToSystemPDE</a>(<span class="stringliteral">&quot;V&quot;</span>);</div>
-<div class="line"><span class="lineno">  124</span> </div>
-<div class="line"><span class="lineno">  125</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> == 3) system.<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a606e07526d7a0d31eed638404ee2ed24">AddSolutionToSystemPDE</a>(<span class="stringliteral">&quot;W&quot;</span>);</div>
+<div class="line"><span class="lineno">   94</span>  <a class="code hl_class" href="../../d6/da4/classfemus_1_1_multi_level_solution.html">MultiLevelSolution</a> mlSol(&amp;mlMsh);</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>  <span class="comment">// add variables to mlSol</span></div>
+<div class="line"><span class="lineno">   97</span>  mlSol.AddSolution(<span class="stringliteral">&quot;U&quot;</span>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3">SECOND</a>);</div>
+<div class="line"><span class="lineno">   98</span>  mlSol.AddSolution(<span class="stringliteral">&quot;V&quot;</span>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3">SECOND</a>);</div>
+<div class="line"><span class="lineno">   99</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> == 3) mlSol.AddSolution(<span class="stringliteral">&quot;W&quot;</span>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3">SECOND</a>);</div>
+<div class="line"><span class="lineno">  100</span>  mlSol.AddSolution(<span class="stringliteral">&quot;P&quot;</span>,  <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a2318cd5622bed5320c47de68813ab4df">DISCONTINUOUS_POLYNOMIAL</a>, <a class="code hl_enumvalue" href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa6a7856cca1833641e731676636b193f1">FIRST</a>);</div>
+<div class="line"><span class="lineno">  101</span>  </div>
+<div class="line"><span class="lineno">  102</span>  <span class="comment">//  Taylor-hood</span></div>
+<div class="line"><span class="lineno">  103</span>  <span class="comment">//  mlSol.AddSolution(&quot;U&quot;, LAGRANGE, SERENDIPITY);</span></div>
+<div class="line"><span class="lineno">  104</span>  <span class="comment">//  mlSol.AddSolution(&quot;V&quot;, LAGRANGE, SERENDIPITY);</span></div>
+<div class="line"><span class="lineno">  105</span>  <span class="comment">//  if (dim == 3) mlSol.AddSolution(&quot;W&quot;, LAGRANGE, SERENDIPITY);</span></div>
+<div class="line"><span class="lineno">  106</span>  <span class="comment">//  mlSol.AddSolution(&quot;P&quot;, LAGRANGE, FIRST);</span></div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>  </div>
+<div class="line"><span class="lineno">  109</span>  mlSol.Initialize(<span class="stringliteral">&quot;All&quot;</span>);</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>  <span class="comment">// attach the boundary condition function and generate boundary data</span></div>
+<div class="line"><span class="lineno">  112</span>  mlSol.AttachSetBoundaryConditionFunction(<a class="code hl_function" href="../../df/d93/ex06b__navier__stokes_8cpp.html#ab8b0d45993b678f2b4a8aea9fff7fc87">SetBoundaryCondition</a>);</div>
+<div class="line"><span class="lineno">  113</span>  <span class="comment">//mlSol.FixSolutionAtOnePoint(&quot;P&quot;);</span></div>
+<div class="line"><span class="lineno">  114</span>  </div>
+<div class="line"><span class="lineno">  115</span>  mlSol.GenerateBdc(<span class="stringliteral">&quot;All&quot;</span>);</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>  <span class="comment">// define the multilevel problem attach the mlSol object to it</span></div>
+<div class="line"><span class="lineno">  118</span>  <a class="code hl_class" href="../../de/d6a/classfemus_1_1_multi_level_problem.html">MultiLevelProblem</a> mlProb(&amp;mlSol);</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>  <span class="comment">// add system Poisson in mlProb as a Linear Implicit System</span></div>
+<div class="line"><span class="lineno">  121</span>  <a class="code hl_class" href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html">NonLinearImplicitSystem</a>&amp; system = mlProb.add_system &lt; <a class="code hl_class" href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html">NonLinearImplicitSystem</a> &gt; (<span class="stringliteral">&quot;NS&quot;</span>);</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>  <span class="comment">// add solution &quot;u&quot; to system</span></div>
+<div class="line"><span class="lineno">  124</span>  system.<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a606e07526d7a0d31eed638404ee2ed24">AddSolutionToSystemPDE</a>(<span class="stringliteral">&quot;U&quot;</span>);</div>
+<div class="line"><span class="lineno">  125</span>  system.<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a606e07526d7a0d31eed638404ee2ed24">AddSolutionToSystemPDE</a>(<span class="stringliteral">&quot;V&quot;</span>);</div>
 <div class="line"><span class="lineno">  126</span> </div>
-<div class="line"><span class="lineno">  127</span>  system.<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a606e07526d7a0d31eed638404ee2ed24">AddSolutionToSystemPDE</a>(<span class="stringliteral">&quot;P&quot;</span>);</div>
+<div class="line"><span class="lineno">  127</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a> == 3) system.<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a606e07526d7a0d31eed638404ee2ed24">AddSolutionToSystemPDE</a>(<span class="stringliteral">&quot;W&quot;</span>);</div>
 <div class="line"><span class="lineno">  128</span> </div>
-<div class="line"><span class="lineno">  129</span>  <span class="comment">// attach the assembling function to system</span></div>
-<div class="line"><span class="lineno">  130</span>  system.<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a42a5b5b5d2c7673b1d4c896762d8db9e">SetAssembleFunction</a>(<a class="code hl_function" href="../../df/d93/ex06b__navier__stokes_8cpp.html#a5efee0775707ca1f35f49df747a099af">AssembleBoussinesqAppoximation_AD</a>);</div>
-<div class="line"><span class="lineno">  131</span> </div>
-<div class="line"><span class="lineno">  132</span>  <span class="comment">// initilaize and solve the system</span></div>
-<div class="line"><span class="lineno">  133</span>  system.<a class="code hl_function" href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html#ad2d20975e0c919a9d99bdd9368a0212a">init</a>();</div>
-<div class="line"><span class="lineno">  134</span>  <span class="comment">//system.SetOuterSolver(PREONLY);</span></div>
-<div class="line"><span class="lineno">  135</span>  system.<a class="code hl_function" href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html#a438462e18c01e8fb08358526c04c50b5">MGsolve</a>();</div>
-<div class="line"><span class="lineno">  136</span> </div>
-<div class="line"><span class="lineno">  137</span>  <span class="comment">// print solutions</span></div>
-<div class="line"><span class="lineno">  138</span>  std::vector &lt; std::string &gt; variablesToBePrinted;</div>
-<div class="line"><span class="lineno">  139</span>  variablesToBePrinted.push_back(<span class="stringliteral">&quot;All&quot;</span>);</div>
-<div class="line"><span class="lineno">  140</span> </div>
-<div class="line"><span class="lineno">  141</span>  <a class="code hl_class" href="../../d4/d8d/classfemus_1_1_v_t_k_writer.html">VTKWriter</a> vtkIO(&amp;mlSol);</div>
-<div class="line"><span class="lineno">  142</span>  vtkIO.SetDebugOutput(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  143</span>  vtkIO.Write(<a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a>, <span class="stringliteral">&quot;biquadratic&quot;</span>, variablesToBePrinted);</div>
-<div class="line"><span class="lineno">  144</span> </div>
-<div class="line"><span class="lineno">  145</span>  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  146</span>}</div>
+<div class="line"><span class="lineno">  129</span>  system.<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a606e07526d7a0d31eed638404ee2ed24">AddSolutionToSystemPDE</a>(<span class="stringliteral">&quot;P&quot;</span>);</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>  <span class="comment">// attach the assembling function to system</span></div>
+<div class="line"><span class="lineno">  132</span>  system.<a class="code hl_function" href="../../d5/dc7/classfemus_1_1_system.html#a42a5b5b5d2c7673b1d4c896762d8db9e">SetAssembleFunction</a>(<a class="code hl_function" href="../../df/d93/ex06b__navier__stokes_8cpp.html#a5efee0775707ca1f35f49df747a099af">AssembleBoussinesqAppoximation_AD</a>);</div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>  <span class="comment">// initilaize and solve the system</span></div>
+<div class="line"><span class="lineno">  135</span>  system.<a class="code hl_function" href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html#ad2d20975e0c919a9d99bdd9368a0212a">init</a>();</div>
+<div class="line"><span class="lineno">  136</span>  <span class="comment">//system.SetOuterSolver(PREONLY);</span></div>
+<div class="line"><span class="lineno">  137</span>  system.<a class="code hl_function" href="../../dd/d33/classfemus_1_1_non_linear_implicit_system.html#a438462e18c01e8fb08358526c04c50b5">MGsolve</a>();</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>  <span class="comment">// print solutions</span></div>
+<div class="line"><span class="lineno">  140</span>  std::vector &lt; std::string &gt; variablesToBePrinted;</div>
+<div class="line"><span class="lineno">  141</span>  variablesToBePrinted.push_back(<span class="stringliteral">&quot;All&quot;</span>);</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>  <a class="code hl_class" href="../../d4/d8d/classfemus_1_1_v_t_k_writer.html">VTKWriter</a> vtkIO(&amp;mlSol);</div>
+<div class="line"><span class="lineno">  144</span>  vtkIO.SetDebugOutput(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  145</span>  vtkIO.Write(<a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a>, <span class="stringliteral">&quot;biquadratic&quot;</span>, variablesToBePrinted);</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  148</span>}</div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a00ea9562f0dbb25e22bb3297d596e3baa6a7856cca1833641e731676636b193f1"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa6a7856cca1833641e731676636b193f1">FIRST</a></div><div class="ttdeci">@ FIRST</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00015">FElemTypeEnum.hpp:15</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3">SECOND</a></div><div class="ttdeci">@ SECOND</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00018">FElemTypeEnum.hpp:17</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a7c9a70b7c6b5baf5d7942938d770a664a2318cd5622bed5320c47de68813ab4df"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a2318cd5622bed5320c47de68813ab4df">DISCONTINUOUS_POLYNOMIAL</a></div><div class="ttdeci">@ DISCONTINUOUS_POLYNOMIAL</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00006">FElemTypeEnum.hpp:6</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a></div><div class="ttdeci">@ LAGRANGE</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00005">FElemTypeEnum.hpp:5</a></div></div>
-<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00040">FemusDefault.hpp:40</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_a9474ccd5fe02de808a96182d96ac32ab"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#a9474ccd5fe02de808a96182d96ac32ab">DEFAULT_MESH_FILES_PATH</a></div><div class="ttdeci">#define DEFAULT_MESH_FILES_PATH</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00044">FemusDefault.hpp:44</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00041">FemusDefault.hpp:41</a></div></div>
 <div class="ttc" id="a_i_s_m_2ex4_2ex4_8cpp_html_a0aca793820b6ff7705450e2043256938"><div class="ttname"><a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#a0aca793820b6ff7705450e2043256938">numberOfUniformLevels</a></div><div class="ttdeci">unsigned numberOfUniformLevels</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp_source.html#l00089">ex4.cpp:89</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_femus_init_html"><div class="ttname"><a href="../../da/d5e/classfemus_1_1_femus_init.html">femus::FemusInit</a></div><div class="ttdef"><b>Definition</b> <a href="../../df/d7c/_femus_init_8hpp_source.html#l00049">FemusInit.hpp:49</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_multi_level_mesh_html"><div class="ttname"><a href="../../dc/d8d/classfemus_1_1_multi_level_mesh.html">femus::MultiLevelMesh</a></div><div class="ttdef"><b>Definition</b> <a href="../../dd/dc5/_multi_level_mesh_8hpp_source.html#l00046">MultiLevelMesh.hpp:46</a></div></div>
@@ -600,7 +606,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1_system_html_a42a5b5b5d2c7673b1d4c896762d8db9e"><div class="ttname"><a href="../../d5/dc7/classfemus_1_1_system.html#a42a5b5b5d2c7673b1d4c896762d8db9e">femus::System::SetAssembleFunction</a></div><div class="ttdeci">void SetAssembleFunction(AssembleFunctionType)</div><div class="ttdef"><b>Definition</b> <a href="../../d8/de5/_system_8cpp_source.html#l00058">System.cpp:58</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_system_html_a606e07526d7a0d31eed638404ee2ed24"><div class="ttname"><a href="../../d5/dc7/classfemus_1_1_system.html#a606e07526d7a0d31eed638404ee2ed24">femus::System::AddSolutionToSystemPDE</a></div><div class="ttdeci">virtual void AddSolutionToSystemPDE(const char solname[])</div><div class="ttdef"><b>Definition</b> <a href="../../d8/de5/_system_8cpp_source.html#l00075">System.cpp:75</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_v_t_k_writer_html"><div class="ttname"><a href="../../d4/d8d/classfemus_1_1_v_t_k_writer.html">femus::VTKWriter</a></div><div class="ttdef"><b>Definition</b> <a href="../../d8/df7/_v_t_k_writer_8hpp_source.html#l00046">VTKWriter.hpp:46</a></div></div>
-<div class="ttc" id="aex06b__navier__stokes_8cpp_html_a5efee0775707ca1f35f49df747a099af"><div class="ttname"><a href="../../df/d93/ex06b__navier__stokes_8cpp.html#a5efee0775707ca1f35f49df747a099af">AssembleBoussinesqAppoximation_AD</a></div><div class="ttdeci">void AssembleBoussinesqAppoximation_AD(MultiLevelProblem &amp;ml_prob)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d93/ex06b__navier__stokes_8cpp_source.html#l00149">ex06b_navier_stokes.cpp:149</a></div></div>
+<div class="ttc" id="aex06b__navier__stokes_8cpp_html_a5efee0775707ca1f35f49df747a099af"><div class="ttname"><a href="../../df/d93/ex06b__navier__stokes_8cpp.html#a5efee0775707ca1f35f49df747a099af">AssembleBoussinesqAppoximation_AD</a></div><div class="ttdeci">void AssembleBoussinesqAppoximation_AD(MultiLevelProblem &amp;ml_prob)</div><div class="ttdef"><b>Definition</b> <a href="../../df/d93/ex06b__navier__stokes_8cpp_source.html#l00151">ex06b_navier_stokes.cpp:151</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -651,11 +657,11 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../df/d93/ex06b__navier__stokes_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../df/d93/ex06b__navier__stokes_8cpp_source.html">ex06b_navier_stokes.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   27</span>                                                                                                                                     {</div>
 <div class="line"><span class="lineno">   28</span>  <span class="keywordtype">bool</span> dirichlet = <span class="keyword">true</span>; <span class="comment">//dirichlet</span></div>
-<div class="line"><span class="lineno">   29</span>  value = 0.;</div>
+<div class="line"><span class="lineno">   29</span>  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   30</span>  </div>
 <div class="line"><span class="lineno">   31</span>  <span class="keywordflow">if</span> (!strcmp(SolName, <span class="stringliteral">&quot;U&quot;</span>)) { <span class="comment">// strcmp compares two string in lexiographic sense. why !strcmp??? not false ==true?</span></div>
 <div class="line"><span class="lineno">   32</span>    <span class="keywordflow">if</span> (facename == 2) {</div>
-<div class="line"><span class="lineno">   33</span>      value = -(x[1]-0.5) * (x[1]+0.5);</div>
+<div class="line"><span class="lineno">   33</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = -(x[1]-0.5) * (x[1]+0.5);</div>
 <div class="line"><span class="lineno">   34</span>    }</div>
 <div class="line"><span class="lineno">   35</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (facename == 3) {</div>
 <div class="line"><span class="lineno">   36</span>      dirichlet = <span class="keyword">false</span>;  </div>
@@ -663,25 +669,26 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   38</span>  } </div>
 <div class="line"><span class="lineno">   39</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp(SolName, <span class="stringliteral">&quot;V&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   40</span>     <span class="keywordflow">if</span> (facename == 2) {</div>
-<div class="line"><span class="lineno">   41</span>      value = 0.;</div>
+<div class="line"><span class="lineno">   41</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   42</span>    }</div>
 <div class="line"><span class="lineno">   43</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (facename == 3) {</div>
 <div class="line"><span class="lineno">   44</span>      dirichlet = <span class="keyword">false</span>;  </div>
 <div class="line"><span class="lineno">   45</span>    }</div>
 <div class="line"><span class="lineno">   46</span>  }</div>
 <div class="line"><span class="lineno">   47</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp(SolName, <span class="stringliteral">&quot;W&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   48</span>    value = 0.;</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   49</span>  } </div>
 <div class="line"><span class="lineno">   50</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp(SolName, <span class="stringliteral">&quot;P&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   51</span>    dirichlet = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   52</span>    value = 0.;</div>
+<div class="line"><span class="lineno">   52</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span>(facename == 3){</div>
-<div class="line"><span class="lineno">   54</span>      value = 0.;</div>
+<div class="line"><span class="lineno">   54</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   55</span>    }</div>
 <div class="line"><span class="lineno">   56</span>  }</div>
 <div class="line"><span class="lineno">   57</span> </div>
 <div class="line"><span class="lineno">   58</span>  <span class="keywordflow">return</span> dirichlet;</div>
 <div class="line"><span class="lineno">   59</span>}</div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

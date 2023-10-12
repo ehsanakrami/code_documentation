@@ -201,6 +201,7 @@ var namespacefemus =
     [ "__libmesh_petsc_preconditioner_apply", "d8/dea/namespacefemus.html#abbf7ae06606778e3dd164b5174dd540e", null ],
     [ "__libmesh_petsc_preconditioner_setup", "d8/dea/namespacefemus.html#a2b826b5e8671bc2f570f78b61de60d55", null ],
     [ "allocate_element_faces", "d8/dea/namespacefemus.html#a71906e79107ac54f584dd335fcdd5637", null ],
+    [ "AssembleBoussinesqAppoximation_AD", "d8/dea/namespacefemus.html#a5efee0775707ca1f35f49df747a099af", null ],
     [ "CFDSteadyStateAssembly", "d8/dea/namespacefemus.html#aa855928f5bcd03cb77496db87568a9ac", null ],
     [ "check_if_same_elem", "d8/dea/namespacefemus.html#a7fd99c1d407fe7ae1aad4ede3a0e488e", null ],
     [ "check_if_same_elem_bdry", "d8/dea/namespacefemus.html#a3c7a1b3a76b08ffd68d29619bc38d57e", null ],

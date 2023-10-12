@@ -1048,7 +1048,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  261</span>      ierr = VecGetArray(<a class="code hl_variable" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ac134673509a18ee6f600fb64d192c779">_vec</a>, &amp;values);</div>
 <div class="line"><span class="lineno">  262</span>      CHKERRABORT(MPI_COMM_WORLD,ierr);</div>
 <div class="line"><span class="lineno">  263</span>      <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a> = fli + i;</div>
-<div class="line"><span class="lineno">  264</span>      PetscScalar value = (values[i] + v);</div>
+<div class="line"><span class="lineno">  264</span>      PetscScalar <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = (values[i] + v);</div>
 <div class="line"><span class="lineno">  265</span>      ierr = VecRestoreArray(<a class="code hl_variable" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ac134673509a18ee6f600fb64d192c779">_vec</a>, &amp;values);</div>
 <div class="line"><span class="lineno">  266</span>      CHKERRABORT(MPI_COMM_WORLD,ierr);</div>
 <div class="line"><span class="lineno">  267</span>      ierr = VecSetValues(<a class="code hl_variable" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ac134673509a18ee6f600fb64d192c779">_vec</a>, 1, &amp;<a class="code hl_variable" href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">ig</a>, &amp;value, INSERT_VALUES);</div>
@@ -1068,7 +1068,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  281</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;n; i++) {</div>
 <div class="line"><span class="lineno">  282</span>      ierr = VecGetArray(loc_vec, &amp;values);</div>
 <div class="line"><span class="lineno">  283</span>      CHKERRABORT(MPI_COMM_WORLD,ierr);</div>
-<div class="line"><span class="lineno">  284</span>      PetscScalar value = (values[i] + v);</div>
+<div class="line"><span class="lineno">  284</span>      PetscScalar <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = (values[i] + v);</div>
 <div class="line"><span class="lineno">  285</span>      ierr = VecRestoreArray(loc_vec, &amp;values);</div>
 <div class="line"><span class="lineno">  286</span>      CHKERRABORT(MPI_COMM_WORLD,ierr);</div>
 <div class="line"><span class="lineno">  287</span>      ierr = VecSetValues(loc_vec, 1, &amp;i, &amp;value, INSERT_VALUES);</div>
@@ -1082,6 +1082,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  295</span>}</div>
 <div class="ttc" id="aclassfemus_1_1_petsc_vector_html_a0721bc1a1506471210879d543e7fe6fc"><div class="ttname"><a href="../../d2/d9c/classfemus_1_1_petsc_vector.html#a0721bc1a1506471210879d543e7fe6fc">femus::PetscVector::first_local_index</a></div><div class="ttdeci">int first_local_index() const</div><div class="ttdoc">This function returns the index of the first vector element.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d77/_petsc_vector_8hpp_source.html#l00708">PetscVector.hpp:708</a></div></div>
 <div class="ttc" id="anamespacefemus_html_a865501b20d45caeb12e3f10935e38cf6"><div class="ttname"><a href="../../d8/dea/namespacefemus.html#a865501b20d45caeb12e3f10935e38cf6">femus::ig</a></div><div class="ttdeci">const unsigned ig[N_GEOM_ELS][6][9]</div><div class="ttdef"><b>Definition</b> <a href="../../df/dd9/_elem_8hpp_source.html#l00345">Elem.hpp:345</a></div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1129,7 +1130,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  120</span>  assert(i&lt;<a class="code hl_function" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#a55b897177341e239c8ea36e0852ba213">size</a>());</div>
 <div class="line"><span class="lineno">  121</span>  <span class="keywordtype">int</span> ierr=0;</div>
 <div class="line"><span class="lineno">  122</span>  <span class="keywordtype">int</span> i_val = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(i);</div>
-<div class="line"><span class="lineno">  123</span>  PetscScalar petsc_value = <span class="keyword">static_cast&lt;</span>PetscScalar<span class="keyword">&gt;</span>(value);</div>
+<div class="line"><span class="lineno">  123</span>  PetscScalar petsc_value = <span class="keyword">static_cast&lt;</span>PetscScalar<span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>);</div>
 <div class="line"><span class="lineno">  124</span> </div>
 <div class="line"><span class="lineno">  125</span>  ierr = VecSetValues(<a class="code hl_variable" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ac134673509a18ee6f600fb64d192c779">_vec</a>, 1, &amp;i_val, &amp;petsc_value, ADD_VALUES);</div>
 <div class="line"><span class="lineno">  126</span>  CHKERRABORT(MPI_COMM_WORLD,ierr);</div>
@@ -2037,13 +2038,13 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  400</span>  this-&gt;<a class="code hl_function" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ae72305c0a5c596cf56fdbdf6354bff8f">_restore_array</a>();</div>
 <div class="line"><span class="lineno">  401</span>  <span class="comment">// Error flag and Return value</span></div>
 <div class="line"><span class="lineno">  402</span>  <span class="keywordtype">int</span> ierr = 0;</div>
-<div class="line"><span class="lineno">  403</span>  PetscScalar value=0.;</div>
+<div class="line"><span class="lineno">  403</span>  PetscScalar <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>=0.;</div>
 <div class="line"><span class="lineno">  404</span>  <span class="comment">// Make sure the NumericVector passed in is really a PetscVector</span></div>
 <div class="line"><span class="lineno">  405</span>  <span class="keyword">const</span> <a class="code hl_function" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#a97a488763d754a507a0aa1a600f2a0e8">PetscVector</a>* v = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code hl_function" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#a97a488763d754a507a0aa1a600f2a0e8">PetscVector</a>*<span class="keyword">&gt;</span>(&amp;V);</div>
 <div class="line"><span class="lineno">  406</span>  <span class="comment">// 2.3.x (at least) style.  Untested for previous versions.</span></div>
 <div class="line"><span class="lineno">  407</span>  ierr = VecDot(this-&gt;<a class="code hl_variable" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ac134673509a18ee6f600fb64d192c779">_vec</a>, v-&gt;_vec, &amp;value);</div>
 <div class="line"><span class="lineno">  408</span>  CHKERRABORT(MPI_COMM_WORLD,ierr);</div>
-<div class="line"><span class="lineno">  409</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(value);</div>
+<div class="line"><span class="lineno">  409</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>);</div>
 <div class="line"><span class="lineno">  410</span>}</div>
 </div><!-- fragment -->
 </div>
@@ -2789,10 +2790,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   56</span>  this-&gt;<a class="code hl_function" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ae72305c0a5c596cf56fdbdf6354bff8f">_restore_array</a>();</div>
 <div class="line"><span class="lineno">   57</span>  assert(this-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a34f55bd075ab087a8b6c2d10fe962f0a">closed</a>());</div>
 <div class="line"><span class="lineno">   58</span>  <span class="keywordtype">int</span> ierr=0;</div>
-<div class="line"><span class="lineno">   59</span>  PetscReal value=0.;</div>
+<div class="line"><span class="lineno">   59</span>  PetscReal <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>=0.;</div>
 <div class="line"><span class="lineno">   60</span>  ierr = VecNorm(<a class="code hl_variable" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ac134673509a18ee6f600fb64d192c779">_vec</a>, NORM_1, &amp;value);</div>
 <div class="line"><span class="lineno">   61</span>  CHKERRABORT(MPI_COMM_WORLD,ierr);</div>
-<div class="line"><span class="lineno">   62</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(value);</div>
+<div class="line"><span class="lineno">   62</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>);</div>
 <div class="line"><span class="lineno">   63</span>}</div>
 <div class="ttc" id="aclassfemus_1_1_numeric_vector_html_a34f55bd075ab087a8b6c2d10fe962f0a"><div class="ttname"><a href="../../da/d12/classfemus_1_1_numeric_vector.html#a34f55bd075ab087a8b6c2d10fe962f0a">femus::NumericVector::closed</a></div><div class="ttdeci">virtual bool closed() const</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d43/_numeric_vector_8hpp_source.html#l00179">NumericVector.hpp:179</a></div></div>
 </div><!-- fragment -->
@@ -2830,10 +2831,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   68</span>  this-&gt;<a class="code hl_function" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ae72305c0a5c596cf56fdbdf6354bff8f">_restore_array</a>();</div>
 <div class="line"><span class="lineno">   69</span>  assert(this-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a34f55bd075ab087a8b6c2d10fe962f0a">closed</a>());</div>
 <div class="line"><span class="lineno">   70</span>  <span class="keywordtype">int</span> ierr=0;</div>
-<div class="line"><span class="lineno">   71</span>  PetscReal value=0.;</div>
+<div class="line"><span class="lineno">   71</span>  PetscReal <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>=0.;</div>
 <div class="line"><span class="lineno">   72</span>  ierr = VecNorm(<a class="code hl_variable" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ac134673509a18ee6f600fb64d192c779">_vec</a>, NORM_2, &amp;value);</div>
 <div class="line"><span class="lineno">   73</span>  CHKERRABORT(MPI_COMM_WORLD,ierr);</div>
-<div class="line"><span class="lineno">   74</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(value);</div>
+<div class="line"><span class="lineno">   74</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>);</div>
 <div class="line"><span class="lineno">   75</span>}</div>
 </div><!-- fragment -->
 </div>
@@ -2908,10 +2909,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   80</span>  this-&gt;<a class="code hl_function" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ae72305c0a5c596cf56fdbdf6354bff8f">_restore_array</a>();</div>
 <div class="line"><span class="lineno">   81</span>  assert(this-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a34f55bd075ab087a8b6c2d10fe962f0a">closed</a>());</div>
 <div class="line"><span class="lineno">   82</span>  <span class="keywordtype">int</span> ierr=0;</div>
-<div class="line"><span class="lineno">   83</span>  PetscReal value=0.;</div>
+<div class="line"><span class="lineno">   83</span>  PetscReal <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>=0.;</div>
 <div class="line"><span class="lineno">   84</span>  ierr = VecNorm(<a class="code hl_variable" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ac134673509a18ee6f600fb64d192c779">_vec</a>, NORM_INFINITY, &amp;value);</div>
 <div class="line"><span class="lineno">   85</span>  CHKERRABORT(MPI_COMM_WORLD,ierr);</div>
-<div class="line"><span class="lineno">   86</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(value);</div>
+<div class="line"><span class="lineno">   86</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>);</div>
 <div class="line"><span class="lineno">   87</span>}</div>
 </div><!-- fragment -->
 </div>
@@ -4380,7 +4381,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  108</span>  assert(i&lt;<a class="code hl_function" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#a55b897177341e239c8ea36e0852ba213">size</a>());</div>
 <div class="line"><span class="lineno">  109</span>  <span class="keywordtype">int</span> ierr=0;</div>
 <div class="line"><span class="lineno">  110</span>  <span class="keywordtype">int</span> i_val = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(i);</div>
-<div class="line"><span class="lineno">  111</span>  PetscScalar petsc_value = <span class="keyword">static_cast&lt;</span>PetscScalar<span class="keyword">&gt;</span>(value);</div>
+<div class="line"><span class="lineno">  111</span>  PetscScalar petsc_value = <span class="keyword">static_cast&lt;</span>PetscScalar<span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>);</div>
 <div class="line"><span class="lineno">  112</span>  ierr = VecSetValues(<a class="code hl_variable" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ac134673509a18ee6f600fb64d192c779">_vec</a>, 1, &amp;i_val, &amp;petsc_value, INSERT_VALUES);</div>
 <div class="line"><span class="lineno">  113</span>  CHKERRABORT(MPI_COMM_WORLD,ierr);</div>
 <div class="line"><span class="lineno">  114</span>  this-&gt;<a class="code hl_variable" href="../../da/d12/classfemus_1_1_numeric_vector.html#a722d2654319ad192949d9f844975e80e">_is_closed</a> = <span class="keyword">false</span>;</div>
@@ -4537,8 +4538,8 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  127</span>    <span class="keyword">const</span> std::set&lt; int&gt;::iterator it_end = indices.end();</div>
 <div class="line"><span class="lineno">  128</span>    <span class="keywordtype">double</span> norm = 0;</div>
 <div class="line"><span class="lineno">  129</span>    <span class="keywordflow">for</span>(; it != it_end; ++it)    {</div>
-<div class="line"><span class="lineno">  130</span>      <span class="keywordtype">double</span> value = std::abs(v(*it));</div>
-<div class="line"><span class="lineno">  131</span>      <span class="keywordflow">if</span>(value &gt; norm)     norm = value;</div>
+<div class="line"><span class="lineno">  130</span>      <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = std::abs(v(*it));</div>
+<div class="line"><span class="lineno">  131</span>      <span class="keywordflow">if</span>(value &gt; norm)     norm = <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  132</span>    }</div>
 <div class="line"><span class="lineno">  133</span>    <a class="code hl_function" href="../../db/ded/namespacefemus_1_1_parallel.html#af18000527efd43ab82a8734b3c6d91f1">Parallel::max</a>(norm);</div>
 <div class="line"><span class="lineno">  134</span> </div>
@@ -4581,10 +4582,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   44</span>  this-&gt;<a class="code hl_function" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ae72305c0a5c596cf56fdbdf6354bff8f">_restore_array</a>();</div>
 <div class="line"><span class="lineno">   45</span>  assert(this-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a34f55bd075ab087a8b6c2d10fe962f0a">closed</a>());</div>
 <div class="line"><span class="lineno">   46</span>  <span class="keywordtype">int</span> ierr=0;</div>
-<div class="line"><span class="lineno">   47</span>  PetscScalar value=0.;</div>
+<div class="line"><span class="lineno">   47</span>  PetscScalar <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>=0.;</div>
 <div class="line"><span class="lineno">   48</span>  ierr = VecSum(<a class="code hl_variable" href="../../d2/d9c/classfemus_1_1_petsc_vector.html#ac134673509a18ee6f600fb64d192c779">_vec</a>, &amp;value);</div>
 <div class="line"><span class="lineno">   49</span>  CHKERRABORT(MPI_COMM_WORLD,ierr);</div>
-<div class="line"><span class="lineno">   50</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(value);</div>
+<div class="line"><span class="lineno">   50</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>);</div>
 <div class="line"><span class="lineno">   51</span>}</div>
 </div><!-- fragment -->
 </div>
@@ -5032,8 +5033,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/algebra/<a class="el" href="../../d0/d77/_petsc_vector_8hpp_source.html">PetscVector.hpp</a></li>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/algebra/<a class="el" href="../../d9/d01/_petsc_vector_8cpp_source.html">PetscVector.cpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/algebra/<a class="el" href="../../d0/d77/_petsc_vector_8hpp_source.html">PetscVector.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/algebra/<a class="el" href="../../d9/d01/_petsc_vector_8cpp_source.html">PetscVector.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

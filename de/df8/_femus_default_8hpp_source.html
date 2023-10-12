@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/00_utils/FemusDefault.hpp Source File</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/00_utils/FemusDefault.hpp Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -130,52 +130,56 @@ $(document).ready(function(){initNavTree('de/df8/_femus_default_8hpp_source.html
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a7a88e16ce1938ed65bfdf59c9c38d864">   38</a></span><span class="preprocessor">#define DEFAULT_BASEPATH     &quot;./&quot;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a8e12c4926d6c36bf00835a092bc0e310">   39</a></span><span class="preprocessor">#define DEFAULT_INPUTDIR    &quot;input/&quot;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">   40</a></span><span class="preprocessor">#define DEFAULT_OUTPUTDIR    &quot;output/&quot;</span>  <span class="comment">//we have to hardcode it here otherwise we cannot perform restart without logical inconsistencies</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a9e9f49d2dbc7aa4211c0b2690f15c3bf">   41</a></span><span class="preprocessor">#define DEFAULT_RUNTIMECONF  &quot;femus_conf.in&quot;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//*********************************************</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//*********************************************</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">//********** PRINT INFO ***********************</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// This is for configuring the &quot;verbosity&quot; of FEMuS:</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// important for a log of the program.</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// Deactivate it if you want to make faster runs.</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">// // // #define DEFAULT_FEMUS_PRINT_GRAPHIC 0 //this will be turned into runtime</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a338265e1e58b9f60faac609ac1c5580a">   51</a></span><span class="preprocessor">#define DEFAULT_PRINT_INFO 1</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#ac16b66b1d0df49a5fec75a870b1e1cac">   52</a></span><span class="preprocessor">#define DEFAULT_PRINT_TIME 1</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#ab14c3814f8fddfa53833e59adaf1bebf">   53</a></span><span class="preprocessor">#define DEFAULT_PRINT_CONV 1</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#if DEFAULT_PRINT_TIME==1</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#include &lt;ctime&gt;</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">//*********************************************</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">//*********************************************</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">//********** BOUNDARY CONDITIONS **************</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a677f7c7f33a86b54b074a951931761d5">   62</a></span><span class="preprocessor">#define DEFAULT_BC_FLAG 1 </span><span class="comment">//=0 if you put a function on the RHS //you also have to comment the bc_read</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a3b117a1f0753d4692c37c05ac12c7e35">   63</a></span><span class="preprocessor">#define DEFAULT_BDRY_TOLL  0.0000001</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#aea5c61ec1e5de0df5bd912de050ce7fd">   39</a></span><span class="preprocessor">#define DEFAULT_PACKAGE_DIR    &quot;femus/&quot;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a8e12c4926d6c36bf00835a092bc0e310">   40</a></span><span class="preprocessor">#define DEFAULT_INPUTDIR    &quot;input/&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">   41</a></span><span class="preprocessor">#define DEFAULT_OUTPUTDIR    &quot;output/&quot;</span>  <span class="comment">//we have to hardcode it here otherwise we cannot perform restart without logical inconsistencies</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a9e64ee8deb18daea4c9b0696f4d615be">   42</a></span><span class="preprocessor">#define DEFAULT_SOURCE_DIR    &quot;src/&quot;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a95bac3473270188ef66454507fe9e6a5">   43</a></span><span class="preprocessor">#define DEFAULT_APPLICATIONS_DIR    &quot;applications/&quot;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a9474ccd5fe02de808a96182d96ac32ab">   44</a></span><span class="preprocessor">#define DEFAULT_MESH_FILES_PATH    &quot;src/02_mesh/01_input/00_mesh_files/&quot;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a9e9f49d2dbc7aa4211c0b2690f15c3bf">   45</a></span><span class="preprocessor">#define DEFAULT_RUNTIMECONF  &quot;femus_conf.in&quot;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">//*********************************************</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">//*********************************************</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">//********** PRINT INFO ***********************</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// This is for configuring the &quot;verbosity&quot; of FEMuS:</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// important for a log of the program.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// Deactivate it if you want to make faster runs.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// // // #define DEFAULT_FEMUS_PRINT_GRAPHIC 0 //this will be turned into runtime</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a338265e1e58b9f60faac609ac1c5580a">   55</a></span><span class="preprocessor">#define DEFAULT_PRINT_INFO 1</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#ac16b66b1d0df49a5fec75a870b1e1cac">   56</a></span><span class="preprocessor">#define DEFAULT_PRINT_TIME 1</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#ab14c3814f8fddfa53833e59adaf1bebf">   57</a></span><span class="preprocessor">#define DEFAULT_PRINT_CONV 1</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#if DEFAULT_PRINT_TIME==1</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#include &lt;ctime&gt;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">//*********************************************</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//*********************************************</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">//**************************************************************************************</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//************************EQNBASE - MULTIGRID ******************************************</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">//**************************************************************************************</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#afe40997b907b133a681e31a6e8841a7d">   70</a></span><span class="preprocessor">#define DEFAULT_EPS_LSOLV  1.e-6 </span><span class="comment">//1.e-20</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#aa21e776f40127911ef49a52868056646">   71</a></span><span class="preprocessor">#define DEFAULT_EPS_LSOLV_C  1.e-20</span><span class="comment">//1.e-10</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a7284fafdf64cfe5ffd2be7c8f1544fb6">   72</a></span><span class="preprocessor">#define DEFAULT_EPS_PREPOST 1.e-20</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a7bfcdce4711e2019fb92fd7e59e42f08">   73</a></span><span class="preprocessor">#define DEFAULT_MAXITS_LSOLV  40</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#aa6458acc1fd5bf491e4121ebb5c115e1">   74</a></span><span class="preprocessor">#define DEFAULT_MG_GAMMA 1</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a56e01beffdefa0f94bdf92f9bfc990f6">   75</a></span><span class="preprocessor">#define DEFAULT_NC_PRE    8 </span><span class="comment">//16</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a95a240c38b468754cc507c3597c90807">   76</a></span><span class="preprocessor">#define DEFAULT_NC_COARSE 40</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a0f88c327f74f1f82803c5a506d426b92">   77</a></span><span class="preprocessor">#define DEFAULT_NC_POST   8 </span><span class="comment">//16 </span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a98182a4de3bd63ade9cdf09303e65cec">   78</a></span><span class="preprocessor">#define DEFAULT_REST_SIMPLE  0   </span><span class="comment">//no simple restrictor</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">//**************************************************************************************</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">//**************************************************************************************</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a54b71b34ccee274b9d8c99c4f1d70c41">   82</a></span><span class="preprocessor">#define DEFAULT_NDIGITS   4  </span><span class="comment">//n of digits for the timestep printing</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//********** BOUNDARY CONDITIONS **************</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a677f7c7f33a86b54b074a951931761d5">   66</a></span><span class="preprocessor">#define DEFAULT_BC_FLAG 1 </span><span class="comment">//=0 if you put a function on the RHS //you also have to comment the bc_read</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a3b117a1f0753d4692c37c05ac12c7e35">   67</a></span><span class="preprocessor">#define DEFAULT_BDRY_TOLL  0.0000001</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//*********************************************</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">//**************************************************************************************</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">//************************EQNBASE - MULTIGRID ******************************************</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">//**************************************************************************************</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#afe40997b907b133a681e31a6e8841a7d">   74</a></span><span class="preprocessor">#define DEFAULT_EPS_LSOLV  1.e-6 </span><span class="comment">//1.e-20</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#aa21e776f40127911ef49a52868056646">   75</a></span><span class="preprocessor">#define DEFAULT_EPS_LSOLV_C  1.e-20</span><span class="comment">//1.e-10</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a7284fafdf64cfe5ffd2be7c8f1544fb6">   76</a></span><span class="preprocessor">#define DEFAULT_EPS_PREPOST 1.e-20</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a7bfcdce4711e2019fb92fd7e59e42f08">   77</a></span><span class="preprocessor">#define DEFAULT_MAXITS_LSOLV  40</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#aa6458acc1fd5bf491e4121ebb5c115e1">   78</a></span><span class="preprocessor">#define DEFAULT_MG_GAMMA 1</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a56e01beffdefa0f94bdf92f9bfc990f6">   79</a></span><span class="preprocessor">#define DEFAULT_NC_PRE    8 </span><span class="comment">//16</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a95a240c38b468754cc507c3597c90807">   80</a></span><span class="preprocessor">#define DEFAULT_NC_COARSE 40</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a0f88c327f74f1f82803c5a506d426b92">   81</a></span><span class="preprocessor">#define DEFAULT_NC_POST   8 </span><span class="comment">//16 </span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a98182a4de3bd63ade9cdf09303e65cec">   82</a></span><span class="preprocessor">#define DEFAULT_REST_SIMPLE  0   </span><span class="comment">//no simple restrictor</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">//**************************************************************************************</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">//**************************************************************************************</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../de/df8/_femus_default_8hpp.html#a54b71b34ccee274b9d8c99c4f1d70c41">   86</a></span><span class="preprocessor">#define DEFAULT_NDIGITS   4  </span><span class="comment">//n of digits for the timestep printing</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

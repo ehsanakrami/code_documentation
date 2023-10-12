@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>femus: C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/applications/MPM_FEM/ex12/ex12.cpp File Reference</title>
+<title>femus: C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/applications/MPM_FEM/ex12/ex12.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -749,7 +749,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">  888</span>        }</div>
 <div class="line"><span class="lineno">  889</span>      }</div>
 <div class="line"><span class="lineno">  890</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nDofsP; i++) {</div>
-<div class="line"><span class="lineno">  891</span>        res[ (dim2 + <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>)  * nDofsU + i] = -aRes[dim2 + <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>][i].value();</div>
+<div class="line"><span class="lineno">  891</span>        res[ (dim2 + <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>)  * nDofsU + i] = -aRes[dim2 + <a class="code hl_variable" href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#aece1bc3fff4b670afc08354a6d995a0e">dim</a>][i].<a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>();</div>
 <div class="line"><span class="lineno">  892</span>      }</div>
 <div class="line"><span class="lineno">  893</span>      RES-&gt;<a class="code hl_function" href="../../da/d12/classfemus_1_1_numeric_vector.html#a0440021963af01ac49a6f02df562e44b">add_vector_blocked</a> (res, sysDof);</div>
 <div class="line"><span class="lineno">  894</span> </div>
@@ -869,6 +869,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aclassfemus_1_1_sparse_matrix_html_a45654dbe423d1970565b94c792ce6df3"><div class="ttname"><a href="../../d3/d61/classfemus_1_1_sparse_matrix.html#a45654dbe423d1970565b94c792ce6df3">femus::SparseMatrix::zero</a></div><div class="ttdeci">virtual void zero()=0</div></div>
 <div class="ttc" id="aclassfemus_1_1_sparse_matrix_html_a6eb9fbd88830b0d10c88f0ce066b07ae"><div class="ttname"><a href="../../d3/d61/classfemus_1_1_sparse_matrix.html#a6eb9fbd88830b0d10c88f0ce066b07ae">femus::SparseMatrix::close</a></div><div class="ttdeci">virtual void close() const =0</div></div>
 <div class="ttc" id="aclassfemus_1_1_sparse_matrix_html_aac0370cebbcc2d7111660dcf7115ebbf"><div class="ttname"><a href="../../d3/d61/classfemus_1_1_sparse_matrix.html#aac0370cebbcc2d7111660dcf7115ebbf">femus::SparseMatrix::add_matrix_blocked</a></div><div class="ttdeci">virtual void add_matrix_blocked(const std::vector&lt; double &gt; &amp;mat_value, const std::vector&lt; int &gt; &amp;rows, const std::vector&lt; int &gt; &amp;cols)=0</div></div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1640,7 +1641,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a00ea9562f0dbb25e22bb3297d596e3baa7cb36ff0a80f238d5b987d9250d369e3">SECOND</a></div><div class="ttdeci">@ SECOND</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00018">FElemTypeEnum.hpp:17</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a7c9a70b7c6b5baf5d7942938d770a664a2318cd5622bed5320c47de68813ab4df"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a2318cd5622bed5320c47de68813ab4df">DISCONTINUOUS_POLYNOMIAL</a></div><div class="ttdeci">@ DISCONTINUOUS_POLYNOMIAL</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00006">FElemTypeEnum.hpp:6</a></div></div>
 <div class="ttc" id="a_f_elem_type_enum_8hpp_html_a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e"><div class="ttname"><a href="../../dd/df7/_f_elem_type_enum_8hpp.html#a7c9a70b7c6b5baf5d7942938d770a664a3a2686743e1a69768985087ac144a28e">LAGRANGE</a></div><div class="ttdeci">@ LAGRANGE</div><div class="ttdef"><b>Definition</b> <a href="../../dd/df7/_f_elem_type_enum_8hpp_source.html#l00005">FElemTypeEnum.hpp:5</a></div></div>
-<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00040">FemusDefault.hpp:40</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_af12829f27afb4207fd7c58ef847b9d8b"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#af12829f27afb4207fd7c58ef847b9d8b">DEFAULT_OUTPUTDIR</a></div><div class="ttdeci">#define DEFAULT_OUTPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00041">FemusDefault.hpp:41</a></div></div>
 <div class="ttc" id="a_i_s_m_2ex4_2ex4_8cpp_html_a0aca793820b6ff7705450e2043256938"><div class="ttname"><a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp.html#a0aca793820b6ff7705450e2043256938">numberOfUniformLevels</a></div><div class="ttdeci">unsigned numberOfUniformLevels</div><div class="ttdef"><b>Definition</b> <a href="../../d1/d67/_i_s_m_2ex4_2ex4_8cpp_source.html#l00089">ex4.cpp:89</a></div></div>
 <div class="ttc" id="a_m_p_m___f_e_m_2ex12_2ex12_8cpp_html_a1e7369171cecdfa4a389b49c84f500f1"><div class="ttname"><a href="../../da/d2c/_m_p_m___f_e_m_2ex12_2ex12_8cpp.html#a1e7369171cecdfa4a389b49c84f500f1">AssembleWithProjection</a></div><div class="ttdeci">void AssembleWithProjection(MultiLevelProblem &amp;ml_prob)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d2c/_m_p_m___f_e_m_2ex12_2ex12_8cpp_source.html#l00671">ex12.cpp:671</a></div></div>
 <div class="ttc" id="a_m_p_m___f_e_m_2ex12_2ex12_8cpp_html_a946a02919407be91f6e459ce8e01eef9"><div class="ttname"><a href="../../da/d2c/_m_p_m___f_e_m_2ex12_2ex12_8cpp.html#a946a02919407be91f6e459ce8e01eef9">GetErrorNormWithProjection</a></div><div class="ttdeci">std::pair&lt; double, double &gt; GetErrorNormWithProjection(MultiLevelSolution *mlSol)</div><div class="ttdef"><b>Definition</b> <a href="../../da/d2c/_m_p_m___f_e_m_2ex12_2ex12_8cpp_source.html#l00338">ex12.cpp:338</a></div></div>
@@ -1767,11 +1768,11 @@ Variables</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../da/d2c/_m_p_m___f_e_m_2ex12_2ex12_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../da/d2c/_m_p_m___f_e_m_2ex12_2ex12_8cpp_source.html">ex12.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   29</span>                                                                                                                                      {</div>
 <div class="line"><span class="lineno">   30</span>  <span class="keywordtype">bool</span> dirichlet = <span class="keyword">true</span>; <span class="comment">//dirichlet</span></div>
-<div class="line"><span class="lineno">   31</span>  value = 0.;</div>
+<div class="line"><span class="lineno">   31</span>  <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   32</span> </div>
 <div class="line"><span class="lineno">   33</span>  <span class="keywordflow">if</span> (!strcmp (SolName, <span class="stringliteral">&quot;u&quot;</span>)) { <span class="comment">// strcmp compares two string in lexiographic sense. why !strcmp??? not false ==true?</span></div>
 <div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span> (facename == 2) {</div>
-<div class="line"><span class="lineno">   35</span>      value = - (x[1] - 0.5) * (x[1] + 0.5);</div>
+<div class="line"><span class="lineno">   35</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = - (x[1] - 0.5) * (x[1] + 0.5);</div>
 <div class="line"><span class="lineno">   36</span>    }</div>
 <div class="line"><span class="lineno">   37</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (facename == 3) {</div>
 <div class="line"><span class="lineno">   38</span>      dirichlet = <span class="keyword">false</span>;</div>
@@ -1779,25 +1780,25 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   40</span>  }</div>
 <div class="line"><span class="lineno">   41</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (SolName, <span class="stringliteral">&quot;v&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   42</span>    <span class="keywordflow">if</span> (facename == 2) {</div>
-<div class="line"><span class="lineno">   43</span>      value = 0.;</div>
+<div class="line"><span class="lineno">   43</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   44</span>    }</div>
 <div class="line"><span class="lineno">   45</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (facename == 3) {</div>
 <div class="line"><span class="lineno">   46</span>      dirichlet = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   47</span>    }</div>
 <div class="line"><span class="lineno">   48</span>  }</div>
 <div class="line"><span class="lineno">   49</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (SolName, <span class="stringliteral">&quot;w&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   50</span>    value = 0.;</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   51</span>  }</div>
 <div class="line"><span class="lineno">   52</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!strcmp (SolName, <span class="stringliteral">&quot;P&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   53</span>    dirichlet = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   54</span>    value = 0.;</div>
+<div class="line"><span class="lineno">   54</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (facename == 3) {</div>
-<div class="line"><span class="lineno">   56</span>      value = 0.;</div>
+<div class="line"><span class="lineno">   56</span>      <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   57</span>    }</div>
 <div class="line"><span class="lineno">   58</span>  }</div>
 <div class="line"><span class="lineno">   59</span>  <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   60</span>    dirichlet = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   61</span>    value = 0.;</div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> = 0.;</div>
 <div class="line"><span class="lineno">   62</span>  }</div>
 <div class="line"><span class="lineno">   63</span> </div>
 <div class="line"><span class="lineno">   64</span>  <span class="keywordflow">return</span> dirichlet;</div>

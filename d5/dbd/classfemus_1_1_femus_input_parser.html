@@ -283,15 +283,16 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  168</span>  <span class="keyword">typename</span> std::map&lt;std::string,T&gt;::const_iterator pos_e=<a class="code hl_variable" href="../../d5/dbd/classfemus_1_1_femus_input_parser.html#ab5d6ea57ed37959267aa8cf3909d1422">_rtmap</a>.end();</div>
 <div class="line"><span class="lineno">  169</span>  <span class="keywordflow">for</span> (;pos!=pos_e;pos++){</div>
 <div class="line"><span class="lineno">  170</span>    std::string name=pos-&gt;first; <span class="comment">// get name</span></div>
-<div class="line"><span class="lineno">  171</span>    T value=pos-&gt;second;    <span class="comment">// get value</span></div>
+<div class="line"><span class="lineno">  171</span>    T <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>=pos-&gt;second;    <span class="comment">// get value</span></div>
 <div class="line"><span class="lineno">  172</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;  &quot;</span> &lt;&lt; std::left &lt;&lt; std::setw(15) &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> </div>
-<div class="line"><span class="lineno">  173</span>              &lt;&lt; std::setprecision(12) &lt;&lt; value &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  173</span>              &lt;&lt; std::setprecision(12) &lt;&lt; <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  174</span>  }</div>
 <div class="line"><span class="lineno">  175</span>  </div>
 <div class="line"><span class="lineno">  176</span><span class="preprocessor">#endif  </span></div>
 <div class="line"><span class="lineno">  177</span>  </div>
 <div class="line"><span class="lineno">  178</span>  <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  179</span>}</div>
+<div class="ttc" id="anamespacesegment_1_1function__0_html_a1907e04e881c10f3ef9cc3dac6dde30b"><div class="ttname"><a href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">segment::function_0::value</a></div><div class="ttdeci">double value(const std::vector&lt; double &gt; &amp;x)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/dfe/ex02__poisson__a__all__dims__dir__neu_8cpp_source.html#l00035">ex02_poisson_a_all_dims_dir_neu.cpp:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -312,13 +313,13 @@ template&lt;typename T &gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../dc/d19/_femus_input_parser_8hpp_source.html#l00107">107</a> of file <a class="el" href="../../dc/d19/_femus_input_parser_8hpp_source.html">FemusInputParser.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  107</span>                                 {</div>
 <div class="line"><span class="lineno">  108</span> </div>
-<div class="line"><span class="lineno">  109</span>    std::ostringstream filename;</div>
-<div class="line"><span class="lineno">  110</span>    filename &lt;&lt; <a class="code hl_variable" href="../../d5/dbd/classfemus_1_1_femus_input_parser.html#a7bc03b4cb89200a0c76547e3f169c8d3">_basepath</a> &lt;&lt;  <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; <a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#a8e12c4926d6c36bf00835a092bc0e310">DEFAULT_INPUTDIR</a> &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; <a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#a9e9f49d2dbc7aa4211c0b2690f15c3bf">DEFAULT_RUNTIMECONF</a>;  </div>
+<div class="line"><span class="lineno">  109</span>    std::ostringstream <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>;</div>
+<div class="line"><span class="lineno">  110</span>    <a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a> &lt;&lt; <a class="code hl_variable" href="../../d5/dbd/classfemus_1_1_femus_input_parser.html#a7bc03b4cb89200a0c76547e3f169c8d3">_basepath</a> &lt;&lt;  <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; <a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#a8e12c4926d6c36bf00835a092bc0e310">DEFAULT_INPUTDIR</a> &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; <a class="code hl_define" href="../../de/df8/_femus_default_8hpp.html#a9e9f49d2dbc7aa4211c0b2690f15c3bf">DEFAULT_RUNTIMECONF</a>;  </div>
 <div class="line"><span class="lineno">  111</span> </div>
 <div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>std::ifstream fin(filename.str().c_str());</div>
+<div class="line"><span class="lineno">  113</span>std::ifstream fin(<a class="code hl_variable" href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">filename</a>.str().c_str());</div>
 <div class="line"><span class="lineno">  114</span>  std::string buf=<span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><span class="lineno">  115</span>  T value;</div>
+<div class="line"><span class="lineno">  115</span>  T <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>;</div>
 <div class="line"><span class="lineno">  116</span> </div>
 <div class="line"><span class="lineno">  117</span>  std::string cl_begin = <span class="stringliteral">&quot;&lt;&quot;</span> +  <a class="code hl_variable" href="../../d5/dbd/classfemus_1_1_femus_input_parser.html#a4349859a157afe5b95f35df510f907b8">_tag_name</a> + <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
 <div class="line"><span class="lineno">  118</span>  std::string cl_end   = <span class="stringliteral">&quot;&lt;/&quot;</span> + <a class="code hl_variable" href="../../d5/dbd/classfemus_1_1_femus_input_parser.html#a4349859a157afe5b95f35df510f907b8">_tag_name</a> + <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
@@ -337,7 +338,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  131</span>           </div>
 <div class="line"><span class="lineno">  132</span>                  <span class="keywordflow">if</span> (buf == <span class="stringliteral">&quot;#&quot;</span>) getline(fin, buf); <span class="comment">// comment line  //fin.ignore(200,&#39;\n&#39;); TODO what is the diff</span></div>
 <div class="line"><span class="lineno">  133</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (buf == cl_end) {<span class="keywordflow">break</span>;} <span class="comment">//exit the INNER nearest enclosing loop </span></div>
-<div class="line"><span class="lineno">  134</span>                <span class="keywordflow">else</span> { fin &gt;&gt; value; <a class="code hl_function" href="../../d5/dbd/classfemus_1_1_femus_input_parser.html#acbc42027ebef9bad38afd4e0bdef4169">set</a>(buf,value); } <span class="comment">// set new parameter</span></div>
+<div class="line"><span class="lineno">  134</span>                <span class="keywordflow">else</span> { fin &gt;&gt; <a class="code hl_function" href="../../d0/d45/namespacesegment_1_1function__0.html#a1907e04e881c10f3ef9cc3dac6dde30b">value</a>; <a class="code hl_function" href="../../d5/dbd/classfemus_1_1_femus_input_parser.html#acbc42027ebef9bad38afd4e0bdef4169">set</a>(buf,value); } <span class="comment">// set new parameter</span></div>
 <div class="line"><span class="lineno">  135</span>   </div>
 <div class="line"><span class="lineno">  136</span>         } <span class="keywordflow">while</span> (buf != cl_end);</div>
 <div class="line"><span class="lineno">  137</span> </div>
@@ -353,9 +354,10 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  147</span><span class="keywordflow">return</span>;  </div>
 <div class="line"><span class="lineno">  148</span> </div>
 <div class="line"><span class="lineno">  149</span>  }</div>
-<div class="ttc" id="a_femus_default_8hpp_html_a8e12c4926d6c36bf00835a092bc0e310"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#a8e12c4926d6c36bf00835a092bc0e310">DEFAULT_INPUTDIR</a></div><div class="ttdeci">#define DEFAULT_INPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00039">FemusDefault.hpp:39</a></div></div>
-<div class="ttc" id="a_femus_default_8hpp_html_a9e9f49d2dbc7aa4211c0b2690f15c3bf"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#a9e9f49d2dbc7aa4211c0b2690f15c3bf">DEFAULT_RUNTIMECONF</a></div><div class="ttdeci">#define DEFAULT_RUNTIMECONF</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00041">FemusDefault.hpp:41</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_a8e12c4926d6c36bf00835a092bc0e310"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#a8e12c4926d6c36bf00835a092bc0e310">DEFAULT_INPUTDIR</a></div><div class="ttdeci">#define DEFAULT_INPUTDIR</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00040">FemusDefault.hpp:40</a></div></div>
+<div class="ttc" id="a_femus_default_8hpp_html_a9e9f49d2dbc7aa4211c0b2690f15c3bf"><div class="ttname"><a href="../../de/df8/_femus_default_8hpp.html#a9e9f49d2dbc7aa4211c0b2690f15c3bf">DEFAULT_RUNTIMECONF</a></div><div class="ttdeci">#define DEFAULT_RUNTIMECONF</div><div class="ttdef"><b>Definition</b> <a href="../../de/df8/_femus_default_8hpp_source.html#l00045">FemusDefault.hpp:45</a></div></div>
 <div class="ttc" id="aclassfemus_1_1_femus_input_parser_html_acbc42027ebef9bad38afd4e0bdef4169"><div class="ttname"><a href="../../d5/dbd/classfemus_1_1_femus_input_parser.html#acbc42027ebef9bad38afd4e0bdef4169">femus::FemusInputParser::set</a></div><div class="ttdeci">void set(const std::string &amp;name, const T &amp;value)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d19/_femus_input_parser_8hpp_source.html#l00088">FemusInputParser.hpp:88</a></div></div>
+<div class="ttc" id="anamespacebuild__edges__of__volumes_html_a8b9aa5b5b104ffacbc115e9ba3c22e6a"><div class="ttname"><a href="../../da/da1/namespacebuild__edges__of__volumes.html#a8b9aa5b5b104ffacbc115e9ba3c22e6a">build_edges_of_volumes.filename</a></div><div class="ttdeci">filename</div><div class="ttdef"><b>Definition</b> <a href="../../d2/dce/build__edges__of__volumes_8py_source.html#l00009">build_edges_of_volumes.py:9</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -458,7 +460,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Ehsan/OneDrive - Dublin City University/Desktop/femus/source/src/00_utils/input_parser/<a class="el" href="../../dc/d19/_femus_input_parser_8hpp_source.html">FemusInputParser.hpp</a></li>
+<li>C:/Users/Ehsan/OneDrive - National University of Ireland, Galway/Desktop/femus/source/src/00_utils/input_parser/<a class="el" href="../../dc/d19/_femus_input_parser_8hpp_source.html">FemusInputParser.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
