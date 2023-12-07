@@ -1,0 +1,91 @@
+\documentclass{article}
+\usepackage{ifthen}
+\usepackage{epsfig}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{newunicodechar}
+  \makeatletter
+    \def\doxynewunicodechar#1#2{%
+    \@tempswafalse
+    \edef\nuc@tempa{\detokenize{#1}}%
+    \if\relax\nuc@tempa\relax
+      \nuc@emptyargerr
+    \else
+      \edef\@tempb{\expandafter\@car\nuc@tempa\@nil}%
+      \nuc@check
+      \if@tempswa
+        \@namedef{u8:\nuc@tempa}{#2}%
+      \fi
+    \fi
+  }
+  \makeatother
+  \doxynewunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \doxynewunicodechar{²}{${}^{2}$}% Superscript two
+  \doxynewunicodechar{³}{${}^{3}$}% Superscript three
+
+\pagestyle{empty}
+\begin{document}
+\begin{eqnarray*}
+&& \mathbf{V} \cdot \nabla \mathbf{V} - \nabla \cdot \nu (\nabla \mathbf{V} +(\nabla \mathbf{V})^T)
++\nabla P = 0 \\
+&& \nabla \cdot \mathbf{V} = 0
+\end{eqnarray*}
+\pagebreak
+
+\begin{eqnarray*}
+&& \mathbf{V} \cdot \nabla T - \nabla \cdot\alpha \nabla T = 0 \\
+&& \mathbf{V} \cdot \nabla \mathbf{V} - \nabla \cdot \nu (\nabla \mathbf{V} +(\nabla \mathbf{V})^T)
++\nabla P = \beta T \mathbf{j} \\
+&& \nabla \cdot \mathbf{V} = 0
+\end{eqnarray*}
+\pagebreak
+
+$U(0-N) = s$
+\pagebreak
+
+$U = V$
+\pagebreak
+
+$ U=v $
+\pagebreak
+
+$U=V$
+\pagebreak
+
+$ U=V $
+\pagebreak
+
+$l_1$
+\pagebreak
+
+$l_2$
+\pagebreak
+
+$U(0-LIBMESH_DIM)+=s$
+\pagebreak
+
+$U+=V$
+\pagebreak
+
+$U+=a*V$
+\pagebreak
+
+$ U+=v $
+\pagebreak
+
+$U+=A*V$
+\pagebreak
+
+$ U+=V $
+\pagebreak
+
+$ U+=a*V $
+\pagebreak
+
+$U+=V $
+\pagebreak
+
+$\texttt{this} = a*X + \texttt{this} $
+\pagebreak
+
+\end{document}

@@ -1,0 +1,26 @@
+var namespaceapplications__opt__control =
+[
+    [ "MagnFieldExtLagMult", "dd/d38/classapplications__opt__control_1_1_magn_field_ext_lag_mult.html", "dd/d38/classapplications__opt__control_1_1_magn_field_ext_lag_mult" ],
+    [ "MagnFieldExtX", "db/d82/classapplications__opt__control_1_1_magn_field_ext_x.html", "db/d82/classapplications__opt__control_1_1_magn_field_ext_x" ],
+    [ "MagnFieldExtY", "dc/d54/classapplications__opt__control_1_1_magn_field_ext_y.html", "dc/d54/classapplications__opt__control_1_1_magn_field_ext_y" ],
+    [ "MagnFieldExtZ", "df/dc6/classapplications__opt__control_1_1_magn_field_ext_z.html", "df/dc6/classapplications__opt__control_1_1_magn_field_ext_z" ],
+    [ "MagnFieldHomAdjX", "d7/d52/classapplications__opt__control_1_1_magn_field_hom_adj_x.html", "d7/d52/classapplications__opt__control_1_1_magn_field_hom_adj_x" ],
+    [ "MagnFieldHomAdjY", "d8/d78/classapplications__opt__control_1_1_magn_field_hom_adj_y.html", "d8/d78/classapplications__opt__control_1_1_magn_field_hom_adj_y" ],
+    [ "MagnFieldHomAdjZ", "d0/d84/classapplications__opt__control_1_1_magn_field_hom_adj_z.html", "d0/d84/classapplications__opt__control_1_1_magn_field_hom_adj_z" ],
+    [ "MagnFieldHomLagMult", "d0/da2/classapplications__opt__control_1_1_magn_field_hom_lag_mult.html", "d0/da2/classapplications__opt__control_1_1_magn_field_hom_lag_mult" ],
+    [ "MagnFieldHomLagMultAdj", "dc/d25/classapplications__opt__control_1_1_magn_field_hom_lag_mult_adj.html", "dc/d25/classapplications__opt__control_1_1_magn_field_hom_lag_mult_adj" ],
+    [ "MagnFieldHomX", "d1/dea/classapplications__opt__control_1_1_magn_field_hom_x.html", "d1/dea/classapplications__opt__control_1_1_magn_field_hom_x" ],
+    [ "MagnFieldHomY", "d8/d32/classapplications__opt__control_1_1_magn_field_hom_y.html", "d8/d32/classapplications__opt__control_1_1_magn_field_hom_y" ],
+    [ "MagnFieldHomZ", "da/d71/classapplications__opt__control_1_1_magn_field_hom_z.html", "da/d71/classapplications__opt__control_1_1_magn_field_hom_z" ],
+    [ "Pressure", "db/d44/classapplications__opt__control_1_1_pressure.html", "db/d44/classapplications__opt__control_1_1_pressure" ],
+    [ "PressureAdj", "da/d15/classapplications__opt__control_1_1_pressure_adj.html", "da/d15/classapplications__opt__control_1_1_pressure_adj" ],
+    [ "TempAdj", "d6/dda/classapplications__opt__control_1_1_temp_adj.html", "d6/dda/classapplications__opt__control_1_1_temp_adj" ],
+    [ "Temperature", "dc/d98/classapplications__opt__control_1_1_temperature.html", "dc/d98/classapplications__opt__control_1_1_temperature" ],
+    [ "TempLift", "da/d05/classapplications__opt__control_1_1_temp_lift.html", "da/d05/classapplications__opt__control_1_1_temp_lift" ],
+    [ "VelocityAdjX", "d1/d84/classapplications__opt__control_1_1_velocity_adj_x.html", "d1/d84/classapplications__opt__control_1_1_velocity_adj_x" ],
+    [ "VelocityAdjY", "d8/d15/classapplications__opt__control_1_1_velocity_adj_y.html", "d8/d15/classapplications__opt__control_1_1_velocity_adj_y" ],
+    [ "VelocityAdjZ", "d7/df4/classapplications__opt__control_1_1_velocity_adj_z.html", "d7/df4/classapplications__opt__control_1_1_velocity_adj_z" ],
+    [ "VelocityX", "da/db5/classapplications__opt__control_1_1_velocity_x.html", "da/db5/classapplications__opt__control_1_1_velocity_x" ],
+    [ "VelocityY", "dc/d8c/classapplications__opt__control_1_1_velocity_y.html", "dc/d8c/classapplications__opt__control_1_1_velocity_y" ],
+    [ "VelocityZ", "d9/d38/classapplications__opt__control_1_1_velocity_z.html", "d9/d38/classapplications__opt__control_1_1_velocity_z" ]
+];
