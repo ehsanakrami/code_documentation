@@ -1,4 +1,0 @@
-var classfemus_1_1ctrl_1_1boundary__control__full__face_1_1square_1_1_multiple__controls__and__homogeneous__boundary__conditions =
-[
-    [ "ctrl_or_state_set_dirichlet_fixed_values", "classfemus_1_1ctrl_1_1boundary__control__full__face_1_1square_1_1_multiple__controls__and__homogeneous__boundary__conditions.html#a88098e2e926336a2e0cc3ee15c443d06", null ]
-];

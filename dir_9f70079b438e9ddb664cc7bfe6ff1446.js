@@ -1,4 +1,0 @@
-var dir_9f70079b438e9ddb664cc7bfe6ff1446 =
-[
-    [ "assignment_prism_annular_base.py", "dd/dcc/src_202__mesh_201__input_200__mesh__files_200__salome_203__3d_2prism__annular__base_2assignment__prism__annular__base_8py.html", "dd/dcc/src_202__mesh_201__input_200__mesh__files_200__salome_203__3d_2prism__annular__base_2assignment__prism__annular__base_8py" ]
-];
